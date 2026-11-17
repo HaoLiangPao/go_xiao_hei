@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>借一盏灯 · 小黑的四时拾光</title>
+<link rel="stylesheet" href="scene.css">
+<script defer src="scene-data.js"></script><script defer src="scene-model.js"></script><script defer src="scene.js"></script>
+</head>
+<body>
+<header><a class="brand" href="index.html">小黑的四时拾光</a><nav aria-label="原型入口"><a href="puzzle.html">雨水拼图</a><a href="https://luoxiaohei.cockerel.com.cn/">海报收藏</a></nav></header>
+<main>
+  <div class="intro"><div><p class="season">春 · 雨水</p><h1>借一盏灯</h1></div><p>把一处屋檐，慢慢变成等人的地方。<br><span>没有倒计时，也没有选错的颜色。</span></p></div>
+  <div class="layout">
+    <section class="art" aria-label="可填色和摆放物件的旧屋场景">
+      <div class="scene-wrap" id="scene-wrap">
+      <svg id="scene" viewBox="0 0 760 560" xmlns="http://www.w3.org/2000/svg" aria-label="雨中的小屋" role="group">
+        <defs>
+          <pattern id="rain" width="40" height="48" patternUnits="userSpaceOnUse" patternTransform="rotate(13)"><path d="M8 0v12 M28 26v9" stroke="#99b3bc" stroke-width="1.3" opacity=".5"/></pattern>
+          <radialGradient id="glow"><stop stop-color="#ffe9a4" stop-opacity=".8"/><stop offset="1" stop-color="#ffe9a4" stop-opacity="0"/></radialGradient>
+          <symbol id="icon-tile" viewBox="-30 -30 60 60"><path d="M-26-11Q0 3 26-11L22 9Q0 24-22 9Z" fill="#71939b" stroke="#425c63" stroke-width="3"/><path d="M-22-7Q0 7 22-7" fill="none" stroke="#b4c8c7" stroke-width="3"/></symbol>
+          <symbol id="icon-cup" viewBox="-30 -30 60 60"><ellipse cy="20" rx="26" ry="5" fill="#bac2af"/><path d="M14-10C39-17 33 15 14 9" fill="none" stroke="#856747" stroke-width="5"/><path d="M-20-13H17L13 16Q-1 25-16 16Z" fill="#eed4a3" stroke="#856747" stroke-width="2.5"/><ellipse cx="-1" cy="-13" rx="19" ry="5" fill="#8f6c49"/></symbol>
+          <symbol id="icon-lamp" viewBox="-30 -30 60 60"><path d="M-8-20Q-8-35 8-20" fill="none" stroke="#765937" stroke-width="3"/><path d="M-12-18H12L19 12Q0 25-19 12Z" fill="#edc46e" stroke="#856747" stroke-width="3"/><path d="M-14-13H14M-17 11H17M0-16V17" stroke="#b18a48" stroke-width="2"/></symbol>
+        </defs>
+        <rect width="760" height="560" fill="#dce9ea"/>
+        <path d="M0 231Q90 105 199 186Q301 76 410 160Q565 67 760 178V420H0Z" fill="#bccfcb"/>
+        <path d="M0 309Q134 195 260 269Q469 158 760 253V493H0Z" fill="#a6c1b8"/>
+        <rect width="760" height="530" fill="url(#rain)"/>
+        <path d="M0 455Q156 396 353 434Q581 400 760 441V560H0Z" fill="#c0ccbb"/>
+        <g stroke="#516b68" stroke-width="3" stroke-linejoin="round">
+          <path data-region="ground" d="M160 426H575L616 475H123Z"/><path d="M142 453H595M254 427L238 475M452 427L476 475" fill="none" opacity=".45" pointer-events="none"/>
+          <path data-region="wall" d="M194 195H553V426H194Z"/>
+          <path d="M435 245H508V425H435Z" fill="#81968b"/><path d="M446 256H498V426H446Z" fill="#4d6866"/>
+          <path data-region="window" d="M228 250H347V340H228Z"/>
+          <path d="M239 260H336V329H239Z" fill="#c5dbd8" pointer-events="none"/>
+          <path d="M288 255V335M233 294H341" fill="none" pointer-events="none"/>
+          <path data-region="roof" d="M153 202L207 126H530L585 202Z"/>
+          <path d="M172 184H568M187 164H552M202 145H539M259 127L227 200M329 127L316 201M398 127L403 201M468 127L490 201" fill="none" opacity=".5" pointer-events="none"/>
+          <path id="roof-hole" d="M394 146L427 146L438 184L400 184Z" fill="#526a69" pointer-events="none"/>
+          <path data-region="table" d="M351 359H445L457 379H338ZM348 379H358V426H348ZM435 379H445V426H435Z"/>
+          <ellipse cx="403" cy="368" rx="22" ry="5" fill="#e8dec8" pointer-events="none"/>
+          <path d="M573 423H615L608 454H579Z" fill="#b29d89"/>
+          <path data-region="plant" d="M592 424C554 415 554 383 563 381Q591 383 592 411Q589 368 612 360Q630 385 596 419Q615 391 638 401Q633 425 592 424Z"/>
+        </g>
+        <g id="leak" stroke="#90b9cb" stroke-width="3" stroke-linecap="round"><path d="M416 209v16M420 241v9M416 271v16M418 305v10M415 337v13M415 409h13"/></g>
+        <!-- Original placeholder character drawing, separate from poster assets. -->
+        <g id="cat" transform="translate(285 398)" stroke="#293b40" stroke-width="3" stroke-linejoin="round">
+          <path d="M-25 13Q-28-15-14-22L-22-43L-3-31L12-32L29-45L27-20Q42 6 21 21Q-1 31-25 13Z" fill="#35464b"/>
+          <path d="M24 19Q51 36 48 9" fill="none" stroke-width="8"/>
+          <ellipse cx="-5" cy="-7" rx="6" ry="8" fill="#b9d899"/><ellipse cx="15" cy="-7" rx="6" ry="8" fill="#b9d899"/>
+          <path d="M-3-10V-3M16-10V-3" stroke-width="2"/><path d="M3 6L7 8L11 5" fill="none"/>
+        </g>
+        <g id="arrival" hidden><path d="M713 505l-13-6m-11-8l-12-5m-10-9l-12-4m-11-8l-12-4" stroke="#7c8d7d" stroke-width="5" stroke-linecap="round"/>
+          <path d="M650 399V355M609 359Q648 304 691 359Z" fill="#91a8a6" stroke="#516b68" stroke-width="3"/>
+          <text x="593" y="529" fill="#405e5b" font-size="15">哒、哒。有人回来了。</text></g>
+        <g id="placed-objects" pointer-events="none"></g>
+        <g id="targets"></g>
+        <path d="M55 474Q60 420 75 402M63 440L48 428M67 427L83 413M698 453Q696 410 709 394" fill="none" stroke="#6e9682" stroke-width="3"/>
+      </svg>
+      <div id="preview-banner" hidden>场景配色参考 · 收起后继续</div>
+      </div>
+      <p class="caption">屋檐下留一口热茶，门外留一点光。</p>
+      <div class="tools"><button id="hint">一点提示</button><button id="preview" aria-pressed="false">看看配色参考</button><button id="undo">撤销一步</button><button id="reset">重新开始</button></div>
+    </section>
+    <aside>
+      <div class="progress-label"><span id="task">先修好漏雨的屋檐</span><span id="count"></span></div><progress id="progress" max="9" value="0" aria-label="场景完成进度"></progress>
+      <section class="story" aria-live="polite"><p id="chapter">雨来时</p><h2 id="story-title"></h2><p id="story-text"></p><p id="choice-text" hidden></p></section>
+      <section class="workbench"><h3>给旧屋添一点颜色</h3><p class="help" id="color-instructions">先点画面中的区域，再从浮出的色盘选颜色。悬停可以预览，点击才会留下。</p><div id="region-list" aria-label="可填色区域"></div></section>
+      <section class="workbench"><h3>把日常放回原位</h3><div id="inventory"></div></section>
+      <p id="message" role="status">点一下屋檐或屋墙，给它挑个颜色，再试着放回瓦片。</p>
+      <details><summary>重读这场雨 <span id="memory-count">0 段记忆</span></summary><ol id="memories"></ol></details>
+    </aside>
+  </div>
+  <footer><p>原创二创短篇与矢量场景试作 · 非官方剧情<br>海报原图未改动；旧版拼图保留。进度仅保存在当前浏览器。</p><a href="../web/public/art/rain-2020.jpg">查看雨水海报</a></footer>
+</main>
+<section id="color-popover" role="dialog" aria-labelledby="color-title" aria-describedby="color-help" aria-hidden="true" inert>
+  <div class="color-heading"><div><h2 id="color-title">给屋檐添色</h2><p id="color-help">悬停预览 · 点击留下</p></div><button id="close-colors" type="button" aria-label="关闭色盘">×</button></div>
+  <div id="palette" aria-label="颜色选择"></div>
+  <p id="color-feedback" aria-live="polite">选一个喜欢的颜色</p>
+</section>
+</body></html>

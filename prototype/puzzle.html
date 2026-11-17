@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>雨水 · 拾回春天 | 小黑的四时拾光</title>
+<style>
+  :root { --paper:#f5f3eb; --ink:#253c35; --muted:#738077; --green:#567d5d; --line:#d8ddd0; --tile-image:none; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font-family:"Noto Sans CJK SC","Microsoft YaHei",system-ui,sans-serif; }
+  button,a { -webkit-tap-highlight-color:transparent; }
+  button { font:inherit; cursor:pointer; color:inherit; }
+  button:focus-visible,a:focus-visible { outline:3px solid #b58443; outline-offset:4px; }
+  button:disabled { cursor:default; }
+  a { color:var(--green); text-underline-offset:4px; }
+  header { max-width:1100px; margin:auto; padding:28px 32px 22px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--line); }
+  .brand { font-family:serif; font-size:22px; letter-spacing:.13em; }
+  .brand small { font:11px system-ui,sans-serif; letter-spacing:.22em; margin-left:20px; color:var(--muted); }
+  .tag { font-size:11px; border:1px solid #b8c7b8; border-radius:20px; padding:6px 12px; letter-spacing:.08em; }
+  main { max-width:1000px; margin:auto; padding:32px 32px 20px; }
+  .intro { display:flex; justify-content:space-between; align-items:end; margin-bottom:24px; }
+  .eyebrow { text-transform:uppercase; font-size:11px; letter-spacing:.18em; color:var(--green); margin:0 0 8px; }
+  h1 { font:500 34px/1.35 "Noto Serif CJK SC",serif; letter-spacing:.08em; margin:0; }
+  .intro p:last-child { margin:0 0 4px; font-size:12px; color:var(--muted); }
+  .layout { display:grid; grid-template-columns:minmax(260px,380px) minmax(300px,1fr); gap:48px; align-items:start; }
+  .art-col { min-width:0; text-align:center; }
+  .board-frame { padding:12px; border:1px solid #d0d8cb; background:#fffdf6; box-shadow:0 16px 38px #354c3511; border-radius:6px; }
+  .board { position:relative; width:100%; aspect-ratio:1080 / 2057; border-radius:3px; overflow:hidden; background:#dce6df; }
+  .board>img { position:absolute; inset:0; width:100%; height:100%; filter:grayscale(1) brightness(1.12); transition:filter .5s; }
+  .slots { position:absolute; inset:0; display:grid; grid-template-columns:repeat(3,1fr); grid-template-rows:repeat(4,1fr); }
+  .slot { position:relative; padding:0; background:transparent; border:0; box-shadow:inset 0 0 0 .7px #fff9; transition:box-shadow .2s, background-color .2s; }
+  .slot::after { content:""; position:absolute; width:10px; height:10px; inset:50% auto auto 50%; transform:translate(-50%,-50%); border:1px solid #fff9; border-radius:50%; }
+  .slot:hover:not(.placed) { background:#fff3; box-shadow:inset 0 0 0 2px #547c60; }
+  .slot.placed,.piece { background-image:var(--tile-image); background-size:300% 400%; background-position:var(--x) var(--y); }
+  .slot.placed { box-shadow:none; }
+  .slot.placed::after { display:none; }
+  .slot.hint { box-shadow:inset 0 0 0 4px #c39142; background-color:#dcae6140; }
+  .slot.wrong { box-shadow:inset 0 0 0 3px #aa665a; }
+  .board.show-original>img { filter:none; }
+  .board.show-original .slots { opacity:.12; pointer-events:none; }
+  .art-caption { font-size:10px; color:var(--muted); margin:13px 0 0; letter-spacing:.04em; }
+  .panel { padding-top:2px; }
+  .progress-label { display:flex; justify-content:space-between; font-size:12px; margin-bottom:10px; }
+  progress { display:block; width:100%; height:4px; appearance:none; border:0; border-radius:3px; overflow:hidden; background:#e0e5d9; }
+  progress::-webkit-progress-bar { background:#e0e5d9; }
+  progress::-webkit-progress-value { background:var(--green); transition:width .4s; }
+  progress::-moz-progress-bar { background:var(--green); }
+  .story { padding:21px 0 20px; border-bottom:1px solid var(--line); min-height:159px; }
+  .story .eyebrow { font-size:10px; margin-bottom:9px; }
+  h2 { font:500 21px/1.5 "Noto Serif CJK SC",serif; letter-spacing:.05em; margin:0 0 8px; }
+  .story-text { font-size:13px; line-height:1.85; margin:0; min-height:48px; }
+  .tray-header { display:flex; align-items:baseline; justify-content:space-between; margin:19px 0 11px; }
+  .tray-header h3 { font-size:13px; font-weight:500; margin:0; }
+  .tray-header span { font-size:10px; color:var(--muted); }
+  .tray { display:grid; grid-template-columns:repeat(4,1fr); gap:9px; }
+  .piece { aspect-ratio:1 / 1.42847; border:2px solid #fffdf6; border-radius:4px; padding:0; box-shadow:0 2px 5px #243a2b19; position:relative; transition:transform .16s, box-shadow .16s; touch-action:manipulation; }
+  .piece:hover { transform:translateY(-3px); }
+  .piece[aria-pressed="true"] { outline:3px solid var(--green); outline-offset:1px; transform:translateY(-3px); }
+  .piece.used { background-image:none; background-color:#e8ebe2; border:1px dashed #cdd7c9; box-shadow:none; transform:none; }
+  .piece.used::after { content:"✓"; font-size:20px; color:#869e83; position:absolute; inset:50% auto auto 50%; transform:translate(-50%,-50%); }
+  .message { font-size:11px; color:var(--green); line-height:1.7; min-height:38px; margin:15px 0 10px; }
+  .controls { display:flex; flex-wrap:wrap; gap:7px; }
+  .controls button { border:1px solid #becabb; background:transparent; border-radius:25px; padding:8px 13px; font-size:11px; }
+  .controls button:hover { background:#e6ecdf; }
+  .controls button[aria-pressed="true"] { background:#dce7d6; }
+  .note { font-size:10px; line-height:1.8; color:var(--muted); margin:17px 0 0; }
+  .load-error { padding:12px; border:1px solid #ad685b; font-size:12px; }
+  footer { max-width:1000px; margin:18px auto 24px; padding:0 32px; display:flex; justify-content:space-between; gap:16px; font-size:10px; color:var(--muted); }
+  [hidden] { display:none!important; }
+  @media(min-width:1100px) { .layout { grid-template-columns:350px minmax(300px,1fr); gap:72px; } }
+  @media(max-width:700px) { header { padding:20px; } .brand { font-size:19px; } .brand small { display:none; } main { padding:24px 20px; } h1 { font-size:29px; } .intro { display:block; } .intro p:last-child { margin-top:8px; } .layout { grid-template-columns:1fr; gap:26px; } .art-col { max-width:340px; margin:auto; width:100%; } .panel { max-width:420px; width:100%; margin:auto; } .tray { gap:10px; } .piece { max-height:125px; } footer { padding:0 20px; flex-direction:column; } }
+  @media(prefers-reduced-motion:reduce) { * { transition:none!important; } }
+</style>
+</head>
+<body>
+<header><div class="brand">小黑的四时拾光 <small>A LITTLE SEASONAL STORY</small></div><span class="tag">离线原型 · 01</span></header>
+<main>
+  <div class="intro"><div><p class="eyebrow">Chapter 01 / 春日的一场雨</p><h1>雨水 · 拾回春天</h1></div><p>把散落的颜色，放回记忆里。</p></div>
+  <p id="load-error" class="load-error" hidden>图片暂未加载。请将本页面与 luoxiaohei_collection 放在同一项目目录，保留原有文件名。</p>
+  <div class="layout">
+    <div class="art-col">
+      <div class="board-frame"><div class="board" id="board" aria-label="将十二片画面拼回春天">
+        <img id="art" alt="小黑与师父在春雨中观察叶尖的水珠，2020 年雨水节气图">
+        <div class="slots" id="slots"></div>
+      </div></div>
+      <p class="art-caption">2020 · 雨水 / A0243 <a id="source-link" href="https://luoxiaohei.cockerel.com.cn/artwork/huiji:solar/2020/%E9%9B%A8%E6%B0%B4">查看收藏图库 ↗</a></p>
+    </div>
+    <section class="panel" aria-label="碎片和故事">
+      <div class="progress-label"><span>正在拾回春天</span><span id="count">0 / 12</span></div>
+      <progress id="progress" max="12" value="0" aria-label="画面完成进度"></progress>
+      <div class="story" aria-live="polite" aria-atomic="true"><p class="eyebrow" id="story-stage">原创片段 · 序</p><h2 id="story-title">一片安静的灰色</h2><p class="story-text" id="story-text"></p></div>
+      <div class="tray-header"><h3>散落的画面</h3><span>先选碎片，再点对应的位置</span></div>
+      <div class="tray" id="tray" role="group" aria-label="十二片彩色画面"></div>
+      <p class="message" id="message" role="status">也可以把碎片拖到画面里。没有倒计时，慢慢来。</p>
+      <div class="controls"><button id="hint" type="button">给我一点提示</button><button id="preview" type="button" aria-pressed="false">看看原图</button><button id="reset" type="button">重新开始</button></div>
+      <p class="note">每拾回 4 片，故事向前走一步。<br>这段小故事为原创二创练习；画面与素材出处保留在收藏目录中。</p>
+    </section>
+  </div>
+</main>
+<footer><span>一段小小的春天，留给愿意慢下来的人。</span><a href="../docs/REVIEW.md">后续玩法构想 ↗</a></footer>
+<script>
+(() => {
+  'use strict';
+  const IMAGE = '../web/public/art/rain-2020.jpg';
+  const KEY = 'xiaohei-shiguang-rain-v1';
+  const TOTAL = 12;
+  const $ = id => document.getElementById(id);
+  const board = $('board'), slots = $('slots'), tray = $('tray');
+  const stories = [
+    ['原创片段 · 序', '一片安静的灰色', '春雨落在叶尖。小黑停下脚步，觉得这个春天似乎还少了一点颜色。把散落的画面放回去，听听雨会带来什么。'],
+    ['原创片段 · 一', '叶子先醒了', '最先回来的，是叶子上的青绿。小黑蹲下来，把一颗摇摇欲坠的水珠看了好久。原来小小的东西，也能装下整个天空。'],
+    ['原创片段 · 二', '伞下有两个人', '“师父，你看。”他把声音放得很轻。伞向小黑那边挪了一点。雨还在下，可是这一小块地方，已经慢慢暖起来了。'],
+    ['原创片段 · 终', '春天已经在这里了', '最后一片颜色落回叶间。小黑决定再看一会儿水珠，师父便陪他等了一会儿。有些旅程不用赶路，也会走进心里。']
+  ];
+  let selected = null, placed = new Set(), canSave = true, order = [];
+  try {
+    const data = JSON.parse(localStorage.getItem(KEY) || 'null');
+    if (data && data.version === 1 && Array.isArray(data.placed)) {
+      placed = new Set(data.placed.filter(n => Number.isInteger(n) && n >= 0 && n < TOTAL));
+    }
+  } catch (_) { canSave = false; }
+  document.documentElement.style.setProperty('--tile-image', `url("${encodeURI(IMAGE)}")`);
+  const art = $('art');
+  art.onload = () => { $('load-error').hidden = true; };
+  art.onerror = () => { $('load-error').hidden = false; };
+  art.src = IMAGE;
+  const position = (element, n) => {
+    element.style.setProperty('--x', `${(n % 3) * 50}%`);
+    element.style.setProperty('--y', `${Math.floor(n / 3) * 100 / 3}%`);
+  };
+  const save = () => {
+    if (!canSave) return;
+    try { localStorage.setItem(KEY, JSON.stringify({version:1, placed:[...placed]})); }
+    catch (_) { canSave = false; }
+  };
+  const say = text => { $('message').textContent = text; };
+  const clearHints = () => { slots.querySelectorAll('.hint,.wrong').forEach(el => el.classList.remove('hint','wrong')); };
+  const update = () => {
+    $('count').textContent = `${placed.size} / ${TOTAL}`;
+    $('progress').value = placed.size;
+    const stage = Math.floor(placed.size / 4);
+    const story = stories[stage];
+    $('story-stage').textContent = story[0];
+    $('story-title').textContent = story[1];
+    $('story-text').textContent = story[2];
+    slots.querySelectorAll('button').forEach(el => {
+      const n = Number(el.dataset.index), done = placed.has(n);
+      el.classList.toggle('placed', done);
+      el.disabled = done;
+      el.setAttribute('aria-label', `第 ${Math.floor(n / 3) + 1} 行第 ${n % 3 + 1} 列${done ? '，已放回' : '，等待碎片'}`);
+    });
+    tray.querySelectorAll('button').forEach(el => {
+      const n = Number(el.dataset.index), done = placed.has(n);
+      el.classList.toggle('used', done);
+      el.disabled = done;
+      el.draggable = !done;
+      el.setAttribute('aria-pressed', String(selected === n));
+      el.setAttribute('aria-label', `碎片 ${n + 1}${done ? '，已放回' : selected === n ? '，已选中' : ''}`);
+    });
+    $('hint').disabled = placed.size === TOTAL;
+  };
+  const select = n => {
+    if (placed.has(n)) return;
+    selected = n;
+    clearHints();
+    update();
+    say('碎片拿好了。把它放回左边画面中对应的位置。');
+  };
+  const place = target => {
+    if (board.classList.contains('show-original') || placed.has(target)) return;
+    clearHints();
+    if (selected === null) { say('先在“散落的画面”中选一片，再来找它的位置。'); return; }
+    if (selected !== target) {
+      slots.children[target].classList.add('wrong');
+      say('这片好像属于别的地方。看看颜色和线条，或者点一下提示。');
+      return;
+    }
+    placed.add(target);
+    selected = null;
+    save();
+    update();
+    say(placed.size === TOTAL ? '春天完整了。谢谢你陪小黑慢慢走完这一场雨。' : placed.size % 4 === 0 ? '一段新的记忆出现了。读完以后，再继续拾回颜色吧。' : '颜色回来了。继续找下一片吧。');
+  };
+  const shuffle = () => {
+    order = Array.from({length:TOTAL},(_,i) => i);
+    for (let i = order.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [order[i], order[j]] = [order[j], order[i]];
+    }
+  };
+  const render = () => {
+    slots.replaceChildren(); tray.replaceChildren();
+    for (let n = 0; n < TOTAL; n++) {
+      const el = document.createElement('button');
+      el.type = 'button'; el.className = 'slot'; el.dataset.index = n;
+      position(el,n);
+      el.addEventListener('click',() => place(n));
+      el.addEventListener('dragover', e => { e.preventDefault(); e.dataTransfer.dropEffect = 'move'; });
+      el.addEventListener('drop', e => {
+        e.preventDefault();
+        const raw = e.dataTransfer.getData('application/x-xiaohei-piece');
+        if (!/^\d+$/.test(raw)) return;
+        const index = Number(raw);
+        if (index < 0 || index >= TOTAL || placed.has(index)) return;
+        selected = index; place(n);
+      });
+      slots.append(el);
+    }
+    order.forEach(n => {
+      const el = document.createElement('button');
+      el.type = 'button'; el.className = 'piece'; el.dataset.index = n;
+      position(el,n);
+      el.addEventListener('click',() => select(n));
+      el.addEventListener('dragstart',e => {
+        select(n);
+        e.dataTransfer.setData('application/x-xiaohei-piece', String(n));
+        e.dataTransfer.effectAllowed = 'move';
+      });
+      tray.append(el);
+    });
+    update();
+  };
+  $('hint').addEventListener('click',() => {
+    if (selected === null) select(order.find(n => !placed.has(n)));
+    if (selected === null || selected === undefined) return;
+    clearHints();
+    if (board.classList.contains('show-original')) $('preview').click();
+    slots.children[selected].classList.add('hint');
+    say('金色边框标出了这片画面的位置。把它放回去吧。');
+  });
+  $('preview').addEventListener('click',() => {
+    const preview = board.classList.toggle('show-original');
+    $('preview').setAttribute('aria-pressed', String(preview));
+    $('preview').textContent = preview ? '收起原图' : '看看原图';
+    say(preview ? '先看看完整的春天。点击“收起原图”回到拼图。' : '回到拼图了，刚才的进度都还在。');
+  });
+  $('reset').addEventListener('click',() => {
+    placed = new Set(); selected = null;
+    board.classList.remove('show-original');
+    $('preview').setAttribute('aria-pressed','false'); $('preview').textContent = '看看原图';
+    shuffle(); render(); save(); say('又一场春雨开始了。选一片喜欢的颜色，慢慢来。');
+  });
+  shuffle(); render();
+  if (placed.size) say(placed.size === TOTAL ? '你完成的春天还在这里。可以看看原图，或者重新开始。' : `接着上次的记忆，已经拾回 ${placed.size} 片颜色。`);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+# Existing local collection: original artwork and generated gallery stay local.
+/luoxiaohei_collection/
+*.zip
+*.7z
+*.tar.gz
+# Audio experiments and model weights are separate from source code.
+/audio-sources/
+/generated-audio/
+/models/
+*.ckpt
+*.safetensors
+# Local development artifacts
+node_modules/
+.playwright-mcp/
+playwright-report/
+test-results/
+__pycache__/
+*.pyc
+.DS_Store
