@@ -1,0 +1,11 @@
+# 试玩图片来源
+
+`web/public/art/rain-2020.jpg` 为收藏目录的 A0243「2020 年雨水节气图」。不是本项目生成的图片，未修改原始字节。
+
+- 图片尺寸：1080 × 2057；JPEG；177851 bytes。
+- SHA-256：`6ab1708f9a9801c2d3eda340964e445ba39baddbede7d4a9bdad324868a1f49c`。
+- 第三方收录页：https://luoxiaohei.cockerel.com.cn/artwork/huiji:solar/2020/雨水
+- 原始收录条目：https://luoxiaohei.huijiwiki.com/wiki/文件:2020年雨水贺图.jpg
+- 收藏目录版权署名：北京寒木春华动画技术有限公司（原作）。本轮尚未逐张核对官方首发。
+
+保留单图仅用于本次原型复现与审阅，不代表拥有或授予该图的再分发、商业使用许可。整套收藏留在用户原目录，本提交不包含收藏库、下载器或影音模型。

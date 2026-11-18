@@ -1,0 +1,77 @@
+// Optional development dependency only; the game itself remains dependency-free.
+// NODE_PATH=/path/to/node_modules node tests/color-interaction.test.cjs
+const {createRequire} = require('node:module');
+const {JSDOM} = createRequire(require('node:path').join(__dirname,'../web/package.json'))('jsdom');
+const fs = require('node:fs');
+const path = require('node:path');
+const assert = require('node:assert/strict');
+const root = process.env.SHIGUANG_PROTOTYPE_ROOT || path.join(__dirname, '../prototype');
+const dom = new JSDOM(fs.readFileSync(path.join(root,'index.html'),'utf8'), {
+  url:'https://shiguang.test/prototype/index.html', runScripts:'outside-only', pretendToBeVisual:true
+});
+const w = dom.window, d = w.document;
+const errors=[];w.addEventListener('error',e=>errors.push(e.error?.message || e.message));
+// Geometry is a fixture, not a visual/browser test.
+for(const el of d.querySelectorAll('[data-region]'))el.getBoundingClientRect=()=>({left:100,top:100,right:400,bottom:200,width:300,height:100});
+Object.defineProperties(d.getElementById('color-popover'),{offsetWidth:{value:324},offsetHeight:{value:202}});
+for(const file of ['scene-data.js','scene-model.js','scene.js'])w.eval(fs.readFileSync(path.join(root,file),'utf8'));
+let passed=0;
+const check=(ok,label)=>{assert.ok(ok,label);passed++;};
+const el=selector=>d.querySelector(selector);
+const control=id=>el(`[data-control="${id}"]`);
+const click=node=>node.dispatchEvent(new w.MouseEvent('click',{bubbles:true,detail:1}));
+const press=(node,key)=>node.dispatchEvent(new w.KeyboardEvent('keydown',{key,bubbles:true,cancelable:true}));
+const pointer=(node,type)=>{const e=new w.Event(type,{bubbles:type==='pointerdown'});Object.defineProperty(e,'pointerType',{value:'mouse'});node.dispatchEvent(e);};
+const count=()=>el('#count').textContent;
+const saved=()=>w.localStorage.getItem('xiaohei-shiguang-borrow-a-light-v2');
+const isOpen=()=>el('#color-popover').classList.contains('is-open');
+const paint=(region,color='moss')=>{click(control(`region-${region}`));click(control(`color-${color}`));};
+
+click(el('#reset'));
+const before=saved();
+click(el('[data-region="roof"]'));
+check(isOpen(),'selecting SVG region opens palette');
+check(el('[data-region="roof"]').classList.contains('region-active'),'selected region highlights');
+check(count()==='0 / 9','selection alone does not paint');
+pointer(control('color-rain'),'pointerenter');
+check(el('[data-region="roof"]').style.fill==='#789eae','mouse hover previews actual region');
+check(saved()===before,'hover never saves progress');
+pointer(control('color-rain'),'pointerleave');
+check(el('[data-region="roof"]').style.fill==='var(--blank)','pointer leave restores unpainted color');
+pointer(control('color-petal'),'pointerenter');press(d.body,'Escape');
+check(!isOpen()&&count()==='0 / 9'&&saved()===before,'Esc cancels without writing progress');
+click(control('region-roof'));click(control('color-rain'));
+check(count()==='1 / 9'&&!isOpen(),'click commits and smoothly closes tray');
+const committed=saved();
+click(control('region-roof'));pointer(control('color-sun'),'pointerenter');
+pointer(d.body,'pointerdown');
+check(el('[data-region="roof"]').style.fill==='#789eae'&&saved()===committed,'outside click cancels recolor preview');
+click(control('region-roof'));pointer(control('color-petal'),'pointerenter');click(control('region-wall'));
+check(el('[data-region="roof"]').style.fill==='#789eae','changing region clears old preview');
+check(!el('[data-region="roof"]').classList.contains('region-active')&&el('[data-region="wall"]').classList.contains('region-active'),'exactly one highlighted selection');
+click(control('color-sun'));
+check(count()==='2 / 9','second region paints only on confirm');
+click(control('object-tile'));click(el('[data-target="roof-gap"]'));
+check(count()==='3 / 9'&&el('#leak').hasAttribute('hidden'),'existing tile story still works');
+paint('table','wood');paint('window','moss');click(control('object-cup'));click(el('[data-target="table-top"]'));
+paint('ground','rain');paint('plant','moss');click(control('object-lamp'));click(el('[data-target="window-hook"]'));
+check(count()==='9 / 9'&&el('#choice-text').textContent.includes('远远就能看见家'),'full story and window ending');
+click(el('#undo'));check(count()==='8 / 9','undo still rewinds story');
+click(control('object-lamp'));click(el('[data-target="door-hook"]'));
+check(el('#choice-text').textContent.includes('不会踩空'),'door ending preserved');
+click(el('#preview'));click(el('[data-region="roof"]'));
+check(!isOpen()&&count()==='9 / 9','reference blocks painting and palette');
+click(el('#preview'));
+press(el('[data-region="roof"]'),'Enter');
+check(isOpen()&&d.activeElement===control('color-rain'),'keyboard opens on committed color');
+press(d.activeElement,'ArrowRight');
+check(d.activeElement===control('color-wood'),'arrow keys move through palette');
+press(d.body,'Escape');
+check(d.activeElement===el('[data-region="roof"]'),'Esc returns keyboard focus to region');
+click(el('#undo'));
+click(control('region-table'));click(control('color-petal'));click(el('#undo'));
+check(el('[data-region="table"]').style.fill==='#b98b61','undo restores previously committed fill');
+check(!isOpen(),'undo dismisses tray');
+check(errors.length===0,`no runtime errors: ${errors.join(', ')}`);
+console.log(JSON.stringify({checksPassed:passed,errors,scope:'jsdom DOM/event checks; no browser rendering or animation timing asserted'},null,2));
+dom.window.close();

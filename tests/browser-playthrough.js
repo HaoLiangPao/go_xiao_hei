@@ -1,0 +1,30 @@
+// Current region-first interaction. Invoked by web/tests/browser.cjs.
+const assert=require('node:assert/strict');
+const path=require('node:path');
+module.exports=async function coloring(page,screenshots){
+ const control=id=>page.locator(`[data-control="${id}"]`);
+ const count=()=>page.locator('#count').innerText();
+ const paint=async(id,color)=>{await control(`region-${id}`).click();await control(`color-${color}`).click();};
+ const put=async(object,target)=>{await control(`object-${object}`).click();await page.locator(`[data-target="${target}"]`).click();};
+ await page.locator('#reset').click();
+ await page.locator('[data-region="roof"]').click();assert.equal(await count(),'0 / 9');
+ await control('color-rain').hover();assert.equal(await count(),'0 / 9');
+ await page.keyboard.press('Escape');assert.equal(await count(),'0 / 9');
+ await paint('roof','rain');await paint('wall','sun');
+ await put('tile','roof-gap');assert.ok(await page.locator('#leak').evaluate(el=>el.hasAttribute('hidden')));assert.equal(await count(),'3 / 9');
+ await paint('table','wood');await paint('window','moss');await put('cup','table-top');
+ await paint('ground','rain');await paint('plant','moss');
+ await control('object-lamp').click();
+ await control('object-lamp').dragTo(page.locator('[data-target="door-hook"]'));
+ assert.equal(await count(),'9 / 9');assert.ok((await page.locator('#choice-text').innerText()).includes('不会踩空'));
+ await page.screenshot({path:path.join(screenshots,'story-door-ending.png'),fullPage:true});
+ await page.locator('#undo').click();assert.equal(await count(),'8 / 9');await put('lamp','window-hook');
+ assert.ok((await page.locator('#choice-text').innerText()).includes('远远就能看见家'));
+ await page.screenshot({path:path.join(screenshots,'story-window-ending.png'),fullPage:true});
+ await page.reload();assert.equal(await count(),'9 / 9');
+ await page.locator('#preview').click();assert.equal(await page.locator('[data-region="roof"]').getAttribute('aria-disabled'),'true');assert.equal(await count(),'9 / 9');
+ await page.locator('#preview').click();
+ await page.setViewportSize({width:390,height:844});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+ await page.screenshot({path:path.join(screenshots,'story-mobile.png'),fullPage:true});
+ console.log('PASS coloring: region selection, preview cancellation, tile/cup/lamp progression, drag, both endings, undo, reload and mobile layout');
+};

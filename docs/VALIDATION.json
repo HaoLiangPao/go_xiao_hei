@@ -1,0 +1,16 @@
+{
+  "date_toronto": "2026-11-17",
+  "node": "22.23.4",
+  "results": {
+    "scene_model_tests": {"passed":4,"failed":0},
+    "jsdom_interaction_checks": {"passed":23,"failed":0},
+    "puzzle_geometry_and_save_tests": {"passed":10,"failed":0},
+    "chromium_puzzle_combinations": {"completed":9,"total":9},
+    "chromium_coloring": ["region first selection","hover does not commit","Escape cancels","tile stops leak","tea placement","lamp drag","door ending","undo and window ending","reload","preview disables editing","390px layout"],
+    "chromium_other": ["mouse puzzle drag","keyboard puzzle placement","touch simulation","storage blocked fallback","no page errors in main playthrough"],
+    "screenshots":7,
+    "production_build":"passed",
+    "script_syntax":"passed"
+  },
+  "limits":["not physical mobile hardware","not Safari or Firefox","no animation performance benchmark","no generated audio or video"]
+}
