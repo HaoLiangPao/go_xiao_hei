@@ -1,9 +1,6 @@
 import { recordedClip } from "./dialogueClips.js";
 
-const delivery = {
-  无限: { rate: 0.78, pitch: 0.72 },
-  小黑: { rate: 1.06, pitch: 1.13 },
-};
+import { castVoice, mandarinVoices, voiceProfiles } from "./voiceProfiles.js";
 
 // Every play settles on completion, failure, or cancellation so subtitles can advance.
 export function createDialoguePlayer({
@@ -12,6 +9,7 @@ export function createDialoguePlayer({
   Utterance = window.SpeechSynthesisUtterance,
   onSpeaking,
   onNote,
+  voiceCast = () => ({}),
   voiceWait = 1500,
   loadWait = 8000,
 }) {
@@ -78,12 +76,12 @@ export function createDialoguePlayer({
           finish();
           return;
         }
-        const mandarin = voices.filter((item) => /^zh(?:-(?:CN|TW|SG|Hans|Hant))?$/i.test(item.lang));
-        const choices = mandarin.length ? mandarin : voices;
+        const role = cue.voice ?? (cue.speaker === "小黑" ? "child" : cue.speaker === "无限" ? "adultMale" : "adultFemale");
         const utterance = new Utterance(cue.text);
-        utterance.voice = choices[cue.speaker === "小黑" && choices.length > 1 ? 1 : 0];
+        utterance.voice = castVoice(mandarinVoices(voices), role, voiceCast());
         utterance.lang = utterance.voice.lang;
-        Object.assign(utterance, delivery[cue.speaker] ?? { rate: 0.91, pitch: 1 });
+        const { rate, pitch } = voiceProfiles[role] ?? voiceProfiles.adultFemale;
+        Object.assign(utterance, { rate, pitch });
         utterance.onend = finish;
         utterance.onerror = (event) => {
           if (!active()) return;

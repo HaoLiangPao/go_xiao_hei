@@ -9,7 +9,8 @@ const origin = "http://127.0.0.1:5186";
 
 (async () => {
   await import(path.join(root, "scripts/prepare-public.mjs"));
-  assert.equal(fs.readdirSync(path.join(root, "public/audio/dialogue")).length, 6,
+  const { dialogueCues } = await import(path.join(root, "src/dialogueClips.js"));
+  assert.equal(fs.readdirSync(path.join(root, "public/audio/dialogue")).length, dialogueCues.length,
     "先运行 npm run audio:generate；本检查使用真实 MP3，不使用音频替身。");
   fs.mkdirSync(shots, { recursive: true });
   const server = spawn(process.execPath, [path.join(root, "node_modules/vite/bin/vite.js"),

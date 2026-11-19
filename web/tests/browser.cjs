@@ -4,7 +4,9 @@ const fs = require("node:fs");
 const assert = require("node:assert/strict");
 const { chromium } = require(process.env.PLAYWRIGHT_MODULE || "playwright");
 const root = path.resolve(__dirname, ".."),
-  shots = path.join(root, "../docs/screenshots/puzzle-2d");
+  shots =
+    process.env.SCREENSHOT_DIR ||
+    path.join(root, "../docs/screenshots/puzzle-2d");
 fs.mkdirSync(shots, { recursive: true });
 (async () => {
   await import(path.join(root, "scripts/prepare-public.mjs"));
@@ -78,6 +80,7 @@ fs.mkdirSync(shots, { recursive: true });
         .click();
     }
     async function showPiece(id) {
+      await page.locator(".floating-piece").waitFor({ state: "detached" });
       for (let i = 0; i < 20; i++) {
         if (await page.locator(`[data-piece="${id}"]`).count())
           return page.locator(`[data-piece="${id}"]`);
@@ -179,8 +182,13 @@ fs.mkdirSync(shots, { recursive: true });
           await page.getByRole("button", { name: "提示", exact: true }).click();
           assert.equal(await page.locator(".slot.hint").count(), 1);
           await page.getByRole("button", { name: "参考", exact: true }).click();
-          assert.equal(await page.locator("[data-slot]").count(), 0);
-          assert.ok(await page.locator("[data-piece]").first().isDisabled());
+          assert.equal(await page.locator("[data-slot]").count(), total);
+          assert.ok(
+            await page
+              .getByRole("complementary", { name: "独立原图参考" })
+              .isVisible(),
+          );
+          assert.ok(await page.locator("[data-piece]").first().isEnabled());
           await page.getByRole("button", { name: "参考", exact: true }).click();
           for (let id = 0; id < total; id++) await clickPlace(id);
           await waitCount(total, total);
@@ -444,8 +452,9 @@ fs.mkdirSync(shots, { recursive: true });
         value: {
           getVoices() {
             return [
-              { lang: "zh-CN", name: "试音一" },
-              { lang: "zh-CN", name: "试音二" },
+              { lang: "zh-CN", name: "晓晓", voiceURI: "xiaoxiao" },
+              { lang: "zh-CN", name: "云希", voiceURI: "yunxi" },
+              { lang: "zh-CN", name: "云夏", voiceURI: "yunxia" },
             ];
           },
           speak(item) {
@@ -479,6 +488,7 @@ fs.mkdirSync(shots, { recursive: true });
       () => window.__mix[2] === 0 && window.__mix[1] > 0,
     );
     await ap.getByLabel("对白朗读", { exact: false }).check();
+    await ap.getByLabel("成年女声").selectOption("xiaoxiao");
     await ap.getByRole("button", { name: "回到春天", exact: true }).click();
     await ap.locator('[data-memory="grass"]').click();
     for (
@@ -510,6 +520,8 @@ fs.mkdirSync(shots, { recursive: true });
       voice: window.__lastUtterance.voice.name,
     }));
     assert.ok(xiaohei.pitch > wuxian.pitch && xiaohei.voice !== wuxian.voice);
+    assert.equal(xiaohei.voice, "云夏");
+    assert.equal(wuxian.voice, "云希");
     await ap.evaluate(() =>
       window.__lastUtterance.onerror({ error: "interrupted" }),
     );
@@ -519,6 +531,19 @@ fs.mkdirSync(shots, { recursive: true });
         "系统朗读未能播放",
       ),
     );
+    await ap.getByRole("button", { name: "回到春天", exact: true }).click();
+    await ap.getByRole("button", { name: "游戏设置", exact: true }).click();
+    await ap.getByRole("radio", { name: "春分", exact: true }).check();
+    await ap.getByRole("button", { name: "回到春天", exact: true }).click();
+    await ap.waitForFunction(() =>
+      window.__lastUtterance?.text.includes("纸鸢"),
+    );
+    assert.equal(
+      await ap.evaluate(() => window.__lastUtterance.voice.name),
+      "晓晓",
+    );
+    await ap.getByRole("button", { name: "游戏设置", exact: true }).click();
+    await ap.getByRole("radio", { name: "雨水", exact: true }).check();
     await ap.getByRole("button", { name: "回到春天", exact: true }).click();
     await ap.getByRole("button", { name: "关闭声音", exact: true }).click();
     await ap.waitForFunction(() =>
@@ -536,6 +561,236 @@ fs.mkdirSync(shots, { recursive: true });
     await ap.getByRole("button", { name: "游戏设置", exact: true }).click();
     await ap.getByRole("status").filter({ hasText: "未找到中文系统语音" }).waitFor();
     await ac.close();
+
+    // Cover the physical-puzzle controls together with existing saves and image switching.
+    await page.setViewportSize({ width: 1360, height: 940 });
+    await mode("easy", "classic");
+    await clickPlace(0);
+    await settings();
+    await page.getByLabel("拼板提示").selectOption("blank");
+    await page.getByLabel("磁吸归位").uncheck();
+    await page.getByRole("button", { name: "回到春天", exact: true }).click();
+    await waitCount(0, 12);
+    assert.equal(
+      await page.locator(".board .underlay").getAttribute("visibility"),
+      "hidden",
+    );
+    await page.getByRole("button", { name: "参考", exact: true }).click();
+    assert.equal(
+      await page.locator(".picture-reference img").getAttribute("src"),
+      "/art/rain-2020.jpg",
+    );
+    assert.equal(
+      await page.locator(".board .underlay").getAttribute("visibility"),
+      "hidden",
+    );
+    assert.ok(await page.locator("[data-piece]").first().isEnabled());
+    await page.screenshot({
+      path: path.join(shots, "blank-board-reference.png"),
+    });
+    await page
+      .getByRole("button", { name: "关闭原图参考", exact: true })
+      .click();
+    await page.getByLabel("碎片排列").selectOption("shape");
+    await page.getByLabel("筛选碎片").selectOption("corner");
+    assert.equal(await page.locator('[data-piece-group="corner"]').count(), 4);
+    await page.getByLabel("筛选碎片").selectOption("edge");
+    assert.equal(await page.locator('[data-piece-group="edge"]').count(), 6);
+    await page.getByLabel("碎片排列").selectOption("color");
+    await page.waitForFunction(
+      () => !document.querySelector('[aria-label="筛选碎片"]').disabled,
+    );
+    const filter = page.getByLabel("筛选碎片");
+    const color = await filter
+      .locator("option")
+      .evaluateAll(
+        (options) =>
+          options.find(
+            (option) =>
+              option.value !== "all" && !option.textContent.endsWith("（0）"),
+          ).value,
+      );
+    await filter.selectOption(color);
+    assert.ok(await page.locator(`[data-piece-group="${color}"]`).count());
+    assert.equal(
+      await page
+        .locator(`[data-piece]:not([data-piece-group="${color}"])`)
+        .count(),
+      0,
+    );
+    await page.getByLabel("碎片排列").selectOption("random");
+    source = await (await showPiece(0)).boundingBox();
+    dest = await target(0, 3, 4);
+    const wrong = await target(1, 3, 4);
+    async function startManualDrag() {
+      await page.mouse.move(
+        source.x + source.width / 2,
+        source.y + source.height / 2,
+      );
+      await page.mouse.down();
+      await page.mouse.move(dest.x, dest.y, { steps: 6 });
+      await page.locator("[data-floating].phase-held").waitFor();
+    }
+    await startManualDrag();
+    assert.equal(await count(), "0 / 12");
+    await page.mouse.move(wrong.x, wrong.y);
+    await page.mouse.up();
+    await page.locator("[data-floating]").waitFor({ state: "detached" });
+    assert.equal(await count(), "0 / 12");
+    await startManualDrag();
+    await page.mouse.up();
+    await waitCount(1, 12);
+    await page.reload();
+    await waitCount(1, 12);
+    await settings();
+    assert.equal(await page.getByLabel("磁吸归位").isChecked(), false);
+    await page.getByLabel("拼板提示").selectOption("guided");
+    await page.getByRole("button", { name: "回到春天", exact: true }).click();
+    await waitCount(1, 12);
+    const { puzzleStories } = await import(
+      path.join(root, "src/puzzleStories.js")
+    );
+    const { regionPieces } = await import(path.join(root, "src/gameplay.js"));
+    for (const [title, asset, storyId] of [
+      ["春分", "equinox", "equinox"],
+      ["谷雨", "grain-rain", "grainRain"],
+    ]) {
+      await settings();
+      await page.getByRole("radio", { name: title, exact: true }).check();
+      await page.getByRole("button", { name: "回到春天", exact: true }).click();
+      await waitCount(0, 12);
+      assert.equal(
+        await page.locator(".board .underlay").getAttribute("href"),
+        `/art/${asset}-2020.jpg`,
+      );
+      await page.evaluate((url) => {
+        const image = new Image();
+        image.src = url;
+        return image.decode();
+      }, `/art/${asset}-2020.jpg`);
+      const story = puzzleStories[storyId];
+      const storyGoal = page.locator("[data-primary-goal]");
+      assert.equal(
+        await storyGoal.getAttribute("data-primary-goal"),
+        story.goal,
+      );
+      assert.equal(await storyGoal.getAttribute("data-goal-complete"), "false");
+      const goal = story.memories.find((memory) => memory.id === story.goal);
+      const goalPieces = regionPieces(goal, 3, 4);
+      for (const id of goalPieces) await clickPlace(id);
+      assert.equal(await storyGoal.getAttribute("data-goal-complete"), "true");
+      assert.ok(
+        await page.locator(`[data-memory-effect="${goal.id}"]`).count(),
+      );
+      assert.equal(
+        await page.locator(".dialogue").getAttribute("data-cue"),
+        story.goal,
+      );
+      await page.waitForFunction(
+        () =>
+          document.querySelector(".dialogue-copy p[aria-hidden]").textContent
+            .length >= 6,
+      );
+      await page.screenshot({
+        path: path.join(shots, `${asset}-story-desktop.png`),
+      });
+      await page.setViewportSize({ width: 390, height: 844 });
+      assert.ok(
+        await page.evaluate(
+          () => document.documentElement.scrollWidth <= innerWidth,
+        ),
+      );
+      for (const selector of [".board", ".dialogue", ".memory-list"]) {
+        const region = await page.locator(selector).boundingBox();
+        assert.ok(region.y >= 0 && region.y + region.height < 844);
+      }
+      await page.locator(`[data-memory="${goal.id}"]`).click();
+      await page.waitForFunction(
+        () =>
+          document.querySelector(".dialogue-copy p[aria-hidden]").textContent
+            .length >= 6,
+      );
+      await page.screenshot({
+        path: path.join(shots, `${asset}-story-mobile.png`),
+      });
+      await page.setViewportSize({ width: 1360, height: 940 });
+      for (let id = 0; id < 12; id++)
+        if (!goalPieces.includes(id)) await clickPlace(id);
+      await waitCount(12, 12);
+      assert.equal(await page.locator(".memory-chip.unlocked").count(), 4);
+    }
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.getByRole("button", { name: "参考", exact: true }).click();
+    assert.ok(await page.locator(".picture-reference").isVisible());
+    assert.ok(await page.locator(".board-scroller").evaluate((el) => el.inert));
+    await page
+      .getByRole("button", { name: "关闭原图参考", exact: true })
+      .click();
+    assert.ok(
+      !(await page.locator(".board-scroller").evaluate((el) => el.inert)),
+    );
+    assert.equal(
+      await page.evaluate(() =>
+        document.activeElement.getAttribute("aria-label"),
+      ),
+      "参考",
+    );
+    const manualTouch = await browser.newContext({
+      viewport: { width: 390, height: 844 },
+      hasTouch: true,
+      isMobile: true,
+    });
+    await manualTouch.addInitScript(() =>
+      localStorage.setItem(
+        "shiguang-mode",
+        JSON.stringify({
+          level: "easy",
+          shape: "classic",
+          picture: "equinox",
+          board: "blank",
+          magnet: false,
+        }),
+      ),
+    );
+    const mobilePage = await manualTouch.newPage();
+    await mobilePage.goto("http://127.0.0.1:5174/");
+    const mobilePiece = mobilePage.locator("[data-piece]").first();
+    const mobileSource = await mobilePiece.boundingBox();
+    const mobileId = Number(await mobilePiece.getAttribute("data-piece"));
+    const mobileBoard = await mobilePage.locator(".board").boundingBox();
+    const touchEndX =
+      mobileBoard.x + (((mobileId % 3) + 0.5) * mobileBoard.width) / 3;
+    const touchEndY =
+      mobileBoard.y +
+      ((Math.floor(mobileId / 3) + 0.5) * mobileBoard.height) / 4 +
+      46;
+    const manualCdp = await manualTouch.newCDPSession(mobilePage);
+    await manualCdp.send("Input.dispatchTouchEvent", {
+      type: "touchStart",
+      touchPoints: [
+        {
+          x: mobileSource.x + mobileSource.width / 2,
+          y: mobileSource.y + mobileSource.height / 2,
+        },
+      ],
+    });
+    await manualCdp.send("Input.dispatchTouchEvent", {
+      type: "touchMove",
+      touchPoints: [{ x: touchEndX, y: touchEndY }],
+    });
+    await mobilePage.locator("[data-floating].phase-held").waitFor();
+    assert.equal(await mobilePage.locator("#count").innerText(), "0 / 12");
+    await manualCdp.send("Input.dispatchTouchEvent", {
+      type: "touchEnd",
+      touchPoints: [],
+    });
+    await mobilePage.waitForFunction(
+      () => document.querySelector("#count").textContent === "1 / 12",
+    );
+    await manualTouch.close();
+    console.log(
+      "PASS blank board, separate reference, color and border filters, manual drops, saved settings and two extra pictures",
+    );
     assert.deepEqual(errors, []);
     console.log(
       "PASS spatial subtitle/grass cue, keyboard, 3 viewport layouts, zoom, reduced motion, real touch pointer input, blocked storage, opt-in audio/voice scheduling and missing Chinese voice fallback",

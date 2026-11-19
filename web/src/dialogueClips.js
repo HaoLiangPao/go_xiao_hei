@@ -1,20 +1,12 @@
-import { memories } from "./gameplay.js";
+import { puzzleStories } from "./puzzleStories.js";
 
-export const opening = {
-  id: "opening",
-  speaker: "春日来信",
-  text: "春雨落在叶尖。把散落的画面放回去，听听这一场雨。",
-};
-export const closing = {
-  id: "complete",
-  speaker: "春日来信",
-  text: "春天完整了。谢谢你，陪他们慢慢走完这一场雨。",
-};
-export const dialogueCues = [opening, ...memories, closing];
+export const opening = puzzleStories.rain.opening;
+export const closing = puzzleStories.rain.ending;
+export const dialogueCues = Object.values(puzzleStories).flatMap((story) => [story.opening, ...story.memories, story.ending]);
 export const voiceProfiles = {
   无限: { voice: "zh-CN-YunxiNeural", rate: "-18%", pitch: "-26Hz" },
   小黑: { voice: "zh-CN-YunxiaNeural", rate: "+6%", pitch: "+10Hz" },
-  春日来信: { voice: "zh-CN-XiaoxiaoNeural", rate: "-8%", pitch: "+0Hz" },
+  春日旁白: { voice: "zh-CN-XiaoxiaoNeural", rate: "-8%", pitch: "+0Hz" },
 };
 
 export function clipFilename(cue) {

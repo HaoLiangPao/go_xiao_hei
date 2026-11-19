@@ -32,7 +32,7 @@ test("replayed dialogue uses the matching clip; changed text/profile cannot reus
   assert.equal(recordedClip({ ...cue, id: "umbrella-replay-123" }), recordedClip(cue));
   assert.equal(recordedClip({ ...cue, text: "新台词" }), null);
   assert.notEqual(clipFilename({ ...cue, text: "新台词" }), clipFilename(cue));
-  assert.equal(new Set(dialogueCues.map(clipFilename)).size, 6);
+  assert.equal(new Set(dialogueCues.map(clipFilename)).size, dialogueCues.length);
 });
 
 test("recording plays with no OS voices and settles only when ended", async () => {
@@ -145,11 +145,12 @@ test("subtitle queue waits for audio after its reading timer and still supports 
   try {
     await React.act(() => root.render(React.createElement(Harness)));
     await React.act(() => dialogue.enqueue([cue]));
+    await React.act(() => dialogue.enqueue([dialogueCues.at(-1)]));
     await React.act(async () => { t.mock.timers.tick(10000); });
-    assert.equal(dialogue.cue.id, "opening");
+    assert.equal(dialogue.cue.id, cue.id);
     assert.equal(dialogue.pending, 2);
     await React.act(async () => { resolvePlayback(); });
-    assert.equal(dialogue.cue.id, cue.id);
+    assert.equal(dialogue.cue.id, dialogueCues.at(-1).id);
     await React.act(() => dialogue.next());
     assert.equal(dialogue.pending, 0);
   } finally {

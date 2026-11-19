@@ -1,18 +1,22 @@
 import { useEffect, useRef, useState } from "react";
-import { opening } from "./dialogueClips.js";
-export function useDialogue(sound, paused = false) {
-  const [queue, setQueue] = useState([opening]),
-    [last, setLast] = useState(opening),
+export const opening = {
+  id: "opening",
+  speaker: "春日来信",
+  text: "春雨落在叶尖。把散落的画面放回去，听听这一场雨。",
+};
+export function useDialogue(sound, openingCue = opening, paused = false) {
+  const [queue, setQueue] = useState([openingCue]),
+    [last, setLast] = useState(openingCue),
     [length, setLength] = useState(0),
     [log, setLog] = useState([]);
   const audio = useRef(sound);
   audio.current = sound;
   const active = queue[0];
   useEffect(() => {
-    if (!active) return;
+    if (!active || paused) return;
     setLast(active);
     setLength(0);
-    const playback = paused ? Promise.resolve() : audio.current.speak(active);
+    const playback = audio.current.speak(active);
     let canceled = false;
     const characters = Array.from(active.text);
     let index = 0,
@@ -49,11 +53,14 @@ export function useDialogue(sound, paused = false) {
       clearTimeout(linger);
       audio.current.stopDialogue();
     };
-  }, [active?.id]);
+  }, [active?.id, paused]);
   function enqueue(events) {
     if (!events.length) return;
     setLog((items) => [...items, ...events]);
-    setQueue((items) => [...items, ...events]);
+    setQueue((items) => [
+      ...items.filter((item) => !item.id.startsWith("opening")),
+      ...events,
+    ]);
   }
   function next() {
     setQueue((items) => items.slice(1));
@@ -64,8 +71,8 @@ export function useDialogue(sound, paused = false) {
   function reset() {
     audio.current.stop();
     setLog([]);
-    setLast(opening);
-    setQueue([{ ...opening, id: `opening-${Date.now()}` }]);
+    setLast(openingCue);
+    setQueue([{ ...openingCue, id: `opening-${Date.now()}` }]);
   }
   const cue = active || last,
     text = active ? Array.from(cue.text).slice(0, length).join("") : cue.text;

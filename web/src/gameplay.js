@@ -8,6 +8,8 @@ export const memories = [
     name: "一把伞",
     icon: "umbrella",
     speaker: "无限",
+    voice: "adultMale",
+    effect: "umbrella",
     text: "靠近一点，雨就淋不到了。",
     bounds: [0.04, 0.01, 0.97, 0.23],
   },
@@ -16,6 +18,7 @@ export const memories = [
     name: "无限",
     icon: "mountain",
     speaker: "无限",
+    voice: "adultMale",
     text: "不赶时间。你想看，就再看一会儿。",
     bounds: [0.12, 0.27, 0.68, 0.53],
   },
@@ -24,6 +27,7 @@ export const memories = [
     name: "小黑",
     icon: "cat",
     speaker: "小黑",
+    voice: "child",
     text: "师父，你看！叶子上有一颗小小的天空。",
     bounds: [0.45, 0.51, 0.94, 0.77],
   },
@@ -32,6 +36,7 @@ export const memories = [
     name: "叶尖水珠",
     icon: "leaf",
     speaker: "小黑",
+    voice: "child",
     text: "嘘——别动。让它在叶子上，再待一小会儿。",
     bounds: [0, 0.83, 1, 1],
   },
@@ -53,8 +58,8 @@ export function regionPieces(region, cols, rows) {
     }
   return ids;
 }
-export function completedMemories(placed, cols, rows) {
-  return memories.filter((memory) => {
+export function completedMemories(placed, cols, rows, regions = memories) {
+  return regions.filter((memory) => {
     const ids = regionPieces(memory, cols, rows);
     return ids.length > 0 && ids.every((id) => placed.has(id));
   });

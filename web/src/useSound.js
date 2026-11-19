@@ -1,21 +1,32 @@
 import { useEffect, useRef, useState } from "react";
 import { createRainSoundscape } from "./rainSoundscape.js";
+import { mandarinVoices } from "./voiceProfiles.js";
+
 import { createDialoguePlayer } from "./dialoguePlayer.js";
 
-export function useSound() {
+export function useSound(rainy = true) {
   const [enabled, setEnabled] = useState(false),
-    [voice, setVoice] = useState(false),
+    [voice, setVoice] = useState(true),
     [music, setMusic] = useState(true),
     [sheltered, setSheltered] = useState(false),
     [speaking, setSpeaking] = useState(false),
     [visible, setVisible] = useState(() => !document.hidden),
-    [note, setNote] = useState("");
+    [note, setNote] = useState(""),
+    [voices, setVoices] = useState([]),
+    [voiceCast, setVoiceCast] = useState(() => {
+      try {
+        return JSON.parse(localStorage.getItem("shiguang-voice-cast")) ?? {};
+      } catch {
+        return {};
+      }
+    });
   const context = useRef(null),
     mix = useRef(null),
-    player = useRef(null),
-    playbackKind = useRef(null);
-  if (!player.current)
-    player.current = createDialoguePlayer({ onSpeaking: setSpeaking, onNote: setNote });
+    player = useRef(null), playbackKind = useRef(null), castRef = useRef(voiceCast);
+  castRef.current = voiceCast;
+  if (!player.current) player.current = createDialoguePlayer({
+    onSpeaking: setSpeaking, onNote: setNote, voiceCast: () => castRef.current,
+  });
 
   function unlock() {
     try {
@@ -100,16 +111,22 @@ export function useSound() {
   useEffect(() => {
     mix.current?.({
       active: enabled && visible,
+      rainy,
       sheltered,
       playingMusic: music,
       speaking,
     });
-  }, [enabled, visible, sheltered, music, speaking]);
+  }, [enabled, visible, sheltered, music, speaking, rainy]);
   useEffect(() => {
     if (!voice) stop();
   }, [voice]);
   useEffect(() => {
-    window.speechSynthesis?.getVoices();
+    const synthesis = window.speechSynthesis;
+    function loadVoices() {
+      setVoices(mandarinVoices(synthesis?.getVoices() ?? []));
+    }
+    loadVoices();
+    synthesis?.addEventListener?.("voiceschanged", loadVoices);
     function onVisibility() {
       setVisible(!document.hidden);
       if (document.hidden) stop();
@@ -117,14 +134,25 @@ export function useSound() {
     document.addEventListener("visibilitychange", onVisibility);
     return () => {
       document.removeEventListener("visibilitychange", onVisibility);
+      synthesis?.removeEventListener?.("voiceschanged", loadVoices);
       player.current.stop();
       context.current?.close().catch(() => {});
     };
   }, []);
+  function chooseVoice(role, voiceURI) {
+    const next = { ...voiceCast, [role]: voiceURI };
+    setVoiceCast(next);
+    try {
+      localStorage.setItem("shiguang-voice-cast", JSON.stringify(next));
+    } catch {}
+  }
   return {
     enabled,
     voice,
     setVoice,
+    voices,
+    voiceCast,
+    chooseVoice,
     music,
     setMusic,
     sheltered,
