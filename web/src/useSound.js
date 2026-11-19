@@ -1,19 +1,23 @@
 import { useEffect, useRef, useState } from "react";
 import { createRainSoundscape } from "./rainSoundscape.js";
+import { castVoice, mandarinVoices, voiceProfiles } from "./voiceProfiles.js";
 
-const delivery = {
-  无限: { rate: 0.84, pitch: 0.86 },
-  小黑: { rate: 1.02, pitch: 1.23 },
-};
-
-export function useSound() {
+export function useSound(rainy = true) {
   const [enabled, setEnabled] = useState(false),
-    [voice, setVoice] = useState(false),
+    [voice, setVoice] = useState(true),
     [music, setMusic] = useState(true),
     [sheltered, setSheltered] = useState(false),
     [speaking, setSpeaking] = useState(false),
     [visible, setVisible] = useState(() => !document.hidden),
-    [note, setNote] = useState("");
+    [note, setNote] = useState(""),
+    [voices, setVoices] = useState([]),
+    [voiceCast, setVoiceCast] = useState(() => {
+      try {
+        return JSON.parse(localStorage.getItem("shiguang-voice-cast")) ?? {};
+      } catch {
+        return {};
+      }
+    });
   const context = useRef(null),
     mix = useRef(null),
     currentUtterance = useRef(null);
@@ -78,21 +82,17 @@ export function useSound() {
       setNote("音效暂时不可用，字幕仍可使用。");
     }
   }
-  function speak({ text, speaker }) {
+  function speak({ text, voice: role = "adultFemale" }) {
     if (!enabled || !voice || document.hidden) return;
     if (!window.speechSynthesis || !window.SpeechSynthesisUtterance) {
       setNote("当前浏览器没有系统朗读功能。");
       return;
     }
-    const chinese = window.speechSynthesis
-      .getVoices()
-      .filter((item) => /^zh(?:-|$)/i.test(item.lang));
-    const mandarin = chinese.filter((item) =>
-      /^zh(?:-(?:CN|TW|SG|Hans|Hant))?$/i.test(item.lang),
+    const systemVoice = castVoice(
+      mandarinVoices(window.speechSynthesis.getVoices()),
+      role,
+      voiceCast,
     );
-    const choices = mandarin.length ? mandarin : chinese;
-    const systemVoice =
-      choices[speaker === "小黑" && choices.length > 1 ? 1 : 0];
     if (!systemVoice) {
       setNote("未找到中文系统语音；字幕和音效仍可使用。");
       return;
@@ -102,7 +102,7 @@ export function useSound() {
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.voice = systemVoice;
     utterance.lang = systemVoice.lang;
-    const { rate, pitch } = delivery[speaker] ?? { rate: 0.91, pitch: 1 };
+    const { rate, pitch } = voiceProfiles[role];
     utterance.rate = rate;
     utterance.pitch = pitch;
     function finish() {
@@ -139,16 +139,22 @@ export function useSound() {
   useEffect(() => {
     mix.current?.({
       active: enabled && visible,
+      rainy,
       sheltered,
       playingMusic: music,
       speaking,
     });
-  }, [enabled, visible, sheltered, music, speaking]);
+  }, [enabled, visible, sheltered, music, speaking, rainy]);
   useEffect(() => {
     if (!voice) stop();
   }, [voice]);
   useEffect(() => {
-    window.speechSynthesis?.getVoices();
+    const synthesis = window.speechSynthesis;
+    function loadVoices() {
+      setVoices(mandarinVoices(synthesis?.getVoices() ?? []));
+    }
+    loadVoices();
+    synthesis?.addEventListener?.("voiceschanged", loadVoices);
     function onVisibility() {
       setVisible(!document.hidden);
       if (document.hidden) stop();
@@ -156,14 +162,25 @@ export function useSound() {
     document.addEventListener("visibilitychange", onVisibility);
     return () => {
       document.removeEventListener("visibilitychange", onVisibility);
+      synthesis?.removeEventListener?.("voiceschanged", loadVoices);
       if (currentUtterance.current) window.speechSynthesis?.cancel();
       context.current?.close().catch(() => {});
     };
   }, []);
+  function chooseVoice(role, voiceURI) {
+    const next = { ...voiceCast, [role]: voiceURI };
+    setVoiceCast(next);
+    try {
+      localStorage.setItem("shiguang-voice-cast", JSON.stringify(next));
+    } catch {}
+  }
   return {
     enabled,
     voice,
     setVoice,
+    voices,
+    voiceCast,
+    chooseVoice,
     music,
     setMusic,
     sheltered,

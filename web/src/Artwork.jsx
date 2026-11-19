@@ -1,7 +1,6 @@
 import React, { memo } from "react";
 import { WIDTH, HEIGHT } from "./geometry.js";
-export const IMAGE = "/art/rain-2020.jpg";
-export const Fragment = memo(function Fragment({ piece, prefix }) {
+export const Fragment = memo(function Fragment({ piece, prefix, image }) {
   const id = `${prefix}-${piece.id}`;
   return (
     <>
@@ -11,7 +10,7 @@ export const Fragment = memo(function Fragment({ piece, prefix }) {
         </clipPath>
       </defs>
       <image
-        href={IMAGE}
+        href={image}
         width={WIDTH}
         height={HEIGHT}
         clipPath={`url(#${id})`}
@@ -44,6 +43,21 @@ export function Icon({ name, ...props }) {
       <>
         <path d="m2 19 7-13 5 8 3-5 5 10Z" />
         <path d="m6 12 3 1 2-3" />
+      </>
+    ),
+    kite: (
+      <path d="m13 2 8 8-11 6-4-4 7-10Zm-3 14c-5 0 0 4-6 6m2-10 15-2M13 2l-3 14" />
+    ),
+    flower: (
+      <>
+        <path d="M12 8c-5-6-10 2-5 4-4 5 5 8 5 3 3 5 9-1 5-3 5-4-2-10-5-4Z" />
+        <path d="M12 16v6m0-2 5-2" />
+      </>
+    ),
+    drawing: (
+      <>
+        <path d="m5 16 11-11 3 3L8 19l-5 2 2-5Zm9-9 3 3" />
+        <path d="M12 21h9" />
       </>
     ),
     sound: (

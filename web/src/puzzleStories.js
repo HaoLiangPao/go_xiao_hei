@@ -1,0 +1,117 @@
+import { memories as rainMemories } from "./gameplay.js";
+
+const narration = (id, text) => ({
+  id,
+  speaker: "春日旁白",
+  voice: "adultFemale",
+  text,
+});
+
+export const puzzleStories = {
+  rain: {
+    goal: "umbrella",
+    opening: narration("opening", "先拼出雨伞，给小黑和无限挡一挡雨。"),
+    ending: narration(
+      "complete",
+      "伞下的小路拼好了。他们慢慢走，听了一路的雨。",
+    ),
+    memories: rainMemories,
+  },
+  equinox: {
+    goal: "kites",
+    opening: narration("opening", "先找回天空中的纸鸢，帮小黑把春风放上天。"),
+    ending: narration("complete", "纸鸢飘过花田。小黑回头一看，师父还在那儿。"),
+    memories: [
+      {
+        id: "kites",
+        name: "纸鸢",
+        icon: "kite",
+        speaker: "无限",
+        voice: "adultMale",
+        text: "等风来了，手里的线就轻轻松一点。",
+        bounds: [0.39, 0.115, 0.9, 0.37],
+        effect: "wind",
+      },
+      {
+        id: "field-guide",
+        name: "无限",
+        icon: "mountain",
+        speaker: "无限",
+        voice: "adultMale",
+        text: "你往前跑吧。我在这儿，看得见你。",
+        bounds: [0.64, 0.55, 0.92, 0.79],
+        effect: "glow",
+      },
+      {
+        id: "field-xiaohei",
+        name: "小黑",
+        icon: "cat",
+        speaker: "小黑",
+        voice: "child",
+        text: "师父，你看！它飞得比我的尾巴还高！",
+        bounds: [0.22, 0.62, 0.66, 0.85],
+        effect: "glow",
+      },
+      {
+        id: "flowers",
+        name: "花田",
+        icon: "flower",
+        speaker: "春日旁白",
+        voice: "adultFemale",
+        text: "风吹过花田，金黄色的花梢也跟着点头。",
+        bounds: [0.02, 0.86, 0.98, 1],
+        effect: "petals",
+      },
+    ],
+  },
+  grainRain: {
+    goal: "sand-drawing",
+    opening: narration("opening", "先拼出屋檐下的沙画，看看小黑画了什么。"),
+    ending: narration(
+      "complete",
+      "雨还在下。只要留在屋檐下，沙地上的画还能再看一会儿。",
+    ),
+    memories: [
+      {
+        id: "sand-drawing",
+        name: "沙画",
+        icon: "drawing",
+        speaker: "小黑",
+        voice: "child",
+        text: "这里加两只耳朵！师父，你猜猜我画的是谁？",
+        bounds: [0.26, 0.84, 0.77, 1],
+        effect: "glow",
+      },
+      {
+        id: "eaves",
+        name: "屋檐",
+        icon: "umbrella",
+        speaker: "春日旁白",
+        voice: "adultFemale",
+        text: "屋檐一滴一滴落着雨，地上亮起了小小的水圈。",
+        bounds: [0, 0.02, 1, 0.22],
+        effect: "rain",
+      },
+      {
+        id: "porch-guide",
+        name: "无限",
+        icon: "mountain",
+        speaker: "无限",
+        voice: "adultMale",
+        text: "让我想想……那我也添一笔，你别偷看。",
+        bounds: [0.33, 0.29, 0.66, 0.65],
+        effect: "glow",
+      },
+      {
+        id: "porch-xiaohei",
+        name: "小黑",
+        icon: "cat",
+        speaker: "小黑",
+        voice: "child",
+        text: "我不偷看！我就把眼睛睁开一条缝。",
+        bounds: [0.63, 0.66, 0.95, 0.88],
+        effect: "glow",
+      },
+    ],
+  },
+};
