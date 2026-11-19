@@ -53,6 +53,7 @@ const shots = path.join(root, "../docs/screenshots/cardboard-puzzle");
       const before = await page.locator(".board").boundingBox();
       await surface("cardboard");
       await counter(1);
+      assert.equal(await page.locator(".board").evaluate((board) => getComputedStyle(board).backgroundColor), "rgb(185, 193, 171)", "纸板样式必须在普通与减少动态模式下均生效");
       assert.equal(await page.locator(".piece-well").count(), 11);
       assert.equal(await page.locator('[data-slot="0"] .material-piece').count(), 1);
       const after = await page.locator(".board").boundingBox();
@@ -114,6 +115,10 @@ const shots = path.join(root, "../docs/screenshots/cardboard-puzzle");
       assert.equal(await page.locator(`[data-slot="${id}"] .material-piece`).count(), 1);
       if (reduced) {
         assert.equal(await page.locator(`[data-slot="${id}"]`).evaluate((el) => getComputedStyle(el).animationName), "none");
+        await page.getByRole("button", { name: "开启声音", exact: true }).tap();
+        assert.equal(await page.getByRole("button", { name: "关闭声音", exact: true }).count(), 1, "触摸与兼容 click 不应重复切换声音");
+        await page.getByRole("button", { name: "关闭声音", exact: true }).tap();
+        assert.equal(await page.getByRole("button", { name: "开启声音", exact: true }).count(), 1);
       } else {
         await page.screenshot({ path: path.join(shots, `${label}-seated.png`), fullPage: true });
       }

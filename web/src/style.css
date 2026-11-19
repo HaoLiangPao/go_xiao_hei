@@ -1443,6 +1443,7 @@ progress::-moz-progress-bar {
   .story-effect > * {
     opacity: 0.8;
   }
+}
 
 /* Optional cardboard material: same puzzle geometry, with a cut edge and a seat. */
 .floating-surface { width: 100%; height: 100%; }

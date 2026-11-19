@@ -62,9 +62,20 @@ function useMedia(query) {
   }, [query]);
   return matches;
 }
-function Tool({ icon, children, ...props }) {
+function Tool({ icon, children, onClick, ...props }) {
+  // Handle touch release directly: a rapid tap after a drag may have no native
+  // compatibility click. Mouse and keyboard keep their normal click behavior.
+  function touchUp(event) {
+    if (props.disabled || event.pointerType !== "touch") return;
+    const rect = event.currentTarget.getBoundingClientRect();
+    if (event.clientX >= rect.left && event.clientX <= rect.right &&
+        event.clientY >= rect.top && event.clientY <= rect.bottom) onClick?.(event);
+  }
   return (
-    <button className="tool" {...props}>
+    <button className="tool" {...props} onPointerUp={touchUp}
+      onClick={(event) => {
+        if (event.detail === 0 || event.nativeEvent.pointerType !== "touch") onClick?.(event);
+      }}>
       <Icon name={icon} />
       {children && <span>{children}</span>}
     </button>
