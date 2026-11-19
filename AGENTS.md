@@ -3,6 +3,8 @@
 - Use Chinese for explanations and PR descriptions unless asked otherwise.
 - Implement one coherent feature per branch and pull request. Target `main`; use `feat/`, `fix/`, or `docs/` branch prefixes.
 - Include the observable behavior, validation performed, and material limitations in each PR description. Distinguish DOM/model tests from real-browser checks.
+- Prepare a PR after every feature. Include the desktop web experience and the mobile experience in the implementation, screenshots, and acceptance checks.
+- If remote PR creation is blocked, leave a verified feature commit bundle, PR body, and a ready-to-run desktop command that pushes the branch and creates the PR.
 - Open the PR for the user to review. Do not merge it, enable auto-merge, or push directly to `main` without explicit instructions.
 - Preserve the user's working changes. Use an isolated checkout or staging directory when needed.
 - Keep the browser prototype runnable offline without a build step. Retain existing saves unless the feature requires a documented migration.
