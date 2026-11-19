@@ -13,6 +13,7 @@ import { Fragment, Icon, IMAGE } from "./Artwork.jsx";
 import { useFloatingPiece } from "./useFloatingPiece.js";
 import { useSound } from "./useSound.js";
 import { useDialogue } from "./useDialogue.js";
+import { closing } from "./dialogueClips.js";
 import "./style.css";
 const shapes = { flat: "方形碎片", classic: "经典拼图", organic: "不规则拼图" };
 function getMode() {
@@ -81,7 +82,7 @@ function Puzzle({ mode, sound, paused, gameRef }) {
       new Set(completedMemories(placed, cols, rows).map((memory) => memory.id)),
     );
   const [boardHeight, setBoardHeight] = useState(400);
-  const dialogue = useDialogue(sound);
+  const dialogue = useDialogue(sound, paused);
   const completed = completedMemories(placed, cols, rows),
     remaining = order.filter((id) => !placed.has(id)),
     pages = Math.max(1, Math.ceil(remaining.length / pageSize)),
@@ -134,13 +135,7 @@ function Puzzle({ mode, sound, paused, gameRef }) {
       sound.play("memory");
     }
     if (next.size === total) {
-      dialogue.enqueue([
-        {
-          id: "complete",
-          speaker: "春日来信",
-          text: "春天完整了。谢谢你，陪他们慢慢走完这一场雨。",
-        },
-      ]);
+      dialogue.enqueue([closing]);
       setMessage("春天完整了。点亮的记忆，可以再听一遍。");
     } else
       setMessage(
@@ -204,7 +199,7 @@ function Puzzle({ mode, sound, paused, gameRef }) {
   useEffect(() => {
     if (paused) {
       setSelected(null);
-      sound.stop();
+      sound.stopDialogue();
     }
   }, [paused]);
   useEffect(() => {
@@ -742,7 +737,7 @@ function App() {
             <span>
               对白朗读
               <small>
-                {sound.enabled ? "使用设备的中文系统语音" : "先开启游戏声音"}
+                {sound.enabled ? "优先播放普通中文配音，缺失时使用系统朗读" : "先开启游戏声音"}
               </small>
             </span>
             <input
@@ -752,6 +747,18 @@ function App() {
               onChange={(event) => sound.setVoice(event.target.checked)}
             />
           </label>
+          <div className="voice-preview" aria-label="普通中文配音试听">
+            <p>普通中文合成配音 · 试听</p>
+            <div className="voice-preview-buttons">
+              <button className="secondary-button" disabled={!sound.enabled}
+                onClick={() => sound.preview(memories[0])}>试听无限</button>
+              <button className="secondary-button" disabled={!sound.enabled}
+                onClick={() => sound.preview(memories[2])}>试听小黑</button>
+              <button className="secondary-button" disabled={!sound.speaking}
+                onClick={sound.stop}>停止</button>
+            </div>
+            <p className="voice-preview-caption">无限：靠近一点，雨就淋不到了。<br />小黑：师父，你看！叶子上有一颗小小的天空。</p>
+          </div>
           {sound.note && (
             <p className="settings-note" role="status">
               {sound.note}

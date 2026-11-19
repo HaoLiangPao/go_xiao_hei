@@ -456,6 +456,7 @@ fs.mkdirSync(shots, { recursive: true });
         },
       });
     });
+    await ac.route("**/audio/dialogue/*.mp3", (route) => route.abort());
     const ap = await ac.newPage();
     await ap.goto("http://127.0.0.1:5174/");
     await ap.locator('[data-memory="grass"]').click();
@@ -489,6 +490,7 @@ fs.mkdirSync(shots, { recursive: true });
       i++
     )
       await ap.getByRole("button", { name: "下一句字幕", exact: true }).click();
+    await ap.waitForFunction(() => window.__spoken.some((text) => text.includes("让它在叶子上")));
     assert.ok(await ap.evaluate(() => window.__soundEvents > 0));
     assert.ok(
       (await ap.evaluate(() => window.__spoken)).some((text) =>
@@ -530,12 +532,9 @@ fs.mkdirSync(shots, { recursive: true });
       window.speechSynthesis.getVoices = () => [];
     });
     await ap.locator('[data-memory="grass"]').click();
+    await ap.locator(".settings-note[role=status]").filter({ hasText: "未找到中文系统语音" }).waitFor({ state: "attached" });
     await ap.getByRole("button", { name: "游戏设置", exact: true }).click();
-    assert.ok(
-      (await ap.locator(".settings-content").innerText()).includes(
-        "未找到中文系统语音",
-      ),
-    );
+    await ap.getByRole("status").filter({ hasText: "未找到中文系统语音" }).waitFor();
     await ac.close();
     assert.deepEqual(errors, []);
     console.log(

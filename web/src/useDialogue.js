@@ -1,10 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-export const opening = {
-  id: "opening",
-  speaker: "春日来信",
-  text: "春雨落在叶尖。把散落的画面放回去，听听这一场雨。",
-};
-export function useDialogue(sound) {
+import { opening } from "./dialogueClips.js";
+export function useDialogue(sound, paused = false) {
   const [queue, setQueue] = useState([opening]),
     [last, setLast] = useState(opening),
     [length, setLength] = useState(0),
@@ -16,7 +12,8 @@ export function useDialogue(sound) {
     if (!active) return;
     setLast(active);
     setLength(0);
-    audio.current.speak(active);
+    const playback = paused ? Promise.resolve() : audio.current.speak(active);
+    let canceled = false;
     const characters = Array.from(active.text);
     let index = 0,
       linger;
@@ -25,7 +22,10 @@ export function useDialogue(sound) {
     ).matches;
     function done() {
       linger = setTimeout(
-        () => setQueue((q) => (q[0]?.id === active.id ? q.slice(1) : q)),
+        async () => {
+          await playback;
+          if (!canceled) setQueue((q) => (q[0]?.id === active.id ? q.slice(1) : q));
+        },
         4200,
       );
     }
@@ -44,9 +44,10 @@ export function useDialogue(sound) {
           }
         }, 48);
     return () => {
+      canceled = true;
       clearInterval(interval);
       clearTimeout(linger);
-      audio.current.stop();
+      audio.current.stopDialogue();
     };
   }, [active?.id]);
   function enqueue(events) {
