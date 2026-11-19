@@ -17,9 +17,9 @@ npm run dev
 
 `prototype/` 是填色页的唯一源码。`predev` / `prebuild` 从仓库根目录的 `prototype/` 生成 `web/public/prototype/`，不应手改生成副本。Vite 的构建输出 `dist/` 不提交。
 
-拼图各模式分别保存进度，刷新默认显示轻松方形，重新选择原模式可继续。旧 HTML 拼图存档不自动迁移到 React。支持鼠标拖放，触控与键盘采用先选碎片再选目标位置。
+拼图各模式分别保存进度，刷新记住上次模式，首次打开默认轻松经典拼图。旧 HTML 拼图存档不自动迁移到 React。鼠标与触控均支持浮动拖拽和磁吸，也保留先选碎片再选目标位置的点击 / 键盘方式。
 
-不规则模式使用可复现的扰动网格和共用凹凸边界，仍有大致行列结构。暂未加入旋转、自由散放、碎片成组合并、声音生成或视频。
+不规则模式使用可复现的扰动网格和共用凹凸边界，仍有大致行列结构。本轮增加手机单屏布局、指针悬浮拖动、磁吸、区域字幕和雨声与伞面雨滴声、可单独关闭的背景音乐、可选系统中文朗读。仍未加入旋转、自由散放、碎片成组合并、AI 配音或视频。详见 [2D 拼图说明](../docs/PUZZLE_2D.md)。
 
 ## 检查
 
@@ -32,6 +32,6 @@ npx playwright install chromium
 npm run test:browser
 ```
 
-浏览器脚本会启动本地 5174 服务，在隔离的浏览器上下文中重置测试进度，结束后停止服务。截图写入 `docs/screenshots/`。`CHROMIUM_PATH` 可指定已有 Chromium，`PLAYWRIGHT_MODULE` 可指定已有 Playwright 包，仅为测试环境兼容项。
+浏览器脚本会启动本地 5174 服务，在隔离的浏览器上下文中重置测试进度，结束后停止服务。本轮浏览器脚本专注拼图；截图写入 `docs/screenshots/puzzle-2d/`。原生填色测试另见仓库根目录的测试脚本。`CHROMIUM_PATH` 可指定已有 Chromium，`PLAYWRIGHT_MODULE` 可指定已有 Playwright 包，仅为测试环境兼容项。
 
 图片来自收藏中的 A0243，来源与范围说明见 [素材说明](../docs/ART_SOURCE.md)。
