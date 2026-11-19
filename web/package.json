@@ -11,6 +11,7 @@
     "test:model": "node ../tests/scene-model.test.cjs",
     "test:dom": "node ../tests/color-interaction.test.cjs",
     "test:browser": "node tests/browser.cjs",
+    "test:material-browser": "node tests/material-browser.cjs",
     "predev": "node scripts/prepare-public.mjs",
     "prebuild": "node scripts/prepare-public.mjs"
   },

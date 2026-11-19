@@ -9,7 +9,7 @@ import {
   shuffle,
 } from "./geometry.js";
 import { completedMemories, memories, regionPieces } from "./gameplay.js";
-import { Fragment, Icon, IMAGE } from "./Artwork.jsx";
+import { Fragment, PieceWell, Icon, IMAGE } from "./Artwork.jsx";
 import { useFloatingPiece } from "./useFloatingPiece.js";
 import { useSound } from "./useSound.js";
 import { useDialogue } from "./useDialogue.js";
@@ -41,7 +41,7 @@ function Tool({ icon, children, ...props }) {
     </button>
   );
 }
-function Puzzle({ mode, sound, paused, gameRef }) {
+function Puzzle({ mode, sound, paused, gameRef, material }) {
   const { level, shape } = mode,
     { cols, rows } = levels[level],
     total = cols * rows;
@@ -68,6 +68,7 @@ function Puzzle({ mode, sound, paused, gameRef }) {
     [zoom, setZoom] = useState(false),
     [page, setPage] = useState(0),
     [lastPlaced, setLastPlaced] = useState(null),
+    [placementKind, setPlacementKind] = useState("direct"),
     [celebration, setCelebration] = useState(null),
     [saveError, setSaveError] = useState(false),
     [imageError, setImageError] = useState(false),
@@ -115,7 +116,7 @@ function Puzzle({ mode, sound, paused, gameRef }) {
     observer.observe(viewportRef.current);
     return () => observer.disconnect();
   }, []);
-  function commit(id, keyboard = false) {
+  function commit(id, keyboard = false, fromDrag = false) {
     if (paused || preview || placedRef.current.has(id)) return;
     const next = new Set(placedRef.current).add(id);
     placedRef.current = next;
@@ -123,6 +124,7 @@ function Puzzle({ mode, sound, paused, gameRef }) {
     setSelected(null);
     setHint(null);
     setLastPlaced(id);
+    setPlacementKind(fromDrag ? "drag" : "direct");
     sound.play("place");
     const unlocked = completedMemories(next, cols, rows).filter(
       (memory) => !seen.current.has(memory.id),
@@ -162,7 +164,8 @@ function Puzzle({ mode, sound, paused, gameRef }) {
     rows,
     placedRef,
     disabled: paused || preview,
-    onPlace: commit,
+    material,
+    onPlace: (id) => commit(id, false, true),
     onSelect: setSelected,
     onPick: () => {
       sound.play("pick");
@@ -307,7 +310,7 @@ function Puzzle({ mode, sound, paused, gameRef }) {
                 pieces.map((piece) => (
                   <g
                     key={piece.id}
-                    className={`slot ${placed.has(piece.id) ? "placed" : ""} ${hint === piece.id ? "hint" : ""} ${floating.near === piece.id ? "magnet-near" : ""} ${lastPlaced === piece.id ? "just-placed" : ""}`}
+                    className={`slot ${placed.has(piece.id) ? "placed" : ""} ${hint === piece.id ? "hint" : ""} ${floating.near === piece.id ? "magnet-near" : ""} ${lastPlaced === piece.id ? "just-placed" : ""} ${lastPlaced === piece.id && placementKind === "direct" ? "press-in" : ""} ${floating.visual?.id === piece.id && ["snap", "press"].includes(floating.visual.phase) ? "receiving" : ""}`}
                     data-slot={piece.id}
                     role="button"
                     tabIndex={placed.has(piece.id) ? -1 : 0}
@@ -338,8 +341,9 @@ function Puzzle({ mode, sound, paused, gameRef }) {
                       if (lastPlaced === piece.id) setLastPlaced(null);
                     }}
                   >
+                    {material === "cardboard" && !placed.has(piece.id) && <PieceWell piece={piece} />}
                     {placed.has(piece.id) && (
-                      <Fragment piece={piece} prefix="board" />
+                      <Fragment piece={piece} prefix="board" material={material} raised={false} />
                     )}
                     <path d={piece.path} className="seam" />
                   </g>
@@ -452,7 +456,7 @@ function Puzzle({ mode, sound, paused, gameRef }) {
               }}
             >
               <svg viewBox={pieces[id].viewBox} aria-hidden="true">
-                <Fragment piece={pieces[id]} prefix="tray" />
+                <Fragment piece={pieces[id]} prefix="tray" material={material} />
                 <path d={pieces[id].path} className="piece-edge" />
               </svg>
               <span className="piece-shadow" />
@@ -579,13 +583,15 @@ function Puzzle({ mode, sound, paused, gameRef }) {
           }}
           aria-hidden="true"
         >
-          <svg viewBox={pieces[floating.visual.id].viewBox}>
-            <Fragment piece={pieces[floating.visual.id]} prefix="floating" />
+          <div className="floating-surface">
+            <svg viewBox={pieces[floating.visual.id].viewBox}>
+            <Fragment piece={pieces[floating.visual.id]} prefix="floating" material={material} />
             <path
               d={pieces[floating.visual.id].path}
               className="floating-edge"
             />
-          </svg>
+            </svg>
+          </div>
         </div>
       )}
     </main>
@@ -594,7 +600,11 @@ function Puzzle({ mode, sound, paused, gameRef }) {
 function App() {
   const [mode, setMode] = useState(getMode),
     [settings, setSettings] = useState(false),
-    [showGuide, setShowGuide] = useState(true);
+    [showGuide, setShowGuide] = useState(true),
+    [material, setMaterial] = useState(() => {
+      try { return localStorage.getItem("shiguang-material-v1") === "cardboard" ? "cardboard" : "light"; }
+      catch { return "light"; }
+    });
   const gameRef = useRef(null),
     dialogRef = useRef(null),
     sound = useSound();
@@ -609,8 +619,11 @@ function App() {
     if (settings && !dialog.open) dialog.showModal();
     else if (!settings && dialog.open) dialog.close();
   }, [settings]);
+  useEffect(() => {
+    try { localStorage.setItem("shiguang-material-v1", material); } catch {}
+  }, [material]);
   return (
-    <div className="game-shell">
+    <div className={`game-shell material-${material}`} data-material={material}>
       <header className="game-header">
         <a className="brand" href="/" aria-label="小黑的四时拾光首页">
           <Icon name="leaf" />
@@ -644,6 +657,7 @@ function App() {
         mode={mode}
         sound={sound}
         paused={settings}
+        material={material}
         gameRef={gameRef}
       />
       <footer className="game-footer">
@@ -705,6 +719,13 @@ function App() {
                   {value}
                 </option>
               ))}
+            </select>
+          </label>
+          <label className="setting-row">
+            <span>拼图质感<small>纸板有厚度，放下时轻轻嵌入</small></span>
+            <select aria-label="拼图质感" value={material} onChange={(event) => setMaterial(event.target.value)}>
+              <option value="light">轻盈 · 当前效果</option>
+              <option value="cardboard">纸板拼图 · 立体手感</option>
             </select>
           </label>
           <label className="setting-row">

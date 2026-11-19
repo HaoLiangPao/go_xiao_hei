@@ -1209,3 +1209,82 @@ progress::-moz-progress-bar {
     scroll-behavior: auto !important;
   }
 }
+
+/* Optional cardboard material: same puzzle geometry, with a cut edge and a seat. */
+.floating-surface { width: 100%; height: 100%; }
+.material-cardboard .board-frame {
+  background: #d2c9ab;
+  box-shadow: 0 4px 0 #999b7c, 0 6px 0 #72836b, 0 18px 30px #29452a35;
+}
+.material-cardboard .board {
+  background: #b9c1ab;
+  box-shadow: inset 0 2px 5px #2e493d66;
+}
+.material-cardboard .underlay { filter: grayscale(1) brightness(.98); }
+.material-cardboard .slot.placed .seam {
+  stroke: #2b453b88;
+  stroke-width: 1.2;
+  vector-effect: non-scaling-stroke;
+}
+.material-cardboard .slot.placed .material-piece { opacity: 1; }
+.material-cardboard .slot.just-placed { animation: cardboard-glint .38s ease-out; }
+.material-cardboard .slot.press-in .material-piece {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: cardboard-seat .34s cubic-bezier(.2,.7,.3,1);
+}
+.material-cardboard .slot.receiving .piece-well {
+  filter: brightness(1.12);
+}
+.material-cardboard .piece > svg {
+  filter: drop-shadow(0 5px 2px #344d3c55);
+  transition: filter .2s;
+}
+.material-cardboard .piece.is-selected > svg {
+  filter: drop-shadow(1px 9px 4px #344d3c55);
+}
+.material-cardboard .piece-edge { stroke: #eef0d2a6; stroke-width: 2; }
+.material-cardboard .floating-piece {
+  filter: drop-shadow(3px 21px 10px #263f3e66);
+  transition: transform .085s ease-out, width .15s, height .15s, filter .23s;
+}
+.material-cardboard .floating-surface {
+  transform: perspective(700px) rotateX(9deg) rotateY(-5deg);
+  transform-origin: center;
+  transition: transform .23s ease-out;
+}
+.material-cardboard .floating-piece.phase-snap {
+  transition: transform .23s cubic-bezier(.16,.85,.3,1), filter .23s;
+  filter: drop-shadow(1px 7px 4px #263f3e66);
+}
+.material-cardboard .phase-snap .floating-surface {
+  transform: perspective(700px) rotateX(0) rotateY(0);
+}
+.material-cardboard .floating-piece.phase-press {
+  filter: drop-shadow(0 1px 1px #263f3e55);
+}
+.material-cardboard .phase-press .floating-surface {
+  animation: cardboard-press .2s ease-out both;
+}
+.material-cardboard .floating-piece.phase-return {
+  filter: drop-shadow(0 5px 3px #263f3e44);
+  transition: transform .21s ease-in-out, filter .21s;
+}
+.material-cardboard .phase-return .floating-surface { transform: none; }
+@keyframes cardboard-press {
+  0% { transform: translateY(-2px) scale(1.008); }
+  60% { transform: translateY(1px) scale(.992); }
+  100% { transform: translateY(0) scale(1); }
+}
+@keyframes cardboard-seat {
+  0% { transform: translateY(-5px) scale(1.018); }
+  65% { transform: translateY(1px) scale(.995); }
+  100% { transform: translateY(0) scale(1); }
+}
+@keyframes cardboard-glint {
+  0% { filter: brightness(1.15); }
+  100% { filter: brightness(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .material-cardboard .floating-surface { transform: none; }
+}

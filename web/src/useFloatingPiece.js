@@ -56,7 +56,7 @@ export function useFloatingPiece(options) {
       : success
         ? 230
         : 210;
-    timer.current = setTimeout(() => {
+    function finish() {
       if (active.current !== item) return;
       active.current = null;
       release(item);
@@ -66,6 +66,24 @@ export function useFloatingPiece(options) {
         latest.current.onSelect(null);
         latest.current.onMiss();
       }
+    }
+    function seat() {
+      if (active.current !== item) return;
+      if (success && config.material === "cardboard" && !item.touchReleased) {
+        // Keep the original touch target alive through touchend. Removing it
+        // sooner can suppress the next tap, especially with reduced motion.
+        item.onTouchEnd = finish;
+        item.phase = "press";
+        setVisual({ id: item.id, ...target, ...size, angle: 0, phase: "press" });
+      } else finish();
+    }
+    timer.current = setTimeout(() => {
+      if (active.current !== item) return;
+      if (success && config.material === "cardboard" && duration > 0) {
+        item.phase = "press";
+        setVisual({ id: item.id, ...target, ...size, angle: 0, phase: "press" });
+        timer.current = setTimeout(seat, 200);
+      } else seat();
     }, duration);
   }
   function begin(event, id) {
@@ -99,6 +117,7 @@ export function useFloatingPiece(options) {
       lastX: event.clientX,
       moved: false,
       lift: event.pointerType === "touch" ? 46 : 0,
+      touchReleased: event.pointerType !== "touch",
     };
     active.current = item;
     config.onSelect(id);
@@ -190,11 +209,18 @@ export function useFloatingPiece(options) {
     function hidden() {
       if (document.hidden) cancel();
     }
+    function touchEnd(event) {
+      const item = active.current;
+      if (!item || event.touches.length) return;
+      item.touchReleased = true;
+      item.onTouchEnd?.();
+    }
     window.addEventListener("pointermove", move, { passive: false });
     window.addEventListener("pointerup", up);
     window.addEventListener("pointercancel", abort);
     window.addEventListener("lostpointercapture", lost);
     window.addEventListener("blur", cancel);
+    window.addEventListener("touchend", touchEnd, { passive: true });
     document.addEventListener("visibilitychange", hidden);
     return () => {
       window.removeEventListener("pointermove", move);
@@ -202,6 +228,7 @@ export function useFloatingPiece(options) {
       window.removeEventListener("pointercancel", abort);
       window.removeEventListener("lostpointercapture", lost);
       window.removeEventListener("blur", cancel);
+      window.removeEventListener("touchend", touchEnd);
       document.removeEventListener("visibilitychange", hidden);
       clearJobs();
       release(active.current);

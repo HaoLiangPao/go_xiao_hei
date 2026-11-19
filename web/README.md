@@ -35,3 +35,5 @@ npm run test:browser
 浏览器脚本会启动本地 5174 服务，在隔离的浏览器上下文中重置测试进度，结束后停止服务。本轮浏览器脚本专注拼图；截图写入 `docs/screenshots/puzzle-2d/`。原生填色测试另见仓库根目录的测试脚本。`CHROMIUM_PATH` 可指定已有 Chromium，`PLAYWRIGHT_MODULE` 可指定已有 Playwright 包，仅为测试环境兼容项。
 
 图片来自收藏中的 A0243，来源与范围说明见 [素材说明](../docs/ART_SOURCE.md)。
+
+可选的纸板厚度、凹槽与按压归位效果见 [纸板拼图说明](../docs/CARDBOARD_PUZZLE.md)。
