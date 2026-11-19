@@ -8,4 +8,11 @@
 - 原始收录条目：https://luoxiaohei.huijiwiki.com/wiki/文件:2020年雨水贺图.jpg
 - 收藏目录版权署名：北京寒木春华动画技术有限公司（原作）。本轮尚未逐张核对官方首发。
 
-保留单图仅用于本次原型复现与审阅，不代表拥有或授予该图的再分发、商业使用许可。整套收藏留在用户原目录，本提交不包含收藏库、下载器或影音模型。
+收藏中的原图用于原型复现与试玩，不代表拥有或授予该图的再分发、商业使用许可。整套收藏留在用户原目录，本提交不包含收藏库、下载器或影音模型。
+
+本地选图另收录两张同尺寸的原图。
+
+| 图名 | 收藏编号 | 文件 | 收录来源 |
+| --- | --- | --- | --- |
+| 2020 年春分节气图 | A0223 | `web/public/art/equinox-2020.jpg` | [收藏条目](https://luoxiaohei.cockerel.com.cn/artwork/huiji:solar/2020/%E6%98%A5%E5%88%86) |
+| 2020 年谷雨节气图 | A0241 | `web/public/art/grain-rain-2020.jpg` | [收藏条目](https://luoxiaohei.cockerel.com.cn/artwork/huiji:solar/2020/%E8%B0%B7%E9%9B%A8) |

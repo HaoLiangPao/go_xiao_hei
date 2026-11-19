@@ -302,18 +302,6 @@ progress::-moz-progress-bar {
 .slot.just-placed {
   animation: snap-glow 0.55s ease-out;
 }
-.reference-tag {
-  position: absolute;
-  bottom: 14px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 10px;
-  background: #f9fbf3ed;
-  padding: 6px 9px;
-  border-radius: 18px;
-  white-space: nowrap;
-  pointer-events: none;
-}
 .stage-tools {
   display: flex;
   align-items: center;
@@ -1209,6 +1197,252 @@ progress::-moz-progress-bar {
     scroll-behavior: auto !important;
   }
 }
+
+.board-area {
+  min-width: 0;
+  min-height: 0;
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+}
+.board-area.has-reference {
+  grid-template-columns: minmax(0, 1fr) minmax(135px, 27%);
+}
+.picture-reference {
+  min-width: 0;
+  min-height: 0;
+  z-index: 2;
+  display: grid;
+  grid-template-rows: 32px minmax(0, 1fr);
+  gap: 6px;
+  margin: 6px 12px 6px 0;
+  padding: 6px 9px 9px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+.reference-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5px;
+  font-size: 12px;
+}
+.reference-heading .tool {
+  width: 32px;
+  height: 32px;
+}
+.reference-heading svg {
+  width: 16px;
+  height: 16px;
+}
+.picture-reference img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 6px;
+}
+.blank-board {
+  background: #eef2e5;
+}
+.blank-board .slot:not(.hint):not(.magnet-near):not(:focus-visible) .seam {
+  fill: transparent;
+  stroke: transparent;
+}
+.tray-filters {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+.tray-filters select {
+  min-height: 32px;
+  max-width: 100%;
+  border: 1px solid #bccfbf;
+  border-radius: 8px;
+  padding: 4px 6px;
+  background: #f5f8ed;
+  color: var(--ink);
+  font-size: 12px;
+}
+.tray-filters > span {
+  flex-basis: 100%;
+  color: var(--ink);
+  font-size: 11px;
+}
+.empty-group p {
+  margin: 0;
+}
+.picture-picker {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0;
+  border: 0;
+  padding: 0 0 10px;
+}
+.picture-picker legend {
+  padding: 0 0 10px;
+  font-size: 13px;
+  font-weight: 650;
+}
+.picture-option {
+  min-width: 0;
+  height: 88px;
+  position: relative;
+  display: grid;
+  place-items: end center;
+  overflow: hidden;
+  border-radius: 9px;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+.picture-option:has(:checked) {
+  border-color: #668657;
+}
+.picture-option:has(:focus-visible) {
+  outline: 2px solid #668657;
+  outline-offset: 2px;
+}
+.picture-option input {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  z-index: 1;
+  accent-color: #668657;
+}
+.picture-option img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 42%;
+}
+.picture-option span {
+  position: relative;
+  padding: 3px 9px;
+  margin-bottom: 4px;
+  background: var(--paper);
+  border-radius: 12px;
+  font-size: 11px;
+}
+
+@media (max-width: 740px) {
+  .game-main {
+    grid-template-rows: minmax(0, 1fr) 78px 168px;
+  }
+  .board-area.has-reference {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .picture-reference {
+    position: absolute;
+    inset: 3px 8px;
+    margin: 0;
+  }
+  .tray-panel {
+    grid-template-rows: 30px 82px 21px 30px;
+    grid-template-areas: "filters filters" "pieces pages" "message message" "memories memories";
+  }
+  .tray-filters {
+    grid-area: filters;
+    margin: 0;
+    gap: 5px;
+    flex-wrap: nowrap;
+  }
+  .tray-filters select {
+    font-size: 11px;
+    min-height: 26px;
+  }
+  .tray-filters > span {
+    flex-basis: auto;
+    font-size: 9px;
+  }
+  .tray-complete.empty-group p {
+    display: block;
+  }
+}
+
+.chapter [data-goal-complete="true"] {
+  color: #315f43;
+  font-weight: 650;
+}
+.memory-chip.primary-memory {
+  color: #6c5526;
+}
+.memory-chip.primary-memory > svg {
+  border-color: #b38b45;
+}
+.story-effect > * {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: sparkle 1.8s ease-out both;
+  fill: #ffefb3;
+  stroke: #a07938;
+  stroke-width: 2.5;
+}
+.effect-wind > path {
+  fill: none;
+  stroke: #377f70;
+  stroke-width: 7;
+  stroke-linecap: round;
+  animation-name: story-drift;
+}
+.effect-petals > ellipse {
+  fill: #ffd765;
+  stroke: #bb8035;
+  animation-name: story-drift;
+}
+.effect-rain > ellipse,
+.effect-umbrella > ellipse {
+  fill: none;
+  stroke: #d8f8ff;
+  stroke-width: 6;
+  animation-name: story-ripple;
+}
+@keyframes story-drift {
+  0% {
+    opacity: 0;
+    transform: translate(-16px, 16px) rotate(-12deg);
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(95px, -34px) rotate(25deg);
+  }
+}
+@keyframes story-ripple {
+  0% {
+    opacity: 0;
+    transform: scale(0.35);
+  }
+  28% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+.voice-cast {
+  border: 0;
+  margin: 12px 0 0;
+  padding: 0;
+}
+.voice-cast legend {
+  font-size: 12px;
+  font-weight: 650;
+}
+.voice-cast .setting-row {
+  min-height: 44px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .story-effect > * {
+    opacity: 0.8;
+  }
 
 /* Optional cardboard material: same puzzle geometry, with a cut edge and a seat. */
 .floating-surface { width: 100%; height: 100%; }

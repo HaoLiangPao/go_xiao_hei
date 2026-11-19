@@ -158,11 +158,23 @@ export function useFloatingPiece(options) {
           rect,
         ),
         radius = snapRadius(config.cols, config.rows, rect);
-      if (withinSnap(point, target, radius)) {
+      const viewport = config.boardRef.current
+        .closest(".board-scroller")
+        .getBoundingClientRect();
+      const targetVisible =
+        target.x >= viewport.left &&
+        target.x <= viewport.right &&
+        target.y >= viewport.top &&
+        target.y <= viewport.bottom;
+      if (config.magnet && targetVisible && withinSnap(point, target, radius)) {
         settle(item, true);
         return;
       }
-      setNear(withinSnap(point, target, radius * 2) ? item.id : null);
+      setNear(
+        config.magnet && targetVisible && withinSnap(point, target, radius * 2)
+          ? item.id
+          : null,
+      );
       const angle = Math.max(
         -9,
         Math.min(9, (event.clientX - item.lastX) * 0.55),
@@ -186,14 +198,23 @@ export function useFloatingPiece(options) {
       const item = active.current;
       if (!item || item.pointerId !== event.pointerId || item.phase !== "held")
         return;
-      if (!item.moved) {
+      if (
+        !item.moved &&
+        Math.hypot(event.clientX - item.startX, event.clientY - item.startY) <=
+          5
+      ) {
         cancel();
         latest.current.onSelect(item.id);
         return;
       }
       // Test the final pointer as well: browsers may coalesce the last move.
       move(event);
-      if (item.phase === "held") settle(item, false);
+      if (item.phase !== "held") return;
+      const config = latest.current;
+      const x = event.clientX,
+        y = event.clientY - item.lift;
+      const slot = document.elementFromPoint(x, y)?.closest("[data-slot]");
+      settle(item, !config.magnet && slot?.dataset.slot === String(item.id));
     }
     function abort(event) {
       if (!event.pointerId || active.current?.pointerId === event.pointerId)

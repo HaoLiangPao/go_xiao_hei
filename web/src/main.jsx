@@ -8,8 +8,18 @@ import {
   readProgress,
   shuffle,
 } from "./geometry.js";
-import { completedMemories, memories, regionPieces } from "./gameplay.js";
-import { Fragment, PieceWell, Icon, IMAGE } from "./Artwork.jsx";
+import { completedMemories, regionPieces } from "./gameplay.js";
+import { Fragment, PieceWell, Icon } from "./Artwork.jsx";
+import { pictures } from "./pictureCatalog.js";
+import { puzzleStories } from "./puzzleStories.js";
+import { MemoryEffect } from "./MemoryEffect.jsx";
+import { voiceProfiles } from "./voiceProfiles.js";
+import {
+  colorGroups,
+  readPieceColors,
+  shapeGroup,
+  shapeGroups,
+} from "./pieceGroups.js";
 import { useFloatingPiece } from "./useFloatingPiece.js";
 import { useSound } from "./useSound.js";
 import { useDialogue } from "./useDialogue.js";
@@ -18,9 +28,28 @@ const shapes = { flat: "方形碎片", classic: "经典拼图", organic: "不规
 function getMode() {
   try {
     const saved = JSON.parse(localStorage.getItem("shiguang-mode"));
-    if (levels[saved?.level] && shapes[saved?.shape]) return saved;
+    if (
+      Object.hasOwn(levels, saved?.level) &&
+      Object.hasOwn(shapes, saved?.shape)
+    ) {
+      return {
+        level: saved.level,
+        shape: saved.shape,
+        picture: Object.hasOwn(pictures, saved.picture)
+          ? saved.picture
+          : "rain",
+        board: saved.board === "blank" ? "blank" : "guided",
+        magnet: saved.magnet !== false,
+      };
+    }
   } catch {}
-  return { level: "easy", shape: "classic" };
+  return {
+    level: "easy",
+    shape: "classic",
+    picture: "rain",
+    board: "guided",
+    magnet: true,
+  };
 }
 function useMedia(query) {
   const [matches, setMatches] = useState(() => matchMedia(query).matches);
@@ -42,11 +71,20 @@ function Tool({ icon, children, ...props }) {
   );
 }
 function Puzzle({ mode, sound, paused, gameRef, material }) {
-  const { level, shape } = mode,
+  const { level, shape, picture, board, magnet } = mode,
     { cols, rows } = levels[level],
     total = cols * rows;
+  const art = pictures[picture];
+  const isRain = picture === "rain";
+  const guide = board === "guided";
+  const story = puzzleStories[picture];
+  const storyMemories = story.memories;
+  const primaryGoal = storyMemories.find((memory) => memory.id === story.goal);
   // Preserve all existing mode saves, including the original v1 React format.
-  const saveKey = `shiguang-react-v1-${level}-${shape}`;
+  const saveKey =
+    isRain && guide
+      ? `shiguang-react-v1-${level}-${shape}`
+      : `shiguang-puzzle-${picture}-${board}-${level}-${shape}`;
   const pieces = useMemo(
     () => makePieces(cols, rows, shape),
     [cols, rows, shape],
@@ -64,34 +102,76 @@ function Puzzle({ mode, sound, paused, gameRef, material }) {
     [selected, setSelected] = useState(null),
     [hint, setHint] = useState(null),
     [preview, setPreview] = useState(false),
-    [guide, setGuide] = useState(true),
+    [sort, setSort] = useState("random"),
+    [group, setGroup] = useState("all"),
+    [colors, setColors] = useState(null),
+    [colorError, setColorError] = useState(false),
     [zoom, setZoom] = useState(false),
     [page, setPage] = useState(0),
     [lastPlaced, setLastPlaced] = useState(null),
     [placementKind, setPlacementKind] = useState("direct"),
-    [celebration, setCelebration] = useState(null),
+    [celebrations, setCelebrations] = useState([]),
     [saveError, setSaveError] = useState(false),
     [imageError, setImageError] = useState(false),
-    [message, setMessage] = useState("拿起一片，靠近它的位置，就会轻轻吸住。");
+    [message, setMessage] = useState("");
   const mobile = useMedia("(max-width: 740px)"),
     pageSize = mobile ? 4 : 6;
+  const referenceBlocksBoard = preview && mobile;
   const boardRef = useRef(null),
     viewportRef = useRef(null),
     trayRef = useRef(null),
+    referenceButton = useRef(null),
+    referenceCloseButton = useRef(null),
     seen = useRef(
-      new Set(completedMemories(placed, cols, rows).map((memory) => memory.id)),
+      new Set(
+        completedMemories(placed, cols, rows, storyMemories).map(
+          (memory) => memory.id,
+        ),
+      ),
     );
   const [boardHeight, setBoardHeight] = useState(400);
-  const dialogue = useDialogue(sound);
-  const completed = completedMemories(placed, cols, rows),
-    remaining = order.filter((id) => !placed.has(id)),
-    pages = Math.max(1, Math.ceil(remaining.length / pageSize)),
+  useEffect(() => {
+    if (referenceBlocksBoard) referenceCloseButton.current?.focus();
+  }, [referenceBlocksBoard]);
+  const dialogue = useDialogue(sound, story.opening, paused);
+  const completed = completedMemories(placed, cols, rows, storyMemories);
+  const goalComplete = completed.some((memory) => memory.id === story.goal);
+  const grassCelebrating = celebrations.some((memory) => memory.id === "grass");
+  const remaining = order.filter((id) => !placed.has(id));
+  const groups = sort === "shape" ? shapeGroups : colorGroups;
+  const categoryOf = (id) =>
+    sort === "shape" ? shapeGroup(pieces[id], cols, rows) : colors?.[id];
+  const organized =
+    sort === "random" || (sort === "color" && !colors)
+      ? remaining
+      : Object.keys(groups).flatMap((category) =>
+          remaining.filter((id) => categoryOf(id) === category),
+        );
+  const shown =
+    group === "all"
+      ? organized
+      : organized.filter((id) => categoryOf(id) === group);
+  const pages = Math.max(1, Math.ceil(shown.length / pageSize)),
     currentPage = Math.min(page, pages - 1),
-    visible = remaining.slice(
-      currentPage * pageSize,
-      (currentPage + 1) * pageSize,
+    visible = shown.slice(currentPage * pageSize, (currentPage + 1) * pageSize);
+  useEffect(() => {
+    if (sort !== "color" || colors) return;
+    let canceled = false;
+    setColorError(false);
+    readPieceColors(art.image, pieces).then(
+      (result) => {
+        if (!canceled) setColors(result);
+      },
+      () => {
+        if (!canceled) setColorError(true);
+      },
     );
+    return () => {
+      canceled = true;
+    };
+  }, [art.image, pieces, sort, colors]);
   const umbrellaComplete = completed.some((memory) => memory.id === "umbrella");
+  useEffect(() => setMessage(""), [magnet]);
   useEffect(() => {
     sound.setSheltered(umbrellaComplete);
   }, [umbrellaComplete, sound.setSheltered]);
@@ -117,7 +197,7 @@ function Puzzle({ mode, sound, paused, gameRef, material }) {
     return () => observer.disconnect();
   }, []);
   function commit(id, keyboard = false, fromDrag = false) {
-    if (paused || preview || placedRef.current.has(id)) return;
+    if (paused || referenceBlocksBoard || placedRef.current.has(id)) return;
     const next = new Set(placedRef.current).add(id);
     placedRef.current = next;
     setPlaced(next);
@@ -126,24 +206,18 @@ function Puzzle({ mode, sound, paused, gameRef, material }) {
     setLastPlaced(id);
     setPlacementKind(fromDrag ? "drag" : "direct");
     sound.play("place");
-    const unlocked = completedMemories(next, cols, rows).filter(
+    const unlocked = completedMemories(next, cols, rows, storyMemories).filter(
       (memory) => !seen.current.has(memory.id),
     );
     unlocked.forEach((memory) => seen.current.add(memory.id));
     if (unlocked.length) {
       dialogue.enqueue(unlocked);
-      setCelebration(unlocked.at(-1).id);
+      setCelebrations(unlocked);
       sound.play("memory");
     }
     if (next.size === total) {
-      dialogue.enqueue([
-        {
-          id: "complete",
-          speaker: "春日来信",
-          text: "春天完整了。谢谢你，陪他们慢慢走完这一场雨。",
-        },
-      ]);
-      setMessage("春天完整了。点亮的记忆，可以再听一遍。");
+      dialogue.enqueue([story.ending]);
+      setMessage("拼好了。点亮的片段可以再听一遍。");
     } else
       setMessage(
         unlocked.length
@@ -163,14 +237,19 @@ function Puzzle({ mode, sound, paused, gameRef, material }) {
     cols,
     rows,
     placedRef,
-    disabled: paused || preview,
+    magnet,
+    disabled: paused || referenceBlocksBoard,
     material,
     onPlace: (id) => commit(id, false, true),
     onSelect: setSelected,
     onPick: () => {
       sound.play("pick");
       setHint(null);
-      setMessage("拿好了。靠近正确的位置，碎片会自己落下。");
+      setMessage(
+        magnet
+          ? "拿好了。靠近正确的位置，碎片会自己落下。"
+          : "拿好了。在正确位置松手。",
+      );
     },
     onMiss: () => setMessage("还差一点点。碎片回到这里，再试一次吧。"),
   });
@@ -188,17 +267,24 @@ function Puzzle({ mode, sound, paused, gameRef, material }) {
     setPreview(false);
     setZoom(false);
     setLastPlaced(null);
-    setCelebration(null);
+    setCelebrations([]);
     seen.current = new Set();
     dialogue.reset();
-    setMessage("又一场春雨开始了。没有倒计时，慢慢来。");
+    setGroup("all");
+    setMessage("新的一局开始了。没有倒计时，慢慢来。");
   }
-  gameRef.current = { reset, cancel, guide, setGuide };
+  gameRef.current = { reset, cancel };
+  function closeReference() {
+    setPreview(false);
+    referenceButton.current?.focus();
+  }
   useEffect(() => {
     const escape = (event) => {
       if (event.key === "Escape") {
         cancel();
-        setPreview(false);
+        if (referenceCloseButton.current === document.activeElement)
+          closeReference();
+        else setPreview(false);
       }
     };
     window.addEventListener("keydown", escape);
@@ -211,25 +297,27 @@ function Puzzle({ mode, sound, paused, gameRef, material }) {
     }
   }, [paused]);
   useEffect(() => {
-    if (!celebration) return;
-    const timer = setTimeout(() => setCelebration(null), 2400);
+    if (!celebrations.length) return;
+    const timer = setTimeout(() => setCelebrations([]), 2400);
     return () => clearTimeout(timer);
-  }, [celebration]);
+  }, [celebrations]);
   function select(id) {
-    if (paused || preview || floating.busy || placed.has(id)) return;
+    if (paused || referenceBlocksBoard || floating.busy || placed.has(id))
+      return;
     setSelected(id);
     setHint(null);
     sound.play("pick");
     setMessage("碎片拿好了。也可以直接点它在画板上的位置。");
   }
   function placeAt(id, keyboard = false) {
-    if (paused || preview || floating.busy || placed.has(id)) return;
+    if (paused || referenceBlocksBoard || floating.busy || placed.has(id))
+      return;
     if (selected === id) commit(id, keyboard);
     else
       setMessage(
         selected === null
           ? "先在碎片栏里拿起一片。"
-          : "这片属于别的地方。试试靠近时的吸附提示。",
+          : "这片属于别的地方，再试一次。",
       );
   }
   function showHint() {
@@ -237,10 +325,17 @@ function Puzzle({ mode, sound, paused, gameRef, material }) {
     cancel();
     setPreview(false);
     const id =
-      selected !== null && !placed.has(selected) ? selected : remaining[0];
+      selected !== null && !placed.has(selected)
+        ? selected
+        : (shown[0] ?? remaining[0]);
+    if (!shown.includes(id)) setGroup("all");
     setSelected(id);
     setHint(id);
-    setPage(Math.floor(remaining.indexOf(id) / pageSize));
+    setPage(
+      Math.floor(
+        (shown.includes(id) ? shown : organized).indexOf(id) / pageSize,
+      ),
+    );
     setMessage("金色轮廓就是它的位置。拖过去，或者点一下那里。");
   }
   const artHeight = boardHeight * (zoom ? 1.7 : 1);
@@ -253,7 +348,14 @@ function Puzzle({ mode, sound, paused, gameRef, material }) {
         <div className="stage-top">
           <span className="chapter">
             <i />
-            春日的一场雨
+            <span
+              data-primary-goal={story.goal}
+              data-goal-complete={goalComplete}
+            >
+              {goalComplete
+                ? `${primaryGoal.name}已拼好`
+                : `先拼出${primaryGoal.name}`}
+            </span>
           </span>
           <div className="progress-group">
             <progress
@@ -266,48 +368,64 @@ function Puzzle({ mode, sound, paused, gameRef, material }) {
             </output>
           </div>
         </div>
-        <div
-          className={`board-scroller ${zoom ? "is-zoomed" : ""}`}
-          ref={viewportRef}
-          aria-label="画板视窗"
-          tabIndex={zoom ? 0 : -1}
-        >
+        <div className={preview ? "board-area has-reference" : "board-area"}>
           <div
-            className="board-frame"
-            style={{
-              width: (artHeight * WIDTH) / HEIGHT + 12,
-              height: artHeight + 12,
-            }}
+            className={`board-scroller ${zoom ? "is-zoomed" : ""}`}
+            ref={viewportRef}
+            aria-label="画板视窗"
+            tabIndex={zoom ? 0 : -1}
+            inert={referenceBlocksBoard}
           >
-            <svg
-              className="board"
-              ref={boardRef}
-              viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
-              role="group"
-              aria-label={`${total} 片${shapes[shape]}画板`}
+            <div
+              className="board-frame"
+              style={{
+                width: (artHeight * WIDTH) / HEIGHT + 12,
+                height: artHeight + 12,
+              }}
             >
-              <defs>
-                <linearGradient id="grass-feather" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0" stopColor="white" stopOpacity="0" />
-                  <stop offset=".35" stopColor="white" />
-                </linearGradient>
-                <mask id="grass-mask">
-                  <path
-                    d={`M0 ${HEIGHT * 0.81}H${WIDTH}V${HEIGHT}H0Z`}
-                    fill="url(#grass-feather)"
-                  />
-                </mask>
-              </defs>
-              <image
-                href={IMAGE}
-                width={WIDTH}
-                height={HEIGHT}
-                className={preview ? "reference" : "underlay"}
-                opacity={preview || guide ? 1 : 0.06}
-                onError={() => setImageError(true)}
-              />
-              {!preview &&
-                pieces.map((piece) => (
+              <svg
+                className={guide ? "board" : "board blank-board"}
+                ref={boardRef}
+                viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
+                role="group"
+                aria-label={`${total} 片${shapes[shape]}画板`}
+              >
+                <defs>
+                  <linearGradient
+                    id="grass-feather"
+                    x1="0"
+                    y1="0"
+                    x2="0"
+                    y2="1"
+                  >
+                    <stop offset="0" stopColor="white" stopOpacity="0" />
+                    <stop offset=".35" stopColor="white" />
+                  </linearGradient>
+                  <mask id="grass-mask">
+                    <path
+                      d={`M0 ${HEIGHT * 0.81}H${WIDTH}V${HEIGHT}H0Z`}
+                      fill="url(#grass-feather)"
+                    />
+                  </mask>
+                  {!guide && grassCelebrating && (
+                    <clipPath id="placed-grass-clip">
+                      {pieces
+                        .filter((piece) => placed.has(piece.id))
+                        .map((piece) => (
+                          <path key={piece.id} d={piece.path} />
+                        ))}
+                    </clipPath>
+                  )}
+                </defs>
+                <image
+                  href={art.image}
+                  width={WIDTH}
+                  height={HEIGHT}
+                  className="underlay"
+                  visibility={guide ? "visible" : "hidden"}
+                  onError={() => setImageError(true)}
+                />
+                {pieces.map((piece) => (
                   <g
                     key={piece.id}
                     className={`slot ${placed.has(piece.id) ? "placed" : ""} ${hint === piece.id ? "hint" : ""} ${floating.near === piece.id ? "magnet-near" : ""} ${lastPlaced === piece.id ? "just-placed" : ""} ${lastPlaced === piece.id && placementKind === "direct" ? "press-in" : ""} ${floating.visual?.id === piece.id && ["snap", "press"].includes(floating.visual.phase) ? "receiving" : ""}`}
@@ -343,51 +461,46 @@ function Puzzle({ mode, sound, paused, gameRef, material }) {
                   >
                     {material === "cardboard" && !placed.has(piece.id) && <PieceWell piece={piece} />}
                     {placed.has(piece.id) && (
-                      <Fragment piece={piece} prefix="board" material={material} raised={false} />
+                      <Fragment piece={piece} prefix="board" image={art.image} material={material} raised={false} />
                     )}
                     <path d={piece.path} className="seam" />
                   </g>
                 ))}
-              {!preview && celebration === "grass" && (
-                <g className="grass-sway" pointerEvents="none">
-                  <image
-                    href={IMAGE}
-                    width={WIDTH}
-                    height={HEIGHT}
-                    mask="url(#grass-mask)"
-                  />
-                </g>
-              )}
-              {!preview && celebration && (
-                <g
-                  className="memory-sparkles"
-                  pointerEvents="none"
-                  aria-hidden="true"
-                >
-                  {[0, 1, 2, 3, 4].map((i) => (
-                    <circle
-                      key={i}
-                      cx={WIDTH * (0.2 + i * 0.15)}
-                      cy={
-                        HEIGHT *
-                          (celebration === "grass"
-                            ? 0.86
-                            : celebration === "umbrella"
-                              ? 0.13
-                              : 0.48) +
-                        (i % 2) * 70
-                      }
-                      r={9 - i}
-                      style={{ animationDelay: `${i * 80}ms` }}
-                    />
-                  ))}
-                </g>
-              )}
-            </svg>
-            {preview && (
-              <span className="reference-tag">原图参考 · 进度不会改变</span>
-            )}
+                {grassCelebrating && (
+                  <g
+                    clipPath={guide ? undefined : "url(#placed-grass-clip)"}
+                    pointerEvents="none"
+                  >
+                    <g className="grass-sway">
+                      <image
+                        href={art.image}
+                        width={WIDTH}
+                        height={HEIGHT}
+                        mask="url(#grass-mask)"
+                      />
+                    </g>
+                  </g>
+                )}
+                {celebrations.map((memory) => (
+                  <MemoryEffect key={memory.id} memory={memory} />
+                ))}
+              </svg>
+            </div>
           </div>
+          {preview && (
+            <aside className="picture-reference" aria-label="独立原图参考">
+              <div className="reference-heading">
+                <span>原图参考</span>
+                <Tool
+                  icon="close"
+                  ref={referenceCloseButton}
+                  aria-label="关闭原图参考"
+                  onClick={closeReference}
+                />
+              </div>
+              <img src={art.image} alt={art.credit} />
+            </aside>
+          )}
         </div>
         <div className="stage-tools">
           <Tool
@@ -400,6 +513,8 @@ function Puzzle({ mode, sound, paused, gameRef, material }) {
           <Tool
             icon="eye"
             aria-pressed={preview}
+            aria-label="参考"
+            ref={referenceButton}
             onClick={() => {
               cancel();
               setPreview(!preview);
@@ -427,13 +542,60 @@ function Puzzle({ mode, sound, paused, gameRef, material }) {
       <aside className="tray-panel" aria-label="碎片与记忆">
         <div className="tray-heading">
           <div>
-            <p>把春天放回去</p>
             <h2>散落的画面</h2>
           </div>
           <span className="remaining-count">
             {remaining.length}
             <small>片待归位</small>
           </span>
+        </div>
+        <div className="tray-filters">
+          <select
+            aria-label="碎片排列"
+            value={sort}
+            disabled={paused || floating.busy}
+            onChange={(event) => {
+              cancel();
+              setSort(event.target.value);
+              setGroup("all");
+              setPage(0);
+            }}
+          >
+            <option value="random">随机排列</option>
+            <option value="color">按颜色</option>
+            <option value="shape">按形状</option>
+          </select>
+          {sort !== "random" && (
+            <select
+              aria-label="筛选碎片"
+              value={group}
+              disabled={
+                paused || floating.busy || (sort === "color" && !colors)
+              }
+              onChange={(event) => {
+                cancel();
+                setGroup(event.target.value);
+                setPage(0);
+              }}
+            >
+              <option value="all">全部分类</option>
+              {Object.entries(groups).map(([id, label]) => (
+                <option key={id} value={id}>
+                  {label}（
+                  {
+                    remaining.filter((pieceId) => categoryOf(pieceId) === id)
+                      .length
+                  }
+                  ）
+                </option>
+              ))}
+            </select>
+          )}
+          {sort === "color" && !colors && (
+            <span role="status">
+              {colorError ? "颜色分类不可用" : "正在识别颜色…"}
+            </span>
+          )}
         </div>
         <div
           className="tray"
@@ -447,16 +609,17 @@ function Puzzle({ mode, sound, paused, gameRef, material }) {
               key={id}
               className={`piece ${selected === id ? "is-selected" : ""} ${floating.visual?.id === id ? "is-lifted" : ""}`}
               data-piece={id}
+              data-piece-group={sort === "random" ? undefined : categoryOf(id)}
               aria-label={`碎片 ${id + 1}`}
               aria-pressed={selected === id}
-              disabled={preview || paused}
+              disabled={referenceBlocksBoard || paused}
               onPointerDown={(event) => floating.begin(event, id)}
               onClick={(event) => {
                 if (event.detail === 0) select(id);
               }}
             >
               <svg viewBox={pieces[id].viewBox} aria-hidden="true">
-                <Fragment piece={pieces[id]} prefix="tray" material={material} />
+                <Fragment piece={pieces[id]} prefix="tray" image={art.image} material={material} />
                 <path d={pieces[id].path} className="piece-edge" />
               </svg>
               <span className="piece-shadow" />
@@ -465,10 +628,24 @@ function Puzzle({ mode, sound, paused, gameRef, material }) {
           {!remaining.length && (
             <div className="tray-complete">
               <Icon name="leaf" />
-              <strong>春天完整了</strong>
-              <p>一场雨，四段小小的记忆。</p>
+              <strong>{isRain ? "春天完整了" : `${art.title}拼好了`}</strong>
+              <p>四段小小的记忆。</p>
               <button className="text-button" onClick={reset}>
-                再走一遍春天
+                再拼一次
+              </button>
+            </div>
+          )}
+          {!!remaining.length && !shown.length && (
+            <div className="tray-complete empty-group">
+              <p>这类没有待拼碎片。</p>
+              <button
+                className="text-button"
+                onClick={() => {
+                  setGroup("all");
+                  setPage(0);
+                }}
+              >
+                查看全部碎片
               </button>
             </div>
           )}
@@ -493,30 +670,36 @@ function Puzzle({ mode, sound, paused, gameRef, material }) {
           </button>
         </div>
         <p className="interaction-message" role="status">
-          {saveError ? "浏览器无法保存进度，仍可继续游玩。" : message}
+          {saveError
+            ? "浏览器无法保存进度，仍可继续游玩。"
+            : message ||
+              (magnet
+                ? "拿起一片，靠近正确位置就会吸住。"
+                : "拿起一片，在正确位置松手。")}
         </p>
         <div className="memory-section">
           <p className="memory-title">
             找回的记忆{" "}
             <span>
-              {completed.length} / {memories.length}
+              {completed.length} / {storyMemories.length}
             </span>
           </p>
           <div className="memory-list">
-            {memories.map((memory) => {
+            {storyMemories.map((memory) => {
               const ids = regionPieces(memory, cols, rows),
                 count = ids.filter((id) => placed.has(id)).length,
                 done = count === ids.length;
               return (
                 <button
                   key={memory.id}
-                  className={`memory-chip ${done ? "unlocked" : ""}`}
+                  className={`memory-chip ${done ? "unlocked" : ""} ${!done && memory.id === story.goal ? "primary-memory" : ""}`}
                   data-memory={memory.id}
                   disabled={!done || floating.busy}
                   aria-label={`${memory.name}，${done ? "已解锁，点击回听" : `${count} / ${ids.length} 片`}`}
                   onClick={() => {
                     sound.play("memory");
                     dialogue.replay(memory);
+                    setCelebrations([memory]);
                   }}
                 >
                   <Icon name={memory.icon} />
@@ -533,7 +716,7 @@ function Puzzle({ mode, sound, paused, gameRef, material }) {
         </div>
       </aside>
       <section
-        className={`dialogue ${celebration ? "new-memory" : ""}`}
+        className={`dialogue ${celebrations.length ? "new-memory" : ""}`}
         aria-label="故事字幕"
         data-cue={dialogue.cue.id}
       >
@@ -585,7 +768,7 @@ function Puzzle({ mode, sound, paused, gameRef, material }) {
         >
           <div className="floating-surface">
             <svg viewBox={pieces[floating.visual.id].viewBox}>
-            <Fragment piece={pieces[floating.visual.id]} prefix="floating" material={material} />
+            <Fragment piece={pieces[floating.visual.id]} prefix="floating" image={art.image} material={material} />
             <path
               d={pieces[floating.visual.id].path}
               className="floating-edge"
@@ -600,19 +783,18 @@ function Puzzle({ mode, sound, paused, gameRef, material }) {
 function App() {
   const [mode, setMode] = useState(getMode),
     [settings, setSettings] = useState(false),
-    [showGuide, setShowGuide] = useState(true),
     [material, setMaterial] = useState(() => {
       try { return localStorage.getItem("shiguang-material-v1") === "cardboard" ? "cardboard" : "light"; }
       catch { return "light"; }
     });
+  const art = pictures[mode.picture];
   const gameRef = useRef(null),
     dialogRef = useRef(null),
-    sound = useSound();
+    sound = useSound(mode.picture !== "equinox");
   useEffect(() => {
     try {
       localStorage.setItem("shiguang-mode", JSON.stringify(mode));
     } catch {}
-    setShowGuide(true);
   }, [mode]);
   useEffect(() => {
     const dialog = dialogRef.current;
@@ -632,7 +814,7 @@ function App() {
           </span>
         </a>
         <div className="game-title">
-          <span>雨水</span>
+          <span>{art.title}</span>
           <h1>拾回春天</h1>
         </div>
         <div className="header-actions">
@@ -653,7 +835,7 @@ function App() {
         </div>
       </header>
       <Puzzle
-        key={`${mode.level}-${mode.shape}`}
+        key={`${mode.picture}-${mode.board}-${mode.level}-${mode.shape}`}
         mode={mode}
         sound={sound}
         paused={settings}
@@ -689,6 +871,22 @@ function App() {
               onClick={() => setSettings(false)}
             />
           </div>
+          <fieldset className="picture-picker">
+            <legend>选择拼图</legend>
+            {Object.entries(pictures).map(([id, picture]) => (
+              <label key={id} className="picture-option">
+                <input
+                  type="radio"
+                  name="picture"
+                  value={id}
+                  checked={mode.picture === id}
+                  onChange={() => setMode({ ...mode, picture: id })}
+                />
+                <img src={picture.image} alt="" />
+                <span>{picture.title}</span>
+              </label>
+            ))}
+          </fieldset>
           <label className="setting-row">
             拼图难度
             <select
@@ -729,15 +927,31 @@ function App() {
             </select>
           </label>
           <label className="setting-row">
-            显示灰色底图
+            <span>
+              拼板提示<small>空白拼板可单独看原图</small>
+            </span>
+            <select
+              aria-label="拼板提示"
+              value={mode.board}
+              onChange={(event) =>
+                setMode({ ...mode, board: event.target.value })
+              }
+            >
+              <option value="guided">灰色底图</option>
+              <option value="blank">空白拼板</option>
+            </select>
+          </label>
+          <label className="setting-row">
+            <span>
+              磁吸归位<small>关闭后须在正确位置松手</small>
+            </span>
             <input
               type="checkbox"
-              aria-label="设置灰色底图"
-              checked={showGuide}
-              onChange={(event) => {
-                setShowGuide(event.target.checked);
-                gameRef.current?.setGuide(event.target.checked);
-              }}
+              aria-label="磁吸归位"
+              checked={mode.magnet}
+              onChange={(event) =>
+                setMode({ ...mode, magnet: event.target.checked })
+              }
             />
           </label>
           <label className="setting-row">
@@ -773,14 +987,36 @@ function App() {
               onChange={(event) => sound.setVoice(event.target.checked)}
             />
           </label>
+          {sound.enabled && sound.voice && sound.voices.length > 0 && (
+            <fieldset className="voice-cast">
+              <legend>角色音色</legend>
+              {Object.entries(voiceProfiles).map(([role, profile]) => (
+                <label className="setting-row" key={role}>
+                  {profile.label}
+                  <select
+                    value={sound.voiceCast[role] || ""}
+                    onChange={(event) =>
+                      sound.chooseVoice(role, event.target.value)
+                    }
+                  >
+                    <option value="">自动选择</option>
+                    {sound.voices.map((voice) => (
+                      <option key={voice.voiceURI} value={voice.voiceURI}>
+                        {voice.name}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+              ))}
+            </fieldset>
+          )}
           {sound.note && (
             <p className="settings-note" role="status">
               {sound.note}
             </p>
           )}
           <p className="settings-note">
-            拖动时靠近正确位置，会自动吸附。也可以先选碎片，再点画板位置。触屏碎片会抬到指尖上方；按
-            Esc 可取消。切换难度和形状，各自的进度都会保留。
+            也可以先选碎片，再点画板位置。每张图、片数、形状和拼板提示各有独立进度。
           </p>
           <div className="settings-bottom">
             <button
@@ -801,11 +1037,11 @@ function App() {
           </div>
           <a
             className="source-link"
-            href="https://luoxiaohei.cockerel.com.cn/artwork/huiji:solar/2020/%E9%9B%A8%E6%B0%B4"
+            href={art.source}
             target="_blank"
             rel="noreferrer"
           >
-            2020 年雨水节气图 · A0243 · 素材出处
+            {art.credit} · 素材出处
           </a>
         </div>
       </dialog>

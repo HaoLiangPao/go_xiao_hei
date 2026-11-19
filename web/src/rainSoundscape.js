@@ -79,15 +79,25 @@ export function createRainSoundscape(context) {
   const rain = makeLoop(context, 8, drawRain);
   const umbrella = makeLoop(context, 12, drawUmbrella);
   const music = makeLoop(context, 16, drawMusic);
-  return function mix({ active, sheltered, playingMusic, speaking }) {
+  return function mix({
+    active,
+    sheltered,
+    playingMusic,
+    speaking,
+    rainy = true,
+  }) {
     const time = context.currentTime;
     const duck = speaking ? 0.55 : 1;
     rain.setTargetAtTime(
-      active ? (sheltered ? 0.11 : 0.29) * duck : 0,
+      active && rainy ? (sheltered ? 0.11 : 0.29) * duck : 0,
       time,
       0.12,
     );
-    umbrella.setTargetAtTime(active && sheltered ? 0.19 * duck : 0, time, 0.12);
+    umbrella.setTargetAtTime(
+      active && rainy && sheltered ? 0.19 * duck : 0,
+      time,
+      0.12,
+    );
     music.setTargetAtTime(
       active && playingMusic ? 0.085 * duck : 0,
       time,
