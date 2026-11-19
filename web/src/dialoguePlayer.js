@@ -1,8 +1,8 @@
 import { recordedClip } from "./dialogueClips.js";
 
 const delivery = {
-  无限: { rate: 0.84, pitch: 0.86 },
-  小黑: { rate: 1.02, pitch: 1.23 },
+  无限: { rate: 0.78, pitch: 0.72 },
+  小黑: { rate: 1.06, pitch: 1.13 },
 };
 
 // Every play settles on completion, failure, or cancellation so subtitles can advance.

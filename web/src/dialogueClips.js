@@ -12,8 +12,8 @@ export const closing = {
 };
 export const dialogueCues = [opening, ...memories, closing];
 export const voiceProfiles = {
-  无限: { voice: "zh-CN-YunxiNeural", rate: "-12%", pitch: "-8Hz" },
-  小黑: { voice: "zh-CN-XiaoxiaoNeural", rate: "+3%", pitch: "+8Hz" },
+  无限: { voice: "zh-CN-YunxiNeural", rate: "-18%", pitch: "-26Hz" },
+  小黑: { voice: "zh-CN-YunxiaNeural", rate: "+6%", pitch: "+10Hz" },
   春日来信: { voice: "zh-CN-XiaoxiaoNeural", rate: "-8%", pitch: "+0Hz" },
 };
 
