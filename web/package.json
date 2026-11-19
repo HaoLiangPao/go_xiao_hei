@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
+    "test:journey-browser": "node tests/journey-browser.cjs",
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1",
-    "test": "node --test tests/geometry.test.js tests/gameplay.test.js",
+    "test": "node --test tests/geometry.test.js tests/gameplay.test.js tests/journey.test.js",
     "test:model": "node ../tests/scene-model.test.cjs",
     "test:dom": "node ../tests/color-interaction.test.cjs",
     "test:browser": "node tests/browser.cjs",

@@ -1444,3 +1444,107 @@ progress::-moz-progress-bar {
     opacity: 0.8;
   }
 }
+
+/* Four seasons share one continuous, saved journey. */
+.game-shell { grid-template-rows: 80px 50px minmax(0, 1fr) 30px; }
+.year-progress {
+  width: calc(100% - 56px); max-width: 1440px; margin: 0 auto;
+  min-height: 44px; padding: 4px 2px 8px; border: 0;
+  display: grid; grid-template-columns: 136px minmax(0,1fr) 52px; align-items: center; gap: 22px;
+  background: transparent; text-align: left; border-bottom: 1px solid #ccdbcc;
+}
+.year-progress-label { font-size: 12px; white-space: nowrap; }
+.year-progress-label strong { margin-left: 8px; font-weight: 600; }
+.year-progress-label small { color: var(--muted); font-weight: 400; }
+.year-segments { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 24px; }
+.year-segment { display: flex; align-items: center; gap: 10px; font-size: 11px; }
+.year-dots { flex: 1; display: grid; grid-template-columns: repeat(6,minmax(0,1fr)); align-items: center; position: relative; }
+.year-dots::before { content: ""; position: absolute; inset: 50% 6%; height: 1px; background: var(--term-color); opacity: .3; }
+.year-dots i { width: 8px; height: 8px; border: 1px solid var(--term-color); border-radius: 50%; justify-self: center; background: #e6eee7; z-index: 1; }
+.year-dots i.lit { background: var(--term-color); animation: term-light .5s ease-out; }
+.year-dots i.current { outline: 2px solid var(--term-color); outline-offset: 3px; }
+.year-open { justify-self: end; font-size: 12px; white-space: nowrap; }
+.choose-season-button {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  width: 100%; min-height: 52px; padding: 8px 0; border: 0; border-bottom: 1px solid var(--line);
+  background: transparent; text-align: left; font-size: 12px;
+}
+.choose-season-button strong { display: block; font: 20px "Noto Serif CJK SC",serif; margin-top: 5px; }
+.next-term-button { border: 0; border-radius: 20px; background: #36594b; color: white; min-height: 44px; padding: 9px 16px; margin: 5px 0 8px; font-size: 12px; }
+.journey-dialog {
+  width: min(920px,calc(100vw - 24px)); max-height: calc(100dvh - 24px);
+  border: 1px solid #cfddce; border-radius: 24px; padding: 0; background: var(--paper); color: var(--ink);
+  box-shadow: 0 25px 90px #24483f40;
+}
+.journey-dialog::backdrop { background: #24413888; backdrop-filter: blur(5px); }
+.journey-close { position: absolute; right: 12px; top: 12px; z-index: 2; width: 44px; height: 44px; }
+.season-journey { padding: 30px 32px 20px; }
+.journey-summary { display: flex; justify-content: space-between; gap: 24px; padding-right: 42px; align-items: end; }
+.journey-summary p { font-size: 11px; margin: 0 0 5px; color: var(--muted); }
+.journey-summary h2 { font: 32px "Noto Serif CJK SC",serif; letter-spacing: .09em; margin: 0 0 8px; }
+.journey-summary > div > span { font-size: 12px; color: var(--muted); }
+.journey-count { white-space: nowrap; }
+.journey-count strong { font: 42px "Noto Serif CJK SC",serif; color: #36594b; }
+.journey-count span { font-size: 12px; color: var(--muted); }
+.journey-progress { display: block; width: 100%; height: 6px; border: 0; border-radius: 3px; margin: 22px 0 12px; appearance: none; overflow: hidden; }
+.journey-progress::-webkit-progress-bar { background: #e0e7db; }
+.journey-progress::-webkit-progress-value { background: linear-gradient(90deg,#69875c,#368c85,#b37c3a,#7187a7); }
+.journey-progress::-moz-progress-bar { background: #69875c; }
+.journey-legend { display: flex; gap: 20px; color: var(--muted); font-size: 10px; margin-bottom: 16px; }
+.season-track { display: grid; grid-template-columns: 62px minmax(0,1fr); gap: 18px; padding: 18px 0; border-top: 1px solid #dfe7d9; }
+.season-track > header { align-self: center; text-align: center; }
+.season-track h3 { font: 30px "Noto Serif CJK SC",serif; color: var(--term-color); margin: 0 0 7px; }
+.season-track header span { font-size: 10px; color: var(--muted); }
+.term-track { display: grid; grid-template-columns: repeat(6,minmax(0,1fr)); gap: 12px; position: relative; }
+.term-track::before { content: ""; position: absolute; height: 2px; left: 7%; right: 7%; top: 38px; background: var(--term-color); opacity: .25; }
+.term-node { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 6px 0; border: 0; background: transparent; min-width: 0; min-height: 100px; z-index: 1; }
+.term-orb { width: 64px; height: 64px; border: 2px solid #c7d2c4; border-radius: 50%; background: #e2e9dd; position: relative; display: grid; place-items: center; }
+.term-orb > span { font: 25px "Noto Serif CJK SC",serif; opacity: .6; }
+.term-orb img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 44%; border-radius: 50%; }
+.term-orb img[hidden] { display: none; }
+.term-node.is-locked .term-orb img { filter: grayscale(1); opacity: .24; }
+.term-node.is-locked strong { color: #718170; font-weight: 400; }
+.term-node.is-available .term-orb { border: 2px dashed var(--term-color); }
+.term-node.is-complete .term-orb { border-color: var(--term-color); box-shadow: 0 0 0 3px color-mix(in srgb,var(--term-color) 16%,transparent); }
+.term-node[aria-current="step"] .term-orb { outline: 2px solid var(--term-color); outline-offset: 4px; }
+.term-orb b { position: absolute; right: -2px; bottom: -3px; width: 20px; height: 20px; border-radius: 50%; background: #36594b; color: white; font-size: 12px; display: grid; place-items: center; }
+.term-node strong { font-size: 13px; font-weight: 500; }
+.term-node small { font-size: 9px; color: var(--muted); }
+.term-node:not(:disabled):hover .term-orb { transform: translateY(-2px); }
+.term-orb { transition: transform .18s; }
+.journey-footnote, .journey-save-note { font-size: 11px; line-height: 1.8; color: var(--muted); margin: 16px 0 0; }
+.journey-save-note { color: #755d2f; }
+@keyframes term-light { 0% { box-shadow: 0 0 0 5px #b9cbb366; } 100% { box-shadow: 0 0 0 0 transparent; } }
+@media (max-width: 740px) {
+  .game-shell { grid-template-rows: 60px 44px minmax(0,1fr) 22px; }
+  .year-progress { width: calc(100% - 28px); grid-template-columns: 62px minmax(0,1fr) 28px; gap: 8px; padding: 0 0 5px; }
+  .year-progress-label { font-size: 9px; }
+  .year-progress-label strong { margin-left: 0; display: block; font-size: 12px; }
+  .year-segments { gap: 8px; }
+  .year-segment { gap: 4px; font-size: 9px; }
+  .year-dots i { width: 5px; height: 5px; }
+  .year-dots i.current { outline-width: 1px; outline-offset: 2px; }
+  .year-open { font-size: 10px; }
+  .season-journey { padding: 26px 20px 18px; }
+  .journey-summary { gap: 8px; padding-right: 20px; align-items: center; }
+  .journey-summary h2 { font-size: 26px; }
+  .journey-summary > div > span { font-size: 10px; }
+  .journey-count strong { font-size: 32px; }
+  .journey-count span { display: block; font-size: 10px; }
+  .season-track { grid-template-columns: 34px minmax(0,1fr); gap: 12px; }
+  .term-track { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 14px 8px; }
+  .term-track::before { display: none; }
+  .term-orb { width: 52px; height: 52px; }
+  .term-node { min-height: 91px; }
+  .season-track h3 { font-size: 27px; }
+  .journey-legend { gap: 10px; font-size: 9px; }
+  .tray-complete .next-term-button { display: inline-block; min-height: 36px; font-size: 11px; padding: 7px 12px; }
+  .memory-title span { font-size: 8px; }
+}
+@media (prefers-reduced-motion: reduce) { .year-dots i.lit { animation: none; } }
+@media (max-width: 740px) and (max-height: 600px) {
+  .game-shell { grid-template-rows: 52px 44px minmax(0,1fr) 22px; }
+  .game-main { grid-template-rows: minmax(0,1fr) 60px 146px; gap: 8px; }
+  .tray-panel { grid-template-rows: 30px 60px 20px 30px; }
+  .dialogue { padding-top: 10px; padding-bottom: 10px; }
+}
