@@ -3,6 +3,7 @@
 - Use Chinese for explanations and PR descriptions unless asked otherwise.
 - Implement one coherent feature per branch and pull request. Target `main`; use `feat/`, `fix/`, or `docs/` branch prefixes.
 - Include the observable behavior, validation performed, and material limitations in each PR description. Distinguish DOM/model tests from real-browser checks.
+- For UI changes, embed screenshots of desktop and mobile views and the main states directly in the PR description. Include route details, gameplay, and progress changes where relevant; do not limit the description to two screenshots and send the reviewer to another document for the rest.
 - Prepare a PR after every feature. Include the desktop web experience and the mobile experience in the implementation, screenshots, and acceptance checks.
 - If remote PR creation is blocked, leave a verified feature commit bundle, PR body, and a ready-to-run desktop command that pushes the branch and creates the PR.
 - Open the PR for the user to review. Do not merge it, enable auto-merge, or push directly to `main` without explicit instructions.

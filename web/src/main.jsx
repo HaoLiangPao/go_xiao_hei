@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
 import {
   WIDTH,
@@ -23,8 +23,21 @@ import {
 import { useFloatingPiece } from "./useFloatingPiece.js";
 import { useSound } from "./useSound.js";
 import { useDialogue } from "./useDialogue.js";
+import { seasons, solarTerms } from "./solarTerms.js";
+import { completeTerm, nextTerm, persistJourney, puzzleSaveKey, readJourney, termStatus } from "./journeyModel.js";
+import { SeasonJourney, YearProgress } from "./SeasonJourney.jsx";
 import "./style.css";
 const shapes = { flat: "方形碎片", classic: "经典拼图", organic: "不规则拼图" };
+function loadJourney() {
+  try { return readJourney(localStorage); }
+  catch { return { completed: new Set(), started: new Set() }; }
+}
+function genericStory(art) {
+  return { goal: null, memories: [],
+    opening: { id: "opening", speaker: "四时旁白", voice: "adultFemale", text: `把${art.title}的画面慢慢拼回来，点亮这一站。` },
+    ending: { id: "complete", speaker: "四时旁白", voice: "adultFemale", text: `${art.title}拼好了。这一处光，留在四时旅程里。` },
+  };
+}
 function getMode() {
   try {
     const saved = JSON.parse(localStorage.getItem("shiguang-mode"));
@@ -35,9 +48,9 @@ function getMode() {
       return {
         level: saved.level,
         shape: saved.shape,
-        picture: Object.hasOwn(pictures, saved.picture)
+        picture: Object.hasOwn(pictures, saved.picture) && termStatus(saved.picture, loadJourney()) !== "locked"
           ? saved.picture
-          : "rain",
+          : "startSpring",
         board: saved.board === "blank" ? "blank" : "guided",
         magnet: saved.magnet !== false,
       };
@@ -46,7 +59,7 @@ function getMode() {
   return {
     level: "easy",
     shape: "classic",
-    picture: "rain",
+    picture: "startSpring",
     board: "guided",
     magnet: true,
   };
@@ -81,21 +94,18 @@ function Tool({ icon, children, onClick, ...props }) {
     </button>
   );
 }
-function Puzzle({ mode, sound, paused, gameRef, material }) {
+function Puzzle({ mode, sound, paused, gameRef, onComplete, onNext, material }) {
   const { level, shape, picture, board, magnet } = mode,
     { cols, rows } = levels[level],
     total = cols * rows;
   const art = pictures[picture];
   const isRain = picture === "rain";
   const guide = board === "guided";
-  const story = puzzleStories[picture];
+  const story = puzzleStories[picture] ?? genericStory(art);
   const storyMemories = story.memories;
   const primaryGoal = storyMemories.find((memory) => memory.id === story.goal);
   // Preserve all existing mode saves, including the original v1 React format.
-  const saveKey =
-    isRain && guide
-      ? `shiguang-react-v1-${level}-${shape}`
-      : `shiguang-puzzle-${picture}-${board}-${level}-${shape}`;
+  const saveKey = puzzleSaveKey(picture, board, level, shape);
   const pieces = useMemo(
     () => makePieces(cols, rows, shape),
     [cols, rows, shape],
@@ -124,6 +134,7 @@ function Puzzle({ mode, sound, paused, gameRef, material }) {
     [celebrations, setCelebrations] = useState([]),
     [saveError, setSaveError] = useState(false),
     [imageError, setImageError] = useState(false),
+    [imageReady, setImageReady] = useState(false),
     [message, setMessage] = useState("");
   const mobile = useMedia("(max-width: 740px)"),
     pageSize = mobile ? 4 : 6;
@@ -199,7 +210,7 @@ function Puzzle({ mode, sound, paused, gameRef, material }) {
       const { width, height } = entry.contentRect;
       setBoardHeight(
         Math.max(
-          120,
+          72,
           Math.min(height - 20, ((width - 28) * HEIGHT) / WIDTH, 720),
         ),
       );
@@ -208,7 +219,7 @@ function Puzzle({ mode, sound, paused, gameRef, material }) {
     return () => observer.disconnect();
   }, []);
   function commit(id, keyboard = false, fromDrag = false) {
-    if (paused || referenceBlocksBoard || placedRef.current.has(id)) return;
+    if (paused || referenceBlocksBoard || !imageReady || placedRef.current.has(id)) return;
     const next = new Set(placedRef.current).add(id);
     placedRef.current = next;
     setPlaced(next);
@@ -227,6 +238,7 @@ function Puzzle({ mode, sound, paused, gameRef, material }) {
       sound.play("memory");
     }
     if (next.size === total) {
+      onComplete(picture);
       dialogue.enqueue([story.ending]);
       setMessage("拼好了。点亮的片段可以再听一遍。");
     } else
@@ -235,12 +247,14 @@ function Puzzle({ mode, sound, paused, gameRef, material }) {
           ? `你找回了${unlocked.map((item) => item.name).join("、")}的记忆。`
           : "咔哒，颜色回来了。",
       );
-    if (keyboard)
-      requestAnimationFrame(() =>
-        trayRef.current
-          ?.querySelector("[data-piece]")
-          ?.focus({ preventScroll: true }),
-      );
+    if (keyboard) {
+      const previousFocus = document.activeElement;
+      requestAnimationFrame(() => {
+        // A new user focus choice takes priority over deferred convenience.
+        if (document.activeElement === previousFocus)
+          trayRef.current?.querySelector("[data-piece]")?.focus({ preventScroll: true });
+      });
+    }
   }
   const floating = useFloatingPiece({
     boardRef,
@@ -249,7 +263,7 @@ function Puzzle({ mode, sound, paused, gameRef, material }) {
     rows,
     placedRef,
     magnet,
-    disabled: paused || referenceBlocksBoard,
+    disabled: paused || referenceBlocksBoard || !imageReady,
     material,
     onPlace: (id) => commit(id, false, true),
     onSelect: setSelected,
@@ -313,7 +327,7 @@ function Puzzle({ mode, sound, paused, gameRef, material }) {
     return () => clearTimeout(timer);
   }, [celebrations]);
   function select(id) {
-    if (paused || referenceBlocksBoard || floating.busy || placed.has(id))
+    if (paused || referenceBlocksBoard || !imageReady || floating.busy || placed.has(id))
       return;
     setSelected(id);
     setHint(null);
@@ -321,7 +335,7 @@ function Puzzle({ mode, sound, paused, gameRef, material }) {
     setMessage("碎片拿好了。也可以直接点它在画板上的位置。");
   }
   function placeAt(id, keyboard = false) {
-    if (paused || referenceBlocksBoard || floating.busy || placed.has(id))
+    if (paused || referenceBlocksBoard || !imageReady || floating.busy || placed.has(id))
       return;
     if (selected === id) commit(id, keyboard);
     else
@@ -349,6 +363,9 @@ function Puzzle({ mode, sound, paused, gameRef, material }) {
     );
     setMessage("金色轮廓就是它的位置。拖过去，或者点一下那里。");
   }
+  useEffect(() => {
+    if (imageReady && placed.size === total) onComplete(picture);
+  }, [imageReady, placed.size, total, picture, onComplete]);
   const artHeight = boardHeight * (zoom ? 1.7 : 1);
   return (
     <main className="game-main" data-game="puzzle">
@@ -363,9 +380,7 @@ function Puzzle({ mode, sound, paused, gameRef, material }) {
               data-primary-goal={story.goal}
               data-goal-complete={goalComplete}
             >
-              {goalComplete
-                ? `${primaryGoal.name}已拼好`
-                : `先拼出${primaryGoal.name}`}
+              {primaryGoal ? (goalComplete ? `${primaryGoal.name}已拼好` : `先拼出${primaryGoal.name}`) : `把${art.title}拼回来`}
             </span>
           </span>
           <div className="progress-group">
@@ -434,7 +449,8 @@ function Puzzle({ mode, sound, paused, gameRef, material }) {
                   height={HEIGHT}
                   className="underlay"
                   visibility={guide ? "visible" : "hidden"}
-                  onError={() => setImageError(true)}
+                  onLoad={() => setImageReady(true)}
+                onError={() => { setImageError(true); setImageReady(false); }}
                 />
                 {pieces.map((piece) => (
                   <g
@@ -623,7 +639,7 @@ function Puzzle({ mode, sound, paused, gameRef, material }) {
               data-piece-group={sort === "random" ? undefined : categoryOf(id)}
               aria-label={`碎片 ${id + 1}`}
               aria-pressed={selected === id}
-              disabled={referenceBlocksBoard || paused}
+              disabled={referenceBlocksBoard || paused || !imageReady}
               onPointerDown={(event) => floating.begin(event, id)}
               onClick={(event) => {
                 if (event.detail === 0) select(id);
@@ -640,7 +656,10 @@ function Puzzle({ mode, sound, paused, gameRef, material }) {
             <div className="tray-complete">
               <Icon name="leaf" />
               <strong>{isRain ? "春天完整了" : `${art.title}拼好了`}</strong>
-              <p>四段小小的记忆。</p>
+              <p>{storyMemories.length ? "画面与记忆，都留在这一站。" : "这一处光，已收进四时旅程。"}</p>
+              {nextTerm(picture) ? <button className="next-term-button" onClick={onNext} disabled={!imageReady}>
+                下一节气 · {nextTerm(picture).title}
+              </button> : <p>走到大寒了，可以回头重温每一处光。</p>}
               <button className="text-button" onClick={reset}>
                 再拼一次
               </button>
@@ -690,9 +709,9 @@ function Puzzle({ mode, sound, paused, gameRef, material }) {
         </p>
         <div className="memory-section">
           <p className="memory-title">
-            找回的记忆{" "}
+            {storyMemories.length ? "找回的记忆" : "这一站的光"}{" "}
             <span>
-              {completed.length} / {storyMemories.length}
+              {storyMemories.length ? `${completed.length} / ${storyMemories.length}` : "拼好整幅画面即可点亮"}
             </span>
           </p>
           <div className="memory-list">
@@ -794,14 +813,19 @@ function Puzzle({ mode, sound, paused, gameRef, material }) {
 function App() {
   const [mode, setMode] = useState(getMode),
     [settings, setSettings] = useState(false),
+    [journeyOpen, setJourneyOpen] = useState(false),
+    [journey, setJourney] = useState(loadJourney),
+    [journeySaveError, setJourneySaveError] = useState(false),
     [material, setMaterial] = useState(() => {
       try { return localStorage.getItem("shiguang-material-v1") === "cardboard" ? "cardboard" : "light"; }
       catch { return "light"; }
     });
   const art = pictures[mode.picture];
+  const season = seasons.find((item) => item.id === art.season);
   const gameRef = useRef(null),
     dialogRef = useRef(null),
-    sound = useSound(mode.picture !== "equinox");
+    journeyRef = useRef(null),
+    sound = useSound(["rain", "grainRain"].includes(mode.picture));
   useEffect(() => {
     try {
       localStorage.setItem("shiguang-mode", JSON.stringify(mode));
@@ -815,18 +839,43 @@ function App() {
   useEffect(() => {
     try { localStorage.setItem("shiguang-material-v1", material); } catch {}
   }, [material]);
+  useEffect(() => {
+    const dialog = journeyRef.current;
+    if (journeyOpen && !dialog.open) dialog.showModal();
+    else if (!journeyOpen && dialog.open) dialog.close();
+  }, [journeyOpen]);
+  useEffect(() => {
+    try { persistJourney(localStorage, journey); setJourneySaveError(false); }
+    catch { setJourneySaveError(true); }
+  }, [journey]);
+  const markComplete = useCallback((id) => setJourney((previous) => completeTerm(previous, id)), []);
+  function openJourney() {
+    gameRef.current?.cancel();
+    setSettings(false);
+    setJourney((previous) => {
+      const saved = loadJourney();
+      return { completed: new Set([...previous.completed, ...saved.completed]), started: new Set([...previous.started, ...saved.started]) };
+    });
+    setJourneyOpen(true);
+  }
+  function selectTerm(id) {
+    if (termStatus(id, journey) === "locked") return;
+    gameRef.current?.cancel();
+    setMode((previous) => ({ ...previous, picture: id }));
+    setJourneyOpen(false);
+  }
   return (
-    <div className={`game-shell material-${material}`} data-material={material}>
+    <div className={`game-shell season-${art.season} material-${material}`} data-material={material} style={{ "--season-color": season.color }}>
       <header className="game-header">
         <a className="brand" href="/" aria-label="小黑的四时拾光首页">
           <Icon name="leaf" />
           <span>
-            四时拾光<small>小黑的春日拼图</small>
+            四时拾光<small>小黑的四时拼图</small>
           </span>
         </a>
         <div className="game-title">
           <span>{art.title}</span>
-          <h1>拾回春天</h1>
+          <h1>拾回{season.title}</h1>
         </div>
         <div className="header-actions">
           <Tool
@@ -845,11 +894,14 @@ function App() {
           />
         </div>
       </header>
+      <YearProgress journey={journey} current={mode.picture} onOpen={openJourney} />
       <Puzzle
         key={`${mode.picture}-${mode.board}-${mode.level}-${mode.shape}`}
         mode={mode}
         sound={sound}
-        paused={settings}
+        paused={settings || journeyOpen}
+        onComplete={markComplete}
+        onNext={() => { const next = nextTerm(mode.picture); if (next) selectTerm(next.id); }}
         material={material}
         gameRef={gameRef}
       />
@@ -865,7 +917,7 @@ function App() {
           event.preventDefault();
           setSettings(false);
         }}
-        onClose={() => setSettings(false)}
+        onClose={(event) => { if (!event.currentTarget.open) setSettings(false); }}
         onClick={(event) => {
           if (event.target === event.currentTarget) setSettings(false);
         }}
@@ -882,22 +934,9 @@ function App() {
               onClick={() => setSettings(false)}
             />
           </div>
-          <fieldset className="picture-picker">
-            <legend>选择拼图</legend>
-            {Object.entries(pictures).map(([id, picture]) => (
-              <label key={id} className="picture-option">
-                <input
-                  type="radio"
-                  name="picture"
-                  value={id}
-                  checked={mode.picture === id}
-                  onChange={() => setMode({ ...mode, picture: id })}
-                />
-                <img src={picture.image} alt="" />
-                <span>{picture.title}</span>
-              </label>
-            ))}
-          </fieldset>
+          <button className="choose-season-button" onClick={openJourney}>
+            <span>选择节气 <strong>{art.title}</strong></span><span>{journey.completed.size} / 24 已点亮 ›</span>
+          </button>
           <label className="setting-row">
             拼图难度
             <select
@@ -1067,6 +1106,13 @@ function App() {
             {art.credit} · 素材出处
           </a>
         </div>
+      </dialog>
+      <dialog ref={journeyRef} className="journey-dialog" aria-labelledby="journey-title"
+        onCancel={(event) => { event.preventDefault(); setJourneyOpen(false); }}
+        onClose={(event) => { if (!event.currentTarget.open) setJourneyOpen(false); }}
+        onClick={(event) => { if (event.target === event.currentTarget) setJourneyOpen(false); }}>
+        <button className="journey-close tool" aria-label="关闭节气旅程" onClick={() => setJourneyOpen(false)}><Icon name="close" /></button>
+        {journeyOpen && <SeasonJourney journey={journey} current={mode.picture} onSelect={selectTerm} saveError={journeySaveError} />}
       </dialog>
     </div>
   );

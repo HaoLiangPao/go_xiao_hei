@@ -43,6 +43,7 @@ const origin = "http://127.0.0.1:5186";
       await context.addInitScript(() => {
         // The MP3 player is native. Only remove OS speech to reproduce the user's problem.
         Object.defineProperty(window, "speechSynthesis", { value: { getVoices: () => [], cancel() {} } });
+        localStorage.setItem("shiguang-mode", JSON.stringify({ picture: "rain", level: "easy", shape: "classic", board: "guided" }));
         window.__clips = [];
         const NativeAudio = window.Audio;
         window.Audio = function (source) {

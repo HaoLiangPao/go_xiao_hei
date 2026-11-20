@@ -3,4 +3,6 @@ dist/
 .vite-cache/
 test-results/
 public/prototype/
+public/art/solar/
+
 public/audio/
