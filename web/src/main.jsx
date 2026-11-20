@@ -27,6 +27,7 @@ import { seasons, solarTerms } from "./solarTerms.js";
 import { completeTerm, nextTerm, persistJourney, puzzleSaveKey, readJourney, termStatus } from "./journeyModel.js";
 import { SeasonJourney, YearProgress } from "./SeasonJourney.jsx";
 import "./style.css";
+import { SiteRouter } from "./SiteRouter.jsx";
 const shapes = { flat: "方形碎片", classic: "经典拼图", organic: "不规则拼图" };
 function loadJourney() {
   try { return readJourney(localStorage); }
@@ -878,6 +879,7 @@ function App() {
           <h1>拾回{season.title}</h1>
         </div>
         <div className="header-actions">
+          <a className="tool character-entry" href="#/characters" aria-label="打开人物资料库"><Icon name="cat" /></a>
           <Tool
             icon={sound.enabled ? "sound" : "mute"}
             aria-label={sound.enabled ? "关闭声音" : "开启声音"}
@@ -1117,4 +1119,4 @@ function App() {
     </div>
   );
 }
-createRoot(document.getElementById("root")).render(<App />);
+createRoot(document.getElementById("root")).render(<SiteRouter Game={App} />);
