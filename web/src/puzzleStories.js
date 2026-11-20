@@ -1,4 +1,5 @@
 import { memories as rainMemories } from "./gameplay.js";
+import { summerStories } from "./stories/summer.js";
 
 const narration = (id, text) => ({
   id,
@@ -8,6 +9,7 @@ const narration = (id, text) => ({
 });
 
 export const puzzleStories = {
+  ...summerStories,
   startSpring: {
     goal: "spring-buds",
     opening: narration("opening", "先找回枝头的新芽，陪小黑和无限走过水边的小桥。"),

@@ -1,0 +1,545 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "path": "/audio/dialogue/opening-65958341.mp3",
+      "bytes": 32400,
+      "sha256": "eaaf838c9fd6110074a537c30c9b890cd0548898be35aa48f14a185823cf8376",
+      "kind": "dialogue",
+      "cue": "opening",
+      "speaker": "四时旁白",
+      "text": "先拼回水上的竹筏，看看小黑把午觉睡到了哪里。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/summer-raft-ded73556.mp3",
+      "bytes": 28080,
+      "sha256": "f8b7526f1cba499914df321e22939bf26d1b6bab72f63b177a9e379e274381ec",
+      "kind": "dialogue",
+      "cue": "summer-raft",
+      "speaker": "四时旁白",
+      "text": "竹筏托着两个人，把午后的光也轻轻托住。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/summer-resting-guide-381aad7d.mp3",
+      "bytes": 26208,
+      "sha256": "06bad764a94ef6e61d31e15b0e4b088a4f5430e23ed5c54d97dd2f664f89999a",
+      "kind": "dialogue",
+      "cue": "summer-resting-guide",
+      "speaker": "无限",
+      "text": "水面很稳。再睡一会儿吧。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-18%",
+        "pitch": "-26Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/summer-sleeping-child-8d7805dd.mp3",
+      "bytes": 24768,
+      "sha256": "90d6534d57bb8121e51dfdd93eb7f7d74830644d8957b500ede9111ccb1e98d4",
+      "kind": "dialogue",
+      "cue": "summer-sleeping-child",
+      "speaker": "四时旁白",
+      "text": "小黑摊开小手，连梦都睡得软乎乎的。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/summer-fish-f250ea6a.mp3",
+      "bytes": 26352,
+      "sha256": "5b1d45f9aa11bea56dbada428acb896361114ba12cd4099c79fbb14c450ba41e",
+      "kind": "dialogue",
+      "cue": "summer-fish",
+      "speaker": "四时旁白",
+      "text": "几尾小鱼绕过竹筏，水纹一圈圈散开。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/complete-e5d964e5.mp3",
+      "bytes": 34416,
+      "sha256": "446d589aac834f2ae4afa6448ada40b726eacaf6807cd4f6859986538cb43ade",
+      "kind": "dialogue",
+      "cue": "complete",
+      "speaker": "四时旁白",
+      "text": "竹筏顺着水纹轻轻漂着，小黑的午觉也跟着晃呀晃。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/opening-93b6ec8.mp3",
+      "bytes": 34128,
+      "sha256": "9c98c318267842fd30fb200359861cc5f5d39f9e4601c6b6308f6e46f31e4189",
+      "kind": "dialogue",
+      "cue": "opening",
+      "speaker": "四时旁白",
+      "text": "先把红果子装回筐里，树荫下还有几位笑着的小伙伴。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/summer-fruit-basket-e377c02b.mp3",
+      "bytes": 31680,
+      "sha256": "c5e099c3c82d3e0d0967b4f15b51963bb3e0ced07293c01cfd3d26cec94bc3b0",
+      "kind": "dialogue",
+      "cue": "summer-fruit-basket",
+      "speaker": "无限",
+      "text": "这筐我来搬。放稳了，再接下一筐。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-18%",
+        "pitch": "-26Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/summer-orchard-fd02fdb6.mp3",
+      "bytes": 25344,
+      "sha256": "2aacebb3bf081276d524e361010a2b1557394eb772ea95c53ac6b787eebfa37f",
+      "kind": "dialogue",
+      "cue": "summer-orchard",
+      "speaker": "四时旁白",
+      "text": "浓绿的叶子里，藏着一颗颗红亮的果子。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/summer-cat-on-head-537d5a25.mp3",
+      "bytes": 23616,
+      "sha256": "6e6fef846521789fba1b52645529d56c92f7fee8746b3f643a1d958e3d9d692b",
+      "kind": "dialogue",
+      "cue": "summer-cat-on-head",
+      "speaker": "小黑",
+      "text": "师父，上面还有一只红色的小家伙！",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiaNeural",
+        "rate": "+6%",
+        "pitch": "+10Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/summer-orchard-company-ec32b08b.mp3",
+      "bytes": 30384,
+      "sha256": "a71a367b94be8af85a8a8c9d9c1c907e307ed84bff60e20cbc4bf209374d813e",
+      "kind": "dialogue",
+      "cue": "summer-orchard-company",
+      "speaker": "四时旁白",
+      "text": "老人和小姑娘笑得开怀，树荫也像跟着亮起来。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/complete-2236cf51.mp3",
+      "bytes": 32400,
+      "sha256": "7870b7b34b9ef0f0f203d8fdbe653d174397d606ec56d628201b387df9d79b28",
+      "kind": "dialogue",
+      "cue": "complete",
+      "speaker": "四时旁白",
+      "text": "一筐筐红果子拼好了，树下的笑声也变得满满的。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/opening-765e44aa.mp3",
+      "bytes": 31680,
+      "sha256": "0423e6251db613984531c1eb045393734afa7ac33504408a445920e23cf9be36",
+      "kind": "dialogue",
+      "cue": "opening",
+      "speaker": "四时旁白",
+      "text": "先找回鼻尖上的小水珠，荷叶下面藏着一场雨。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/summer-raindrop-8afdfbce.mp3",
+      "bytes": 20880,
+      "sha256": "da44dbe0509d7215bab61f24db6e57c53c702cafdf72ad6611d1b7e8d8544d1d",
+      "kind": "dialogue",
+      "cue": "summer-raindrop",
+      "speaker": "小黑",
+      "text": "师父，雨点跑到我的鼻子上啦！",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiaNeural",
+        "rate": "+6%",
+        "pitch": "+10Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/summer-lotus-umbrella-c12de89a.mp3",
+      "bytes": 32832,
+      "sha256": "22ec7980e9411b4c2dfd71fce7198f274083d86d198a456ac61e43d4f4328daf",
+      "kind": "dialogue",
+      "cue": "summer-lotus-umbrella",
+      "speaker": "四时旁白",
+      "text": "宽宽的荷叶举在头顶，给小黑留下一块干爽的地方。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/summer-lotus-guide-b5effca8.mp3",
+      "bytes": 35136,
+      "sha256": "42f7904d97c5b134254655a7f90417d698945889cbf26395f1fdfa7dbaddf341",
+      "kind": "dialogue",
+      "cue": "summer-lotus-guide",
+      "speaker": "无限",
+      "text": "把头低一点。叶子边上的水，要落下来了。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-18%",
+        "pitch": "-26Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/summer-pond-fish-fbabab66.mp3",
+      "bytes": 28944,
+      "sha256": "532bb4f95e4d4f7d4620e13872f619ce0e4ca9a95b1c33a61a3ca14b3a898ca6",
+      "kind": "dialogue",
+      "cue": "summer-pond-fish",
+      "speaker": "四时旁白",
+      "text": "小鱼从荷梗旁游过，追着落进水里的亮点。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/complete-6ccee317.mp3",
+      "bytes": 35712,
+      "sha256": "e7b8fb90a0ee0c63d5d03f5214cb91cf77cc9c656ba8006032bdd3059e97a85d",
+      "kind": "dialogue",
+      "cue": "complete",
+      "speaker": "四时旁白",
+      "text": "荷叶替他们撑起绿伞，雨声落在叶面上，也落进了画里。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/opening-a39322f8.mp3",
+      "bytes": 30816,
+      "sha256": "2c1489c639dfea99c6d0b31e957051052c13a7a8a77e7af6e8a800997b1e9ab9",
+      "kind": "dialogue",
+      "cue": "opening",
+      "speaker": "四时旁白",
+      "text": "先拼好小黑手里的冰碗，在遮阳棚下歇歇脚。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/summer-ice-bowl-5fb557e0.mp3",
+      "bytes": 25056,
+      "sha256": "be8f84980a1c476a7b1626e1bedbd96e5c5c64eaae5d01b29da5076d8cbd68f4",
+      "kind": "dialogue",
+      "cue": "summer-ice-bowl",
+      "speaker": "小黑",
+      "text": "凉凉的！我得一小口、一小口地吃。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiaNeural",
+        "rate": "+6%",
+        "pitch": "+10Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/summer-cold-drink-7527152c.mp3",
+      "bytes": 32544,
+      "sha256": "89dd77917df8ddbd4a1c582e38079c3ec5e7dfe48b059e64da8560cad84f8149",
+      "kind": "dialogue",
+      "cue": "summer-cold-drink",
+      "speaker": "无限",
+      "text": "慢一点。今天的太阳，还要待很久。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-18%",
+        "pitch": "-26Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/summer-shop-awning-bdb11b68.mp3",
+      "bytes": 28944,
+      "sha256": "655df63a52758b29d14a1582a08dd69579a4908ac1986001f8389b216bc061cf",
+      "kind": "dialogue",
+      "cue": "summer-shop-awning",
+      "speaker": "四时旁白",
+      "text": "阳光停在条纹棚外，棚下留着安静的阴凉。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/summer-ice-shop-5eab4d28.mp3",
+      "bytes": 27936,
+      "sha256": "88c58bb50881c239a61a759a56c13592f25d194d06cbe38f817867857c207913",
+      "kind": "dialogue",
+      "cue": "summer-ice-shop",
+      "speaker": "四时旁白",
+      "text": "店里的人笑着看他们，冰柜也亮着柔和的光。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/complete-8da44f7a.mp3",
+      "bytes": 33264,
+      "sha256": "8c97af6e9144478c47a224fd5ee7235fba3278d48dbe124275d6c4f159ead339",
+      "kind": "dialogue",
+      "cue": "complete",
+      "speaker": "四时旁白",
+      "text": "冰碗和凉饮都回来了，最长的白天也有了一小段清凉。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/opening-a3c148ed.mp3",
+      "bytes": 30816,
+      "sha256": "dfd46009b96b267620e3a6c083bd5adda5ea184fc9c3d8d348b39a63591b7052",
+      "kind": "dialogue",
+      "cue": "opening",
+      "speaker": "四时旁白",
+      "text": "先点亮小黑手边的萤火，听夜里的草叶轻轻响。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/summer-fireflies-c2490ce8.mp3",
+      "bytes": 24912,
+      "sha256": "75b50f8a7568a271abe53e8a339cd8eb857b6f3e340055405dfa2af4dce97312",
+      "kind": "dialogue",
+      "cue": "summer-fireflies",
+      "speaker": "小黑",
+      "text": "师父，它把一小点星光带到我手边了！",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiaNeural",
+        "rate": "+6%",
+        "pitch": "+10Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/summer-night-guide-bc5bccbc.mp3",
+      "bytes": 23904,
+      "sha256": "5755f14147d97aed665edd0625bd319ffafa0b5d838ffc0db18f998aa0f45128",
+      "kind": "dialogue",
+      "cue": "summer-night-guide",
+      "speaker": "无限",
+      "text": "轻轻看着就好，让它自己飞。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-18%",
+        "pitch": "-26Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/summer-night-child-5e5d908a.mp3",
+      "bytes": 29520,
+      "sha256": "6bb2b5721877adb4ddfa677659e2d3e348584b498457d71d337bbb5a06cccea2",
+      "kind": "dialogue",
+      "cue": "summer-night-child",
+      "speaker": "四时旁白",
+      "text": "小黑睁大眼睛，绿色的微光映在他的脸上。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/summer-night-grass-2d2683f0.mp3",
+      "bytes": 31104,
+      "sha256": "93463fc3ddeeaec2525be12defe168099a459bef8a61016e428d2c21f3d36d5d",
+      "kind": "dialogue",
+      "cue": "summer-night-grass",
+      "speaker": "四时旁白",
+      "text": "草叶间忽明忽暗，像藏着一小片会呼吸的星空。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/complete-70957d64.mp3",
+      "bytes": 29664,
+      "sha256": "38377c603cdd966046d3094dcfde2ee51477397a9701f8244a51af38d62e0015",
+      "kind": "dialogue",
+      "cue": "complete",
+      "speaker": "四时旁白",
+      "text": "草丛里的微光都回来了，他们把声音也放得很轻。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/opening-97d85775.mp3",
+      "bytes": 34560,
+      "sha256": "1a95677d31f2424c8eef7cdb7a5a9e58f4930b7717584e525e37019e451bea7a",
+      "kind": "dialogue",
+      "cue": "opening",
+      "speaker": "四时旁白",
+      "text": "先拼回海边的小车，陪他们沿着蓝色的海慢慢向前。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/summer-seaside-scooter-4276f2d5.mp3",
+      "bytes": 32112,
+      "sha256": "901cf3025cc10386ac59c3fff7e049b04ea65a83fd22d5add53bd5271366d41b",
+      "kind": "dialogue",
+      "cue": "summer-seaside-scooter",
+      "speaker": "四时旁白",
+      "text": "小车沿着海边的路向前，车影在脚下轻轻跟着。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/summer-seaside-guide-467bd378.mp3",
+      "bytes": 29232,
+      "sha256": "b769d73fe78e389e5998a01d5f40e3b6bbbe8746e227ce0f4423196b9847a458",
+      "kind": "dialogue",
+      "cue": "summer-seaside-guide",
+      "speaker": "无限",
+      "text": "坐稳了。你看，海就在旁边。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-18%",
+        "pitch": "-26Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/summer-seaside-child-4d530f47.mp3",
+      "bytes": 27504,
+      "sha256": "96167fdfac0c45ac31266956b7c71c33dd1a57a4248c742a45b015b9d20a6f78",
+      "kind": "dialogue",
+      "cue": "summer-seaside-child",
+      "speaker": "小黑",
+      "text": "我看见啦！连云朵都像在跟我们一起跑。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiaNeural",
+        "rate": "+6%",
+        "pitch": "+10Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/summer-blue-sea-d8f482ff.mp3",
+      "bytes": 30384,
+      "sha256": "6cc5c2128960fbb0195b9ea8fc07d3eb38dc57a2cc89611035190c12e82d6515",
+      "kind": "dialogue",
+      "cue": "summer-blue-sea",
+      "speaker": "四时旁白",
+      "text": "海天之间亮得透透的，远处的云慢慢舒展开。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/complete-625bbe60.mp3",
+      "bytes": 34848,
+      "sha256": "b288e3a2eeccd340e94d7b5d55256e6236aeec1e9bc013d8beb321a3b845c142",
+      "kind": "dialogue",
+      "cue": "complete",
+      "speaker": "四时旁白",
+      "text": "海风吹过两个人，蓝天、白云和小车都在这条路上了。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    }
+  ]
+}
