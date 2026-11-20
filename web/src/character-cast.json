@@ -1,0 +1,5111 @@
+{
+  "scope": "收录 TV、两部电影、《蓝溪镇》等公开目录中的 196 条候选角色记录；不是官方完整名册。20 条有官方人物页支持角色存在，其余保留出处待核；作品归属和详细设定仍需逐条核对。",
+  "checkedAt": "2026-11-19",
+  "sourceCatalogs": [
+    {
+      "id": "tv-bgm",
+      "title": "TV角色目录",
+      "url": "https://bgm.tv/subject/13603/characters",
+      "work": "TV动画"
+    },
+    {
+      "id": "tv-huiji",
+      "title": "TV角色分类",
+      "url": "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+      "work": "TV动画"
+    },
+    {
+      "id": "tv-cast",
+      "title": "TV角色配音表",
+      "url": "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）",
+      "work": "TV动画"
+    },
+    {
+      "id": "movie1-huiji",
+      "title": "电影1角色分类",
+      "url": "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
+      "work": "电影1"
+    },
+    {
+      "id": "movie1-wiki",
+      "title": "电影1人物表",
+      "url": "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)",
+      "work": "电影1"
+    },
+    {
+      "id": "movie2-bgm",
+      "title": "电影2角色目录",
+      "url": "https://bgm.tv/subject/442114/characters",
+      "work": "电影2"
+    },
+    {
+      "id": "movie2-huiji",
+      "title": "电影2角色分类",
+      "url": "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+      "work": "电影2"
+    },
+    {
+      "id": "blue-huiji",
+      "title": "蓝溪镇角色分类",
+      "url": "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色",
+      "work": "漫画《蓝溪镇》"
+    },
+    {
+      "id": "blue-bgm",
+      "title": "蓝溪镇角色目录",
+      "url": "https://bgm-api-anitabi.magiconch.com/subject/311122/characters",
+      "work": "漫画《蓝溪镇》"
+    },
+    {
+      "id": "all-huiji",
+      "title": "全系列角色分类",
+      "url": "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+      "work": "系列分类，具体作品待核"
+    },
+    {
+      "id": "gate-bgm",
+      "title": "众生之门篇角色目录",
+      "url": "https://bgm.tv/subject/294880/characters",
+      "work": "TV·众生之门篇"
+    },
+    {
+      "id": "pre-bgm",
+      "title": "学前篇角色目录",
+      "url": "https://bgm-api-anitabi.magiconch.com/subject/593863/characters",
+      "work": "未核作品候选·TV学前篇",
+      "evidenceNote": "社区角色前瞻目录，不证明官方宣布、已播出或角色已登场。"
+    },
+    {
+      "id": "tv-moegirl",
+      "title": "TV CAST交叉目录",
+      "url": "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+      "work": "TV动画"
+    },
+    {
+      "id": "blue-guide",
+      "title": "蓝溪镇早期人物词汇表",
+      "url": "https://www.ch-station.org/wp-content/uploads/2021/09/luoxiaoheimingzi.pdf",
+      "work": "漫画《蓝溪镇》",
+      "evidenceNote": "第三方学习词汇表，仅作名字检索线索。"
+    },
+    {
+      "id": "official-tv",
+      "title": "TV官方人物页",
+      "url": "https://luoxiaohei-movie.com/tv/character/"
+    },
+    {
+      "id": "official-movie1",
+      "title": "电影1官方人物页",
+      "url": "https://luoxiaohei-movie.com/1st/character/"
+    },
+    {
+      "id": "official-movie2",
+      "title": "电影2官方人物页",
+      "url": "https://luoxiaohei-movie.com/2nd/character/"
+    }
+  ],
+  "characters": [
+    {
+      "id": "xiaohei",
+      "name": "罗小黑",
+      "aliases": [
+        "小黑",
+        "シャオヘイ"
+      ],
+      "works": [
+        "tv",
+        "movie1",
+        "movie2"
+      ],
+      "summary": "黑猫妖精；可以在猫形与男孩子的人形之间变化，是无限的徒弟。",
+      "sources": [
+        "https://luoxiaohei-movie.com/2nd/character/",
+        "https://luoxiaohei-movie.com/tv/character/",
+        "https://bgm.tv/subject/13603/characters",
+        "https://bgm-api-anitabi.magiconch.com/subject/593863/characters",
+        "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)",
+        "https://bgm.tv/character/26123",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
+        "https://bgm.tv/subject/294880/characters",
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-huiji",
+        "tv-cast",
+        "movie1-huiji",
+        "movie1-wiki",
+        "movie2-bgm",
+        "all-huiji",
+        "gate-bgm",
+        "pre-bgm",
+        "tv-moegirl"
+      ],
+      "status": "confirmed",
+      "unverifiedWorks": [
+        {
+          "work": "TV·学前篇",
+          "status": "社区前瞻目录收录，未核官方登场",
+          "sources": [
+            "https://bgm-api-anitabi.magiconch.com/subject/593863/characters"
+          ]
+        }
+      ],
+      "workDetails": [
+        "TV动画",
+        "电影1",
+        "电影2",
+        "TV·众生之门篇"
+      ]
+    },
+    {
+      "id": "wuxian",
+      "name": "无限",
+      "aliases": [
+        "ムゲン"
+      ],
+      "works": [
+        "tv",
+        "movie1",
+        "movie2",
+        "other"
+      ],
+      "summary": "人类、妖灵会馆执行者，小黑的师父。",
+      "sources": [
+        "https://luoxiaohei-movie.com/2nd/character/",
+        "https://luoxiaohei-movie.com/tv/character/",
+        "https://bgm.tv/subject/13603/characters",
+        "https://bgm-api-anitabi.magiconch.com/subject/593863/characters",
+        "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)",
+        "https://bgm-api-anitabi.magiconch.com/subject/311122/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
+        "https://bgm.tv/subject/294880/characters",
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-huiji",
+        "tv-cast",
+        "movie1-huiji",
+        "movie1-wiki",
+        "movie2-bgm",
+        "blue-huiji",
+        "blue-bgm",
+        "all-huiji",
+        "gate-bgm",
+        "pre-bgm",
+        "tv-moegirl"
+      ],
+      "status": "confirmed",
+      "unverifiedWorks": [
+        {
+          "work": "TV·学前篇",
+          "status": "社区前瞻目录收录，未核官方登场",
+          "sources": [
+            "https://bgm-api-anitabi.magiconch.com/subject/593863/characters"
+          ]
+        }
+      ],
+      "workDetails": [
+        "TV动画",
+        "电影1",
+        "电影2",
+        "漫画《蓝溪镇》",
+        "TV·众生之门篇"
+      ]
+    },
+    {
+      "id": "nezha",
+      "name": "哪吒",
+      "aliases": [
+        "ナタ"
+      ],
+      "works": [
+        "movie1",
+        "movie2",
+        "other"
+      ],
+      "summary": "本作品总会馆所属妖精、会馆创始者之一。",
+      "sources": [
+        "https://luoxiaohei-movie.com/2nd/character/",
+        "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm-api-anitabi.magiconch.com/subject/311122/characters",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色"
+      ],
+      "catalogIds": [
+        "movie1-huiji",
+        "movie1-wiki",
+        "movie2-bgm",
+        "movie2-huiji",
+        "blue-huiji",
+        "blue-bgm",
+        "all-huiji"
+      ],
+      "status": "confirmed",
+      "workDetails": [
+        "电影1",
+        "电影2",
+        "漫画《蓝溪镇》"
+      ]
+    },
+    {
+      "id": "cast-ff1413e08c",
+      "name": "鹿野",
+      "aliases": [
+        "ルーイエ"
+      ],
+      "works": [
+        "movie2",
+        "other"
+      ],
+      "summary": "无限的关门弟子、小黑的师姐。",
+      "sources": [
+        "https://luoxiaohei-movie.com/2nd/character/",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "blue-huiji",
+        "all-huiji"
+      ],
+      "status": "confirmed",
+      "workDetails": [
+        "电影2",
+        "漫画《蓝溪镇》"
+      ]
+    },
+    {
+      "id": "cast-1720c4b8de",
+      "name": "罗小白",
+      "aliases": [
+        "小白",
+        "シャオバイ"
+      ],
+      "works": [
+        "tv"
+      ],
+      "summary": "救助小黑并与其共同生活的人类女孩。",
+      "sources": [
+        "https://luoxiaohei-movie.com/tv/character/",
+        "https://bgm.tv/subject/13603/characters",
+        "https://bgm-api-anitabi.magiconch.com/subject/593863/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://bgm.tv/subject/294880/characters",
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-huiji",
+        "tv-cast",
+        "all-huiji",
+        "gate-bgm",
+        "pre-bgm",
+        "tv-moegirl"
+      ],
+      "status": "confirmed",
+      "unverifiedWorks": [
+        {
+          "work": "TV·学前篇",
+          "status": "社区前瞻目录收录，未核官方登场",
+          "sources": [
+            "https://bgm-api-anitabi.magiconch.com/subject/593863/characters"
+          ]
+        }
+      ],
+      "workDetails": [
+        "TV动画",
+        "TV·众生之门篇"
+      ]
+    },
+    {
+      "id": "cast-b63f869e7b",
+      "name": "山新",
+      "aliases": [
+        "シャンシン"
+      ],
+      "works": [
+        "tv"
+      ],
+      "summary": "小白的同学与好友，喜欢动画和游戏的女孩；与同名配音演员分开记录。",
+      "sources": [
+        "https://luoxiaohei-movie.com/tv/character/",
+        "https://bgm.tv/subject/13603/characters",
+        "https://bgm-api-anitabi.magiconch.com/subject/593863/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://bgm.tv/subject/294880/characters",
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-cast",
+        "all-huiji",
+        "gate-bgm",
+        "pre-bgm",
+        "tv-moegirl"
+      ],
+      "status": "confirmed",
+      "unverifiedWorks": [
+        {
+          "work": "TV·学前篇",
+          "status": "社区前瞻目录收录，未核官方登场",
+          "sources": [
+            "https://bgm-api-anitabi.magiconch.com/subject/593863/characters"
+          ]
+        }
+      ],
+      "workDetails": [
+        "TV动画",
+        "TV·众生之门篇"
+      ]
+    },
+    {
+      "id": "cast-6a926cea4f",
+      "name": "老君",
+      "aliases": [],
+      "works": [
+        "tv",
+        "other"
+      ],
+      "summary": "妖精、会馆创始者，立下百年不出灵域的誓言。",
+      "sources": [
+        "https://luoxiaohei-movie.com/tv/character/",
+        "https://bgm.tv/subject/13603/characters",
+        "https://bgm-api-anitabi.magiconch.com/subject/311122/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-huiji",
+        "tv-cast",
+        "blue-huiji",
+        "blue-bgm",
+        "tv-moegirl"
+      ],
+      "status": "confirmed",
+      "workDetails": [
+        "TV动画",
+        "漫画《蓝溪镇》"
+      ]
+    },
+    {
+      "id": "cast-afc5c303de",
+      "name": "黑咻",
+      "aliases": [
+        "嘿咻",
+        "ヘイシュウ"
+      ],
+      "works": [
+        "tv",
+        "movie2"
+      ],
+      "summary": "从小黑尾巴分裂而来的小生物，单独记录，不能当作小黑别名。",
+      "sources": [
+        "https://luoxiaohei-movie.com/2nd/character/",
+        "https://luoxiaohei-movie.com/tv/character/",
+        "https://bgm.tv/subject/13603/characters",
+        "https://bgm-api-anitabi.magiconch.com/subject/593863/characters",
+        "https://bgm.tv/subject/442114/characters",
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-cast",
+        "movie2-bgm",
+        "pre-bgm",
+        "tv-moegirl"
+      ],
+      "status": "confirmed",
+      "unverifiedWorks": [
+        {
+          "work": "TV·学前篇",
+          "status": "社区前瞻目录收录，未核官方登场",
+          "sources": [
+            "https://bgm-api-anitabi.magiconch.com/subject/593863/characters"
+          ]
+        }
+      ],
+      "workDetails": [
+        "TV动画",
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-c561caa1cb",
+      "name": "阿根",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "小白的表哥，生活在乡下；身世与玄离有关，不能简单并为同一角色条目。",
+      "sources": [
+        "https://luoxiaohei-movie.com/tv/character/",
+        "https://zh.wikipedia.org/wiki/罗小黑战记",
+        "https://bgm.tv/subject/13603/characters",
+        "https://bgm-api-anitabi.magiconch.com/subject/593863/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://bgm.tv/subject/294880/characters",
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-huiji",
+        "tv-cast",
+        "all-huiji",
+        "gate-bgm",
+        "pre-bgm",
+        "tv-moegirl"
+      ],
+      "status": "confirmed",
+      "unverifiedWorks": [
+        {
+          "work": "TV·学前篇",
+          "status": "社区前瞻目录收录，未核官方登场",
+          "sources": [
+            "https://bgm-api-anitabi.magiconch.com/subject/593863/characters"
+          ]
+        }
+      ],
+      "workDetails": [
+        "TV动画",
+        "TV·众生之门篇"
+      ]
+    },
+    {
+      "id": "cast-1e6f306de4",
+      "name": "谛听",
+      "aliases": [],
+      "works": [
+        "tv",
+        "other"
+      ],
+      "summary": "追随老君的妖精，曾为追回天明珠追寻小黑。",
+      "sources": [
+        "https://luoxiaohei-movie.com/tv/character/",
+        "https://bgm.tv/subject/13603/characters",
+        "https://bgm-api-anitabi.magiconch.com/subject/593863/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-huiji",
+        "tv-cast",
+        "blue-huiji",
+        "all-huiji",
+        "pre-bgm",
+        "tv-moegirl"
+      ],
+      "status": "confirmed",
+      "unverifiedWorks": [
+        {
+          "work": "TV·学前篇",
+          "status": "社区前瞻目录收录，未核官方登场",
+          "sources": [
+            "https://bgm-api-anitabi.magiconch.com/subject/593863/characters"
+          ]
+        }
+      ],
+      "workDetails": [
+        "TV动画",
+        "漫画《蓝溪镇》"
+      ]
+    },
+    {
+      "id": "cast-58f403026c",
+      "name": "玄离",
+      "aliases": [],
+      "works": [
+        "other",
+        "tv"
+      ],
+      "summary": "《蓝溪镇》核心角色之一，被称为神兽。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/玄离",
+        "https://bgm-api-anitabi.magiconch.com/subject/311122/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色",
+        "https://www.kuaikanmanhua.com/engine1/133301_19_1",
+        "https://bgm.tv/subject/294880/characters"
+      ],
+      "catalogIds": [
+        "blue-huiji",
+        "blue-bgm",
+        "all-huiji",
+        "gate-bgm"
+      ],
+      "status": "待核",
+      "scopeNote": "快看engine1页面为聚合/SEO页面，不能作为官方连载人物设定一手证据；社区目录支持候选存在，仍待原连载核验。",
+      "workDetails": [
+        "漫画《蓝溪镇》",
+        "TV·众生之门篇"
+      ]
+    },
+    {
+      "id": "cast-1f6faefe97",
+      "name": "李清凝",
+      "aliases": [
+        "清凝",
+        "清凝仙子"
+      ],
+      "works": [
+        "other"
+      ],
+      "summary": "《蓝溪镇》核心角色之一，擅长治愈的人类女孩。",
+      "sources": [
+        "https://bgm-api-anitabi.magiconch.com/subject/311122/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色",
+        "https://www.kuaikanmanhua.com/engine1/133301_19_1",
+        "https://luoxiaohei.huijiwiki.com/wiki/李清凝"
+      ],
+      "catalogIds": [
+        "blue-huiji",
+        "blue-bgm",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "scopeNote": "快看engine1页面为聚合/SEO页面，不能作为官方连载人物设定一手证据；社区目录支持候选存在，仍待原连载核验。",
+      "workDetails": [
+        "漫画《蓝溪镇》"
+      ]
+    },
+    {
+      "id": "cast-431c23faeb",
+      "name": "BOSS",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV·众生之门篇的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/294880/characters"
+      ],
+      "catalogIds": [
+        "gate-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV·众生之门篇"
+      ]
+    },
+    {
+      "id": "cast-a66864f45a",
+      "name": "GM",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV·众生之门篇的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/294880/characters"
+      ],
+      "catalogIds": [
+        "gate-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV·众生之门篇"
+      ]
+    },
+    {
+      "id": "cast-c3c2fa5659",
+      "name": "MT",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画、TV·众生之门篇的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）",
+        "https://bgm.tv/subject/294880/characters"
+      ],
+      "catalogIds": [
+        "tv-huiji",
+        "tv-cast",
+        "all-huiji",
+        "gate-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画",
+        "TV·众生之门篇"
+      ]
+    },
+    {
+      "id": "cast-0a6ae20a69",
+      "name": "Nonopanda",
+      "aliases": [
+        "无知熊猫"
+      ],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://bgm.tv/subject/13603/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-520a6c2780",
+      "name": "一凡",
+      "aliases": [],
+      "works": [
+        "other"
+      ],
+      "summary": "已列入漫画《蓝溪镇》的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色"
+      ],
+      "catalogIds": [
+        "blue-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "漫画《蓝溪镇》"
+      ]
+    },
+    {
+      "id": "cast-06add9f935",
+      "name": "丁",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-08e6c65a89",
+      "name": "七果",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-huiji",
+        "tv-cast",
+        "all-huiji",
+        "tv-moegirl"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-dd781fe345",
+      "name": "七臂",
+      "aliases": [],
+      "works": [
+        "movie1"
+      ],
+      "summary": "已列入电影1的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie1-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影1"
+      ]
+    },
+    {
+      "id": "cast-b64ef61157",
+      "name": "三三",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画、TV·众生之门篇的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）",
+        "https://bgm.tv/subject/294880/characters"
+      ],
+      "catalogIds": [
+        "tv-cast",
+        "gate-bgm",
+        "tv-moegirl"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画",
+        "TV·众生之门篇"
+      ]
+    },
+    {
+      "id": "cast-65c8608358",
+      "name": "三叔",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters"
+      ],
+      "catalogIds": [
+        "tv-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-3458316756",
+      "name": "乙",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "池年的徒弟，性格开朗。",
+      "sources": [
+        "https://luoxiaohei-movie.com/2nd/character/",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "confirmed",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-7723847b8c",
+      "name": "乞峰",
+      "aliases": [],
+      "works": [
+        "movie1",
+        "movie2",
+        "other"
+      ],
+      "summary": "已列入电影1、电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色"
+      ],
+      "catalogIds": [
+        "movie1-huiji",
+        "movie2-bgm",
+        "movie2-huiji",
+        "blue-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影1",
+        "电影2",
+        "漫画《蓝溪镇》"
+      ]
+    },
+    {
+      "id": "cast-4999e82d48",
+      "name": "乱步",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画、TV·众生之门篇的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）",
+        "https://bgm.tv/subject/294880/characters"
+      ],
+      "catalogIds": [
+        "tv-cast",
+        "gate-bgm",
+        "tv-moegirl"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画",
+        "TV·众生之门篇"
+      ]
+    },
+    {
+      "id": "cast-998dcba759",
+      "name": "余",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-9392f01013",
+      "name": "佳柒",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-062c88f50b",
+      "name": "元月",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "tv-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-1c18969f48",
+      "name": "兆岳",
+      "aliases": [],
+      "works": [
+        "movie1",
+        "other"
+      ],
+      "summary": "已列入电影1、漫画《蓝溪镇》的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
+        "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie1-huiji",
+        "movie1-wiki",
+        "blue-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影1",
+        "漫画《蓝溪镇》"
+      ]
+    },
+    {
+      "id": "cast-e4f08a2626",
+      "name": "兴帝",
+      "aliases": [],
+      "works": [
+        "other"
+      ],
+      "summary": "已列入漫画《蓝溪镇》的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色"
+      ],
+      "catalogIds": [
+        "blue-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "漫画《蓝溪镇》"
+      ]
+    },
+    {
+      "id": "cast-231bf85a03",
+      "name": "农民",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画、TV·众生之门篇的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters",
+        "https://bgm.tv/subject/294880/characters"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "gate-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画",
+        "TV·众生之门篇"
+      ]
+    },
+    {
+      "id": "cast-5b81db2bc4",
+      "name": "冠旭",
+      "aliases": [
+        "毛毛"
+      ],
+      "works": [
+        "movie1"
+      ],
+      "summary": "已列入电影1的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
+        "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie1-huiji",
+        "movie1-wiki",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影1"
+      ]
+    },
+    {
+      "id": "cast-eba7d149ec",
+      "name": "冠萱",
+      "aliases": [],
+      "works": [
+        "tv",
+        "movie1"
+      ],
+      "summary": "已列入TV动画、电影1的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm-api-anitabi.magiconch.com/subject/593863/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
+        "https://bgm.tv/subject/294880/characters"
+      ],
+      "catalogIds": [
+        "tv-huiji",
+        "movie1-huiji",
+        "all-huiji",
+        "gate-bgm",
+        "pre-bgm"
+      ],
+      "status": "待核",
+      "unverifiedWorks": [
+        {
+          "work": "TV·学前篇",
+          "status": "社区前瞻目录收录，未核官方登场",
+          "sources": [
+            "https://bgm-api-anitabi.magiconch.com/subject/593863/characters"
+          ]
+        }
+      ],
+      "workDetails": [
+        "TV动画",
+        "电影1",
+        "TV·众生之门篇"
+      ]
+    },
+    {
+      "id": "cast-086ef80d83",
+      "name": "冬冬",
+      "aliases": [],
+      "works": [
+        "tv",
+        "movie1"
+      ],
+      "summary": "已列入TV动画、电影1的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
+        "https://bgm.tv/subject/294880/characters",
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-huiji",
+        "tv-cast",
+        "movie1-huiji",
+        "all-huiji",
+        "gate-bgm",
+        "tv-moegirl"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画",
+        "电影1",
+        "TV·众生之门篇"
+      ]
+    },
+    {
+      "id": "cast-11abe661b4",
+      "name": "冬冬的邻居",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters"
+      ],
+      "catalogIds": [
+        "tv-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-1a5e497239",
+      "name": "凌铜",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-6ae2a72f26",
+      "name": "副机长",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/442114/characters"
+      ],
+      "catalogIds": [
+        "movie2-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-86425a4c3f",
+      "name": "副队",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/442114/characters"
+      ],
+      "catalogIds": [
+        "movie2-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-6a4fe0e1a1",
+      "name": "勃勃",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "tv-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-41be4093f3",
+      "name": "千针",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画、TV·众生之门篇的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://bgm.tv/subject/294880/characters",
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-huiji",
+        "tv-cast",
+        "all-huiji",
+        "gate-bgm",
+        "tv-moegirl"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画",
+        "TV·众生之门篇"
+      ]
+    },
+    {
+      "id": "cast-fa14432007",
+      "name": "南歌",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-7b1c6be8d8",
+      "name": "卡里",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画、TV·众生之门篇的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters",
+        "https://bgm-api-anitabi.magiconch.com/subject/593863/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://bgm.tv/subject/294880/characters",
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-huiji",
+        "tv-cast",
+        "all-huiji",
+        "gate-bgm",
+        "pre-bgm",
+        "tv-moegirl"
+      ],
+      "status": "待核",
+      "unverifiedWorks": [
+        {
+          "work": "TV·学前篇",
+          "status": "社区前瞻目录收录，未核官方登场",
+          "sources": [
+            "https://bgm-api-anitabi.magiconch.com/subject/593863/characters"
+          ]
+        }
+      ],
+      "workDetails": [
+        "TV动画",
+        "TV·众生之门篇"
+      ]
+    },
+    {
+      "id": "cast-1e68a97d2e",
+      "name": "厌骨",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/442114/characters"
+      ],
+      "catalogIds": [
+        "movie2-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-557416fb1e",
+      "name": "叁拾",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/442114/characters"
+      ],
+      "catalogIds": [
+        "movie2-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-a44a2ab513",
+      "name": "叫兽",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters"
+      ],
+      "catalogIds": [
+        "tv-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-9797f151c7",
+      "name": "叶子",
+      "aliases": [],
+      "works": [
+        "movie1"
+      ],
+      "summary": "已列入电影1的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie1-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影1"
+      ]
+    },
+    {
+      "id": "cast-8b7a50c400",
+      "name": "司令",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/442114/characters"
+      ],
+      "catalogIds": [
+        "movie2-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-6f80bfaa8c",
+      "name": "咪咪",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/442114/characters"
+      ],
+      "catalogIds": [
+        "movie2-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-0bf6ea3a40",
+      "name": "坛九",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）",
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-cast",
+        "tv-moegirl"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-1db7816618",
+      "name": "夏雨",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/442114/characters"
+      ],
+      "catalogIds": [
+        "movie2-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-c713573a2c",
+      "name": "大叔",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters"
+      ],
+      "catalogIds": [
+        "tv-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-72e97ca848",
+      "name": "大吉",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）",
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-cast",
+        "tv-moegirl"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-2dc9201115",
+      "name": "大壮",
+      "aliases": [],
+      "works": [
+        "other"
+      ],
+      "summary": "清凝的同村伙伴；规范姓名与具体角色设定仍需对照漫画原页。",
+      "sources": [
+        "https://www.ch-station.org/wp-content/uploads/2021/09/luoxiaoheimingzi.pdf"
+      ],
+      "catalogIds": [
+        "blue-guide"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "漫画《蓝溪镇》"
+      ]
+    },
+    {
+      "id": "cast-1b6e22922b",
+      "name": "大志",
+      "aliases": [
+        "大志（TV版）"
+      ],
+      "works": [
+        "tv",
+        "movie2"
+      ],
+      "summary": "已列入TV动画、电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://bgm.tv/subject/294880/characters",
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）"
+      ],
+      "catalogIds": [
+        "tv-huiji",
+        "tv-cast",
+        "movie2-bgm",
+        "all-huiji",
+        "gate-bgm",
+        "tv-moegirl"
+      ],
+      "status": "待核",
+      "scopeNote": "TV与电影2同名角色是否同一尚待核对；当前记录是暂存并集，不把跨作品同一性当确认事实。",
+      "workDetails": [
+        "TV动画",
+        "电影2",
+        "TV·众生之门篇"
+      ]
+    },
+    {
+      "id": "cast-2ab5c0700b",
+      "name": "大松",
+      "aliases": [],
+      "works": [
+        "movie2",
+        "other"
+      ],
+      "summary": "已列入电影2、漫画《蓝溪镇》的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "blue-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2",
+        "漫画《蓝溪镇》"
+      ]
+    },
+    {
+      "id": "cast-21f81775ce",
+      "name": "大爽",
+      "aliases": [],
+      "works": [
+        "movie1",
+        "other"
+      ],
+      "summary": "已列入电影1、漫画《蓝溪镇》的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie1-huiji",
+        "blue-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影1",
+        "漫画《蓝溪镇》"
+      ]
+    },
+    {
+      "id": "cast-df0f06eb40",
+      "name": "大须",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-e8e992b672",
+      "name": "大黄",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "tv-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-1aca1a02e5",
+      "name": "天介",
+      "aliases": [],
+      "works": [
+        "movie1"
+      ],
+      "summary": "已列入电影1的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
+        "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie1-huiji",
+        "movie1-wiki",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影1"
+      ]
+    },
+    {
+      "id": "cast-1bdf8f3294",
+      "name": "天心",
+      "aliases": [],
+      "works": [
+        "movie2",
+        "other"
+      ],
+      "summary": "已列入电影2、漫画《蓝溪镇》的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "blue-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2",
+        "漫画《蓝溪镇》"
+      ]
+    },
+    {
+      "id": "cast-f69c848e10",
+      "name": "天虎",
+      "aliases": [],
+      "works": [
+        "movie1"
+      ],
+      "summary": "风息的同伴，使用火系能力。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
+        "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie1-huiji",
+        "movie1-wiki",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影1"
+      ]
+    },
+    {
+      "id": "cast-e04df0db56",
+      "name": "契灯",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画、TV·众生之门篇的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）",
+        "https://bgm.tv/subject/294880/characters"
+      ],
+      "catalogIds": [
+        "tv-cast",
+        "gate-bgm",
+        "tv-moegirl"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画",
+        "TV·众生之门篇"
+      ]
+    },
+    {
+      "id": "cast-93dc309a56",
+      "name": "女童",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters"
+      ],
+      "catalogIds": [
+        "tv-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-792298a81e",
+      "name": "寒舞",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters"
+      ],
+      "catalogIds": [
+        "tv-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-f16cc3996b",
+      "name": "小吉",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）",
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-cast",
+        "tv-moegirl"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-f7a2aba518",
+      "name": "小玉",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/442114/characters"
+      ],
+      "catalogIds": [
+        "movie2-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-1da8830cd3",
+      "name": "小白老师",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "tv-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-835bf1fe2b",
+      "name": "小睿",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画、TV·众生之门篇的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）",
+        "https://bgm.tv/subject/294880/characters"
+      ],
+      "catalogIds": [
+        "tv-cast",
+        "gate-bgm",
+        "tv-moegirl"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画",
+        "TV·众生之门篇"
+      ]
+    },
+    {
+      "id": "cast-740039b448",
+      "name": "小绿",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-c313e90938",
+      "name": "小金龙",
+      "aliases": [],
+      "works": [
+        "movie1"
+      ],
+      "summary": "已列入电影1的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie1-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影1"
+      ]
+    },
+    {
+      "id": "cast-83fd9f0b73",
+      "name": "小鱼",
+      "aliases": [],
+      "works": [
+        "unverified"
+      ],
+      "summary": "已列入系列分类，具体作品待核的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "系列分类，具体作品待核"
+      ]
+    },
+    {
+      "id": "cast-c027dca53c",
+      "name": "希声",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-6be75253f2",
+      "name": "幕斯",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）",
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-cast",
+        "tv-moegirl"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-8aaa5cd942",
+      "name": "张舟",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画、TV·学前篇的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://bgm-api-anitabi.magiconch.com/subject/593863/characters"
+      ],
+      "catalogIds": [
+        "tv-huiji",
+        "all-huiji",
+        "pre-bgm"
+      ],
+      "status": "待核",
+      "unverifiedWorks": [
+        {
+          "work": "TV·学前篇",
+          "status": "社区前瞻目录收录，未核官方登场",
+          "sources": [
+            "https://bgm-api-anitabi.magiconch.com/subject/593863/characters"
+          ]
+        }
+      ],
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-cbb23d8f6d",
+      "name": "归月",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-ff7892924e",
+      "name": "彼尔德",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://bgm.tv/subject/13603/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-fec8141c13",
+      "name": "心缘",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-d805ed9934",
+      "name": "托比",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画、TV·众生之门篇的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）",
+        "https://bgm.tv/subject/294880/characters"
+      ],
+      "catalogIds": [
+        "tv-cast",
+        "gate-bgm",
+        "tv-moegirl"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画",
+        "TV·众生之门篇"
+      ]
+    },
+    {
+      "id": "cast-4973c6df3f",
+      "name": "撒旦",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "tv-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-3e653db764",
+      "name": "斑臂",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-d9929dfc13",
+      "name": "旺财",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "tv-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-db8b641599",
+      "name": "昊天",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/442114/characters"
+      ],
+      "catalogIds": [
+        "movie2-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-3cf042ebb5",
+      "name": "明月",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-ef2e893c12",
+      "name": "星月",
+      "aliases": [],
+      "works": [
+        "movie2",
+        "other"
+      ],
+      "summary": "已列入电影2、漫画《蓝溪镇》的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "blue-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2",
+        "漫画《蓝溪镇》"
+      ]
+    },
+    {
+      "id": "cast-dbe3c4d1df",
+      "name": "晓月",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-a5ff913ab7",
+      "name": "晴岚",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/442114/characters"
+      ],
+      "catalogIds": [
+        "movie2-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-2a64266a47",
+      "name": "暮影",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/442114/characters"
+      ],
+      "catalogIds": [
+        "movie2-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-10abb5ba89",
+      "name": "木炎",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-c7b460d488",
+      "name": "木落仙人",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）",
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-cast",
+        "tv-moegirl"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-8776a4fd94",
+      "name": "机长",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-3d87ca46a8",
+      "name": "杰克斯",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "tv-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-89be7ad551",
+      "name": "柚子",
+      "aliases": [],
+      "works": [
+        "unverified"
+      ],
+      "summary": "已列入系列分类，具体作品待核的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "系列分类，具体作品待核"
+      ]
+    },
+    {
+      "id": "cast-8679cb011c",
+      "name": "樊陪",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/442114/characters"
+      ],
+      "catalogIds": [
+        "movie2-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-9e13929af0",
+      "name": "比丢",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画、TV·学前篇的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters",
+        "https://bgm-api-anitabi.magiconch.com/subject/593863/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-huiji",
+        "tv-cast",
+        "all-huiji",
+        "pre-bgm",
+        "tv-moegirl"
+      ],
+      "status": "待核",
+      "unverifiedWorks": [
+        {
+          "work": "TV·学前篇",
+          "status": "社区前瞻目录收录，未核官方登场",
+          "sources": [
+            "https://bgm-api-anitabi.magiconch.com/subject/593863/characters"
+          ]
+        }
+      ],
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-a836d8ed5c",
+      "name": "水查子",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters"
+      ],
+      "catalogIds": [
+        "tv-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-f56735e2f3",
+      "name": "江泠",
+      "aliases": [],
+      "works": [
+        "movie2",
+        "other"
+      ],
+      "summary": "已列入电影2、漫画《蓝溪镇》的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "blue-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2",
+        "漫画《蓝溪镇》"
+      ]
+    },
+    {
+      "id": "cast-d1f0d23907",
+      "name": "池年",
+      "aliases": [],
+      "works": [
+        "movie2",
+        "other"
+      ],
+      "summary": "会馆长老之一，使用御灵系·土能力。",
+      "sources": [
+        "https://luoxiaohei-movie.com/2nd/character/",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm-api-anitabi.magiconch.com/subject/311122/characters",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "blue-huiji",
+        "blue-bgm",
+        "all-huiji"
+      ],
+      "status": "confirmed",
+      "workDetails": [
+        "电影2",
+        "漫画《蓝溪镇》"
+      ]
+    },
+    {
+      "id": "cast-32671018dd",
+      "name": "沐夜",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-4d89744788",
+      "name": "泽宇",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-3665a8ae26",
+      "name": "洛",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "电影2中所属会馆的妖精，与余共事。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/洛"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-dc2409347e",
+      "name": "洛竹",
+      "aliases": [],
+      "works": [
+        "tv",
+        "movie1"
+      ],
+      "summary": "风息的同伴，使用木系能力。",
+      "sources": [
+        "https://bgm-api-anitabi.magiconch.com/subject/593863/characters",
+        "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色"
+      ],
+      "catalogIds": [
+        "tv-huiji",
+        "movie1-huiji",
+        "movie1-wiki",
+        "all-huiji",
+        "pre-bgm"
+      ],
+      "status": "待核",
+      "unverifiedWorks": [
+        {
+          "work": "TV·学前篇",
+          "status": "社区前瞻目录收录，未核官方登场",
+          "sources": [
+            "https://bgm-api-anitabi.magiconch.com/subject/593863/characters"
+          ]
+        }
+      ],
+      "workDetails": [
+        "TV动画",
+        "电影1"
+      ]
+    },
+    {
+      "id": "cast-c94486015c",
+      "name": "浩客",
+      "aliases": [],
+      "works": [
+        "movie2",
+        "other"
+      ],
+      "summary": "已列入电影2、漫画《蓝溪镇》的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm-api-anitabi.magiconch.com/subject/311122/characters",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "blue-huiji",
+        "blue-bgm",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2",
+        "漫画《蓝溪镇》"
+      ]
+    },
+    {
+      "id": "cast-ba88b9bc78",
+      "name": "涅帕",
+      "aliases": [],
+      "works": [
+        "tv",
+        "movie1"
+      ],
+      "summary": "已列入TV动画、电影1的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-huiji",
+        "tv-cast",
+        "movie1-huiji",
+        "all-huiji",
+        "tv-moegirl"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画",
+        "电影1"
+      ]
+    },
+    {
+      "id": "cast-4200f433ee",
+      "name": "淑酱",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters"
+      ],
+      "catalogIds": [
+        "tv-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-da2a314ea0",
+      "name": "清泉",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-23f334cedc",
+      "name": "潘靖",
+      "aliases": [],
+      "works": [
+        "tv",
+        "movie1",
+        "movie2",
+        "other"
+      ],
+      "summary": "龙游会馆馆长，负责与人类一方交涉。",
+      "sources": [
+        "https://luoxiaohei-movie.com/2nd/character/",
+        "https://bgm-api-anitabi.magiconch.com/subject/593863/characters",
+        "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)",
+        "https://bgm-api-anitabi.magiconch.com/subject/311122/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
+        "https://bgm.tv/subject/294880/characters",
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）"
+      ],
+      "catalogIds": [
+        "tv-huiji",
+        "tv-cast",
+        "movie1-huiji",
+        "movie1-wiki",
+        "movie2-bgm",
+        "blue-huiji",
+        "blue-bgm",
+        "all-huiji",
+        "gate-bgm",
+        "pre-bgm",
+        "tv-moegirl"
+      ],
+      "status": "confirmed",
+      "unverifiedWorks": [
+        {
+          "work": "TV·学前篇",
+          "status": "社区前瞻目录收录，未核官方登场",
+          "sources": [
+            "https://bgm-api-anitabi.magiconch.com/subject/593863/characters"
+          ]
+        }
+      ],
+      "workDetails": [
+        "TV动画",
+        "电影1",
+        "电影2",
+        "漫画《蓝溪镇》",
+        "TV·众生之门篇"
+      ]
+    },
+    {
+      "id": "cast-2fa5d44ee3",
+      "name": "火花",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/442114/characters"
+      ],
+      "catalogIds": [
+        "movie2-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-152f87c42b",
+      "name": "灵遥",
+      "aliases": [],
+      "works": [
+        "movie2",
+        "other"
+      ],
+      "summary": "会馆长老之一。",
+      "sources": [
+        "https://luoxiaohei-movie.com/2nd/character/",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm-api-anitabi.magiconch.com/subject/311122/characters",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "blue-huiji",
+        "blue-bgm",
+        "all-huiji"
+      ],
+      "status": "confirmed",
+      "workDetails": [
+        "电影2",
+        "漫画《蓝溪镇》"
+      ]
+    },
+    {
+      "id": "cast-005b963cd3",
+      "name": "炎帝",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）",
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-cast",
+        "tv-moegirl"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-1b97907a5b",
+      "name": "狗剩",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "tv-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-98d6780a53",
+      "name": "狼与狗",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters"
+      ],
+      "catalogIds": [
+        "tv-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-702b88e9b3",
+      "name": "猫渣",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "tv-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-ab72c8b463",
+      "name": "玄止",
+      "aliases": [],
+      "works": [
+        "movie2",
+        "other"
+      ],
+      "summary": "已列入电影2、漫画《蓝溪镇》的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "blue-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2",
+        "漫画《蓝溪镇》"
+      ]
+    },
+    {
+      "id": "cast-06036a1d6b",
+      "name": "甄云",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画、TV·学前篇的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters",
+        "https://bgm-api-anitabi.magiconch.com/subject/593863/characters"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "pre-bgm"
+      ],
+      "status": "待核",
+      "unverifiedWorks": [
+        {
+          "work": "TV·学前篇",
+          "status": "社区前瞻目录收录，未核官方登场",
+          "sources": [
+            "https://bgm-api-anitabi.magiconch.com/subject/593863/characters"
+          ]
+        }
+      ],
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-1b85dd8d61",
+      "name": "甲",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "池年的徒弟，性格冷静、头脑敏锐。",
+      "sources": [
+        "https://luoxiaohei-movie.com/2nd/character/",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "confirmed",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-c2e746a212",
+      "name": "电玩男",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters"
+      ],
+      "catalogIds": [
+        "tv-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-358e109a98",
+      "name": "画虎",
+      "aliases": [],
+      "works": [
+        "movie1"
+      ],
+      "summary": "已列入电影1的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
+        "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie1-huiji",
+        "movie1-wiki",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影1"
+      ]
+    },
+    {
+      "id": "cast-f0c6c1d23d",
+      "name": "白宜",
+      "aliases": [],
+      "works": [
+        "movie2",
+        "other"
+      ],
+      "summary": "已列入电影2、漫画《蓝溪镇》的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "blue-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "note": "灰机目录写白宜，Bangumi原始繁简转换曾显示白宜；不扩充为白依。",
+      "workDetails": [
+        "电影2",
+        "漫画《蓝溪镇》"
+      ]
+    },
+    {
+      "id": "cast-bda602ed7b",
+      "name": "白游",
+      "aliases": [],
+      "works": [
+        "unverified"
+      ],
+      "summary": "已列入TV·学前篇的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm-api-anitabi.magiconch.com/subject/593863/characters"
+      ],
+      "catalogIds": [
+        "pre-bgm"
+      ],
+      "status": "待核",
+      "unverifiedWorks": [
+        {
+          "work": "TV·学前篇",
+          "status": "社区前瞻目录收录，未核官方登场",
+          "sources": [
+            "https://bgm-api-anitabi.magiconch.com/subject/593863/characters"
+          ]
+        }
+      ],
+      "workDetails": []
+    },
+    {
+      "id": "cast-44830ca3dc",
+      "name": "白鬃",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-0f94f63a5d",
+      "name": "皆逆荒",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-655681e181",
+      "name": "皇受",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-huiji",
+        "tv-cast",
+        "all-huiji",
+        "tv-moegirl"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-570ff3700a",
+      "name": "破老",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-huiji",
+        "tv-cast",
+        "all-huiji",
+        "tv-moegirl"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-9cf34d7853",
+      "name": "硫酸",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画、TV·众生之门篇的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）",
+        "https://bgm.tv/subject/294880/characters"
+      ],
+      "catalogIds": [
+        "tv-cast",
+        "gate-bgm",
+        "tv-moegirl"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画",
+        "TV·众生之门篇"
+      ]
+    },
+    {
+      "id": "cast-4328ce09dc",
+      "name": "神棍德",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters"
+      ],
+      "catalogIds": [
+        "tv-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-28a31631bc",
+      "name": "秃贝",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "灵溪会馆管事。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters",
+        "https://bgm-api-anitabi.magiconch.com/subject/593863/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/秃贝",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://bgm.tv/subject/294880/characters",
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-huiji",
+        "tv-cast",
+        "all-huiji",
+        "gate-bgm",
+        "pre-bgm",
+        "tv-moegirl"
+      ],
+      "status": "待核",
+      "unverifiedWorks": [
+        {
+          "work": "TV·学前篇",
+          "status": "社区前瞻目录收录，未核官方登场",
+          "sources": [
+            "https://bgm-api-anitabi.magiconch.com/subject/593863/characters"
+          ]
+        }
+      ],
+      "workDetails": [
+        "TV动画",
+        "TV·众生之门篇"
+      ]
+    },
+    {
+      "id": "cast-46d64e1f19",
+      "name": "秋辞",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/442114/characters"
+      ],
+      "catalogIds": [
+        "movie2-bgm"
+      ],
+      "status": "待核",
+      "note": "仅电影2社区目录收录，暂无官方中文演职员表逐帧核对。",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-1239fbc0d9",
+      "name": "稀碎",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-a2e190200a",
+      "name": "空乘",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/442114/characters"
+      ],
+      "catalogIds": [
+        "movie2-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-f241a65ab5",
+      "name": "空空",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-fb2ccba529",
+      "name": "粉末",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-huiji",
+        "tv-cast",
+        "all-huiji",
+        "tv-moegirl"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-cfaf11d2f7",
+      "name": "紫实",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/442114/characters"
+      ],
+      "catalogIds": [
+        "movie2-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-4ad6adcb0c",
+      "name": "紫罗兰",
+      "aliases": [],
+      "works": [
+        "tv",
+        "movie1"
+      ],
+      "summary": "已列入TV动画、电影1的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://bgm.tv/subject/13603/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-huiji",
+        "movie1-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画",
+        "电影1"
+      ]
+    },
+    {
+      "id": "cast-d9e02de7e0",
+      "name": "绝文",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/442114/characters"
+      ],
+      "catalogIds": [
+        "movie2-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-9534ae4baf",
+      "name": "绿萝",
+      "aliases": [
+        "花精灵",
+        "绿萝（花精灵）"
+      ],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-huiji",
+        "tv-cast",
+        "all-huiji",
+        "tv-moegirl"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-8c299ed29e",
+      "name": "罗云飞",
+      "aliases": [
+        "云飞",
+        "爷爷"
+      ],
+      "works": [
+        "tv"
+      ],
+      "summary": "罗小白的爷爷，对妖精世界有所了解。",
+      "sources": [
+        "https://luoxiaohei-movie.com/tv/character/",
+        "https://bgm.tv/subject/13603/characters",
+        "https://bgm-api-anitabi.magiconch.com/subject/593863/characters",
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-cast",
+        "pre-bgm",
+        "tv-moegirl"
+      ],
+      "status": "confirmed",
+      "unverifiedWorks": [
+        {
+          "work": "TV·学前篇",
+          "status": "社区前瞻目录收录，未核官方登场",
+          "sources": [
+            "https://bgm-api-anitabi.magiconch.com/subject/593863/characters"
+          ]
+        }
+      ],
+      "scopeNote": "官方TV人物页确认爷爷角色存在；罗云飞规范姓名与爷爷合并来自社区目录，姓名仍待中文原片核对。",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-a68eda4272",
+      "name": "罗小白的妈妈",
+      "aliases": [
+        "妈妈",
+        "小白妈妈"
+      ],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）",
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-cast",
+        "tv-moegirl"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-6e3e3a6e2e",
+      "name": "罗小白的爸爸",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters"
+      ],
+      "catalogIds": [
+        "tv-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-6304864cb0",
+      "name": "羽夕",
+      "aliases": [],
+      "works": [
+        "movie1",
+        "other"
+      ],
+      "summary": "已列入电影1、漫画《蓝溪镇》的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie1-huiji",
+        "blue-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影1",
+        "漫画《蓝溪镇》"
+      ]
+    },
+    {
+      "id": "cast-06936d1168",
+      "name": "羽毛球",
+      "aliases": [
+        "羽毛球侠"
+      ],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://bgm.tv/subject/13603/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-a1a2d172f2",
+      "name": "老府",
+      "aliases": [
+        "府先生"
+      ],
+      "works": [
+        "tv",
+        "movie1"
+      ],
+      "summary": "已列入TV动画、电影1的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters",
+        "https://bgm-api-anitabi.magiconch.com/subject/593863/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
+        "https://bgm.tv/subject/294880/characters",
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-huiji",
+        "tv-cast",
+        "movie1-huiji",
+        "all-huiji",
+        "gate-bgm",
+        "pre-bgm",
+        "tv-moegirl"
+      ],
+      "status": "待核",
+      "unverifiedWorks": [
+        {
+          "work": "TV·学前篇",
+          "status": "社区前瞻目录收录，未核官方登场",
+          "sources": [
+            "https://bgm-api-anitabi.magiconch.com/subject/593863/characters"
+          ]
+        }
+      ],
+      "workDetails": [
+        "TV动画",
+        "电影1",
+        "TV·众生之门篇"
+      ]
+    },
+    {
+      "id": "cast-6bb1bdedd3",
+      "name": "肄目",
+      "aliases": [],
+      "works": [
+        "movie2",
+        "other"
+      ],
+      "summary": "已列入电影2、漫画《蓝溪镇》的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm-api-anitabi.magiconch.com/subject/311122/characters",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "blue-huiji",
+        "blue-bgm",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2",
+        "漫画《蓝溪镇》"
+      ]
+    },
+    {
+      "id": "cast-70d4eea648",
+      "name": "肉山",
+      "aliases": [],
+      "works": [
+        "movie1"
+      ],
+      "summary": "已列入电影1的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie1-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影1"
+      ]
+    },
+    {
+      "id": "cast-332b4388b2",
+      "name": "肖符",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-6a2c7fe0fc",
+      "name": "花轮",
+      "aliases": [],
+      "works": [
+        "movie1"
+      ],
+      "summary": "已列入电影1的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie1-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影1"
+      ]
+    },
+    {
+      "id": "cast-d348d0f856",
+      "name": "芷清",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-f554f0e1fe",
+      "name": "若水",
+      "aliases": [],
+      "works": [
+        "tv",
+        "movie1"
+      ],
+      "summary": "鸠老的徒弟，崇拜无限的狐妖。",
+      "sources": [
+        "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
+        "https://bgm.tv/subject/294880/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）"
+      ],
+      "catalogIds": [
+        "tv-huiji",
+        "tv-cast",
+        "movie1-huiji",
+        "movie1-wiki",
+        "all-huiji",
+        "gate-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画",
+        "电影1",
+        "TV·众生之门篇"
+      ]
+    },
+    {
+      "id": "cast-094f2923f3",
+      "name": "莉澄",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-486e807fbe",
+      "name": "莽眼",
+      "aliases": [],
+      "works": [
+        "movie2",
+        "other"
+      ],
+      "summary": "已列入电影2、漫画《蓝溪镇》的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm-api-anitabi.magiconch.com/subject/311122/characters",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "blue-huiji",
+        "blue-bgm",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2",
+        "漫画《蓝溪镇》"
+      ]
+    },
+    {
+      "id": "cast-d6cf9fedb3",
+      "name": "葵纸",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画、TV·众生之门篇的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://bgm.tv/subject/13603/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）",
+        "https://bgm.tv/subject/294880/characters"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-cast",
+        "gate-bgm",
+        "tv-moegirl"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画",
+        "TV·众生之门篇"
+      ]
+    },
+    {
+      "id": "cast-890a5a4949",
+      "name": "蓝玉",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-b90ecafc9e",
+      "name": "虎妞",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://bgm.tv/subject/13603/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-huiji",
+        "tv-cast",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-61222eaf85",
+      "name": "虚淮",
+      "aliases": [],
+      "works": [
+        "movie1"
+      ],
+      "summary": "风息的同伴，使用冰系能力。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
+        "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie1-huiji",
+        "movie1-wiki",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影1"
+      ]
+    },
+    {
+      "id": "cast-82ca3002e6",
+      "name": "蛋蛋（TV版）",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "tv-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-1e01f7b70e",
+      "name": "蛋蛋（妖灵簿）",
+      "aliases": [],
+      "works": [
+        "unverified"
+      ],
+      "summary": "已列入系列分类，具体作品待核的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "系列分类，具体作品待核"
+      ]
+    },
+    {
+      "id": "cast-0a4a9b6b75",
+      "name": "西地",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-461a039c99",
+      "name": "西木子",
+      "aliases": [],
+      "works": [
+        "movie2",
+        "other"
+      ],
+      "summary": "会馆长老之一。",
+      "sources": [
+        "https://luoxiaohei-movie.com/2nd/character/",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm-api-anitabi.magiconch.com/subject/311122/characters",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "blue-huiji",
+        "blue-bgm",
+        "all-huiji"
+      ],
+      "status": "confirmed",
+      "workDetails": [
+        "电影2",
+        "漫画《蓝溪镇》"
+      ]
+    },
+    {
+      "id": "cast-37afe194e6",
+      "name": "记录员",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/442114/characters"
+      ],
+      "catalogIds": [
+        "movie2-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-5b87b10477",
+      "name": "辛绝",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-58b7a9aab8",
+      "name": "逸风",
+      "aliases": [],
+      "works": [
+        "tv",
+        "movie1"
+      ],
+      "summary": "已列入TV动画、电影1的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "tv-huiji",
+        "movie1-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画",
+        "电影1"
+      ]
+    },
+    {
+      "id": "cast-c0d97c4ac4",
+      "name": "那伽",
+      "aliases": [],
+      "works": [
+        "other"
+      ],
+      "summary": "已列入漫画《蓝溪镇》的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色"
+      ],
+      "catalogIds": [
+        "blue-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "漫画《蓝溪镇》"
+      ]
+    },
+    {
+      "id": "cast-c67876f8c0",
+      "name": "郑信毅",
+      "aliases": [],
+      "works": [
+        "movie2",
+        "other"
+      ],
+      "summary": "已列入电影2、漫画《蓝溪镇》的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "blue-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2",
+        "漫画《蓝溪镇》"
+      ]
+    },
+    {
+      "id": "cast-c40b0721c6",
+      "name": "部长",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/442114/characters"
+      ],
+      "catalogIds": [
+        "movie2-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-d9b6582d43",
+      "name": "酒仙",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://bgm.tv/subject/13603/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-72d1b1fd80",
+      "name": "酒鬼",
+      "aliases": [],
+      "works": [
+        "movie1"
+      ],
+      "summary": "已列入电影1的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie1-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影1"
+      ]
+    },
+    {
+      "id": "cast-0418ae54b1",
+      "name": "镜云",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://bgm.tv/subject/442114/characters"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-afa1deea41",
+      "name": "闵翔",
+      "aliases": [],
+      "works": [
+        "movie1"
+      ],
+      "summary": "已列入电影1的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
+        "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie1-huiji",
+        "movie1-wiki",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影1"
+      ]
+    },
+    {
+      "id": "cast-57136db8c8",
+      "name": "阎明",
+      "aliases": [],
+      "works": [
+        "movie2",
+        "other"
+      ],
+      "summary": "已列入电影2、漫画《蓝溪镇》的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "blue-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2",
+        "漫画《蓝溪镇》"
+      ]
+    },
+    {
+      "id": "cast-4f46d47cc7",
+      "name": "阿先",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）",
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-cast",
+        "tv-moegirl"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-6c50666541",
+      "name": "阿吉",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/442114/characters"
+      ],
+      "catalogIds": [
+        "movie2-bgm"
+      ],
+      "status": "待核",
+      "note": "与TV小吉/大吉不合并。",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-d83d935f45",
+      "name": "阿显",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画、TV·众生之门篇的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）",
+        "https://bgm.tv/subject/294880/characters"
+      ],
+      "catalogIds": [
+        "tv-cast",
+        "gate-bgm",
+        "tv-moegirl"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画",
+        "TV·众生之门篇"
+      ]
+    },
+    {
+      "id": "cast-ef19b56d49",
+      "name": "阿柱",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "tv-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-7d4cfcee29",
+      "name": "阿狸",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://bgm.tv/subject/13603/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-271d114726",
+      "name": "阿稳",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV·众生之门篇的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/294880/characters"
+      ],
+      "catalogIds": [
+        "gate-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV·众生之门篇"
+      ]
+    },
+    {
+      "id": "cast-3747af3611",
+      "name": "阿良",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "note": "灰机、Bangumi共同收录为阿良；不要沿用搜索片段的阿良/阿良之外推字。",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-3cf9389c27",
+      "name": "阿赫",
+      "aliases": [],
+      "works": [
+        "movie1"
+      ],
+      "summary": "已列入电影1的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie1-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影1"
+      ]
+    },
+    {
+      "id": "cast-f8d91b7dac",
+      "name": "阿龙",
+      "aliases": [],
+      "works": [
+        "tv",
+        "movie1"
+      ],
+      "summary": "已列入TV动画、电影1的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
+        "https://bgm.tv/subject/294880/characters",
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）"
+      ],
+      "catalogIds": [
+        "tv-huiji",
+        "tv-cast",
+        "movie1-huiji",
+        "all-huiji",
+        "gate-bgm",
+        "tv-moegirl"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画",
+        "电影1",
+        "TV·众生之门篇"
+      ]
+    },
+    {
+      "id": "cast-38247fd9ca",
+      "name": "雨笛",
+      "aliases": [],
+      "works": [
+        "movie2",
+        "other"
+      ],
+      "summary": "妖灵会馆总馆长，地位在长老与分馆馆长之上。",
+      "sources": [
+        "https://luoxiaohei-movie.com/2nd/character/",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "blue-huiji",
+        "all-huiji"
+      ],
+      "status": "confirmed",
+      "workDetails": [
+        "电影2",
+        "漫画《蓝溪镇》"
+      ]
+    },
+    {
+      "id": "cast-521d3c2b1a",
+      "name": "青丘",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画、TV·众生之门篇的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://bgm.tv/subject/294880/characters",
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）"
+      ],
+      "catalogIds": [
+        "tv-bgm",
+        "tv-huiji",
+        "tv-cast",
+        "all-huiji",
+        "gate-bgm",
+        "tv-moegirl"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画",
+        "TV·众生之门篇"
+      ]
+    },
+    {
+      "id": "cast-2ecf4c0e83",
+      "name": "青峰",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-2bc7aee636",
+      "name": "静一",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/442114/characters"
+      ],
+      "catalogIds": [
+        "movie2-bgm"
+      ],
+      "status": "待核",
+      "note": "社区目录拼写曾随页面繁简转换显示静一/靜一；不写成静怡。",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-0fea4a07cd",
+      "name": "革少",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画、TV·众生之门篇的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）",
+        "https://bgm.tv/subject/294880/characters"
+      ],
+      "catalogIds": [
+        "tv-cast",
+        "gate-bgm",
+        "tv-moegirl"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画",
+        "TV·众生之门篇"
+      ]
+    },
+    {
+      "id": "cast-2d3c440bbe",
+      "name": "风息",
+      "aliases": [],
+      "works": [
+        "movie1",
+        "other"
+      ],
+      "summary": "小黑流浪时遇见的妖精，因家园遭破坏而对人类抱有敌意。",
+      "sources": [
+        "https://luoxiaohei-movie.com/1st/character/",
+        "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)",
+        "https://bgm-api-anitabi.magiconch.com/subject/311122/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色"
+      ],
+      "catalogIds": [
+        "movie1-huiji",
+        "movie1-wiki",
+        "blue-huiji",
+        "blue-bgm",
+        "all-huiji"
+      ],
+      "status": "confirmed",
+      "workDetails": [
+        "电影1",
+        "漫画《蓝溪镇》"
+      ]
+    },
+    {
+      "id": "cast-e57c18eaa9",
+      "name": "飞毯豹",
+      "aliases": [],
+      "works": [
+        "movie1"
+      ],
+      "summary": "已列入电影1的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie1-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影1"
+      ]
+    },
+    {
+      "id": "cast-cfe99775ba",
+      "name": "鬼辰",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-900a7ed00d",
+      "name": "鬼镰",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-ceb61a4f37",
+      "name": "鲁伊",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/442114/characters"
+      ],
+      "catalogIds": [
+        "movie2-bgm"
+      ],
+      "status": "待核",
+      "note": "与其他作品同名角色不合并。",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-7c75c143c9",
+      "name": "鳄鱼",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-6b511f1198",
+      "name": "鸠老",
+      "aliases": [],
+      "works": [
+        "tv",
+        "movie1",
+        "movie2",
+        "other"
+      ],
+      "summary": "会馆资深执行者，能鉴别妖精能力属性。",
+      "sources": [
+        "https://luoxiaohei-movie.com/2nd/character/",
+        "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)",
+        "https://bgm-api-anitabi.magiconch.com/subject/311122/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
+        "https://bgm.tv/subject/294880/characters",
+        "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）"
+      ],
+      "catalogIds": [
+        "tv-huiji",
+        "tv-cast",
+        "movie1-huiji",
+        "movie1-wiki",
+        "movie2-bgm",
+        "blue-bgm",
+        "all-huiji",
+        "gate-bgm",
+        "tv-moegirl"
+      ],
+      "status": "confirmed",
+      "workDetails": [
+        "TV动画",
+        "电影1",
+        "电影2",
+        "漫画《蓝溪镇》",
+        "TV·众生之门篇"
+      ]
+    },
+    {
+      "id": "cast-f2365fab49",
+      "name": "鹤天",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-16729c7854",
+      "name": "黄溜溜",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "tv-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-d968147962",
+      "name": "黄逗菌",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV·众生之门篇的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/294880/characters"
+      ],
+      "catalogIds": [
+        "gate-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV·众生之门篇"
+      ]
+    },
+    {
+      "id": "cast-67dd2ea8bb",
+      "name": "黑阳",
+      "aliases": [],
+      "works": [
+        "movie2"
+      ],
+      "summary": "已列入电影2的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记2角色",
+        "https://bgm.tv/subject/442114/characters",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie2-bgm",
+        "movie2-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影2"
+      ]
+    },
+    {
+      "id": "cast-041e43a590",
+      "name": "龙套君",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV动画的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm.tv/subject/13603/characters"
+      ],
+      "catalogIds": [
+        "tv-bgm"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "TV动画"
+      ]
+    },
+    {
+      "id": "cast-8068e879d8",
+      "name": "龙岩",
+      "aliases": [],
+      "works": [
+        "tv"
+      ],
+      "summary": "已列入TV·众生之门篇、TV·学前篇的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://bgm-api-anitabi.magiconch.com/subject/593863/characters",
+        "https://bgm.tv/subject/294880/characters"
+      ],
+      "catalogIds": [
+        "gate-bgm",
+        "pre-bgm"
+      ],
+      "status": "待核",
+      "unverifiedWorks": [
+        {
+          "work": "TV·学前篇",
+          "status": "社区前瞻目录收录，未核官方登场",
+          "sources": [
+            "https://bgm-api-anitabi.magiconch.com/subject/593863/characters"
+          ]
+        }
+      ],
+      "workDetails": [
+        "TV·众生之门篇"
+      ]
+    },
+    {
+      "id": "cast-650e65aedf",
+      "name": "龙老",
+      "aliases": [],
+      "works": [
+        "movie1"
+      ],
+      "summary": "已列入电影1的角色目录；具体身份尚待逐条核对。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+      ],
+      "catalogIds": [
+        "movie1-huiji",
+        "all-huiji"
+      ],
+      "status": "待核",
+      "workDetails": [
+        "电影1"
+      ]
+    }
+  ],
+  "unresolvedNames": [
+    {
+      "input": "善心",
+      "candidate": "山新",
+      "status": "待用户确认",
+      "note": "未找到名为善心的可靠角色条目；官方有角色山新，也有同名真实配音演员。不能自动替换。",
+      "sources": [
+        "https://luoxiaohei-movie.com/tv/character/"
+      ]
+    },
+    {
+      "input": "鹿野",
+      "candidate": "鹿野",
+      "status": "已核对",
+      "note": "电影2官方确有鹿野，规范名无需改写。",
+      "sources": [
+        "https://luoxiaohei-movie.com/2nd/character/"
+      ]
+    }
+  ],
+  "normalizationNotes": [
+    "老府与府先生合并；云飞、爷爷并入罗云飞；毛毛并入冠旭。",
+    "阿根与玄离保留两个条目，不把复杂的灵与身体关系简化为同名。",
+    "黑咻保留独立条目，不列作小黑别名。",
+    "同名大志的电影2与TV条目是否同一需进一步核对，当前一条保留来源并标明边界。",
+    "哪吒仅指罗小黑作品设定，不混入魔童/非人哉等IP设定。"
+  ],
+  "scopeRecord": {
+    "title": "罗小黑系列有来源角色索引（可继续补全）",
+    "included": [
+      "TV及众生之门篇",
+      "2019电影及片尾命名角色",
+      "2025电影2及命名客串/闲角候选",
+      "漫画《蓝溪镇》已能查证人物"
+    ],
+    "excluded": [
+      "未命名群像不逐人拆分",
+      "组织与地点（如妖灵会馆）不当角色",
+      "配音参与人员不当角色",
+      "千里阳光号等跨作品道具不当罗小黑角色",
+      "第三方联动游戏的其他IP角色不并入",
+      "停止运营手游独有角色若仅有系列分类则标待核"
+    ],
+    "completeness": "196条为公开目录并集与有限去重后的候选记录，不是官方全角色册。confirmed只确认角色存在已有电影/TV官方人物页支持，不意味着该条全部作品归属、规范中文名或详细设定均获官方核验。其余社区交叉条目统一待核，待核不等于角色不存在。",
+    "unverifiedCandidates": [
+      "2026学前篇：只保留19个社区目录候选归属，不计为已核实作品出场；没有据此确认新番已播或官方角色名单。"
+    ],
+    "review": {
+      "reviewedAt": "2026-11-19",
+      "records": 196,
+      "initialStatusCounts": {
+        "confirmed": 122,
+        "待核": 74
+      },
+      "statusCounts": {
+        "confirmed": 20,
+        "待核": 176
+      },
+      "downgradedCount": 102,
+      "normalization": "196条NFKC/casefold规范名无重复；别名未跨记录碰撞。只检查候选索引去重，不证明没有同角色异名漏合并。",
+      "nonCharacters": "未发现组织/地点条目或配音演员字段直接混入；同名角色/制作人员客串仍不能据目录独立确认为详细人物设定。",
+      "scopeAudit": "19条学前篇归属移至unverifiedWorks；大志跨作品同一性保持待核；蓝溪镇快看engine1聚合页不计官方一手证据。",
+      "standard": "仅社区角色目录交叉不足以称官方设定已确认；保留源URL作为继续核验线索。"
+    }
+  },
+  "limitations": [
+    "未命名群像不逐人拆分",
+    "组织与地点（如妖灵会馆）不当角色",
+    "配音参与人员不当角色",
+    "千里阳光号等跨作品道具不当罗小黑角色",
+    "第三方联动游戏的其他IP角色不并入",
+    "停止运营手游独有角色若仅有系列分类则标待核",
+    "2026学前篇：只保留19个社区目录候选归属，不计为已核实作品出场；没有据此确认新番已播或官方角色名单。",
+    "196条为公开目录并集与有限去重后的候选记录，不是官方全角色册。confirmed只确认角色存在已有电影/TV官方人物页支持，不意味着该条全部作品归属、规范中文名或详细设定均获官方核验。其余社区交叉条目统一待核，待核不等于角色不存在。"
+  ]
+}
