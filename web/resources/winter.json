@@ -227,13 +227,13 @@
       }
     },
     {
-      "path": "/audio/dialogue/winter-snowman-friends-e43c7e87.mp3",
-      "bytes": 35856,
-      "sha256": "5325a29370df3f24e894a0d827f62bec92a99fd0631928c022967908b0617589",
+      "path": "/audio/dialogue/winter-snowman-friends-88671e9a.mp3",
+      "bytes": 33120,
+      "sha256": "ecd4b2a9732f317526ea6a97e85597857fafe20b6a7664793311597470a8d717",
       "kind": "dialogue",
       "cue": "winter-snowman-friends",
       "speaker": "四时旁白",
-      "text": "同行的姑娘抱着手臂，小黑却在雪人旁边笑得停不下来。",
+      "text": "哪吒抱着手臂，小黑却在雪人旁边笑得停不下来。",
       "synthesis": {
         "provider": "Microsoft Edge online TTS via edge-tts",
         "voice": "zh-CN-XiaoxiaoNeural",

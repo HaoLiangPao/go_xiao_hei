@@ -201,10 +201,10 @@ export const winterStories = {
       },
       {
         "id": "winter-snowman-friends",
-        "name": "同行的小伙伴",
+        "name": "哪吒和小黑",
         "speaker": "四时旁白",
         "voice": "adultFemale",
-        "text": "同行的姑娘抱着手臂，小黑却在雪人旁边笑得停不下来。",
+        "text": "哪吒抱着手臂，小黑却在雪人旁边笑得停不下来。",
         "bounds": [
           0.1,
           0.36,
