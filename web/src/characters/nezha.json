@@ -1,0 +1,177 @@
+{
+  "name": "哪吒",
+  "subtitle": "会馆的执行者，雪人旁的伙伴",
+  "summary": "《罗小黑战记》世界观中的哪吒，来自会馆总部的执行者。双发髻、齐刘海和现代休闲衣装，是辨认他的线索。",
+  "accent": "#a44c50",
+  "basics": [
+    {
+      "label": "身份",
+      "value": "妖精 · 会馆执行者"
+    },
+    {
+      "label": "版本",
+      "value": "《罗小黑战记》哪吒"
+    },
+    {
+      "label": "能力",
+      "value": "火 / 幻化 / 灵御（续作）"
+    },
+    {
+      "label": "2020 相遇",
+      "value": "大雪 · 和伙伴堆雪人"
+    }
+  ],
+  "appearance2020": "大雪图左侧，哪吒穿着冬装、抱着手臂，与无限、小黑一起围着雪人。",
+  "id": "nezha",
+  "aliases": [
+    "ナタ",
+    "Nezha"
+  ],
+  "checkedAt": "2026-11-19",
+  "eraLabel": "2020 画面与跨作品资料",
+  "heroRef": 0,
+  "sections": [
+    {
+      "title": "身份与背景",
+      "items": [
+        {
+          "text": "这是《罗小黑战记》世界观中的哪吒；导演明确说明并非《哪吒之魔童降世》的联动角色。",
+          "sources": [
+            "https://ent.people.com.cn/n1/2019/0911/c1012-31347995.html"
+          ]
+        },
+        {
+          "text": "哪吒是妖灵会馆总部派遣的执行者，拥有很强的实力。续作官方资料进一步将他介绍为隶属总馆的妖精、会馆三大创始神之一。",
+          "sources": [
+            "https://luoxiaohei-movie.com/1st/character/?page=chara08",
+            "https://luoxiaohei-movie.com/2nd/character/"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "性格与相处",
+      "items": [
+        {
+          "text": "发行宣传提到哪吒喜欢游戏。官方立绘中，他多呈平静神情、穿现代休闲装；这些属于外观观察。",
+          "sources": [
+            "https://www.animatetimes.com/news/details.php?id=1763700816",
+            "https://luoxiaohei-movie.com/1st/character/?page=chara08",
+            "https://luoxiaohei-movie.com/2nd/character/"
+          ]
+        },
+        {
+          "text": "哪吒与无限同属会馆执行者。续作发行宣传还呈现了无限暂住哪吒家、以及两人对战的情节。",
+          "sources": [
+            "https://luoxiaohei-movie.com/1st/character/?page=chara08",
+            "https://luoxiaohei-movie.com/1st/character/?page=chara02",
+            "https://www.animatetimes.com/news/details.php?id=1763700816"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "能力与作品阶段",
+      "items": [
+        {
+          "text": "官方续作资料列出御灵系·火、生灵系·幻化、锁御系·灵御。资料页先保留这三项已确认能力，不把别的哪吒作品中的法宝或身世套用过来。",
+          "sources": [
+            "https://luoxiaohei-movie.com/2nd/character/"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "造型观察",
+      "items": [
+        {
+          "text": "官方角色图可见深色齐刘海、头顶双发髻、低束长发、短款外套与NAZA字样上衣，左上臂系红色饰带；首部电影图与续作图服装图案、短裤和鞋款不同。",
+          "sources": [
+            "https://luoxiaohei-movie.com/1st/character/?page=chara08",
+            "https://luoxiaohei-movie.com/2nd/character/"
+          ]
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "首部电影·正面全身角色图",
+      "imageUrl": "https://luoxiaohei-movie.com/1st/assets/img/character/chara_10.png",
+      "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara08",
+      "description": "深色双发髻、齐刘海、黑白外套、NAZA上衣、迷彩短裤、七分打底裤与运动鞋；正面放松站姿。",
+      "modelingUse": "用于首部电影服装分层、身形轮廓、正面配色和饰带位置；不是正交三视图，不提供背面构造。",
+      "src": "/art/characters/nezha/reference-1.png",
+      "kind": "官方角色立绘",
+      "credit": "© 北京寒木春华动画技术有限公司 · 官方发布的原作图像",
+      "licenseStatus": "保留版权；未确认开放再分发、训练或商业使用许可",
+      "evidence": "A: official site with HMCH copyright; no reuse license found",
+      "sha256": "72d2782c85234df85186ad9e4bc3a95168b51ca943b1c8b76b1f6fd04dc1d255",
+      "bytes": 29653
+    },
+    {
+      "title": "首部电影·仰视回身画面",
+      "imageUrl": "https://luoxiaohei-movie.com/1st/assets/img/character/photo_10-1.jpg",
+      "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara08",
+      "description": "夜色场景，侧后方仰视角色回头，能看见刘海、耳部、后束发与外套后侧轮廓。",
+      "modelingUse": "用于头部侧后体积和后束发轮廓参考；图像受镜头透视和夜间光照影响，不能量尺寸或当完整背面设定。",
+      "src": "/art/characters/nezha/reference-2.jpg",
+      "kind": "官方电影剧照",
+      "credit": "© 北京寒木春华动画技术有限公司 · 官方发布的原作图像",
+      "licenseStatus": "保留版权；未确认开放再分发、训练或商业使用许可",
+      "evidence": "A: official site with HMCH copyright; no reuse license found",
+      "sha256": "7f27911d4df86db97fc1c3622aafde9b4eeddbb54146e00bab74f03a88215fb5",
+      "bytes": 16567
+    },
+    {
+      "title": "首部电影·张臂近景",
+      "imageUrl": "https://luoxiaohei-movie.com/1st/assets/img/character/photo_10-2.jpg",
+      "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara08",
+      "description": "正面偏俯视近景，角色张开双臂，面部轮廓、发际线、外套领口及NAZA字样清楚。",
+      "modelingUse": "用于面部比例、眼睑、刘海、肩袖与领口结构观察；这是动作帧，不是T-pose或正交图。",
+      "src": "/art/characters/nezha/reference-3.jpg",
+      "kind": "官方电影剧照",
+      "credit": "© 北京寒木春华动画技术有限公司 · 官方发布的原作图像",
+      "licenseStatus": "保留版权；未确认开放再分发、训练或商业使用许可",
+      "evidence": "A: official site with HMCH copyright; no reuse license found",
+      "sha256": "8030da82c1d531c962b382a514ad7f2e125bf7150383d4a77c9d06a717bb8898",
+      "bytes": 44501
+    },
+    {
+      "title": "续作电影·正面全身角色图",
+      "imageUrl": "https://luoxiaohei-movie.com/2nd/assets/img/chara/chara_04.png",
+      "sourceUrl": "https://luoxiaohei-movie.com/2nd/character/",
+      "description": "双发髻与黑色短外套延续，紫色火焰纹、蓝灰短裤、腰间垂带和鞋款与首部不同。",
+      "modelingUse": "用于单独记录续作服装版本，方便后续换装建模；不能和首部服装混为同一套设定。",
+      "src": "/art/characters/nezha/reference-4.png",
+      "kind": "官方角色立绘",
+      "credit": "© 北京寒木春华动画技术有限公司 · 官方发布的原作图像",
+      "licenseStatus": "保留版权；未确认开放再分发、训练或商业使用许可",
+      "evidence": "A: official site with HMCH copyright; no reuse license found",
+      "sha256": "fbbce6f3f8ae45d696890bf3cc18e4263dbbecdf247cf606732962850cceda64",
+      "bytes": 146231
+    },
+    {
+      "title": "2020大雪·和伙伴堆雪人",
+      "imageUrl": "https://luoxiaohei.cockerel.com.cn/media/solar/2020/2020-大雪.jpg",
+      "sourceUrl": "https://luoxiaohei.cockerel.com.cn/artwork/huiji:solar/2020/%E5%A4%A7%E9%9B%AA",
+      "description": "哪吒在画面左侧抱臂，穿冬季浅色外套、紫色内搭、红色短裤；无限在雪人后方，小黑在右下。",
+      "modelingUse": "用于2020冬装、表情、伙伴相对身高与场景尺度参考；节气插图有风格化变形，不可当精确建模标尺。",
+      "src": "/art/solar/majorSnow.jpg",
+      "kind": "2020 节气插图",
+      "credit": "© 北京寒木春华动画技术有限公司 · 第三方存档，未逐张核对官方首发",
+      "licenseStatus": "保留版权；未确认开放再分发、训练或商业使用许可",
+      "evidence": "B: third-party archive credits HMCH; first official post not verified",
+      "sha256": "004e4c960eceb1750660b1026920dd5c5ae279017ca0fe901ae536cee28ed6c6",
+      "bytes": 250765
+    }
+  ],
+  "uncertainties": [
+    "未找到可靠的精确出生年月；超过3000岁来自2025续作人物资料，不推算出生年份。",
+    "123厘米在社区百科出现，但本轮未找到原始设定来源，页面先不写确定身高。",
+    "2020大雪官方微博首发帖未逐张核验；保存既有第三方档案来源。",
+    "没有完整正交三视图或身体背面设定；不能从前面图自行补造背面。",
+    "所有图片均未确认开放再分发、模型训练或商业建模许可；版权署名不等于授权。"
+  ],
+  "rights": "人物、原画与剧照版权归原权利人。此处为非官方参考资料整理；来源公开可读不等于获得转载、训练或商业建模授权。"
+}

@@ -20,3 +20,6 @@ await writeFile(
 // Runtime media is tracked in Git; clean builds never require the local collection or TTS.
 const { validateResources } = await import("./runtime-resources.mjs");
 await validateResources();
+
+const { validateCharacterResources } = await import("./character-resources.mjs");
+await validateCharacterResources();

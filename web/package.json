@@ -9,7 +9,7 @@
     "test:material-browser": "node tests/material-browser.cjs",
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1",
-    "test": "node --test tests/geometry.test.js tests/gameplay.test.js tests/journey.test.js tests/dialogue.test.js tests/resources.test.js tests/season-content.test.js",
+    "test": "node --test tests/geometry.test.js tests/gameplay.test.js tests/journey.test.js tests/dialogue.test.js tests/resources.test.js tests/season-content.test.js tests/character-model.test.js",
     "audio:generate": "node scripts/generate-dialogue.mjs",
     "test:model": "node ../tests/scene-model.test.cjs",
     "test:dom": "node ../tests/color-interaction.test.cjs",
@@ -20,7 +20,9 @@
     "resources:publish": "node scripts/publish-resources.mjs",
     "resources:check": "node scripts/runtime-resources.mjs",
     "test:spring-browser": "node tests/spring-browser.cjs",
-    "test:season-browser": "node tests/season-browser.cjs"
+    "test:season-browser": "node tests/season-browser.cjs",
+    "test:characters-browser": "node tests/characters-browser.cjs",
+    "characters:check": "node scripts/character-resources.mjs"
   },
   "dependencies": {
     "react": "19.2.3",
