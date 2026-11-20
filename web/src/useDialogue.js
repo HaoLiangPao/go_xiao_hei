@@ -16,7 +16,8 @@ export function useDialogue(sound, openingCue = opening, paused = false) {
     if (!active || paused) return;
     setLast(active);
     setLength(0);
-    audio.current.speak(active);
+    const playback = audio.current.speak(active);
+    let canceled = false;
     const characters = Array.from(active.text);
     let index = 0,
       linger;
@@ -25,7 +26,10 @@ export function useDialogue(sound, openingCue = opening, paused = false) {
     ).matches;
     function done() {
       linger = setTimeout(
-        () => setQueue((q) => (q[0]?.id === active.id ? q.slice(1) : q)),
+        async () => {
+          await playback;
+          if (!canceled) setQueue((q) => (q[0]?.id === active.id ? q.slice(1) : q));
+        },
         4200,
       );
     }
@@ -44,9 +48,10 @@ export function useDialogue(sound, openingCue = opening, paused = false) {
           }
         }, 48);
     return () => {
+      canceled = true;
       clearInterval(interval);
       clearTimeout(linger);
-      audio.current.stop();
+      audio.current.stopDialogue();
     };
   }, [active?.id, paused]);
   function enqueue(events) {

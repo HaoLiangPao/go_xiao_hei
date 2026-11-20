@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { createRainSoundscape } from "./rainSoundscape.js";
-import { castVoice, mandarinVoices, voiceProfiles } from "./voiceProfiles.js";
+import { mandarinVoices } from "./voiceProfiles.js";
+
+import { createDialoguePlayer } from "./dialoguePlayer.js";
 
 export function useSound(rainy = true) {
   const [enabled, setEnabled] = useState(false),
@@ -20,7 +22,11 @@ export function useSound(rainy = true) {
     });
   const context = useRef(null),
     mix = useRef(null),
-    currentUtterance = useRef(null);
+    player = useRef(null), playbackKind = useRef(null), castRef = useRef(voiceCast);
+  castRef.current = voiceCast;
+  if (!player.current) player.current = createDialoguePlayer({
+    onSpeaking: setSpeaking, onNote: setNote, voiceCast: () => castRef.current,
+  });
 
   function unlock() {
     try {
@@ -82,59 +88,25 @@ export function useSound(rainy = true) {
       setNote("音效暂时不可用，字幕仍可使用。");
     }
   }
-  function speak({ text, voice: role = "adultFemale" }) {
-    if (!enabled || !voice || document.hidden) return;
-    if (!window.speechSynthesis || !window.SpeechSynthesisUtterance) {
-      setNote("当前浏览器没有系统朗读功能。");
-      return;
-    }
-    const systemVoice = castVoice(
-      mandarinVoices(window.speechSynthesis.getVoices()),
-      role,
-      voiceCast,
-    );
-    if (!systemVoice) {
-      setNote("未找到中文系统语音；字幕和音效仍可使用。");
-      return;
-    }
-    stop();
-    setNote("");
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.voice = systemVoice;
-    utterance.lang = systemVoice.lang;
-    const { rate, pitch } = voiceProfiles[role];
-    utterance.rate = rate;
-    utterance.pitch = pitch;
-    function finish() {
-      if (currentUtterance.current !== utterance) return;
-      currentUtterance.current = null;
-      setSpeaking(false);
-    }
-    utterance.onend = finish;
-    utterance.onerror = (event) => {
-      if (
-        currentUtterance.current === utterance &&
-        !["canceled", "interrupted"].includes(event.error)
-      ) {
-        setNote("系统朗读未能播放，字幕仍可使用。");
-      }
-      finish();
-    };
-    currentUtterance.current = utterance;
-    setSpeaking(true);
-    try {
-      window.speechSynthesis.speak(utterance);
-    } catch {
-      finish();
-      setNote("系统朗读未能播放，字幕仍可使用。");
-    }
+  function speak(cue) {
+    if (!enabled || !voice || document.hidden) return Promise.resolve();
+    playbackKind.current = "dialogue";
+    return player.current.play(cue);
+  }
+  function preview(cue) {
+    if (!enabled || document.hidden) return;
+    playbackKind.current = "preview";
+    return player.current.play(cue);
+  }
+  function stopDialogue() {
+    if (playbackKind.current !== "dialogue") return;
+    playbackKind.current = null;
+    player.current.stop();
   }
   function stop() {
-    if (currentUtterance.current) {
-      currentUtterance.current = null;
-      window.speechSynthesis?.cancel();
-    }
-    setSpeaking(false);
+    playbackKind.current = null;
+    player.current.stop();
+    setNote("");
   }
   useEffect(() => {
     mix.current?.({
@@ -163,7 +135,7 @@ export function useSound(rainy = true) {
     return () => {
       document.removeEventListener("visibilitychange", onVisibility);
       synthesis?.removeEventListener?.("voiceschanged", loadVoices);
-      if (currentUtterance.current) window.speechSynthesis?.cancel();
+      player.current.stop();
       context.current?.close().catch(() => {});
     };
   }, []);
@@ -188,6 +160,9 @@ export function useSound(rainy = true) {
     toggle,
     play,
     speak,
+    preview,
+    speaking,
+    stopDialogue,
     stop,
     note,
   };

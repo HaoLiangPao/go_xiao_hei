@@ -1,4 +1,4 @@
-import { copyFile, mkdir, readFile, writeFile } from "node:fs/promises";
+import { copyFile, mkdir, readFile, writeFile, rm } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import { solarTerms } from "../src/solarTerms.js";
 import { fileURLToPath } from "node:url";
@@ -38,3 +38,21 @@ for (const term of solarTerms) {
   catch (error) { if (error.code !== "ENOENT") throw error; }
 }
 console.log(`节气图片：${available}/24 已准备；完整原图与新增副本不进入 Git。`);
+
+// Generated audio stays local; only copy clips matching the current text/profile.
+const { dialogueCues, clipFilename } = await import("../src/dialogueClips.js");
+const audioSource = new URL("../../generated-audio/dialogue/", import.meta.url);
+const audioTarget = new URL("../public/audio/dialogue/", import.meta.url);
+await rm(audioTarget, { recursive: true, force: true });
+await mkdir(audioTarget, { recursive: true });
+let copied = 0;
+for (const cue of dialogueCues) {
+  const filename = clipFilename(cue);
+  try {
+    await copyFile(new URL(filename, audioSource), new URL(filename, audioTarget));
+    copied++;
+  } catch (error) {
+    if (error.code !== "ENOENT") throw error;
+  }
+}
+console.log(`中文配音：${copied}/${dialogueCues.length} 段；缺失时使用设备中文语音或字幕。`);
