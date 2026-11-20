@@ -9,6 +9,6 @@
 - Open the PR for the user to review. Do not merge it, enable auto-merge, or push directly to `main` without explicit instructions.
 - Preserve the user's working changes. Use an isolated checkout or staging directory when needed.
 - Keep the browser prototype runnable offline without a build step. Retain existing saves unless the feature requires a documented migration.
-- Keep poster collections, archives, generated audio, and model weights out of feature commits. Preserve local original assets.
+- Keep poster collections, archives, experimental/generated audio sources, and model weights out of feature commits. Preserve local original assets. User-approved runtime images and synthesized clips may be committed under web/public with a checked resource manifest so clean previews and builds have media available.
 - Run `node tests/scene-model.test.cjs` and syntax checks for changed scripts. When changing interactions, also run the DOM checks if jsdom is available, and perform real-browser checks when permitted.
 - Do not claim animation, touch input, drag-and-drop, or visual layout passed browser testing based only on jsdom.

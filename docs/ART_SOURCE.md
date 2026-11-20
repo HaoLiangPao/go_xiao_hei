@@ -16,3 +16,5 @@
 | --- | --- | --- | --- |
 | 2020 年春分节气图 | A0223 | `web/public/art/equinox-2020.jpg` | [收藏条目](https://luoxiaohei.cockerel.com.cn/artwork/huiji:solar/2020/%E6%98%A5%E5%88%86) |
 | 2020 年谷雨节气图 | A0241 | `web/public/art/grain-rain-2020.jpg` | [收藏条目](https://luoxiaohei.cockerel.com.cn/artwork/huiji:solar/2020/%E8%B0%B7%E9%9B%A8) |
+
+当前网页运行图集已扩展为 2020 年标准版二十四节气，精选图片随 Git 保存以保证干净 Preview 可用。完整素材编号、原收藏相对路径、尺寸与来源见 `web/src/solarTerms.js`；每个实际运行文件的 SHA-256 和字节数见 `web/resources-manifest.json`。本次没有改变上述版权归属或修改收藏原件。

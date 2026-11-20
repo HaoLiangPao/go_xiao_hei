@@ -655,7 +655,7 @@ function Puzzle({ mode, sound, paused, gameRef, onComplete, onNext, material }) 
           {!remaining.length && (
             <div className="tray-complete">
               <Icon name="leaf" />
-              <strong>{isRain ? "春天完整了" : `${art.title}拼好了`}</strong>
+              <strong>{art.title}拼好了</strong>
               <p>{storyMemories.length ? "画面与记忆，都留在这一站。" : "这一处光，已收进四时旅程。"}</p>
               {nextTerm(picture) ? <button className="next-term-button" onClick={onNext} disabled={!imageReady}>
                 下一节气 · {nextTerm(picture).title}

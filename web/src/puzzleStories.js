@@ -8,6 +8,51 @@ const narration = (id, text) => ({
 });
 
 export const puzzleStories = {
+  startSpring: {
+    goal: "spring-buds",
+    opening: narration("opening", "先找回枝头的新芽，陪小黑和无限走过水边的小桥。"),
+    ending: narration("complete", "新芽、小桥和溪水都回来了。小黑发现，春天已经走到身边。"),
+    memories: [
+      { id: "spring-buds", name: "枝头新芽", icon: "leaf", speaker: "小黑", voice: "child",
+        text: "师父，树上冒出好多小绿点！它们也睡醒了吗？", bounds: [0.03, 0.02, 0.97, 0.49], effect: "wind" },
+      { id: "bridge-guide", name: "无限", icon: "mountain", speaker: "无限", voice: "adultMale",
+        text: "那是新芽。慢慢看，也别忘了脚下的小桥。", bounds: [0.32, 0.51, 0.67, 0.76], effect: "glow" },
+      { id: "bridge-xiaohei", name: "小黑", icon: "cat", speaker: "小黑", voice: "child",
+        text: "我看着呢！水里的小鱼，也跟我们一起走。", bounds: [0.15, 0.63, 0.36, 0.76], effect: "glow" },
+      { id: "spring-stream", name: "桥下溪水", icon: "leaf", speaker: "春日旁白", voice: "adultFemale",
+        text: "溪水绕过青石，细细的波纹把春光带向远处。", bounds: [0, 0.79, 1, 1], effect: "rain" },
+    ],
+  },
+  insects: {
+    goal: "willow-birds",
+    opening: narration("opening", "先拼出柳枝上的两只小鸟，看看小黑正指着哪里。"),
+    ending: narration("complete", "柳叶轻轻摇着。小黑仰着头，把枝头的小鸟看了又看。"),
+    memories: [
+      { id: "willow-birds", name: "枝头小鸟", icon: "leaf", speaker: "小黑", voice: "child",
+        text: "师父，看上面！两只小鸟，会不会也在聊天？", bounds: [0.47, 0.01, 0.89, 0.27], effect: "glow" },
+      { id: "willow-leaves", name: "垂柳", icon: "leaf", speaker: "春日旁白", voice: "adultFemale",
+        text: "长长的柳条垂下来，嫩叶在风里轻轻摆动。", bounds: [0.02, 0.12, 0.44, 0.55], effect: "wind" },
+      { id: "willow-guide", name: "无限", icon: "mountain", speaker: "无限", voice: "adultMale",
+        text: "我们轻一点。站在这里，已经看得很清楚了。", bounds: [0.13, 0.58, 0.53, 0.94], effect: "glow" },
+      { id: "willow-xiaohei", name: "小黑", icon: "cat", speaker: "小黑", voice: "child",
+        text: "好，我小小声。小鸟，你们好呀。", bounds: [0.46, 0.76, 0.66, 0.95], effect: "glow" },
+    ],
+  },
+  pureBrightness: {
+    goal: "sleeping-xiaohei",
+    opening: narration("opening", "先找回树枝上睡着的小黑，让这段树荫下的午后慢下来。"),
+    ending: narration("complete", "屋瓦和树荫都拼好了。小黑还在睡，无限把这一刻留得很轻。"),
+    memories: [
+      { id: "sleeping-xiaohei", name: "树上小黑", icon: "cat", speaker: "春日旁白", voice: "adultFemale",
+        text: "小黑趴在树枝上睡着了，长长的尾巴也安静下来。", bounds: [0.37, 0.54, 0.73, 0.67], effect: "glow" },
+      { id: "roof-guide", name: "无限", icon: "mountain", speaker: "无限", voice: "adultMale",
+        text: "睡吧。等你醒了，我们再慢慢走。", bounds: [0.52, 0.65, 0.9, 0.94], effect: "glow" },
+      { id: "green-canopy", name: "浓绿树荫", icon: "leaf", speaker: "春日旁白", voice: "adultFemale",
+        text: "一层一层的绿叶，把屋顶上的光筛得柔柔的。", bounds: [0.01, 0.01, 0.98, 0.5], effect: "wind" },
+      { id: "green-roof", name: "青绿屋瓦", icon: "drawing", speaker: "春日旁白", voice: "adultFemale",
+        text: "树枝伸过青绿的屋瓦，安静的午后有了歇脚的地方。", bounds: [0.01, 0.81, 0.53, 0.94], effect: "glow" },
+    ],
+  },
   rain: {
     goal: "umbrella",
     opening: narration("opening", "先拼出雨伞，给小黑和无限挡一挡雨。"),

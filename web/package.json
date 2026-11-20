@@ -6,18 +6,20 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "test:journey-browser": "node tests/journey-browser.cjs",
-
     "test:material-browser": "node tests/material-browser.cjs",
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1",
-    "test": "node --test tests/geometry.test.js tests/gameplay.test.js tests/journey.test.js tests/dialogue.test.js",
+    "test": "node --test tests/geometry.test.js tests/gameplay.test.js tests/journey.test.js tests/dialogue.test.js tests/resources.test.js",
     "audio:generate": "node scripts/generate-dialogue.mjs",
     "test:model": "node ../tests/scene-model.test.cjs",
     "test:dom": "node ../tests/color-interaction.test.cjs",
     "test:browser": "node tests/browser.cjs",
     "test:voice-browser": "node tests/dialogue-browser.cjs",
     "predev": "node scripts/prepare-public.mjs",
-    "prebuild": "node scripts/prepare-public.mjs"
+    "prebuild": "node scripts/prepare-public.mjs",
+    "resources:publish": "node scripts/publish-resources.mjs",
+    "resources:check": "node scripts/runtime-resources.mjs",
+    "test:spring-browser": "node tests/spring-browser.cjs"
   },
   "dependencies": {
     "react": "19.2.3",
