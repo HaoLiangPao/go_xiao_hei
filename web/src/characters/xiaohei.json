@@ -1,0 +1,184 @@
+{
+  "name": "罗小黑",
+  "subtitle": "好奇的男孩子，也是一只小黑猫",
+  "summary": "能在人形与猫形之间变化的黑猫妖精。跟着无限学习，也在与小白相伴的日子里认识人类世界。",
+  "accent": "#466d4c",
+  "basics": [
+    {
+      "label": "身份",
+      "value": "黑猫妖精 · 男孩子"
+    },
+    {
+      "label": "形态",
+      "value": "猫形 / 人形"
+    },
+    {
+      "label": "关系",
+      "value": "无限的徒弟，小白的伙伴"
+    },
+    {
+      "label": "参考版本",
+      "value": "首部电影 / TV 动画"
+    }
+  ],
+  "appearance2020": "2020 年二十四节气图中，与无限一起走过四季；大雪图里正围着雪人玩。",
+  "id": "xiaohei",
+  "aliases": [
+    "小黑",
+    "シャオヘイ"
+  ],
+  "checkedAt": "2026-11-19",
+  "eraLabel": "2020 画面与跨作品资料",
+  "heroRef": 0,
+  "sections": [
+    {
+      "title": "身份与背景",
+      "items": [
+        {
+          "text": "小黑是一只黑猫妖精，也是男孩子；可以变成人形。",
+          "sources": [
+            "https://luoxiaohei-movie.com/2nd/character/",
+            "https://bgm.tv/character/26123"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "性格与相处",
+      "items": [
+        {
+          "text": "直率、活泼，对世界保有好奇，也喜欢人类的食物。",
+          "sources": [
+            "https://luoxiaohei-movie.com/1st/character/",
+            "https://luoxiaohei-movie.com/2nd/character/"
+          ]
+        },
+        {
+          "text": "无限是小黑的师父，带着他学习和生活。",
+          "sources": [
+            "https://luoxiaohei-movie.com/tv/character/",
+            "https://luoxiaohei-movie.com/2nd/"
+          ]
+        },
+        {
+          "text": "小白在小黑受伤流落街头时救助他，之后与他一起生活。",
+          "sources": [
+            "https://luoxiaohei-movie.com/tv/character/",
+            "https://www.aniplex.co.jp/lineup/luoxiaohei-tv/"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "能力与作品阶段",
+      "items": [
+        {
+          "text": "有御灵系·金与空间系·传送能力，能操纵金属、连接空间。其领域能力随剧情阶段变化，不能把所有时期能力直接叠加。",
+          "sources": [
+            "https://luoxiaohei-movie.com/2nd/character/",
+            "https://luoxiaohei-movie.com/1st/character/",
+            "https://luoxiaohei.huijiwiki.com/wiki/罗小黑"
+          ]
+        },
+        {
+          "text": "尾巴能分裂成称为黑咻的小生物。黑咻与小黑是不同的资料条目。",
+          "sources": [
+            "https://luoxiaohei-movie.com/2nd/character/",
+            "https://luoxiaohei-movie.com/tv/character/"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "造型观察",
+      "items": [
+        {
+          "text": "建模参考需区分猫形、人形以及不同作品的衣着和发色。2019电影官图是交领上衣、七分裤；电影2官图为现代便装；形象标注以对应图为准。",
+          "sources": [
+            "https://luoxiaohei-movie.com/1st/character/",
+            "https://luoxiaohei-movie.com/2nd/character/"
+          ]
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "人形与猫形正面全身",
+      "imageUrl": "https://luoxiaohei-movie.com/1st/assets/img/character/chara_01.png",
+      "sourceUrl": "https://luoxiaohei-movie.com/1st/character/",
+      "description": "同一张立绘同时包含人形与黑猫形态。",
+      "modelingUse": "核对猫耳、绿色内耳、头身比、交领上衣、绑腿与猫形基础比例。",
+      "src": "/art/characters/xiaohei/reference-1.png",
+      "kind": "官方角色立绘",
+      "credit": "© 北京寒木春华动画技术有限公司 · 官方发布的原作图像",
+      "licenseStatus": "保留版权；未确认开放再分发、训练或商业使用许可",
+      "evidence": "官方页面已视觉核对",
+      "sha256": "7b0909c37cbffa52276f79a5d1973dac6d0b0a892e363769404662ab4ddbebf2",
+      "bytes": 62059
+    },
+    {
+      "title": "人形斜侧脸·夜间暖光",
+      "imageUrl": "https://luoxiaohei-movie.com/1st/assets/img/character/photo_01-1.jpg",
+      "sourceUrl": "https://luoxiaohei-movie.com/1st/character/",
+      "description": "暖色夜景中的斜侧脸近景，手在颈前。",
+      "modelingUse": "观察脸颊轮廓、鼻口极简结构、耳朵和发束层次；暖光不能当作固有色。",
+      "src": "/art/characters/xiaohei/reference-2.jpg",
+      "kind": "官方电影剧照",
+      "credit": "© 北京寒木春华动画技术有限公司 · 官方发布的原作图像",
+      "licenseStatus": "保留版权；未确认开放再分发、训练或商业使用许可",
+      "evidence": "官方页面已视觉核对",
+      "sha256": "6d4833a66d85c8ae7d666160160690e9d2e2a79501b2d39aa5400d36d84a3428",
+      "bytes": 91803
+    },
+    {
+      "title": "人形背侧·餐桌动作",
+      "imageUrl": "https://luoxiaohei-movie.com/1st/assets/img/character/photo_01-2.jpg",
+      "sourceUrl": "https://luoxiaohei-movie.com/1st/character/",
+      "description": "从背侧看坐姿进食，能见上衣背面、袖口、脸颊和手。",
+      "modelingUse": "补充背侧衣片、袖子与手臂在动作中的关系，不能替代完整背面三视图。",
+      "src": "/art/characters/xiaohei/reference-3.jpg",
+      "kind": "官方电影剧照",
+      "credit": "© 北京寒木春华动画技术有限公司 · 官方发布的原作图像",
+      "licenseStatus": "保留版权；未确认开放再分发、训练或商业使用许可",
+      "evidence": "官方页面已视觉核对",
+      "sha256": "31bbb8bfe4e7b5e7273bd696cca4a4e49454689d05d244b60fb66dfee71d6f25",
+      "bytes": 128346
+    },
+    {
+      "title": "猫形四分之三侧面与黑咻",
+      "imageUrl": "https://luoxiaohei-movie.com/1st/assets/img/character/photo_01-3.jpg",
+      "sourceUrl": "https://luoxiaohei-movie.com/1st/character/",
+      "description": "坐着的黑猫形小黑，旁有体积更小的黑咻。",
+      "modelingUse": "核对大眼、尖耳、四肢与躯干体积，区分猫形小黑和黑咻。",
+      "src": "/art/characters/xiaohei/reference-4.jpg",
+      "kind": "官方电影剧照",
+      "credit": "© 北京寒木春华动画技术有限公司 · 官方发布的原作图像",
+      "licenseStatus": "保留版权；未确认开放再分发、训练或商业使用许可",
+      "evidence": "官方页面已视觉核对",
+      "sha256": "cc82b1ecc131c79cdd9bd394a95980aaaf6c290d5e3a354ce74cf77972232d13",
+      "bytes": 151354
+    },
+    {
+      "title": "猫形趴卧与尾巴",
+      "imageUrl": "https://luoxiaohei-movie.com/tv/assets/img/chara_01.jpg",
+      "sourceUrl": "https://luoxiaohei-movie.com/tv/character/",
+      "description": "趴在垫子上的小黑，全身与尾巴可见。",
+      "modelingUse": "观察猫形趴卧时的躯干轮廓、眼脸比例、尾巴走势。",
+      "src": "/art/characters/xiaohei/reference-5.jpg",
+      "kind": "官方TV人物画面",
+      "credit": "© 北京寒木春华动画技术有限公司 · 官方发布的原作图像",
+      "licenseStatus": "保留版权；未确认开放再分发、训练或商业使用许可",
+      "evidence": "官方页面已视觉核对",
+      "sha256": "4be4f28597577e5361730ae2f7ebc9839e5b9f490f729d874835dd22fa84af8f",
+      "bytes": 51040
+    }
+  ],
+  "uncertainties": [
+    "不在通用简介填写统一年龄：官方电影1写6岁、电影2写8岁，TV时间线不同；如以后显示年龄必须带作品阶段。",
+    "生日没有获得本轮已读官方文字确认，先不填。",
+    "五张公开参考并非完整三视图，没有严格正交背面，建模前仍需补正式设定集与授权。",
+    "官方发布图仍属于原权利人，公开可读不等于获得建模训练或商业授权。"
+  ],
+  "rights": "人物、原画与剧照版权归原权利人。此处为非官方参考资料整理；来源公开可读不等于获得转载、训练或商业建模授权。"
+}
