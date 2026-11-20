@@ -1,13 +1,18 @@
 import { mkdir, rename, writeFile, rm, stat } from "node:fs/promises";
 import { spawn } from "node:child_process";
 import { fileURLToPath } from "node:url";
-import { dialogueCues, clipFilename, voiceProfiles } from "../src/dialogueClips.js";
+import { dialogueCues, dialogueCuesForSeason, clipFilename, voiceProfiles } from "../src/dialogueClips.js";
 
 const destination = fileURLToPath(new URL("../../generated-audio/dialogue/", import.meta.url));
 const python = process.env.TTS_PYTHON || "python3";
+const seasonArgument = process.argv.indexOf("--season");
+const season = seasonArgument < 0 ? null : process.argv[seasonArgument + 1];
+if (seasonArgument >= 0 && !["spring", "summer", "autumn", "winter"].includes(season)) throw new Error("--season 需要 spring、summer、autumn 或 winter。");
+const cues = season ? dialogueCuesForSeason(season) : dialogueCues;
+if (!cues.length) throw new Error("该季节尚未接入区域剧情。");
 await mkdir(destination, { recursive: true });
 const manifest = { provider: "Microsoft Edge online TTS via edge-tts", generatedAt: new Date().toISOString(), clips: [] };
-for (const cue of dialogueCues) {
+for (const cue of cues) {
   const profile = voiceProfiles[cue.speaker];
   const filename = clipFilename(cue);
   const temporary = destination + filename + ".tmp";
