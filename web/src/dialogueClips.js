@@ -1,9 +1,17 @@
 import { puzzleStories } from "./puzzleStories.js";
+import { solarTerms } from "./solarTerms.js";
 
 export const opening = puzzleStories.rain.opening;
 export const closing = puzzleStories.rain.ending;
 export const dialogueCues = Object.values(puzzleStories).flatMap((story) => [story.opening, ...story.memories, story.ending]);
+export function dialogueCuesForSeason(season) {
+  return solarTerms.filter((term) => term.season === season).flatMap((term) => {
+    const story = puzzleStories[term.id];
+    return story ? [story.opening, ...story.memories, story.ending] : [];
+  });
+}
 export const voiceProfiles = {
+  四时旁白: { voice: "zh-CN-XiaoxiaoNeural", rate: "-8%", pitch: "+0Hz" },
   无限: { voice: "zh-CN-YunxiNeural", rate: "-18%", pitch: "-26Hz" },
   小黑: { voice: "zh-CN-YunxiaNeural", rate: "+6%", pitch: "+10Hz" },
   春日旁白: { voice: "zh-CN-XiaoxiaoNeural", rate: "-8%", pitch: "+0Hz" },

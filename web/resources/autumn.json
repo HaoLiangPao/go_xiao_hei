@@ -1,0 +1,545 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "path": "/audio/dialogue/opening-e9a3770e.mp3",
+      "bytes": 31392,
+      "sha256": "500d8e168c519c2050b13c1e2e4774cff660ffb5119301201a1dbbbe1b9e6901",
+      "kind": "dialogue",
+      "cue": "opening",
+      "speaker": "四时旁白",
+      "text": "先找回池边的小鸭子，坐下来听一听树荫里的风。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/autumn-ducklings-bc9da06f.mp3",
+      "bytes": 30096,
+      "sha256": "593ce6dad4042d776480d4db5679efef238494c5683280e93e3c35008c9f0df3",
+      "kind": "dialogue",
+      "cue": "autumn-ducklings",
+      "speaker": "小黑",
+      "text": "师父，它们排成一队啦！后面那只，快跟上。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiaNeural",
+        "rate": "+6%",
+        "pitch": "+10Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/autumn-watermelon-bfc093b6.mp3",
+      "bytes": 29664,
+      "sha256": "dac3ee58f223026bdf60a2bafdae859e3d32422749eac1ab4d22204a54a19e17",
+      "kind": "dialogue",
+      "cue": "autumn-watermelon",
+      "speaker": "四时旁白",
+      "text": "小黑捧着一片西瓜，目光却跟着小鸭游远了。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/autumn-stone-guide-36778d8b.mp3",
+      "bytes": 28512,
+      "sha256": "5b715dd92f91382ef2bf2c66df8c973a646b9d90c88e3766397c159f088b29eb",
+      "kind": "dialogue",
+      "cue": "autumn-stone-guide",
+      "speaker": "无限",
+      "text": "不着急。坐一会儿，再往前走。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-18%",
+        "pitch": "-26Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/autumn-shade-c491d796.mp3",
+      "bytes": 30240,
+      "sha256": "d2029e29433c49c2fca3c87b38c325795db289903249700e524fe91b9e1db702",
+      "kind": "dialogue",
+      "cue": "autumn-shade",
+      "speaker": "四时旁白",
+      "text": "树荫顺着石阶铺下来，水面留着一层安静的绿。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/complete-39b88169.mp3",
+      "bytes": 35280,
+      "sha256": "cebc0c587489c8284321bd3b650780256eef558cdf56f91b22813be04ffefb97",
+      "kind": "dialogue",
+      "cue": "complete",
+      "speaker": "四时旁白",
+      "text": "小鸭游过水面，石阶上的两个人把这一阵凉风留了下来。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/opening-92b4282c.mp3",
+      "bytes": 32544,
+      "sha256": "b9ee724c932b891028a2249560c85533be065fcc1c085238d1eb945cfa2685af",
+      "kind": "dialogue",
+      "cue": "opening",
+      "speaker": "四时旁白",
+      "text": "先找回水面的小灯，沿着灯影看向远处的小船。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/autumn-water-lights-6606432f.mp3",
+      "bytes": 24192,
+      "sha256": "c8a76625a960d42c643bf95f68ef05656c64b55d17e53c197040ec2416a0fb5b",
+      "kind": "dialogue",
+      "cue": "autumn-water-lights",
+      "speaker": "小黑",
+      "text": "像好多小星星，排着队从水上走过来。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiaNeural",
+        "rate": "+6%",
+        "pitch": "+10Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/autumn-boat-guide-fc26ebf5.mp3",
+      "bytes": 27072,
+      "sha256": "4ef7589e10ecdb7a71281f4bdc1409d9345551c3e92beddd67f37ec590e32fa3",
+      "kind": "dialogue",
+      "cue": "autumn-boat-guide",
+      "speaker": "无限",
+      "text": "先坐稳。灯影会慢慢漂过来。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-18%",
+        "pitch": "-26Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/autumn-boat-child-cb2a9eaf.mp3",
+      "bytes": 26496,
+      "sha256": "be04778909efec1e6d07cbcee1ec26a0dab463f1f00621f2bbaf04d03c1cf098",
+      "kind": "dialogue",
+      "cue": "autumn-boat-child",
+      "speaker": "四时旁白",
+      "text": "小黑望着水面，把亮亮的倒影看了又看。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/autumn-night-water-9f0f9fb9.mp3",
+      "bytes": 30528,
+      "sha256": "514d3f77ef2cc1ad0b7e7466ab9a0499adaa0d51daefe52f899257d43ca6e007",
+      "kind": "dialogue",
+      "cue": "autumn-night-water",
+      "speaker": "四时旁白",
+      "text": "细细的水纹把光拉长，夜色也跟着轻轻摇晃。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/complete-353b0c65.mp3",
+      "bytes": 34416,
+      "sha256": "747ffa816b1440f5aaff653395c2d7995d516f759c6cc1e498e449979368d0d1",
+      "kind": "dialogue",
+      "cue": "complete",
+      "speaker": "四时旁白",
+      "text": "小船和灯影都拼回来了，夜色里便有了一条柔柔的亮路。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/opening-65af83c2.mp3",
+      "bytes": 32544,
+      "sha256": "701afc43fcc419ae10e9c978c8300d482b05743e147f62e440a83d666de297e7",
+      "kind": "dialogue",
+      "cue": "opening",
+      "speaker": "四时旁白",
+      "text": "先拼回蓬松的芦穗，看看小黑在草间发现了什么。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/autumn-reed-plumes-f4fe31d5.mp3",
+      "bytes": 23760,
+      "sha256": "386a0bb61785c417f54e824c4f393feb0e2f5843e24979915a3d642d1573b93f",
+      "kind": "dialogue",
+      "cue": "autumn-reed-plumes",
+      "speaker": "小黑",
+      "text": "这些毛茸茸的穗子，像一大片小尾巴。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiaNeural",
+        "rate": "+6%",
+        "pitch": "+10Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/autumn-reed-guide-b1746c5b.mp3",
+      "bytes": 24048,
+      "sha256": "12e642094a093e1405c877fa226743eec984192755369914a8e34b59ececff03",
+      "kind": "dialogue",
+      "cue": "autumn-reed-guide",
+      "speaker": "无限",
+      "text": "跟紧我，别让穗子挠到鼻子。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-18%",
+        "pitch": "-26Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/autumn-reed-child-20412bfa.mp3",
+      "bytes": 27648,
+      "sha256": "e7194f5791a06fab18a595c1db1f1748586bc534d12a6385e0ae45d97c5920cb",
+      "kind": "dialogue",
+      "cue": "autumn-reed-child",
+      "speaker": "四时旁白",
+      "text": "小黑眯起眼睛，脸颊边都是柔软的草穗。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/autumn-reed-light-f6a79861.mp3",
+      "bytes": 30528,
+      "sha256": "2341c77a37eb58cd3d610e5a8515584bc4df1d3f10d62787c18f3f5eaa7096c5",
+      "kind": "dialogue",
+      "cue": "autumn-reed-light",
+      "speaker": "四时旁白",
+      "text": "光从芦穗间穿过去，把整片草丛染得暖暖的。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/complete-3f517eb1.mp3",
+      "bytes": 35280,
+      "sha256": "3f74ca2ad70e5ddfd643c27845235ad76f069547f173eb91487a87ac8cb3c8c2",
+      "kind": "dialogue",
+      "cue": "complete",
+      "speaker": "四时旁白",
+      "text": "芦穗跟着秋风点头，两个人的身影也重新藏进了暖色里。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/opening-6a039d1e.mp3",
+      "bytes": 31392,
+      "sha256": "8f6a7640d17a51f7b9162455e6fcd01715a065dfc563d6a7e995ae4abd1860f7",
+      "kind": "dialogue",
+      "cue": "opening",
+      "speaker": "四时旁白",
+      "text": "先找回小黑手里的棉花糖，秋天的小街热闹起来了。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/autumn-cotton-candy-4cfc0fe2.mp3",
+      "bytes": 29376,
+      "sha256": "191d19c88808cb892acead52ac361464e39fa76d0b023c4ccdf7cb0dde6a6bff",
+      "kind": "dialogue",
+      "cue": "autumn-cotton-candy",
+      "speaker": "小黑",
+      "text": "师父，我手里有两朵小云！你想先尝哪一朵？",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiaNeural",
+        "rate": "+6%",
+        "pitch": "+10Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/autumn-market-guide-44c658eb.mp3",
+      "bytes": 30384,
+      "sha256": "3c01aeaee3446360777ae602cc2e0bd0a0606cc7e54136575cb09df022a65287",
+      "kind": "dialogue",
+      "cue": "autumn-market-guide",
+      "speaker": "无限",
+      "text": "你先拿稳。人多，我们慢慢走。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-18%",
+        "pitch": "-26Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/autumn-red-balloon-1447d5c0.mp3",
+      "bytes": 36432,
+      "sha256": "5fc226a882e65d98bb2ff531505b114691ed53baa0e8d2ff3e218b8e294eb9a2",
+      "kind": "dialogue",
+      "cue": "autumn-red-balloon",
+      "speaker": "四时旁白",
+      "text": "红气球浮在糖果摊前，细细的线一直牵到小黑手里。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/autumn-market-friends-34ad752e.mp3",
+      "bytes": 34416,
+      "sha256": "50afbc455541818af2265a434c7c138fccb0562f4e7e7f8740974ff577512344",
+      "kind": "dialogue",
+      "cue": "autumn-market-friends",
+      "speaker": "四时旁白",
+      "text": "小店前挤满了笑脸，热闹从画面这头一直跑到那头。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/complete-ce55577b.mp3",
+      "bytes": 38016,
+      "sha256": "b6e7a0f9a290ed46d2daf06deb9fda552b873ad0a76021edb2e3f17f5e5c889f",
+      "kind": "dialogue",
+      "cue": "complete",
+      "speaker": "四时旁白",
+      "text": "气球、糖果和笑脸都回来了，街上的每一步都像踩着快乐。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/opening-e160df9d.mp3",
+      "bytes": 35424,
+      "sha256": "0f63654c75b027c65634b4da23b5c2cb9b97c33e252aa4c6d2a511871370f595",
+      "kind": "dialogue",
+      "cue": "opening",
+      "speaker": "四时旁白",
+      "text": "先拼回游乐场的小飞机，和小黑一起看看飘来的秋叶。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/autumn-little-plane-8b1ae1c1.mp3",
+      "bytes": 28368,
+      "sha256": "654cd6122c74868b4754721ff0517c865c6539d968b997eff3993200244fa403",
+      "kind": "dialogue",
+      "cue": "autumn-little-plane",
+      "speaker": "小黑",
+      "text": "师父，前面有片叶子！我们跟它打个招呼吧。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiaNeural",
+        "rate": "+6%",
+        "pitch": "+10Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/autumn-ride-guide-989c9835.mp3",
+      "bytes": 25920,
+      "sha256": "e98746c7790a8f39b0638002e6c280cedf78b613439985a0e71ce3524a5dd932",
+      "kind": "dialogue",
+      "cue": "autumn-ride-guide",
+      "speaker": "无限",
+      "text": "扶好前面。我们在这儿也看得见。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-18%",
+        "pitch": "-26Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/autumn-ride-child-30d76f47.mp3",
+      "bytes": 31968,
+      "sha256": "b5c803c2aca9880e8b13cdbc8812fd19c59269a14ee8f0d89a56c41aae9c094d",
+      "kind": "dialogue",
+      "cue": "autumn-ride-child",
+      "speaker": "四时旁白",
+      "text": "小黑戴着小帽子，眼睛亮得像要把秋天都装进去。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/autumn-floating-leaves-f8b3f133.mp3",
+      "bytes": 31104,
+      "sha256": "2bd9a046b115d3a8d065ead6d9c05e722cdb73d80478b7266e427813be6c0e99",
+      "kind": "dialogue",
+      "cue": "autumn-floating-leaves",
+      "speaker": "四时旁白",
+      "text": "几片叶子翻着跟头，从蓝蓝的天空里慢慢落下。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/complete-3ad9f957.mp3",
+      "bytes": 36144,
+      "sha256": "84325fefe16d5a7113c085cfffd920b487f6488cc6fcde8d28eb04c3fdfd85bf",
+      "kind": "dialogue",
+      "cue": "complete",
+      "speaker": "四时旁白",
+      "text": "小飞机和秋叶都回来了，小黑的笑声还留在高高的风里。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/opening-6031b0f5.mp3",
+      "bytes": 31680,
+      "sha256": "6dca1cdd9d23cff83934a6c65efb3c8a10d41095acbebc5057b64fbe45bcdb3b",
+      "kind": "dialogue",
+      "cue": "opening",
+      "speaker": "四时旁白",
+      "text": "先找回满树的红叶，小桥上的秋天就要完整了。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/autumn-red-canopy-46497d08.mp3",
+      "bytes": 29520,
+      "sha256": "f2e9d7be460293c804cd0f0525949a7cfbdf60f4db6f3eb68f02b36fff570e4b",
+      "kind": "dialogue",
+      "cue": "autumn-red-canopy",
+      "speaker": "四时旁白",
+      "text": "一层又一层的红叶，把天空围成了暖暖的小窗。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/autumn-bridge-child-e6003733.mp3",
+      "bytes": 21600,
+      "sha256": "db6c132c1402ccb6afd439b930e6aae909ea7c626355cc57b2372e51b5461486",
+      "kind": "dialogue",
+      "cue": "autumn-bridge-child",
+      "speaker": "小黑",
+      "text": "师父，这片叶子像一只小手！",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiaNeural",
+        "rate": "+6%",
+        "pitch": "+10Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/autumn-bridge-guide-b830f460.mp3",
+      "bytes": 20880,
+      "sha256": "d51e59c618505900798258f00daad6e867f0c1ea7c6eace78c6125075969d83d",
+      "kind": "dialogue",
+      "cue": "autumn-bridge-guide",
+      "speaker": "无限",
+      "text": "那就让它给秋天挥挥手。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-18%",
+        "pitch": "-26Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/autumn-red-bridge-ae5d288e.mp3",
+      "bytes": 33120,
+      "sha256": "f4ec3799cad95397e04e7a76e967e6d8a627de52c5b6ebe9dd117ada5e90cdce",
+      "kind": "dialogue",
+      "cue": "autumn-red-bridge",
+      "speaker": "四时旁白",
+      "text": "小桥下面水纹轻轻晃着，像在替红叶收好倒影。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/complete-20ca93c7.mp3",
+      "bytes": 39024,
+      "sha256": "e194afebef4ac82c287bb78bc4deac82f8f4bc4065bb5b7d3fe6b7e87ca848f0",
+      "kind": "dialogue",
+      "cue": "complete",
+      "speaker": "四时旁白",
+      "text": "红叶铺满枝头，小桥上两个小小的身影把秋色一路带向前。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    }
+  ]
+}

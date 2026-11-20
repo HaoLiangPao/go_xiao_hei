@@ -4,6 +4,7 @@ import { mkdtemp, mkdir, writeFile, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { pathToFileURL } from "node:url";
 import { runtimePaths, digest, validateResources } from "../scripts/runtime-resources.mjs";
+import { dialogueCues } from "../src/dialogueClips.js";
 import { puzzleStories } from "../src/puzzleStories.js";
 import { solarTerms } from "../src/solarTerms.js";
 import { regionPieces, completedMemories } from "../src/gameplay.js";
@@ -26,7 +27,7 @@ test("spring story regions unlock from their own actual area at all piece counts
 test("tracked runtime media is complete and matches the current text and artwork", async () => {
   const manifest = await validateResources();
   assert.equal(manifest.files.filter((f) => f.kind === "art").length, 24);
-  assert.equal(manifest.files.filter((f) => f.kind === "dialogue").length, 36);
+  assert.equal(manifest.files.filter((f) => f.kind === "dialogue").length, dialogueCues.length);
   for (const term of solarTerms)
     assert.equal(manifest.files.find((f) => f.path === term.image).sha256, term.asset.sha256);
 });

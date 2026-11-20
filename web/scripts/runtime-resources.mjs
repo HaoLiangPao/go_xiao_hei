@@ -1,4 +1,4 @@
-import { readFile } from "node:fs/promises";
+import { readFile, readdir } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import { fileURLToPath } from "node:url";
 import { solarTerms } from "../src/solarTerms.js";
@@ -10,11 +10,28 @@ export const runtimePaths = () => [
 ];
 export const digest = (bytes) => createHash("sha256").update(bytes).digest("hex");
 
+// Independent seasonal packs keep parallel content PRs from overwriting one manifest.
+export async function readResourceManifest(manifestFile = new URL("../resources-manifest.json", import.meta.url)) {
+  const manifest = JSON.parse(await readFile(manifestFile, "utf8"));
+  if (manifest.version !== 1 || !Array.isArray(manifest.files))
+    throw new Error("资源清单数量或版本不匹配，请审核后运行 npm run resources:publish。");
+  const directory = new URL("./resources/", manifestFile);
+  let names;
+  try { names = await readdir(directory); }
+  catch (error) { if (error.code !== "ENOENT") throw error; names = []; }
+  for (const name of names.filter((name) => name.endsWith(".json")).sort()) {
+    const pack = JSON.parse(await readFile(new URL(name, directory), "utf8"));
+    if (pack.version !== 1 || !Array.isArray(pack.files)) throw new Error(`资源分清单版本错误：${name}`);
+    manifest.files.push(...pack.files);
+  }
+  return manifest;
+}
+
 export async function validateResources({
   publicDirectory = new URL("../public/", import.meta.url),
   manifestFile = new URL("../resources-manifest.json", import.meta.url),
 } = {}) {
-  const manifest = JSON.parse(await readFile(manifestFile, "utf8"));
+  const manifest = await readResourceManifest(manifestFile);
   const expected = new Set(runtimePaths());
   if (manifest.version !== 1 || !Array.isArray(manifest.files) ||
       manifest.files.length !== expected.size || new Set(manifest.files.map((f) => f.path)).size !== expected.size)
