@@ -39,16 +39,16 @@
 
 [Vite 会把 public/ 中的文件原样复制到 dist/](https://vite.dev/guide/assets.html#the-public-directory)。浏览器请求例如 `/audio/dialogue/文件名.mp3`，由同站点静态托管提供；不经过浏览器 TTS、GitHub raw 链接或后端合成 API。
 
-根目录已提供 `vercel.json`。Vercel Project 的 Root Directory 使用仓库根目录 `.`：
+根目录已提供 `vercel.json`。适配现有 Vercel Project，Root Directory 保持 `web`：
 
 | 设置 | 值 |
 |---|---|
 | Framework | Vite |
-| Install Command | `npm --prefix web ci` |
-| Build Command | `npm --prefix web run build` |
-| Output Directory | `web/dist` |
+| Install Command | `npm ci` |
+| Build Command | `npm run build` |
+| Output Directory | `dist` |
 
-不要同时把 Root Directory 改成 `web` 又使用这组带 `web` 前缀的命令。若既有项目使用 `web` 根目录，需相应使用 `npm ci`、`npm run build`、`dist`，并保证构建可访问旧 `prototype/` 源码。本次没有修改线上项目设置、调用部署或保证某个已存在的 Preview 已更新；预览需要构建包含本 PR 的提交。
+这些命令相对项目 Root Directory 执行，因此不要在 `web` 根目录再次加 `--prefix web`。如果新项目将 Root Directory 改为仓库根目录，才相应改用 `npm --prefix web ci`、`npm --prefix web run build` 和 `web/dist`。项目的旧 `prototype/` 仍保留在同一仓库，准备脚本从仓库根目录读取。本次不修改线上项目设置；GitHub 推送触发的自动 Preview 与主动部署分开记录。
 
 日常 clone 后只需：
 
