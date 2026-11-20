@@ -47,6 +47,8 @@ npm run dev
 
 [完整改动与截图](docs/REVIEW.md) · [验证范围](docs/TESTING.md) · [对白审阅稿](docs/DIALOGUE_SCRIPT.md) · [React 开发说明](web/README.md)
 
+2020 年冬季六图的原创区域故事、36 段静态中文录音及桌面/手机截图见 [冬季内容说明](docs/WINTER_STORIES.md)。
+
 ## 代码结构
 
 - `prototype/`：无构建依赖的 SVG 填色与剧情；保留旧十二片 HTML 拼图。

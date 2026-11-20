@@ -1,0 +1,545 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "path": "/audio/dialogue/opening-cace0f07.mp3",
+      "bytes": 27936,
+      "sha256": "284c8c8d4e6e0e4eca706febdbb25d1da8add0897b5556cd3f74a85fb5deff07",
+      "kind": "dialogue",
+      "cue": "opening",
+      "speaker": "四时旁白",
+      "text": "先拼回温暖的水面，看看石头后面的小黑。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/winter-hot-spring-c7c26a75.mp3",
+      "bytes": 32832,
+      "sha256": "8e8821fe2c8f80dde12f1e3e68265aa6c2ca904ce15b2c180e12aa025cd6c41d",
+      "kind": "dialogue",
+      "cue": "winter-hot-spring",
+      "speaker": "四时旁白",
+      "text": "温热的水面浮着薄薄的雾，把初冬的风隔得远远的。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/winter-bathing-guide-5b1c19d5.mp3",
+      "bytes": 22896,
+      "sha256": "6a1278fbad3a78ba97424a30ea6df7559284f6dba987f03c26aa3c2cbd28e019",
+      "kind": "dialogue",
+      "cue": "winter-bathing-guide",
+      "speaker": "无限",
+      "text": "外面凉了，先在这里暖一会儿。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-18%",
+        "pitch": "-26Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/winter-stone-child-64b944c8.mp3",
+      "bytes": 21744,
+      "sha256": "84f89106f16b80310c44abfb67dd0caafc96574d12894ce2b9def549a765675d",
+      "kind": "dialogue",
+      "cue": "winter-stone-child",
+      "speaker": "小黑",
+      "text": "师父，落叶也来跟我们一起歇脚啦。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiaNeural",
+        "rate": "+6%",
+        "pitch": "+10Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/winter-tea-tray-cf4cb56a.mp3",
+      "bytes": 32400,
+      "sha256": "b71f62da2eb3b03099624c02fd87132fba28704434f765773289d8495950b97c",
+      "kind": "dialogue",
+      "cue": "winter-tea-tray",
+      "speaker": "四时旁白",
+      "text": "茶盘停在水面上，几片红叶从枝头轻轻落下来。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/complete-cab2d8ab.mp3",
+      "bytes": 37008,
+      "sha256": "345e2efdb2aca899e4572d1ab3d133e19980d4625d384cd2253f5a9ffe777b7d",
+      "kind": "dialogue",
+      "cue": "complete",
+      "speaker": "四时旁白",
+      "text": "水汽、落叶和茶盏都回来了，初冬也有了暖暖的歇脚处。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/opening-e2549e11.mp3",
+      "bytes": 32976,
+      "sha256": "789315e62bdc73ee5c002416e681f96b48efdf87e95d6ce118823dea0c4f7f57",
+      "kind": "dialogue",
+      "cue": "opening",
+      "speaker": "四时旁白",
+      "text": "先把小黑的围巾拼回来，再看看落在伞边的小雪花。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/winter-warm-scarf-1f04aa84.mp3",
+      "bytes": 20304,
+      "sha256": "bc2414648603bbb95dd8b16677b48ffefd6a61a25352e0cdf04667abf6513480",
+      "kind": "dialogue",
+      "cue": "winter-warm-scarf",
+      "speaker": "小黑",
+      "text": "这条围巾，把风都挡在外面啦！",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiaNeural",
+        "rate": "+6%",
+        "pitch": "+10Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/winter-snow-guide-bf3169f5.mp3",
+      "bytes": 24480,
+      "sha256": "3b7b66f7a9e473c53b4fe08c6500abb53a580c053b4f0ae06e59e1c7a3eafce5",
+      "kind": "dialogue",
+      "cue": "winter-snow-guide",
+      "speaker": "无限",
+      "text": "再往里缩一点，耳朵也要暖和。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-18%",
+        "pitch": "-26Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/winter-snow-child-34a49a2.mp3",
+      "bytes": 31968,
+      "sha256": "251ba419d8adaf37583386443ba2f82daf07077125fb648cf335b1741534162b",
+      "kind": "dialogue",
+      "cue": "winter-snow-child",
+      "speaker": "四时旁白",
+      "text": "小黑把脸埋在围巾边，只留一双亮亮的眼睛看雪。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/winter-umbrella-snow-2d14f537.mp3",
+      "bytes": 33120,
+      "sha256": "b87bc9db6daf92c8a62ef59f6b10fcf8c5d5da9b848562366eec94eca61d674a",
+      "kind": "dialogue",
+      "cue": "winter-umbrella-snow",
+      "speaker": "四时旁白",
+      "text": "细小的雪花落过透明的伞，像冬天悄悄写下的字。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/complete-3a4e6f24.mp3",
+      "bytes": 36576,
+      "sha256": "4835c1cf3f425be24ddd675315e6fbb0f024975e7db0b17893e084e85075f312",
+      "kind": "dialogue",
+      "cue": "complete",
+      "speaker": "四时旁白",
+      "text": "围巾裹好了，小雪还在飘，他们把暖意一起带进了冬天。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/opening-b060f1f9.mp3",
+      "bytes": 29088,
+      "sha256": "96d08660e79cb845571715f99fc5e79b81196d1c53fd5a80e812274f17f953bf",
+      "kind": "dialogue",
+      "cue": "opening",
+      "speaker": "四时旁白",
+      "text": "先拼好雪人的脸，看看大家给它画了什么表情。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/winter-snowman-8cc8f283.mp3",
+      "bytes": 19152,
+      "sha256": "dcd380cc246e0f9ba1207a301331f1ab779756bfbf0b7710fba2d18e4dbd772b",
+      "kind": "dialogue",
+      "cue": "winter-snowman",
+      "speaker": "小黑",
+      "text": "眉毛歪一点，才像刚睡醒嘛！",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiaNeural",
+        "rate": "+6%",
+        "pitch": "+10Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/winter-snowman-guide-719b2fb6.mp3",
+      "bytes": 28944,
+      "sha256": "1dc0fac805b4a4c82958a7039c23a0596ab1d3c9e6fc1d471704f5ff218404ca",
+      "kind": "dialogue",
+      "cue": "winter-snowman-guide",
+      "speaker": "无限",
+      "text": "好。那这边的眉毛，就交给你了。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-18%",
+        "pitch": "-26Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/winter-snowman-friends-e43c7e87.mp3",
+      "bytes": 35856,
+      "sha256": "5325a29370df3f24e894a0d827f62bec92a99fd0631928c022967908b0617589",
+      "kind": "dialogue",
+      "cue": "winter-snowman-friends",
+      "speaker": "四时旁白",
+      "text": "同行的姑娘抱着手臂，小黑却在雪人旁边笑得停不下来。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/winter-snowy-trees-2f9a9095.mp3",
+      "bytes": 34416,
+      "sha256": "2ca244d58f52cf7b3df0355b935d17cfa37c1fcc965f0313b1bdbd90ec933f4c",
+      "kind": "dialogue",
+      "cue": "winter-snowy-trees",
+      "speaker": "四时旁白",
+      "text": "树枝披着一层白，热闹的声音从安静的树林里冒出来。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/complete-f801a30a.mp3",
+      "bytes": 38448,
+      "sha256": "dc3246689c57add1b280fef9ecda42913074164c8037aa078ff839a7122fcac7",
+      "kind": "dialogue",
+      "cue": "complete",
+      "speaker": "四时旁白",
+      "text": "雪人站好了，树下的伙伴们也把各自的表情留在了冬天里。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/opening-bb947a2a.mp3",
+      "bytes": 32832,
+      "sha256": "246909aa93bb1e0cc353c64f5f0d5a97e0d212f1de0fe9203e74b75ec8b1f013",
+      "kind": "dialogue",
+      "cue": "opening",
+      "speaker": "四时旁白",
+      "text": "先找回雪地里的脚印，看看小黑把步子迈到了哪里。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/winter-footprints-fecb6146.mp3",
+      "bytes": 27360,
+      "sha256": "dc3fec099672f2e91a42a2e9c65583b44f2397bbb9fa92543c2c2bec64e6471f",
+      "kind": "dialogue",
+      "cue": "winter-footprints",
+      "speaker": "小黑",
+      "text": "师父，我的脚印，能不能走到你的脚印里面？",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiaNeural",
+        "rate": "+6%",
+        "pitch": "+10Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/winter-snowfield-guide-dc0967a4.mp3",
+      "bytes": 28944,
+      "sha256": "73503627d570df709c126e6a0c86c345963eddec0882298cf507da421166a3e4",
+      "kind": "dialogue",
+      "cue": "winter-snowfield-guide",
+      "speaker": "无限",
+      "text": "可以。慢慢来，我在这里等你。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-18%",
+        "pitch": "-26Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/winter-snowfield-child-2ca83326.mp3",
+      "bytes": 31392,
+      "sha256": "931d1b512ccd66d75a15197963fff04b9f293961a8f9ba4927e8667f50a92685",
+      "kind": "dialogue",
+      "cue": "winter-snowfield-child",
+      "speaker": "四时旁白",
+      "text": "小黑裹着冬衣，小小的身影在雪地里格外认真。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/winter-red-branches-7de99f57.mp3",
+      "bytes": 33840,
+      "sha256": "b32f5975b926121985d503131669049da8e78804ebc2f93175e1a2553508dc12",
+      "kind": "dialogue",
+      "cue": "winter-red-branches",
+      "speaker": "四时旁白",
+      "text": "细细的枝条点着红色，给白茫茫的画面添上一点暖。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/complete-91257d08.mp3",
+      "bytes": 37008,
+      "sha256": "45a1dc7600f0756921cc0d018bfb06d5ea839724d2bc3c6f9103ffbb80b7277f",
+      "kind": "dialogue",
+      "cue": "complete",
+      "speaker": "四时旁白",
+      "text": "一串脚印连起两个身影，雪地上也有了可以慢慢走的小路。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/opening-718a5e33.mp3",
+      "bytes": 32544,
+      "sha256": "58977bb160f6eb1bd2e85cec6a0d877f6f6e2cecbb0e55cf3f51b7ce8d4eec52",
+      "kind": "dialogue",
+      "cue": "opening",
+      "speaker": "四时旁白",
+      "text": "先拼回热气腾腾的蒸笼，陪他们在小店里暖暖手。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/winter-steamer-16701095.mp3",
+      "bytes": 26640,
+      "sha256": "1e238c4a4c12f8b4768d96ba5fd06d221d963d79ae42f0b7a0dfe621b64f076b",
+      "kind": "dialogue",
+      "cue": "winter-steamer",
+      "speaker": "小黑",
+      "text": "师父，热气像一朵小云，从笼子里冒出来啦。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiaNeural",
+        "rate": "+6%",
+        "pitch": "+10Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/winter-shop-guide-895d1fd5.mp3",
+      "bytes": 31392,
+      "sha256": "b17c9c0f290919793713c03ef11d0c31766872511173cbc2bd7ebe1c217262ab",
+      "kind": "dialogue",
+      "cue": "winter-shop-guide",
+      "speaker": "无限",
+      "text": "小心烫。先吹一吹，再慢慢吃。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-18%",
+        "pitch": "-26Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/winter-shop-child-7183a274.mp3",
+      "bytes": 35280,
+      "sha256": "3220be504164bf15214155ee9705625161c2b01a759d1c6a0f3b14e862a340cb",
+      "kind": "dialogue",
+      "cue": "winter-shop-child",
+      "speaker": "四时旁白",
+      "text": "小黑靠在师父身旁，把香气和期待一起装进笑脸里。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/winter-warm-shop-e7fed53a.mp3",
+      "bytes": 34704,
+      "sha256": "f0fa4c303a65e35e4e7bccfb13c3dff94353ac901d1d789dd4448571ad3d5af6",
+      "kind": "dialogue",
+      "cue": "winter-warm-shop",
+      "speaker": "四时旁白",
+      "text": "桌椅和墙面染着柔和的暖色，把外头的寒意留在门外。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/complete-ebd63a78.mp3",
+      "bytes": 34704,
+      "sha256": "6fc61833e1d41635773bb6c4407b6b9c32da8ad5c72ed0e6e8c15c6df7edd65b",
+      "kind": "dialogue",
+      "cue": "complete",
+      "speaker": "四时旁白",
+      "text": "热气和笑脸都拼好了，小寒也被这一笼暖意轻轻包住。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/opening-dcf7e8fd.mp3",
+      "bytes": 30384,
+      "sha256": "15c9214e521609f534ec6e383b6c9141c94ca2f4f103480793f5c99a082e47ab",
+      "kind": "dialogue",
+      "cue": "opening",
+      "speaker": "四时旁白",
+      "text": "先点亮街上的灯笼，小黑已经把热闹举到了头顶。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/winter-lanterns-2198c78c.mp3",
+      "bytes": 29808,
+      "sha256": "b66f620322d7a410b2c6c08a532ca97abafd3f3cffca6201518759a21b2bd949",
+      "kind": "dialogue",
+      "cue": "winter-lanterns",
+      "speaker": "四时旁白",
+      "text": "一盏又一盏灯笼，把冬夜的小街照得暖洋洋的。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/winter-festival-child-83dafb47.mp3",
+      "bytes": 21744,
+      "sha256": "988b934b90d51b9c7c5d1c1f51db89a2dff4fcd64a2a6676b71be5b9cd4719b7",
+      "kind": "dialogue",
+      "cue": "winter-festival-child",
+      "speaker": "小黑",
+      "text": "师父，我从这里看见好多好多灯！",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiaNeural",
+        "rate": "+6%",
+        "pitch": "+10Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/winter-festival-guide-515db170.mp3",
+      "bytes": 24048,
+      "sha256": "c0e04c5f7217ce45916bf41fc0ff4ebe8943650d6ca73c01f3c70574bbd0dc49",
+      "kind": "dialogue",
+      "cue": "winter-festival-guide",
+      "speaker": "无限",
+      "text": "坐稳了。我们一起慢慢看。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-18%",
+        "pitch": "-26Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/winter-candied-fruit-858967ea.mp3",
+      "bytes": 34416,
+      "sha256": "38fb21c64dd12d9ef0468e902cbdfb1b71f05a874fdf483e450ddf2df9bcfa52",
+      "kind": "dialogue",
+      "cue": "winter-candied-fruit",
+      "speaker": "四时旁白",
+      "text": "小黑举着一串糖葫芦，甜甜的颜色也跟着灯光亮起来。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/complete-fe80117e.mp3",
+      "bytes": 44352,
+      "sha256": "52fa346f52030b7b0def1ad64c96612d9d7088272451539d75d1f1695bb69bc4",
+      "kind": "dialogue",
+      "cue": "complete",
+      "speaker": "四时旁白",
+      "text": "灯笼、笑脸和远处的烟花都回来了，一年的旅程也暖暖地走到了这里。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    }
+  ]
+}

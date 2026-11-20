@@ -114,6 +114,7 @@ export const puzzleStories = {
       },
     ],
   },
+  ...winterStories,
   grainRain: {
     goal: "sand-drawing",
     opening: narration("opening", "先拼出屋檐下的沙画，看看小黑画了什么。"),
@@ -165,3 +166,5 @@ export const puzzleStories = {
     ],
   },
 };
+
+import { winterStories } from "./stories/winter.js";
