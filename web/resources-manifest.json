@@ -1,0 +1,737 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "path": "/art/solar/startSpring.jpg",
+      "bytes": 196227,
+      "sha256": "9cd8ae71990440aaba46026f8600d4ab54d33226506f7abe9a6cb291840f0692",
+      "kind": "art",
+      "term": "startSpring",
+      "catalogId": "A0235"
+    },
+    {
+      "path": "/art/rain-2020.jpg",
+      "bytes": 177851,
+      "sha256": "6ab1708f9a9801c2d3eda340964e445ba39baddbede7d4a9bdad324868a1f49c",
+      "kind": "art",
+      "term": "rain",
+      "catalogId": "A0243"
+    },
+    {
+      "path": "/art/solar/insects.jpg",
+      "bytes": 291619,
+      "sha256": "a33ae0606d4a15c4ac94577931b4aea1cc16a63231c6c6849d57345e34b463f6",
+      "kind": "art",
+      "term": "insects",
+      "catalogId": "A0221"
+    },
+    {
+      "path": "/art/equinox-2020.jpg",
+      "bytes": 150794,
+      "sha256": "c22cd1d02cc509449cf31a2acc8cd7c3c2db7c8975abe5c459fc29491a47300c",
+      "kind": "art",
+      "term": "equinox",
+      "catalogId": "A0223"
+    },
+    {
+      "path": "/art/solar/pureBrightness.jpg",
+      "bytes": 226254,
+      "sha256": "37eb4e174848b6f7b4679007d4303fefa7a7d06794c8d95f0b1c85100cb4d1dd",
+      "kind": "art",
+      "term": "pureBrightness",
+      "catalogId": "A0225"
+    },
+    {
+      "path": "/art/grain-rain-2020.jpg",
+      "bytes": 229823,
+      "sha256": "521c6e83e16a22ee5d0c1b592378f437facf1f02baf3b4775223706e88fa2f5e",
+      "kind": "art",
+      "term": "grainRain",
+      "catalogId": "A0241"
+    },
+    {
+      "path": "/art/solar/startSummer.jpg",
+      "bytes": 193321,
+      "sha256": "7b5e8081c15021d78279c368bbac879aaf2fe2a31414655112afd8f0f62c3186",
+      "kind": "art",
+      "term": "startSummer",
+      "catalogId": "A0233"
+    },
+    {
+      "path": "/art/solar/grainFull.jpg",
+      "bytes": 206718,
+      "sha256": "db7c90b13a43972b551c053690cf49681dcb8e1d2ed621a9857f9d621ce8959f",
+      "kind": "art",
+      "term": "grainFull",
+      "catalogId": "A0217"
+    },
+    {
+      "path": "/art/solar/grainInEar.jpg",
+      "bytes": 165138,
+      "sha256": "6d72bb433d54701a53f095b65e425cf8957d29841697d59fc29d6c7e78804d4d",
+      "kind": "art",
+      "term": "grainInEar",
+      "catalogId": "A0239"
+    },
+    {
+      "path": "/art/solar/summerSolstice.jpg",
+      "bytes": 178100,
+      "sha256": "190191c3a4bea59ed12ed98b64da387d4f05542209f3dee5506dcf48e7ffb26c",
+      "kind": "art",
+      "term": "summerSolstice",
+      "catalogId": "A0203"
+    },
+    {
+      "path": "/art/solar/minorHeat.jpg",
+      "bytes": 96338,
+      "sha256": "812a3928d776b179c1640bf85e166831dd1c04fef3cb8893874b80332f3af916",
+      "kind": "art",
+      "term": "minorHeat",
+      "catalogId": "A0215"
+    },
+    {
+      "path": "/art/solar/majorHeat.jpg",
+      "bytes": 123131,
+      "sha256": "07119e0000c632541e22911c83aabd3f827911510e062b437b91eef3ffe0911f",
+      "kind": "art",
+      "term": "majorHeat",
+      "catalogId": "A0207"
+    },
+    {
+      "path": "/art/solar/startAutumn.jpg",
+      "bytes": 171085,
+      "sha256": "143c5f9e1d3eb715d22e192ff5af5c209cd0f938b1e3ef7e6938412117cbf686",
+      "kind": "art",
+      "term": "startAutumn",
+      "catalogId": "A0237"
+    },
+    {
+      "path": "/art/solar/limitHeat.jpg",
+      "bytes": 173634,
+      "sha256": "c91384e750b3452232b22b1688e8af0360743afeb44d3517e3355c80671bfdf0",
+      "kind": "art",
+      "term": "limitHeat",
+      "catalogId": "A0201"
+    },
+    {
+      "path": "/art/solar/whiteDew.jpg",
+      "bytes": 263268,
+      "sha256": "8299095499f3d4eb60cf7b1b3050e2d0fb26647baaaf0ffb52215816e08a82a5",
+      "kind": "art",
+      "term": "whiteDew",
+      "catalogId": "A0227"
+    },
+    {
+      "path": "/art/solar/autumnEquinox.jpg",
+      "bytes": 272332,
+      "sha256": "4bf64285e18835e8d1944c438179fd0aa1023fbf0a413a5b319f79ea0bd6f3bb",
+      "kind": "art",
+      "term": "autumnEquinox",
+      "catalogId": "A0229"
+    },
+    {
+      "path": "/art/solar/coldDew.jpg",
+      "bytes": 188521,
+      "sha256": "943bb8995e6c972bb9a4cae856b01b30578e7d82ecd9c1d9142181158bdea891",
+      "kind": "art",
+      "term": "coldDew",
+      "catalogId": "A0211"
+    },
+    {
+      "path": "/art/solar/frostDescent.jpg",
+      "bytes": 182540,
+      "sha256": "86e1a78d32fe68a5d137c3408a9c663ac33251f55da15dcc613b80142f94e6b1",
+      "kind": "art",
+      "term": "frostDescent",
+      "catalogId": "A0245"
+    },
+    {
+      "path": "/art/solar/startWinter.jpg",
+      "bytes": 211667,
+      "sha256": "dce2956ceafb9832bcd39ccc5a6695455463f35360b6b626794c1bdacd022c72",
+      "kind": "art",
+      "term": "startWinter",
+      "catalogId": "A0231"
+    },
+    {
+      "path": "/art/solar/minorSnow.jpg",
+      "bytes": 190747,
+      "sha256": "5d228c21c35aca4614fe24128731bf1ca3a97b0787a425a363819c014843e1d8",
+      "kind": "art",
+      "term": "minorSnow",
+      "catalogId": "A0219"
+    },
+    {
+      "path": "/art/solar/majorSnow.jpg",
+      "bytes": 250765,
+      "sha256": "004e4c960eceb1750660b1026920dd5c5ae279017ca0fe901ae536cee28ed6c6",
+      "kind": "art",
+      "term": "majorSnow",
+      "catalogId": "A0209"
+    },
+    {
+      "path": "/art/solar/winterSolstice.jpg",
+      "bytes": 153420,
+      "sha256": "43b5a23e64b372d6ab7ec6b7baddd17df4ddc3a0adfcf760000e6cee1a36337d",
+      "kind": "art",
+      "term": "winterSolstice",
+      "catalogId": "A0199"
+    },
+    {
+      "path": "/art/solar/minorCold.png",
+      "bytes": 710085,
+      "sha256": "4d35fcb80d3ca2cdf66a18e644247af8aa603de01182409b43d7cb018070530f",
+      "kind": "art",
+      "term": "minorCold",
+      "catalogId": "A0213"
+    },
+    {
+      "path": "/art/solar/majorCold.png",
+      "bytes": 1349223,
+      "sha256": "83f455ed55e603ae4f4552da1d91e2fee513672fee7f4a89b9e0c7a1de4b7618",
+      "kind": "art",
+      "term": "majorCold",
+      "catalogId": "A0205"
+    },
+    {
+      "path": "/audio/dialogue/opening-cb3bba24.mp3",
+      "bytes": 34560,
+      "sha256": "7ed3f2e8e13002e05fd17d74155d528050660c233c6137f46a88844131189f4a",
+      "kind": "dialogue",
+      "cue": "opening",
+      "speaker": "春日旁白",
+      "text": "先找回枝头的新芽，陪小黑和无限走过水边的小桥。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/spring-buds-7ddd7540.mp3",
+      "bytes": 31536,
+      "sha256": "779a1b3b24faff70d6795e14a588f5c4d20ece2df4d4428d2c5dc4d92ba9f7d8",
+      "kind": "dialogue",
+      "cue": "spring-buds",
+      "speaker": "小黑",
+      "text": "师父，树上冒出好多小绿点！它们也睡醒了吗？",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiaNeural",
+        "rate": "+6%",
+        "pitch": "+10Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/bridge-guide-daf241eb.mp3",
+      "bytes": 37008,
+      "sha256": "3a542e935374f73fb76ba976ac66c4a6d334b460a3a1a79940ea6b604e0c3f58",
+      "kind": "dialogue",
+      "cue": "bridge-guide",
+      "speaker": "无限",
+      "text": "那是新芽。慢慢看，也别忘了脚下的小桥。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-18%",
+        "pitch": "-26Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/bridge-xiaohei-6132d5ef.mp3",
+      "bytes": 27360,
+      "sha256": "d37c7b7b33c11f712772daaf1812372d7c09d3f560b46860b97739fb2d6191f4",
+      "kind": "dialogue",
+      "cue": "bridge-xiaohei",
+      "speaker": "小黑",
+      "text": "我看着呢！水里的小鱼，也跟我们一起走。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiaNeural",
+        "rate": "+6%",
+        "pitch": "+10Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/spring-stream-4767c78d.mp3",
+      "bytes": 31968,
+      "sha256": "58423813bb729614968fd480402cdccff719855f36c07d2143748bafbe81e1b4",
+      "kind": "dialogue",
+      "cue": "spring-stream",
+      "speaker": "春日旁白",
+      "text": "溪水绕过青石，细细的波纹把春光带向远处。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/complete-18c68bdc.mp3",
+      "bytes": 42192,
+      "sha256": "88f1d7f33f3f03d6c4d7311eb285163c63339d677db799413f831744b4903bd2",
+      "kind": "dialogue",
+      "cue": "complete",
+      "speaker": "春日旁白",
+      "text": "新芽、小桥和溪水都回来了。小黑发现，春天已经走到身边。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/opening-9a82e126.mp3",
+      "bytes": 32112,
+      "sha256": "550811e8ae3995c724fa7c411cde8b8eda8999be46a2f281d1b8b4a63ff06f6a",
+      "kind": "dialogue",
+      "cue": "opening",
+      "speaker": "春日旁白",
+      "text": "先拼出柳枝上的两只小鸟，看看小黑正指着哪里。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/willow-birds-e234b3ad.mp3",
+      "bytes": 31680,
+      "sha256": "d5dcdcf76dc149aec5b470fa51c4848750b7d7fe30448c1acd6166392712c623",
+      "kind": "dialogue",
+      "cue": "willow-birds",
+      "speaker": "小黑",
+      "text": "师父，看上面！两只小鸟，会不会也在聊天？",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiaNeural",
+        "rate": "+6%",
+        "pitch": "+10Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/willow-leaves-6529135f.mp3",
+      "bytes": 29520,
+      "sha256": "abd42e2ed29fe437aac99904cad2d4ac47df1e9f6df4e3cdd29a58902de02172",
+      "kind": "dialogue",
+      "cue": "willow-leaves",
+      "speaker": "春日旁白",
+      "text": "长长的柳条垂下来，嫩叶在风里轻轻摆动。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/willow-guide-b02594e5.mp3",
+      "bytes": 34272,
+      "sha256": "1227ab9c8a1b8a509d6c6f312c95156b94aee567f4a5ef3480ffbd3191b3b517",
+      "kind": "dialogue",
+      "cue": "willow-guide",
+      "speaker": "无限",
+      "text": "我们轻一点。站在这里，已经看得很清楚了。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-18%",
+        "pitch": "-26Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/willow-xiaohei-554c605c.mp3",
+      "bytes": 26928,
+      "sha256": "fa0d8b870184914af3b9106d107250df3cd09310c7f799e08875b71151d9b63d",
+      "kind": "dialogue",
+      "cue": "willow-xiaohei",
+      "speaker": "小黑",
+      "text": "好，我小小声。小鸟，你们好呀。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiaNeural",
+        "rate": "+6%",
+        "pitch": "+10Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/complete-de11f171.mp3",
+      "bytes": 37584,
+      "sha256": "376ecd6b5f98ff7c55daf767d590157f5e4596bc24935b48f82d948e1de03862",
+      "kind": "dialogue",
+      "cue": "complete",
+      "speaker": "春日旁白",
+      "text": "柳叶轻轻摇着。小黑仰着头，把枝头的小鸟看了又看。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/opening-e1fff4c7.mp3",
+      "bytes": 35712,
+      "sha256": "00f0898cea9a76dabf8333a58714315828951b4348d34cae721b73dc111fbd7e",
+      "kind": "dialogue",
+      "cue": "opening",
+      "speaker": "春日旁白",
+      "text": "先找回树枝上睡着的小黑，让这段树荫下的午后慢下来。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/sleeping-xiaohei-59925e30.mp3",
+      "bytes": 32832,
+      "sha256": "a55f01bb74ff990c646319cff960b898ce159feeada06a437a0d0ec23e84ac25",
+      "kind": "dialogue",
+      "cue": "sleeping-xiaohei",
+      "speaker": "春日旁白",
+      "text": "小黑趴在树枝上睡着了，长长的尾巴也安静下来。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/roof-guide-7444dc9.mp3",
+      "bytes": 30816,
+      "sha256": "721d5382851b3bda8a91bb426909078db9a36f4e505bc9b57c3e8f0ea2f3b2df",
+      "kind": "dialogue",
+      "cue": "roof-guide",
+      "speaker": "无限",
+      "text": "睡吧。等你醒了，我们再慢慢走。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-18%",
+        "pitch": "-26Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/green-canopy-5957f00b.mp3",
+      "bytes": 27504,
+      "sha256": "aacc1f9109d7ab45d658dae06e385b86d61b2cf68bbbf8a0c810360cc68b25c4",
+      "kind": "dialogue",
+      "cue": "green-canopy",
+      "speaker": "春日旁白",
+      "text": "一层一层的绿叶，把屋顶上的光筛得柔柔的。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/green-roof-a113f672.mp3",
+      "bytes": 33408,
+      "sha256": "7f8db2b770071b265e1df8677c37a07fb429bdfe32bfe58979157ae01b1e5532",
+      "kind": "dialogue",
+      "cue": "green-roof",
+      "speaker": "春日旁白",
+      "text": "树枝伸过青绿的屋瓦，安静的午后有了歇脚的地方。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/complete-a5ee75dd.mp3",
+      "bytes": 40032,
+      "sha256": "dd8997c9427934233347c8e73f3b8099ad84c5e8d9fde530613572ab2e71a91f",
+      "kind": "dialogue",
+      "cue": "complete",
+      "speaker": "春日旁白",
+      "text": "屋瓦和树荫都拼好了。小黑还在睡，无限把这一刻留得很轻。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/opening-c41dbcc1.mp3",
+      "bytes": 27072,
+      "sha256": "014a47d2d5217878aab272446caf21ce3bbd2e1afa9b5f530d605e491b92b5a5",
+      "kind": "dialogue",
+      "cue": "opening",
+      "speaker": "春日旁白",
+      "text": "先拼出雨伞，给小黑和无限挡一挡雨。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/umbrella-e706bbb5.mp3",
+      "bytes": 21888,
+      "sha256": "759e01439435f06c81ae37952b18ec061a8e7ac78b3f4271c0fb187a1505e878",
+      "kind": "dialogue",
+      "cue": "umbrella",
+      "speaker": "无限",
+      "text": "靠近一点，雨就淋不到了。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-18%",
+        "pitch": "-26Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/wuxian-a2f114c9.mp3",
+      "bytes": 32976,
+      "sha256": "c7343ca682dfb59197712019cd01d6e3c85664f41328c70dd127b8c882d2d473",
+      "kind": "dialogue",
+      "cue": "wuxian",
+      "speaker": "无限",
+      "text": "不赶时间。你想看，就再看一会儿。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-18%",
+        "pitch": "-26Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/xiaohei-4e91deb6.mp3",
+      "bytes": 28224,
+      "sha256": "42c307aa9702744ff9a2cb865d2b283b6c46a04c5d366fad9760c279cfd23d58",
+      "kind": "dialogue",
+      "cue": "xiaohei",
+      "speaker": "小黑",
+      "text": "师父，你看！叶子上有一颗小小的天空。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiaNeural",
+        "rate": "+6%",
+        "pitch": "+10Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/grass-449e7bce.mp3",
+      "bytes": 29088,
+      "sha256": "f8328fa49c4bac9e91035648f0db8a5d29be14837894d097d0cf447cb74aa700",
+      "kind": "dialogue",
+      "cue": "grass",
+      "speaker": "小黑",
+      "text": "嘘——别动。让它在叶子上，再待一小会儿。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiaNeural",
+        "rate": "+6%",
+        "pitch": "+10Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/complete-ffdbb01.mp3",
+      "bytes": 33408,
+      "sha256": "edf7bb9801fee32c07c82203362ce62190c147c59229ea6706fc1fde4bf5e957",
+      "kind": "dialogue",
+      "cue": "complete",
+      "speaker": "春日旁白",
+      "text": "伞下的小路拼好了。他们慢慢走，听了一路的雨。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/opening-db22f8f6.mp3",
+      "bytes": 30960,
+      "sha256": "758cffa43b1b78ca92f88cab7433792baa6f7e883270ea9818533e2cb1c7434e",
+      "kind": "dialogue",
+      "cue": "opening",
+      "speaker": "春日旁白",
+      "text": "先找回天空中的纸鸢，帮小黑把春风放上天。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/kites-71c8041e.mp3",
+      "bytes": 28512,
+      "sha256": "034e50fec477db449ebb3deb2cb193fdd88df6bd62b060c282b8544438a51e90",
+      "kind": "dialogue",
+      "cue": "kites",
+      "speaker": "无限",
+      "text": "等风来了，手里的线就轻轻松一点。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-18%",
+        "pitch": "-26Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/field-guide-ccb5d49.mp3",
+      "bytes": 32400,
+      "sha256": "ed87c624bf6b70dac53aaf174afbc8a035585e243a1eab60887e6697d613021a",
+      "kind": "dialogue",
+      "cue": "field-guide",
+      "speaker": "无限",
+      "text": "你往前跑吧。我在这儿，看得见你。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-18%",
+        "pitch": "-26Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/field-xiaohei-cee8cac5.mp3",
+      "bytes": 25632,
+      "sha256": "760138274574f60f0ccaa02b6d426a8f4dd5b9f92209968ae0dfe724549e651a",
+      "kind": "dialogue",
+      "cue": "field-xiaohei",
+      "speaker": "小黑",
+      "text": "师父，你看！它飞得比我的尾巴还高！",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiaNeural",
+        "rate": "+6%",
+        "pitch": "+10Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/flowers-ec4b81fc.mp3",
+      "bytes": 28944,
+      "sha256": "666a1fd20fbdec39386b59cc22fbd67a74a458920229c66fb933c4acb7162552",
+      "kind": "dialogue",
+      "cue": "flowers",
+      "speaker": "春日旁白",
+      "text": "风吹过花田，金黄色的花梢也跟着点头。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/complete-8b42bcdd.mp3",
+      "bytes": 33408,
+      "sha256": "ef6efa1e3f72006acc424c1247babe803ff4e60a5515a753b29f5bbbbe397168",
+      "kind": "dialogue",
+      "cue": "complete",
+      "speaker": "春日旁白",
+      "text": "纸鸢飘过花田。小黑回头一看，师父还在那儿。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/opening-c7d82775.mp3",
+      "bytes": 26784,
+      "sha256": "43ad3894bbb39e71009fb0f5863f12e3b72a2696aa7c833ef990b09ab8fc4c71",
+      "kind": "dialogue",
+      "cue": "opening",
+      "speaker": "春日旁白",
+      "text": "先拼出屋檐下的沙画，看看小黑画了什么。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/sand-drawing-e90a54f4.mp3",
+      "bytes": 30672,
+      "sha256": "5290cb42d2d593f356da2519ec8dd758b228bd4d8efcd05927ba0c23a8b905e5",
+      "kind": "dialogue",
+      "cue": "sand-drawing",
+      "speaker": "小黑",
+      "text": "这里加两只耳朵！师父，你猜猜我画的是谁？",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiaNeural",
+        "rate": "+6%",
+        "pitch": "+10Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/eaves-7ab5f9c3.mp3",
+      "bytes": 30096,
+      "sha256": "4db2cf6cd77602f09546780fef84ce7401c62df0969aa547b43fc7abe6abff08",
+      "kind": "dialogue",
+      "cue": "eaves",
+      "speaker": "春日旁白",
+      "text": "屋檐一滴一滴落着雨，地上亮起了小小的水圈。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/porch-guide-e22b98f5.mp3",
+      "bytes": 29664,
+      "sha256": "06e53941e292a0c18d7d1a04604d8180d8cc20d205b636e1c9c283319fa74b8b",
+      "kind": "dialogue",
+      "cue": "porch-guide",
+      "speaker": "无限",
+      "text": "让我想想……那我也添一笔，你别偷看。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-18%",
+        "pitch": "-26Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/porch-xiaohei-eaaf9d62.mp3",
+      "bytes": 23904,
+      "sha256": "efad22319cae670ed18f0bd9b0482fd9dbb4f64c3c21e1b4ea796ac6c8b47730",
+      "kind": "dialogue",
+      "cue": "porch-xiaohei",
+      "speaker": "小黑",
+      "text": "我不偷看！我就把眼睛睁开一条缝。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-YunxiaNeural",
+        "rate": "+6%",
+        "pitch": "+10Hz"
+      }
+    },
+    {
+      "path": "/audio/dialogue/complete-a93323c7.mp3",
+      "bytes": 37872,
+      "sha256": "985409e707080fbb48b32c5f9fad6c06e667ad045077b8c9102bd3518c9ff798",
+      "kind": "dialogue",
+      "cue": "complete",
+      "speaker": "春日旁白",
+      "text": "雨还在下。只要留在屋檐下，沙地上的画还能再看一会儿。",
+      "synthesis": {
+        "provider": "Microsoft Edge online TTS via edge-tts",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "-8%",
+        "pitch": "+0Hz"
+      }
+    }
+  ]
+}

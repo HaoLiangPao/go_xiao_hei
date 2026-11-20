@@ -42,3 +42,5 @@ npm run test:browser
 《雨水》《春分》《谷雨》图像来自已有收藏，来源见 [素材说明](../docs/ART_SOURCE.md)。
 
 普通中文配音试听及本地音频准备见 [中文配音说明](../docs/CHINESE_VOICE.md)。
+
+春季六图的剧情、已入库配音、资源体积与 Vercel 设置见 [春季剧情与资源](../docs/SPRING_STORIES_RESOURCES.md)。正常构建不再需要本地收藏或生成录音。

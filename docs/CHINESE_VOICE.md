@@ -1,6 +1,6 @@
 # 普通中文配音试听
 
-当前拼图的三张节气图的十八句对白可先合成为 MP3，播放时不再要求设备安装中文系统语音。声音是普通中文合成试听，不是角色原配音演员的声音。无限使用放慢、降低音高的 Yunxi 男声；小黑使用 Yunxia 年轻男声，向男孩子的轻快听感调整；开场、收尾保留 Xiaoxiao 女声。小黑的合成源是男声，实际年龄感需要人工试听确认，不能仅凭音色名称保证是男童。系统朗读兜底仍取决于设备提供的声音。
+当前拼图的春季六张节气图的三十六句对白已提供 MP3，播放时不再要求设备安装中文系统语音。声音是普通中文合成试听，不是角色原配音演员的声音。无限使用放慢、降低音高的 Yunxi 男声；小黑使用 Yunxia 年轻男声，向男孩子的轻快听感调整；开场、收尾保留 Xiaoxiao 女声。小黑的合成源是男声，实际年龄感需要人工试听确认，不能仅凭音色名称保证是男童。系统朗读兜底仍取决于设备提供的声音。
 
 ## 桌面与手机使用
 
@@ -24,7 +24,7 @@
 
 ## 准备本地音频
 
-项目按约定不提交生成的音频和模型。新 checkout 需要先生成一次；生成需要联网，运行游戏时只请求随网页提供的静态 MP3，不调用在线合成服务。没有准备文件时仍可使用系统朗读或字幕。
+审核后的运行录音现在随 Git 保存，新 checkout 无需重新合成；没有中文系统音色也可直接播放。实验音频和模型仍不提交。资源发布、大小和 Vercel 配置见 [春季剧情与资源](SPRING_STORIES_RESOURCES.md)。以下命令仅供修改台词后的维护者使用。
 
 在仓库根目录执行：
 
@@ -32,14 +32,15 @@
 python3 -m venv /tmp/xiaohei-tts-venv
 /tmp/xiaohei-tts-venv/bin/python -m pip install edge-tts==7.3.1
 cd web
-TTS_PYTHON=/tmp/xiaohei-tts-venv/bin/python npm run audio:generate
+TTS_PYTHON=/tmp/xiaohei-tts-venv/bin/python npm run audio:generate -- --missing
+npm run resources:publish
 npm ci
 npm run dev
 ```
 
 `audio:generate` 使用 Node 内置模块和指定 Python 环境，不依赖先安装网页包。只有这条命令会把现有游戏对白发给在线合成服务；`npm run dev` 和 `npm run build` 不会联网生成声音。
 
-生成文件位于 `generated-audio/dialogue/`，附本地 `manifest.json` 记录服务、音色、参数、文本和生成时间。脚本以临时文件生成、成功后替换目标文件。`prepare-public.mjs` 将匹配当前文本和音色参数的文件复制到忽略的 `web/public/audio/dialogue/`；构建时再进入 `web/dist/`。文件名随文本和音色配置变化，避免台词修改后误用旧音频。
+生成文件位于 `generated-audio/dialogue/`，附本地 `manifest.json` 记录服务、音色、参数、文本和生成时间。脚本以临时文件生成、成功后替换目标文件。维护者运行 `resources:publish` 后，当前所需录音进入被 Git 跟踪的 `web/public/audio/dialogue/`；`prepare-public.mjs` 校验清单，构建时原样进入 `web/dist/`。文件名随文本和音色配置变化，避免台词修改后误用旧音频。
 
 音频准备完成后，静态站点可在没有外网的环境播放。这里的 React 网页仍沿用既有 Vite 构建方式；旧 `prototype/` 无构建、离线运行入口保持原样。
 
@@ -57,7 +58,7 @@ npm run test:voice-browser
 BROWSER_SCOPE=focused npm run test:browser
 ```
 
-`test:voice-browser` 要求已经生成十八段 MP3，使用独立 5186 端口；既有浏览器回归使用 5174 端口。浏览器由 Playwright 提供，需安装 Chromium；也可用 `CHROMIUM_PATH` 指定已安装的可执行文件。
+`test:voice-browser` 使用随 Git 提供的三十六段 MP3，使用独立 5186 端口；既有浏览器回归使用 5174 端口。浏览器由 Playwright 提供，需安装 Chromium；也可用 `CHROMIUM_PATH` 指定已安装的可执行文件。
 
 | 检查层级 | 结果与边界 |
 |---|---|
