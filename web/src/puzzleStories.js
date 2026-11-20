@@ -8,6 +8,8 @@ const narration = (id, text) => ({
   text,
 });
 
+import { autumnStories } from "./stories/autumn.js";
+
 export const puzzleStories = {
   ...summerStories,
   startSpring: {
@@ -55,6 +57,7 @@ export const puzzleStories = {
         text: "树枝伸过青绿的屋瓦，安静的午后有了歇脚的地方。", bounds: [0.01, 0.81, 0.53, 0.94], effect: "glow" },
     ],
   },
+  ...autumnStories,
   rain: {
     goal: "umbrella",
     opening: narration("opening", "先拼出雨伞，给小黑和无限挡一挡雨。"),

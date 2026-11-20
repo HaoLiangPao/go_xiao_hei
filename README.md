@@ -30,6 +30,8 @@ npm run dev
 
 原生 HTML 入口仍保留：`prototype/index.html`、`prototype/puzzle.html` 可以离线双击，也可以从仓库根目录运行 `python3 -m http.server 8765 --bind 127.0.0.1` 后访问。
 
+2020 年秋季六图的原创区域故事、36 段静态中文录音及桌面/手机截图见 [秋季内容说明](docs/AUTUMN_STORIES.md)。
+
 ## 当前玩法
 
 | 体验 | 内容 |
