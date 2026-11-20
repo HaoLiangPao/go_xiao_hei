@@ -85,7 +85,8 @@ npm run build
 - `npm run test:voice-browser`：既有试听、切换、停止与静音。
 - 从提交 98e596f 建立全新 checkout，不带原始收藏或 generated-audio；实际 npm ci 和 build 通过，输出与首次构建一致。浏览器在这个干净 checkout 的 dist 上运行，36/36 段原生 MP3 播放通过，总时长约 188 秒。
 - 桌面 1360×940、手机 390×844、375×667、320×568 均完成新增三图的区域解锁、通关、四区域回听和刷新。测试使用已点亮部分春季的存档以验证重玩与自由选关，不代表截图中的历史点亮数由该次局内碎片数推断。
-- 实体手机、Safari/Firefox、Vercel 云端实际部署尚未验证。既有三图 focused 回归与四尺寸配音回归通过；本次没有重跑全部片数/形状组合全年通关。
+- Vercel GitHub 自动 Preview 构建已通过，配置与现有 `web` Root Directory 对齐。Preview 受 Vercel SSO 保护，匿名媒体请求会跳转登录；本次原生播放验证针对干净 checkout 的生产输出，未声称完成受保护云端页面的浏览器播放测试。
+- 实体手机、Safari/Firefox 未验证。既有三图 focused 回归与四尺寸配音回归通过；本次没有重跑全部片数/形状组合全年通关。
 
 桌面和手机实测截图保存在 `docs/screenshots/spring-stories/`，PR 描述直接嵌入三张新增剧情及配音可用状态。
 
