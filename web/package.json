@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
+    "test:material-browser": "node tests/material-browser.cjs",
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1",
     "test": "node --test tests/geometry.test.js tests/gameplay.test.js tests/dialogue.test.js",

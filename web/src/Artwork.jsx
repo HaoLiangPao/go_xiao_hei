@@ -1,14 +1,23 @@
 import React, { memo } from "react";
 import { WIDTH, HEIGHT } from "./geometry.js";
-export const Fragment = memo(function Fragment({ piece, prefix, image }) {
+export const Fragment = memo(function Fragment({ piece, prefix, image, material = "light", raised = true }) {
   const id = `${prefix}-${piece.id}`;
+  const cardboard = material === "cardboard";
   return (
-    <>
+    <g className={cardboard ? "material-piece" : undefined} pointerEvents="none">
       <defs>
         <clipPath id={id}>
           <path d={piece.path} />
         </clipPath>
+        {cardboard && <pattern id={`${id}-grain`} width="13" height="17" patternUnits="userSpaceOnUse">
+          <path d="M1 3h3m4 7h2M3 15h2" stroke="#fffce9" strokeWidth="1" opacity=".3" />
+          <path d="M7 2h1m-5 8h2m6 4h1" stroke="#263d32" strokeWidth="1" opacity=".14" />
+        </pattern>}
       </defs>
+      {cardboard && raised && <g className="cardboard-side">
+        <path d={piece.path} transform="translate(1 10)" fill="#736c55" stroke="#575b44" strokeWidth="4" />
+        <path d={piece.path} transform="translate(0 5)" fill="#b4ac87" stroke="#c1b997" strokeWidth="2" />
+      </g>}
       <image
         href={image}
         width={WIDTH}
@@ -16,8 +25,25 @@ export const Fragment = memo(function Fragment({ piece, prefix, image }) {
         clipPath={`url(#${id})`}
         pointerEvents="none"
       />
-    </>
+      {cardboard && <g clipPath={`url(#${id})`} className="cardboard-finish">
+        <rect width={WIDTH} height={HEIGHT} fill={`url(#${id}-grain)`} />
+        <path d={piece.path} fill="none" stroke="#2b443b70" strokeWidth="10" transform="translate(-2 -3)" />
+        <path d={piece.path} fill="none" stroke="#fffbe5c4" strokeWidth="7" transform="translate(2 3)" />
+        <path d={piece.path} fill="none" stroke="#30483d77" strokeWidth="3" />
+      </g>}
+    </g>
   );
+});
+export const PieceWell = memo(function PieceWell({ piece }) {
+  const id = `well-${piece.id}`;
+  return <g className="piece-well" pointerEvents="none">
+    <defs><clipPath id={id}><path d={piece.path} /></clipPath></defs>
+    <path d={piece.path} fill="#4f615222" stroke="#3a4c3e77" strokeWidth="6" />
+    <g clipPath={`url(#${id})`}>
+      <path d={piece.path} fill="none" stroke="#213d3277" strokeWidth="15" transform="translate(3 5)" />
+      <path d={piece.path} fill="none" stroke="#fffce299" strokeWidth="9" transform="translate(-2 -4)" />
+    </g>
+  </g>;
 });
 export function Icon({ name, ...props }) {
   const paths = {

@@ -9,7 +9,7 @@ import {
   shuffle,
 } from "./geometry.js";
 import { completedMemories, regionPieces } from "./gameplay.js";
-import { Fragment, Icon } from "./Artwork.jsx";
+import { Fragment, PieceWell, Icon } from "./Artwork.jsx";
 import { pictures } from "./pictureCatalog.js";
 import { puzzleStories } from "./puzzleStories.js";
 import { MemoryEffect } from "./MemoryEffect.jsx";
@@ -62,15 +62,26 @@ function useMedia(query) {
   }, [query]);
   return matches;
 }
-function Tool({ icon, children, ...props }) {
+function Tool({ icon, children, onClick, ...props }) {
+  // Handle touch release directly: a rapid tap after a drag may have no native
+  // compatibility click. Mouse and keyboard keep their normal click behavior.
+  function touchUp(event) {
+    if (props.disabled || event.pointerType !== "touch") return;
+    const rect = event.currentTarget.getBoundingClientRect();
+    if (event.clientX >= rect.left && event.clientX <= rect.right &&
+        event.clientY >= rect.top && event.clientY <= rect.bottom) onClick?.(event);
+  }
   return (
-    <button className="tool" {...props}>
+    <button className="tool" {...props} onPointerUp={touchUp}
+      onClick={(event) => {
+        if (event.detail === 0 || event.nativeEvent.pointerType !== "touch") onClick?.(event);
+      }}>
       <Icon name={icon} />
       {children && <span>{children}</span>}
     </button>
   );
 }
-function Puzzle({ mode, sound, paused, gameRef }) {
+function Puzzle({ mode, sound, paused, gameRef, material }) {
   const { level, shape, picture, board, magnet } = mode,
     { cols, rows } = levels[level],
     total = cols * rows;
@@ -109,6 +120,7 @@ function Puzzle({ mode, sound, paused, gameRef }) {
     [zoom, setZoom] = useState(false),
     [page, setPage] = useState(0),
     [lastPlaced, setLastPlaced] = useState(null),
+    [placementKind, setPlacementKind] = useState("direct"),
     [celebrations, setCelebrations] = useState([]),
     [saveError, setSaveError] = useState(false),
     [imageError, setImageError] = useState(false),
@@ -195,7 +207,7 @@ function Puzzle({ mode, sound, paused, gameRef }) {
     observer.observe(viewportRef.current);
     return () => observer.disconnect();
   }, []);
-  function commit(id, keyboard = false) {
+  function commit(id, keyboard = false, fromDrag = false) {
     if (paused || referenceBlocksBoard || placedRef.current.has(id)) return;
     const next = new Set(placedRef.current).add(id);
     placedRef.current = next;
@@ -203,6 +215,7 @@ function Puzzle({ mode, sound, paused, gameRef }) {
     setSelected(null);
     setHint(null);
     setLastPlaced(id);
+    setPlacementKind(fromDrag ? "drag" : "direct");
     sound.play("place");
     const unlocked = completedMemories(next, cols, rows, storyMemories).filter(
       (memory) => !seen.current.has(memory.id),
@@ -237,7 +250,8 @@ function Puzzle({ mode, sound, paused, gameRef }) {
     placedRef,
     magnet,
     disabled: paused || referenceBlocksBoard,
-    onPlace: commit,
+    material,
+    onPlace: (id) => commit(id, false, true),
     onSelect: setSelected,
     onPick: () => {
       sound.play("pick");
@@ -425,7 +439,7 @@ function Puzzle({ mode, sound, paused, gameRef }) {
                 {pieces.map((piece) => (
                   <g
                     key={piece.id}
-                    className={`slot ${placed.has(piece.id) ? "placed" : ""} ${hint === piece.id ? "hint" : ""} ${floating.near === piece.id ? "magnet-near" : ""} ${lastPlaced === piece.id ? "just-placed" : ""}`}
+                    className={`slot ${placed.has(piece.id) ? "placed" : ""} ${hint === piece.id ? "hint" : ""} ${floating.near === piece.id ? "magnet-near" : ""} ${lastPlaced === piece.id ? "just-placed" : ""} ${lastPlaced === piece.id && placementKind === "direct" ? "press-in" : ""} ${floating.visual?.id === piece.id && ["snap", "press"].includes(floating.visual.phase) ? "receiving" : ""}`}
                     data-slot={piece.id}
                     role="button"
                     tabIndex={placed.has(piece.id) ? -1 : 0}
@@ -456,12 +470,9 @@ function Puzzle({ mode, sound, paused, gameRef }) {
                       if (lastPlaced === piece.id) setLastPlaced(null);
                     }}
                   >
+                    {material === "cardboard" && !placed.has(piece.id) && <PieceWell piece={piece} />}
                     {placed.has(piece.id) && (
-                      <Fragment
-                        piece={piece}
-                        prefix="board"
-                        image={art.image}
-                      />
+                      <Fragment piece={piece} prefix="board" image={art.image} material={material} raised={false} />
                     )}
                     <path d={piece.path} className="seam" />
                   </g>
@@ -619,7 +630,7 @@ function Puzzle({ mode, sound, paused, gameRef }) {
               }}
             >
               <svg viewBox={pieces[id].viewBox} aria-hidden="true">
-                <Fragment piece={pieces[id]} prefix="tray" image={art.image} />
+                <Fragment piece={pieces[id]} prefix="tray" image={art.image} material={material} />
                 <path d={pieces[id].path} className="piece-edge" />
               </svg>
               <span className="piece-shadow" />
@@ -766,17 +777,15 @@ function Puzzle({ mode, sound, paused, gameRef }) {
           }}
           aria-hidden="true"
         >
-          <svg viewBox={pieces[floating.visual.id].viewBox}>
-            <Fragment
-              piece={pieces[floating.visual.id]}
-              prefix="floating"
-              image={art.image}
-            />
+          <div className="floating-surface">
+            <svg viewBox={pieces[floating.visual.id].viewBox}>
+            <Fragment piece={pieces[floating.visual.id]} prefix="floating" image={art.image} material={material} />
             <path
               d={pieces[floating.visual.id].path}
               className="floating-edge"
             />
-          </svg>
+            </svg>
+          </div>
         </div>
       )}
     </main>
@@ -784,7 +793,11 @@ function Puzzle({ mode, sound, paused, gameRef }) {
 }
 function App() {
   const [mode, setMode] = useState(getMode),
-    [settings, setSettings] = useState(false);
+    [settings, setSettings] = useState(false),
+    [material, setMaterial] = useState(() => {
+      try { return localStorage.getItem("shiguang-material-v1") === "cardboard" ? "cardboard" : "light"; }
+      catch { return "light"; }
+    });
   const art = pictures[mode.picture];
   const gameRef = useRef(null),
     dialogRef = useRef(null),
@@ -799,8 +812,11 @@ function App() {
     if (settings && !dialog.open) dialog.showModal();
     else if (!settings && dialog.open) dialog.close();
   }, [settings]);
+  useEffect(() => {
+    try { localStorage.setItem("shiguang-material-v1", material); } catch {}
+  }, [material]);
   return (
-    <div className="game-shell">
+    <div className={`game-shell material-${material}`} data-material={material}>
       <header className="game-header">
         <a className="brand" href="/" aria-label="小黑的四时拾光首页">
           <Icon name="leaf" />
@@ -834,6 +850,7 @@ function App() {
         mode={mode}
         sound={sound}
         paused={settings}
+        material={material}
         gameRef={gameRef}
       />
       <footer className="game-footer">
@@ -911,6 +928,13 @@ function App() {
                   {value}
                 </option>
               ))}
+            </select>
+          </label>
+          <label className="setting-row">
+            <span>拼图质感<small>纸板有厚度，放下时轻轻嵌入</small></span>
+            <select aria-label="拼图质感" value={material} onChange={(event) => setMaterial(event.target.value)}>
+              <option value="light">轻盈 · 当前效果</option>
+              <option value="cardboard">纸板拼图 · 立体手感</option>
             </select>
           </label>
           <label className="setting-row">

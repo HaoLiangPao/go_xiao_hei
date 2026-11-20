@@ -2,6 +2,8 @@
 
 React 拼图与原生 SVG 填色故事共用一个本地服务。使用 Node.js 22.12 或更新版本。
 
+可选的纸板厚度、凹槽与按压归位效果见 [纸板拼图说明](../docs/CARDBOARD_PUZZLE.md)。
+
 ```bash
 cd web
 npm ci
