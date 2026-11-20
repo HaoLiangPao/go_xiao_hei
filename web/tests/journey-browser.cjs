@@ -41,6 +41,12 @@ const shots = path.join(root, "../docs/screenshots/solar-journey");
       const activate = (locator) => touch ? locator.tap() : locator.click();
       const count = (n) => page.waitForFunction((n) => document.querySelector("#count").textContent === `${n} / 12`, n);
       const lights = (n) => page.waitForFunction((n) => JSON.parse(localStorage.getItem("shiguang-solar-journey-v1")).completed.length === n, n);
+      async function seasonBar(id) {
+        const term = solarTerms.find((item) => item.id === id);
+        assert.equal(await page.locator(".year-progress").getAttribute("data-current-season"), term.season);
+        assert.deepEqual(await page.locator("[data-progress-term]").evaluateAll((nodes) => nodes.map((n) => n.dataset.progressTerm)), solarTerms.filter((item) => item.season === term.season).map((item) => item.id));
+        assert.equal(await page.locator(".year-dots i").count(), 6);
+      }
       const open = () => activate(page.getByRole("button", { name: /^选择节气，已点亮/ }));
       async function finishPuzzle(from = 0) {
         for (let i = from; i < 12; i++) {
@@ -59,8 +65,31 @@ const shots = path.join(root, "../docs/screenshots/solar-journey");
       }
       await page.goto(origin);
       assert.equal(await page.locator(".game-title > span").innerText(), "立春");
+      await seasonBar("startSpring");
+      await page.screenshot({ path: path.join(shots, `${label}-game-spring.png`), fullPage: true });
       await open();
       assert.equal(await page.locator("[data-term]").count(), 24);
+      // All thumbnails must really load. Scroll lazy images into the dialog viewport.
+      for (const season of ["spring", "summer", "autumn", "winter"]) {
+        const ids = solarTerms.filter((term) => term.season === season).map((term) => term.id);
+        await page.locator(`[data-term="${ids[0]}"]`).scrollIntoViewIfNeeded();
+        await page.waitForFunction((ids) => ids.every((id) => {
+          const image = document.querySelector(`[data-term="${id}"] img`);
+          return image?.complete && image.naturalWidth > 0;
+        }), ids);
+      }
+      await page.locator('[data-term="startSpring"]').scrollIntoViewIfNeeded();
+      const flow = await page.locator('.season-track').first().evaluate((track) => {
+        const nodes = [...track.querySelectorAll('.term-node')].map((n) => n.getBoundingClientRect());
+        const turn = getComputedStyle(track.querySelector('.term-link-turn'));
+        return { forward: nodes[0].x < nodes[1].x && nodes[1].x < nodes[2].x,
+          folded: nodes[2].y < nodes[3].y && Math.abs(nodes[2].x - nodes[3].x) < 1 && nodes[3].x > nodes[4].x && nodes[4].x > nodes[5].x,
+          allOneRow: nodes.every((n) => Math.abs(n.y - nodes[0].y) < 1),
+          turnLine: parseFloat(turn.height) >= 124 && turn.borderRightWidth === '1px' };
+      });
+      assert.equal(flow.forward, true);
+      if (touch) { assert.equal(flow.folded, true); assert.equal(flow.turnLine, true); }
+      else assert.equal(flow.allOneRow, true);
       assert.equal(await page.locator('[data-status="locked"]').count(), 23);
       assert.equal(await page.locator('[data-term="rain"]').isDisabled(), true);
       await page.screenshot({ path: path.join(shots, `${label}-start.png`), fullPage: true });
@@ -92,6 +121,10 @@ const shots = path.join(root, "../docs/screenshots/solar-journey");
       assert.equal(await page.locator('[data-term="rain"]').getAttribute("data-status"), "available");
       assert.equal(await page.locator('[data-term="insects"]').getAttribute("data-status"), "locked");
       await page.screenshot({ path: path.join(shots, `${label}-journey.png`), fullPage: true });
+      if (touch) {
+        await page.locator('[data-term="majorCold"]').scrollIntoViewIfNeeded();
+        await page.screenshot({ path: path.join(shots, `${label}-journey-winter.png`), fullPage: true });
+      }
       await activate(page.locator('[data-term="rain"]'));
       assert.equal(await page.locator(".game-title > span").innerText(), "雨水");
       await count(0);
@@ -104,6 +137,8 @@ const shots = path.join(root, "../docs/screenshots/solar-journey");
             await page.getByRole("button", { name: `下一节气 · ${solarTerms[index + 1].title}`, exact: true }).click();
             assert.equal(await page.locator(".game-title > span").innerText(), solarTerms[index + 1].title);
             await count(0);
+            await seasonBar(solarTerms[index + 1].id);
+            if (index === 5) await page.screenshot({ path: path.join(shots, "desktop-game-summer.png"), fullPage: true });
           }
         }
         await page.reload(); await lights(24); await open();
@@ -117,6 +152,21 @@ const shots = path.join(root, "../docs/screenshots/solar-journey");
       console.log(`PASS ${label}: 24 nodes/4 seasons, genuine ${touch ? "touch drag/taps" : "keyboard"} completion, one light/next unlock, refresh, layout, ${label === "desktop" ? "all 24 puzzles completed" : "phone navigation"}, no external requests`);
       await context.close();
     }
+    // A persisted completed-spring fixture verifies switching to summer on phones.
+    const summerContext = await browser.newContext({ viewport: { width: 390, height: 844 }, hasTouch: true, isMobile: true });
+    await summerContext.addInitScript((ids) => {
+      localStorage.setItem("shiguang-solar-journey-v1", JSON.stringify({ version: 1, completed: ids }));
+      localStorage.setItem("shiguang-mode", JSON.stringify({ picture: "startSummer", level: "easy", shape: "classic", board: "guided" }));
+    }, solarTerms.slice(0, 6).map((term) => term.id));
+    const sp = await summerContext.newPage(); await sp.goto(origin);
+    assert.equal(await sp.locator(".year-progress").getAttribute("data-current-season"), "summer");
+    assert.equal(await sp.locator(".year-dots i").count(), 6);
+    assert.equal(await sp.locator(".year-dots .lit").count(), 0);
+    assert.match(await sp.locator(".year-progress").innerText(), /全年 6 \/ 24/);
+    await sp.waitForFunction(() => !document.querySelector("[data-piece]")?.disabled);
+    await sp.screenshot({ path: path.join(shots, "mobile-game-summer.png"), fullPage: true });
+    await summerContext.close();
+    console.log("PASS current-season-only six nodes; persisted spring completion switches to summer with independent season/year totals");
     const legacy = await browser.newContext();
     await legacy.addInitScript(() => {
       localStorage.setItem("shiguang-mode", JSON.stringify({ level: "medium", shape: "organic", picture: "equinox", board: "blank" }));
@@ -138,6 +188,10 @@ const shots = path.join(root, "../docs/screenshots/solar-journey");
     assert.equal(await mp.locator("[data-piece]").first().isDisabled(), true);
     assert.equal(await mp.locator("#count").innerText(), "0 / 12");
     assert.deepEqual(await mp.evaluate(() => JSON.parse(localStorage.getItem("shiguang-solar-journey-v1")).completed), []);
+    await mp.getByRole("button", { name: /^选择节气，已点亮/ }).click();
+    await mp.locator('[data-term="startSpring"] .term-image-missing').waitFor();
+    assert.match(await mp.locator('[data-term="startSpring"]').innerText(), /图片未载入/);
+    assert.equal(await mp.locator('[data-term="rain"]').getAttribute("data-status"), "locked");
     await missing.close();
     const blocked = await browser.newContext();
     await blocked.addInitScript(() => Object.defineProperty(window, "localStorage", { get() { throw new Error("blocked"); } }));

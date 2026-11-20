@@ -55,6 +55,13 @@ fs.mkdirSync(shots, { recursive: true });
         viewport: { width: 1360, height: 940 },
       }),
       errors = [];
+    // Keep the existing three-picture regression scoped to its rain/story fixtures.
+    await page.addInitScript(() => {
+      if (!localStorage.getItem("shiguang-mode")) {
+        localStorage.setItem("shiguang-mode", JSON.stringify({ picture: "rain", level: "easy", shape: "classic", board: "guided" }));
+        localStorage.setItem("shiguang-solar-journey-v1", JSON.stringify({ version: 1, completed: ["startSpring", "rain", "insects", "equinox", "pureBrightness"] }));
+      }
+    });
     page.on("pageerror", (e) => errors.push(e.message));
     await page.goto("http://127.0.0.1:5174/");
     await page.locator("[data-piece]").first().waitFor();
@@ -374,6 +381,8 @@ fs.mkdirSync(shots, { recursive: true });
     // Instrument browser audio scheduling without relying on OS speakers or voice packs.
     const ac = await browser.newContext();
     await ac.addInitScript(() => {
+      localStorage.setItem("shiguang-mode", JSON.stringify({ picture: "rain", level: "easy", shape: "classic", board: "guided" }));
+      localStorage.setItem("shiguang-solar-journey-v1", JSON.stringify({ version: 1, completed: ["insects"] }));
       window.__soundEvents = 0;
       window.__spoken = [];
       window.__mix = [];
@@ -533,8 +542,8 @@ fs.mkdirSync(shots, { recursive: true });
     );
     await ap.getByRole("button", { name: "回到春天", exact: true }).click();
     await ap.getByRole("button", { name: "游戏设置", exact: true }).click();
-    await ap.getByRole("radio", { name: "春分", exact: true }).check();
-    await ap.getByRole("button", { name: "回到春天", exact: true }).click();
+    await ap.locator(".choose-season-button").click();
+    await ap.locator('[data-term="equinox"]').click();
     await ap.waitForFunction(() =>
       window.__lastUtterance?.text.includes("纸鸢"),
     );
@@ -543,8 +552,8 @@ fs.mkdirSync(shots, { recursive: true });
       "晓晓",
     );
     await ap.getByRole("button", { name: "游戏设置", exact: true }).click();
-    await ap.getByRole("radio", { name: "雨水", exact: true }).check();
-    await ap.getByRole("button", { name: "回到春天", exact: true }).click();
+    await ap.locator(".choose-season-button").click();
+    await ap.locator('[data-term="rain"]').click();
     await ap.getByRole("button", { name: "关闭声音", exact: true }).click();
     await ap.waitForFunction(() =>
       window.__mix.slice(0, 3).every((level) => level === 0),
@@ -656,8 +665,8 @@ fs.mkdirSync(shots, { recursive: true });
       ["谷雨", "grain-rain", "grainRain"],
     ]) {
       await settings();
-      await page.getByRole("radio", { name: title, exact: true }).check();
-      await page.getByRole("button", { name: "回到春天", exact: true }).click();
+      await page.locator(".choose-season-button").click();
+      await page.locator(`[data-term="${storyId}"]`).click();
       await waitCount(0, 12);
       assert.equal(
         await page.locator(".board .underlay").getAttribute("href"),
@@ -740,7 +749,8 @@ fs.mkdirSync(shots, { recursive: true });
       hasTouch: true,
       isMobile: true,
     });
-    await manualTouch.addInitScript(() =>
+    await manualTouch.addInitScript(() => {
+      localStorage.setItem("shiguang-solar-journey-v1", JSON.stringify({ version: 1, completed: ["insects"] }));
       localStorage.setItem(
         "shiguang-mode",
         JSON.stringify({
@@ -750,8 +760,8 @@ fs.mkdirSync(shots, { recursive: true });
           board: "blank",
           magnet: false,
         }),
-      ),
-    );
+      );
+    });
     const mobilePage = await manualTouch.newPage();
     await mobilePage.goto("http://127.0.0.1:5174/");
     const mobilePiece = mobilePage.locator("[data-piece]").first();

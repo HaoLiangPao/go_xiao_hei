@@ -33,6 +33,7 @@ const shots = path.join(root, "../docs/screenshots/cardboard-puzzle");
       const context = await browser.newContext({ viewport: { width, height }, hasTouch: touch,
         isMobile: touch, reducedMotion: reduced ? "reduce" : "no-preference" });
       await context.addInitScript(() => {
+        if (!localStorage.getItem("shiguang-mode")) localStorage.setItem("shiguang-mode", JSON.stringify({ picture: "rain", level: "easy", shape: "classic", board: "guided" }));
         if (!localStorage.getItem("shiguang-react-v1-easy-classic"))
           localStorage.setItem("shiguang-react-v1-easy-classic", "[0]");
       });
