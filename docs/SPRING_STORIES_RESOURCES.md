@@ -83,6 +83,26 @@ npm run build
 - jsdom：既有填色 DOM 事件，不用于证明音频、画面或触屏。
 - `npm run test:spring-browser`：针对 Vite 生产输出，四个视口的新增三图区域/通关/回听/刷新；禁用系统中文语音、禁止外部请求，原生 MP3 播放。
 - `npm run test:voice-browser`：既有试听、切换、停止与静音。
-- 干净 checkout 构建只使用 Git 中的媒体；不带原始收藏或 generated-audio。实体手机和 Safari/Firefox 未验证。
+- 从提交 98e596f 建立全新 checkout，不带原始收藏或 generated-audio；实际 npm ci 和 build 通过，输出与首次构建一致。浏览器在这个干净 checkout 的 dist 上运行，36/36 段原生 MP3 播放通过，总时长约 188 秒。
+- 桌面 1360×940、手机 390×844、375×667、320×568 均完成新增三图的区域解锁、通关、四区域回听和刷新。测试使用已点亮部分春季的存档以验证重玩与自由选关，不代表截图中的历史点亮数由该次局内碎片数推断。
+- 实体手机、Safari/Firefox、Vercel 云端实际部署尚未验证。既有三图 focused 回归与四尺寸配音回归通过；本次没有重跑全部片数/形状组合全年通关。
 
 桌面和手机实测截图保存在 `docs/screenshots/spring-stories/`，PR 描述直接嵌入三张新增剧情及配音可用状态。
+
+## 桌面和手机实测
+
+![桌面立春新芽剧情](screenshots/spring-stories/desktop-startSpring.png)
+
+![桌面惊蛰小鸟剧情](screenshots/spring-stories/desktop-insects.png)
+
+![桌面清明树上小黑](screenshots/spring-stories/desktop-pureBrightness.png)
+
+![桌面无需系统中文语音的配音试听](screenshots/spring-stories/desktop-recording-ready.png)
+
+<img src="screenshots/spring-stories/mobile-startSpring.png" width="320" alt="手机立春">
+
+<img src="screenshots/spring-stories/mobile-insects.png" width="320" alt="手机惊蛰">
+
+<img src="screenshots/spring-stories/mobile-pureBrightness.png" width="320" alt="手机清明">
+
+<img src="screenshots/spring-stories/mobile-recording-ready.png" width="320" alt="手机录音播放可用">
