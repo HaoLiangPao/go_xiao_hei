@@ -35,3 +35,5 @@ npm run test:browser
 浏览器脚本会启动本地 5174 服务，在隔离的浏览器上下文中重置测试进度，结束后停止服务。本轮浏览器脚本专注拼图；截图写入 `docs/screenshots/puzzle-2d/`。原生填色测试另见仓库根目录的测试脚本。`CHROMIUM_PATH` 可指定已有 Chromium，`PLAYWRIGHT_MODULE` 可指定已有 Playwright 包，仅为测试环境兼容项。
 
 《雨水》《春分》《谷雨》图像来自已有收藏，来源见 [素材说明](../docs/ART_SOURCE.md)。
+
+普通中文配音试听及本地音频准备见 [中文配音说明](../docs/CHINESE_VOICE.md)。

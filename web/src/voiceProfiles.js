@@ -1,8 +1,8 @@
 export const voiceProfiles = {
   adultMale: {
     label: "成熟男声",
-    rate: 0.86,
-    pitch: 0.85,
+    rate: 0.78,
+    pitch: 0.72,
     preferred:
       /male|云[希健扬]|yunxi|yunjian|yunyang|liang|yusheng|guoqiang|sin-ji-m|zhiwei/i,
   },
@@ -15,9 +15,9 @@ export const voiceProfiles = {
   },
   child: {
     label: "男童声",
-    rate: 1.05,
-    pitch: 1.32,
-    preferred: /boy|child|男童|云夏|yunxia|xiaoyou/i,
+    rate: 1.06,
+    pitch: 1.13,
+    preferred: /boy|child|男童|云夏|yunxia/i,
   },
 };
 

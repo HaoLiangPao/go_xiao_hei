@@ -290,7 +290,7 @@ function Puzzle({ mode, sound, paused, gameRef }) {
   useEffect(() => {
     if (paused) {
       setSelected(null);
-      sound.stop();
+      sound.stopDialogue();
     }
   }, [paused]);
   useEffect(() => {
@@ -964,7 +964,7 @@ function App() {
             <span>
               对白朗读
               <small>
-                {sound.enabled ? "使用设备的中文系统语音" : "先开启游戏声音"}
+                {sound.enabled ? "录音优先，缺失时使用设备中文语音" : "先开启游戏声音"}
               </small>
             </span>
             <input
@@ -997,6 +997,18 @@ function App() {
               ))}
             </fieldset>
           )}
+          <div className="voice-preview" aria-label="普通中文配音试听">
+            <p>普通中文合成配音 · 试听</p>
+            <div className="voice-preview-buttons">
+              <button className="secondary-button" disabled={!sound.enabled}
+                onClick={() => sound.preview(puzzleStories.rain.memories[0])}>试听无限</button>
+              <button className="secondary-button" disabled={!sound.enabled}
+                onClick={() => sound.preview(puzzleStories.rain.memories[2])}>试听小黑</button>
+              <button className="secondary-button" disabled={!sound.speaking}
+                onClick={sound.stop}>停止</button>
+            </div>
+            <p className="voice-preview-caption">录音优先播放；上方音色选择用于系统朗读兜底。</p>
+          </div>
           {sound.note && (
             <p className="settings-note" role="status">
               {sound.note}

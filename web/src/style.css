@@ -762,6 +762,19 @@ progress::-moz-progress-bar {
   accent-color: #67885a;
   flex: none;
 }
+.voice-preview {
+  margin-top: 14px;
+  font-size: 12px;
+}
+.voice-preview > p { margin: 0 0 10px; }
+.voice-preview-buttons { display: flex; gap: 8px; }
+.voice-preview-buttons button { min-height: 44px; padding: 8px; }
+.voice-preview .voice-preview-caption {
+  margin: 10px 0 0;
+  font-size: 10px;
+  line-height: 1.8;
+  color: var(--muted);
+}
 .settings-note {
   font-size: 11px;
   color: var(--muted);
