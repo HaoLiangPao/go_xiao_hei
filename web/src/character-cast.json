@@ -174,7 +174,7 @@
         "movie2",
         "other"
       ],
-      "summary": "人类、妖灵会馆执行者，小黑的师父。",
+      "summary": "无限是人，在妖灵会馆做执行人。小黑第一次见他，他是来抓风息的，动手时也把小黑抓住了。可把孩子带走以后，他又开始教小黑控制能力。两人起初互不亲近，一路相处下来，小黑才认识了抓人之外的无限，最后愿意喊他师父。",
       "sources": [
         "https://luoxiaohei-movie.com/2nd/character/",
         "https://luoxiaohei-movie.com/tv/character/",
@@ -189,7 +189,9 @@
         "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
         "https://bgm.tv/subject/294880/characters",
         "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
-        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）"
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）",
+        "https://luoxiaohei-movie.com/1st/character/?page=chara02",
+        "https://luoxiaohei-movie.com/1st/staffcast/"
       ],
       "catalogIds": [
         "tv-bgm",
@@ -234,7 +236,7 @@
         "movie2",
         "other"
       ],
-      "summary": "本作品总会馆所属妖精、会馆创始者之一。",
+      "summary": "龙游出了事，哪吒从会馆总部赶来支援。可等他到场，风息的领域已经进不去了，人来了也没法直接帮上里面的无限。第一部留给他的戏份不长：一个发型醒目、从总部来的执行人，碰上了眼前这道不好办的难题。中文配音和小黑一样，都是山新。",
       "sources": [
         "https://luoxiaohei-movie.com/2nd/character/",
         "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)",
@@ -243,7 +245,9 @@
         "https://bgm.tv/subject/442114/characters",
         "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
         "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色",
-        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色"
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
+        "https://luoxiaohei-movie.com/1st/character/?page=chara08",
+        "https://luoxiaohei-movie.com/1st/staffcast/"
       ],
       "catalogIds": [
         "movie1-huiji",
@@ -376,6 +380,9 @@
       "workDetails": [
         "TV动画",
         "TV·众生之门篇"
+      ],
+      "userSpellings": [
+        "善心"
       ]
     },
     {
@@ -969,19 +976,21 @@
       ]
     },
     {
-      "id": "cast-1c18969f48",
+      "id": "zhaoyue",
       "name": "兆岳",
       "aliases": [],
       "works": [
         "movie1",
         "other"
       ],
-      "summary": "已列入电影1、漫画《蓝溪镇》的角色目录；具体身份尚待逐条核对。",
+      "summary": "有配音的次要角色",
       "sources": [
         "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
         "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)",
         "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色",
-        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://www.1905.com/mdb/film/2242929/?fr=mdbypk_zp",
+        "https://m.1905.com/Mdb/mdbDetail/filmid/2242929/"
       ],
       "catalogIds": [
         "movie1-huiji",
@@ -1064,20 +1073,22 @@
       ]
     },
     {
-      "id": "cast-eba7d149ec",
+      "id": "guanxuan",
       "name": "冠萱",
       "aliases": [],
       "works": [
         "tv",
         "movie1"
       ],
-      "summary": "已列入TV动画、电影1的角色目录；具体身份尚待逐条核对。",
+      "summary": "媒体数据库配音角色名",
       "sources": [
         "https://bgm-api-anitabi.magiconch.com/subject/593863/characters",
         "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
         "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
         "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
-        "https://bgm.tv/subject/294880/characters"
+        "https://bgm.tv/subject/294880/characters",
+        "https://www.1905.com/mdb/film/2242929/?fr=mdbypk_zp",
+        "https://m.1905.com/Mdb/mdbDetail/filmid/2242929/"
       ],
       "catalogIds": [
         "tv-huiji",
@@ -1682,17 +1693,19 @@
       ]
     },
     {
-      "id": "cast-1aca1a02e5",
+      "id": "tianjie",
       "name": "天介",
       "aliases": [],
       "works": [
         "movie1"
       ],
-      "summary": "已列入电影1的角色目录；具体身份尚待逐条核对。",
+      "summary": "有配音的次要角色",
       "sources": [
         "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
         "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)",
-        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://www.1905.com/mdb/film/2242929/?fr=mdbypk_zp",
+        "https://m.1905.com/Mdb/mdbDetail/filmid/2242929/"
       ],
       "catalogIds": [
         "movie1-huiji",
@@ -1732,17 +1745,19 @@
       ]
     },
     {
-      "id": "cast-f69c848e10",
+      "id": "tianhu",
       "name": "天虎",
       "aliases": [],
       "works": [
         "movie1"
       ],
-      "summary": "风息的同伴，使用火系能力。",
+      "summary": "天虎的虎脸、宽帽檐和圆身形，让人很难认错。可别看他块头大，他是从小跟着风息等人生活的弟弟。欢迎小黑吃饭时，他关心的是吃喝；平时也不太开口。和其他几个人放在一起，他不用说很多话，光是待在饭桌边，就已经很有存在感。",
       "sources": [
         "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
         "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)",
-        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei-movie.com/1st/character/?page=chara06",
+        "https://luoxiaohei-movie.com/1st/staffcast/"
       ],
       "catalogIds": [
         "movie1-huiji",
@@ -2645,20 +2660,22 @@
       ]
     },
     {
-      "id": "cast-dc2409347e",
+      "id": "luozhu",
       "name": "洛竹",
       "aliases": [],
       "works": [
         "tv",
         "movie1"
       ],
-      "summary": "风息的同伴，使用木系能力。",
+      "summary": "小黑刚到岛上，洛竹就张罗着欢迎他，还拿植物的小把戏逗孩子开心。他和风息一起生活，也想念原来的故乡。可到了风息要伤害小黑的时候，他没有跟着点头，而是急着劝阻。先伸手招呼孩子的人，后来也想把这个孩子护下来。",
       "sources": [
         "https://bgm-api-anitabi.magiconch.com/subject/593863/characters",
         "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)",
         "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
         "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
-        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色"
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
+        "https://luoxiaohei-movie.com/1st/character/?page=chara05",
+        "https://luoxiaohei-movie.com/1st/staffcast/"
       ],
       "catalogIds": [
         "tv-huiji",
@@ -3677,7 +3694,7 @@
       ]
     },
     {
-      "id": "cast-a1a2d172f2",
+      "id": "laofu",
       "name": "老府",
       "aliases": [
         "府先生"
@@ -3686,7 +3703,7 @@
         "tv",
         "movie1"
       ],
-      "summary": "已列入TV动画、电影1的角色目录；具体身份尚待逐条核对。",
+      "summary": "有配音的次要角色",
       "sources": [
         "https://bgm.tv/subject/13603/characters",
         "https://bgm-api-anitabi.magiconch.com/subject/593863/characters",
@@ -3695,7 +3712,9 @@
         "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
         "https://bgm.tv/subject/294880/characters",
         "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
-        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）"
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）",
+        "https://www.1905.com/mdb/film/2242929/?fr=mdbypk_zp",
+        "https://m.1905.com/Mdb/mdbDetail/filmid/2242929/"
       ],
       "catalogIds": [
         "tv-bgm",
@@ -3841,21 +3860,23 @@
       ]
     },
     {
-      "id": "cast-f554f0e1fe",
+      "id": "ruoshui",
       "name": "若水",
       "aliases": [],
       "works": [
         "tv",
         "movie1"
       ],
-      "summary": "鸠老的徒弟，崇拜无限的狐妖。",
+      "summary": "若水是会馆的执行者，也是无限的粉丝。和小黑见面时，她笑眯眯地弯下身，把手放到孩子头上；小黑却板着一张脸。这个狐狸妖精对人类友好，和小黑相处时也主动。她自己笑得高兴，小黑还没放下戒心，两个人的反应正好撞在了一起。",
       "sources": [
         "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)",
         "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
         "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记TV版角色",
         "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
         "https://bgm.tv/subject/294880/characters",
-        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）"
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）",
+        "https://luoxiaohei-movie.com/1st/character/?page=chara07",
+        "https://luoxiaohei-movie.com/1st/staffcast/"
       ],
       "catalogIds": [
         "tv-huiji",
@@ -3999,17 +4020,19 @@
       ]
     },
     {
-      "id": "cast-61222eaf85",
+      "id": "xuhuai",
       "name": "虚淮",
       "aliases": [],
       "works": [
         "movie1"
       ],
-      "summary": "风息的同伴，使用冰系能力。",
+      "summary": "小黑来到岛上，认识了风息的几位朋友，虚淮也在其中。和张罗欢迎会的洛竹放在一起，他显得安静得多。他的本事和冰有关，连身体也是冰构成的，受伤能自行修复。平日里不太抢眼的同伴，一旦交手，就有了冰块与精灵鱼环绕的另一副样子。",
       "sources": [
         "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
         "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)",
-        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://luoxiaohei-movie.com/1st/character/?page=chara04",
+        "https://luoxiaohei-movie.com/1st/staffcast/"
       ],
       "catalogIds": [
         "movie1-huiji",
@@ -4314,17 +4337,19 @@
       ]
     },
     {
-      "id": "cast-afa1deea41",
+      "id": "minxiang",
       "name": "闵翔",
       "aliases": [],
       "works": [
         "movie1"
       ],
-      "summary": "已列入电影1的角色目录；具体身份尚待逐条核对。",
+      "summary": "有配音的次要角色",
       "sources": [
         "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
         "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)",
-        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色"
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
+        "https://www.1905.com/mdb/film/2242929/?fr=mdbypk_zp",
+        "https://m.1905.com/Mdb/mdbDetail/filmid/2242929/"
       ],
       "catalogIds": [
         "movie1-huiji",
@@ -4694,21 +4719,23 @@
       ]
     },
     {
-      "id": "cast-2d3c440bbe",
+      "id": "fengxi",
       "name": "风息",
       "aliases": [],
       "works": [
         "movie1",
         "other"
       ],
-      "summary": "小黑流浪时遇见的妖精，因家园遭破坏而对人类抱有敌意。",
+      "summary": "小黑流浪时，是风息把他带上岛，介绍给朋友，还给了他一个住处。风息自己却始终放不下失去的家园，不肯接受会馆的处理办法。他想把原来的地方夺回来，甚至走到了伤害小黑的地步。收留孩子的那个人，后来也成了孩子最难面对的人。",
       "sources": [
         "https://luoxiaohei-movie.com/1st/character/",
         "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)",
         "https://bgm-api-anitabi.magiconch.com/subject/311122/characters",
         "https://luoxiaohei.huijiwiki.com/wiki/分类:角色",
         "https://luoxiaohei.huijiwiki.com/wiki/分类:蓝溪镇角色",
-        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色"
+        "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
+        "https://luoxiaohei-movie.com/1st/character/?page=chara03",
+        "https://luoxiaohei-movie.com/1st/staffcast/"
       ],
       "catalogIds": [
         "movie1-huiji",
@@ -4834,7 +4861,7 @@
       ]
     },
     {
-      "id": "cast-6b511f1198",
+      "id": "jiulao",
       "name": "鸠老",
       "aliases": [],
       "works": [
@@ -4843,7 +4870,7 @@
         "movie2",
         "other"
       ],
-      "summary": "会馆资深执行者，能鉴别妖精能力属性。",
+      "summary": "会馆执行者，能鉴定灵属性",
       "sources": [
         "https://luoxiaohei-movie.com/2nd/character/",
         "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)",
@@ -4854,7 +4881,9 @@
         "https://luoxiaohei.huijiwiki.com/wiki/分类:罗小黑战记电影角色",
         "https://bgm.tv/subject/294880/characters",
         "https://moegirl.uk/index.php?title=罗小黑战记&variant=zh",
-        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）"
+        "https://luoxiaohei.huijiwiki.com/wiki/罗小黑战记（TV版）",
+        "https://luoxiaohei-movie.com/1st/character/?page=chara09",
+        "https://luoxiaohei-movie.com/1st/staffcast/"
       ],
       "catalogIds": [
         "tv-huiji",
@@ -5034,15 +5063,6 @@
     }
   ],
   "unresolvedNames": [
-    {
-      "input": "善心",
-      "candidate": "山新",
-      "status": "待用户确认",
-      "note": "未找到名为善心的可靠角色条目；官方有角色山新，也有同名真实配音演员。不能自动替换。",
-      "sources": [
-        "https://luoxiaohei-movie.com/tv/character/"
-      ]
-    },
     {
       "input": "鹿野",
       "candidate": "鹿野",

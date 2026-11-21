@@ -23,3 +23,6 @@ await validateResources();
 
 const { validateCharacterResources } = await import("./character-resources.mjs");
 await validateCharacterResources();
+
+const { validateCollections } = await import('./collection-resources.mjs');
+await validateCollections();

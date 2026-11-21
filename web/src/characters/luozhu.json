@@ -1,0 +1,147 @@
+{
+  "id": "luozhu",
+  "name": "洛竹",
+  "accent": "#64826b",
+  "aliases": [],
+  "heroRef": 0,
+  "basics": [
+    {
+      "label": "身份",
+      "value": "风息的同伴妖精"
+    },
+    {
+      "label": "能力",
+      "value": "御灵系·木；操控植物、远程操控种灵侦察"
+    },
+    {
+      "label": "中文配音",
+      "value": "叮当"
+    }
+  ],
+  "references": [
+    {
+      "src": "/art/characters/movie1/luozhu/1.png",
+      "title": "洛竹·首作全身立绘",
+      "description": "官网透明背景全身图，显示本片服装与整体轮廓。",
+      "modelingUse": "先建立正面比例、服装分层与配色基准。",
+      "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara05",
+      "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+      "licenseStatus": "版权保留；资料参考，非开放授权",
+      "kind": "官网立绘",
+      "bytes": 31744,
+      "sha256": "752475077ca5615f4838d16477cda90a950c721a83461f7fa29d764688d6907b"
+    },
+    {
+      "src": "/art/characters/movie1/luozhu/2.jpg",
+      "title": "洛竹·首作官方剧照一",
+      "description": "室内场景中的洛竹侧脸近景，长发向后扎起。",
+      "modelingUse": "侧脸、耳朵与发束连接。",
+      "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara05",
+      "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+      "licenseStatus": "版权保留；资料参考，非开放授权",
+      "kind": "官方剧照",
+      "bytes": 36943,
+      "sha256": "5e6b59a71e6acd65fa03f4e74f12aa3c939ae2a11e2b1c44844122e7203c3172"
+    },
+    {
+      "src": "/art/characters/movie1/luozhu/3.jpg",
+      "title": "洛竹·首作官方剧照二",
+      "description": "夜色下与风息同框的洛竹，肩臂与红色围巾清楚可见。",
+      "modelingUse": "人物相对身高与围巾、肩部轮廓；夜间配色仅作光照参考。",
+      "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara05",
+      "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+      "licenseStatus": "版权保留；资料参考，非开放授权",
+      "kind": "官方剧照",
+      "bytes": 34659,
+      "sha256": "8c2040ec4af5da0b60d70b0ae381e922acc6cca797d7fe36d5d930f9de26d0c8"
+    },
+    {
+      "src": "/art/characters/movie1/luozhu/4.jpg",
+      "title": "洛竹·多视角设定稿",
+      "description": "正侧背视图、围巾与肩甲、发型与鞋袜细节。",
+      "modelingUse": "正侧背可相互校对；衣服和身体不要做成一个粘连块。",
+      "sourceUrl": "https://www.jiemian.com/article/3501281.html",
+      "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+      "licenseStatus": "版权保留；资料参考，非开放授权",
+      "kind": "媒体刊载制作设定稿",
+      "bytes": 66618,
+      "sha256": "67976aa0d702888e2f2eed54958f7d9a6689be778331487e486a4913411851fd"
+    },
+    {
+      "src": "/art/characters/movie1/luozhu/5.jpg",
+      "title": "洛竹·林间动作剧照",
+      "description": "洛竹立在树干与藤枝之间，周围是绿色林木。",
+      "modelingUse": "双臂抬起时肩部服装形变、宽裤与腿部动作。",
+      "sourceUrl": "https://www.jiemian.com/article/3501281.html",
+      "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+      "licenseStatus": "版权保留；资料参考，非开放授权",
+      "kind": "媒体刊载电影剧照",
+      "bytes": 55013,
+      "sha256": "097565dba4fd5bb42aa708078cbf63a04cc97e2e3af0f9175b54d3ce68a37223"
+    }
+  ],
+  "rights": "人物与原图版权归《罗小黑战记》及原权利人。非官方资料整理；公开展示不代表开放训练或商业建模授权。",
+  "summary": "小黑刚到岛上，洛竹就张罗着欢迎他，还拿植物的小把戏逗孩子开心。他和风息一起生活，也想念原来的故乡。可到了风息要伤害小黑的时候，他没有跟着点头，而是急着劝阻。先伸手招呼孩子的人，后来也想把这个孩子护下来。",
+  "subtitle": "欢迎小黑的是他，急着替小黑说话的也是他。",
+  "sections": [
+    {
+      "title": "新来的孩子，先吃顿饭",
+      "items": [
+        {
+          "text": "欢迎会是洛竹提议办的。小黑还拘谨着，他就忙着招呼，还用植物逗小黑开心。比起先解释大家为什么住在这里，他先让这个孩子坐进了朋友中间。",
+          "sources": [
+            "https://luoxiaohei-movie.com/1st/character/?page=chara05",
+            "https://read01.com/zh-my/P5By8BB.html"
+          ],
+          "evidence": "primary + secondary + 观影解读",
+          "spoiler": false
+        }
+      ]
+    },
+    {
+      "title": "种灵也能帮忙找人",
+      "items": [
+        {
+          "text": "洛竹的本事和植物有关，除了直接操控植物，还能远程操控种灵察看周围。同样的木系能力，在他手里既能拿来逗孩子，也能用在伙伴的行动里。",
+          "sources": [
+            "https://luoxiaohei-movie.com/1st/character/?page=chara05",
+            "https://read01.com/zh-my/P5By8BB.html"
+          ],
+          "evidence": "primary + secondary",
+          "spoiler": false
+        }
+      ]
+    },
+    {
+      "title": "老朋友也得拦一下",
+      "items": [
+        {
+          "text": "他想夺回故乡，却不赞同风息对小黑的做法。风息强行夺取领域前，洛竹急着劝阻，希望能再跟小黑谈谈。老朋友和刚认识的孩子都在眼前，他没法装作这件事没有问题。",
+          "sources": [
+            "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)",
+            "https://read01.com/zh-my/P5By8BB.html"
+          ],
+          "evidence": "secondary + 观影解读",
+          "spoiler": true
+        }
+      ]
+    }
+  ],
+  "uncertainties": [
+    "不要把他写成风息每一步计划的知情合谋者，首次见小黑的反应不足以证明他知道全部内情。",
+    "不把媒体报道的导演希望他们成为真正朋友，改写成电影之后已经和好的事实。",
+    "台词劝阻情节有二手报道/抄本支持，但缺官方片段听审；不发布逐字引语。"
+  ],
+  "checkedAt": "2026-11-21",
+  "eraLabel": "2019 首部电影 · 图册版本逐图注明",
+  "collectionId": "movie1",
+  "chineseVoiceActor": "叮当",
+  "voiceSources": [
+    "https://www.1905.com/mdb/film/2242929/?fr=mdbypk_zp",
+    "https://www.bilibili.com/bangumi/play/ep281165"
+  ],
+  "appearanceNote": {
+    "label": "这一版造型",
+    "text": "本页新增参考图均来自首部电影官网及2019年媒体资料；多角度设定图保留原始排版。"
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "id": "tianhu",
+  "name": "天虎",
+  "accent": "#64826b",
+  "aliases": [],
+  "heroRef": 0,
+  "basics": [
+    {
+      "label": "身份",
+      "value": "风息等人从小一起生活的弟弟"
+    },
+    {
+      "label": "能力",
+      "value": "御灵系·火"
+    },
+    {
+      "label": "中文配音",
+      "value": "图特哈蒙"
+    }
+  ],
+  "references": [
+    {
+      "src": "/art/characters/movie1/tianhu/1.png",
+      "title": "天虎·首作全身立绘",
+      "description": "官网透明背景全身图，显示本片服装与整体轮廓。",
+      "modelingUse": "先建立正面比例、服装分层与配色基准。",
+      "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara06",
+      "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+      "licenseStatus": "版权保留；资料参考，非开放授权",
+      "kind": "官网立绘",
+      "bytes": 26431,
+      "sha256": "852bff5845763f0896c9d3eb387e69f8cb616067e2376df4a4ed5a4a8105376b"
+    },
+    {
+      "src": "/art/characters/movie1/tianhu/2.jpg",
+      "title": "天虎·首作官方剧照一",
+      "description": "天虎脸部近景，可见虎纹、口鼻与浅色围领。",
+      "modelingUse": "虎脸不是写实虎脸；注意二维简化的口鼻比例和纹路走向。",
+      "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara06",
+      "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+      "licenseStatus": "版权保留；资料参考，非开放授权",
+      "kind": "官方剧照",
+      "bytes": 51273,
+      "sha256": "e1da8683d9ef70a8a0a5d79b18fb422e9755aeaac0d4148bf43f2025c5221cef"
+    },
+    {
+      "src": "/art/characters/movie1/tianhu/3.jpg",
+      "title": "天虎·首作官方剧照二",
+      "description": "白天全身场景中的天虎，宽帽与圆身体的轮廓清楚。",
+      "modelingUse": "体型、帽檐宽度与身体比例；配色以白天画面校准。",
+      "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara06",
+      "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+      "licenseStatus": "版权保留；资料参考，非开放授权",
+      "kind": "官方剧照",
+      "bytes": 57146,
+      "sha256": "ae1877c0a1a7512b2e5464c217b0abc2674c7ab23f6db92b94d46d8a0c0cb3ab"
+    },
+    {
+      "src": "/art/characters/movie1/tianhu/4.jpg",
+      "title": "天虎·多视角设定稿",
+      "description": "正背视图、帽子围领以及手、腿和脸部表情拆解。",
+      "modelingUse": "圆体型仍需看背面和四肢结构，脸部纹路需绕体检查。",
+      "sourceUrl": "https://www.jiemian.com/article/3501281.html",
+      "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+      "licenseStatus": "版权保留；资料参考，非开放授权",
+      "kind": "媒体刊载制作设定稿",
+      "bytes": 71269,
+      "sha256": "9c82664d9f6621a9d01271d78ce0c3923fe3142c493aba59c50a37c23cd0ea19"
+    },
+    {
+      "src": "/art/characters/movie1/tianhu/5.jpg",
+      "title": "天虎·夜街全身剧照",
+      "description": "天虎立于灯笼街巷，画面保留他的全身尺度。",
+      "modelingUse": "环境里的体积与占地感；夜景仅供光照和姿势参考。",
+      "sourceUrl": "https://www.jiemian.com/article/3501281.html",
+      "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+      "licenseStatus": "版权保留；资料参考，非开放授权",
+      "kind": "媒体刊载电影剧照",
+      "bytes": 49838,
+      "sha256": "21a2455a1e9d6ad36ca89eb222e7f3d6dacf9fc218a3377871fa5a3abb32d9c9"
+    }
+  ],
+  "rights": "人物与原图版权归《罗小黑战记》及原权利人。非官方资料整理；公开展示不代表开放训练或商业建模授权。",
+  "summary": "天虎的虎脸、宽帽檐和圆身形，让人很难认错。可别看他块头大，他是从小跟着风息等人生活的弟弟。欢迎小黑吃饭时，他关心的是吃喝；平时也不太开口。和其他几个人放在一起，他不用说很多话，光是待在饭桌边，就已经很有存在感。",
+  "subtitle": "块头很大，话却很少的小弟弟。",
+  "sections": [
+    {
+      "title": "跟着大家长大的弟弟",
+      "items": [
+        {
+          "text": "天虎从小和风息等人一起生活。大家站在一起，最占地方的是他，但同伴间的关系不能按块头来排：他是那个受大家照应的弟弟。",
+          "sources": [
+            "https://luoxiaohei-movie.com/1st/character/?page=chara06"
+          ],
+          "evidence": "primary + 观影解读",
+          "spoiler": false
+        }
+      ]
+    },
+    {
+      "title": "想吃什么，说得很清楚",
+      "items": [
+        {
+          "text": "欢迎小黑的那顿饭里，天虎的话大多围着吃喝转，递酒时还被风息拦住。2019年的设定报道把他的首作台词概括成三个单字。别人忙着说话，他用很短的回应留在热闹里。",
+          "sources": [
+            "https://www.jiemian.com/article/3501281.html",
+            "https://read01.com/zh-my/P5By8BB.html"
+          ],
+          "evidence": "secondary + 观影解读",
+          "spoiler": false
+        }
+      ]
+    },
+    {
+      "title": "要帮忙时也会出手",
+      "items": [
+        {
+          "text": "天虎有御灵系·火的能力，也是风息一起行动的伙伴。他话少，平时安静，真到需要帮忙的时候又靠得住。块头和虎脸都很醒目，认识他以后才发现，他和第一眼看上去的样子有些不同。",
+          "sources": [
+            "https://luoxiaohei-movie.com/1st/character/?page=chara06"
+          ],
+          "evidence": "primary + 观影解读",
+          "spoiler": false
+        }
+      ]
+    }
+  ],
+  "uncertainties": [
+    "现有来源支持弟弟关系，未给出生年龄；不编具体几岁。",
+    "三个单字属于媒体总结，不冒称逐帧核对了全部台词。",
+    "手脚在立绘中遮挡多，建模必须以多视角稿补足，不能只拉伸圆形剪影。"
+  ],
+  "checkedAt": "2026-11-21",
+  "eraLabel": "2019 首部电影 · 图册版本逐图注明",
+  "collectionId": "movie1",
+  "chineseVoiceActor": "图特哈蒙",
+  "voiceSources": [
+    "https://www.1905.com/mdb/film/2242929/?fr=mdbypk_zp",
+    "https://www.bilibili.com/bangumi/play/ep281165"
+  ],
+  "appearanceNote": {
+    "label": "这一版造型",
+    "text": "本页新增参考图均来自首部电影官网及2019年媒体资料；多角度设定图保留原始排版。"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "name": "无限",
-  "subtitle": "寡言的执行者，同行的师父",
-  "summary": "人类出身的妖灵会馆执行者，也是小黑的师父。他寡言、少显表情，却并非没有感情。",
+  "subtitle": "小黑先见他抓人，后来才愿意跟他学。",
+  "summary": "无限是人，在妖灵会馆做执行人。小黑第一次见他，他是来抓风息的，动手时也把小黑抓住了。可把孩子带走以后，他又开始教小黑控制能力。两人起初互不亲近，一路相处下来，小黑才认识了抓人之外的无限，最后愿意喊他师父。",
   "accent": "#497b89",
   "basics": [
     {
@@ -28,80 +28,48 @@
     "ムゲン",
     "Wuxian"
   ],
-  "checkedAt": "2026-11-19",
-  "eraLabel": "2020 画面与跨作品资料",
+  "checkedAt": "2026-11-21",
+  "eraLabel": "2019 首部电影 · 图册版本逐图注明",
   "heroRef": 0,
   "sections": [
     {
-      "title": "身份与背景",
+      "title": "上岛是来抓人的",
       "items": [
         {
-          "text": "无限是人类，属于妖精们聚集的会馆，担任执行者。",
+          "text": "无限登岛追捕风息一行。风息等人脱身后，小黑落在他手里，他便带着小黑往会馆走。这段关系的开头，是一个想办完差事的大人，和一个不愿跟他走的孩子。",
           "sources": [
-            "https://luoxiaohei-movie.com/character/?page=chara02",
-            "https://luoxiaohei-movie.com/2nd/character/"
-          ]
-        },
-        {
-          "text": "首部电影官方人物页将无限称为“最强的执行者”。",
-          "sources": [
-            "https://luoxiaohei-movie.com/character/?page=chara02",
-            "https://luoxiaohei-movie.com/2nd/character/"
-          ]
-        },
-        {
-          "text": "无限是小黑的师父；电影第二部官方简介使用师父称呼，二人有共同生活和旅行的经历。",
-          "sources": [
-            "https://luoxiaohei-movie.com/2nd/"
-          ]
+            "https://luoxiaohei-movie.com/1st/"
+          ],
+          "evidence": "primary + 观影解读",
+          "spoiler": false
         }
       ]
     },
     {
-      "title": "性格与相处",
+      "title": "两个人的本事有相通的地方",
       "items": [
         {
-          "text": "无限通常寡言、少有表情变化，但并不是没有感情。",
+          "text": "无限和小黑都有金属性、空间系能力，所以他能教小黑怎样控制力量。旅途给了他们相处的时间，小黑对他的印象也不再停在岛上的那场冲突里。",
           "sources": [
-            "https://luoxiaohei-movie.com/character/?page=chara02",
-            "https://luoxiaohei-movie.com/2nd/character/"
-          ]
+            "https://luoxiaohei-movie.com/1st/character/?page=chara01",
+            "https://luoxiaohei-movie.com/1st/character/?page=chara02",
+            "https://www.youtube.com/watch?v=4K0aNytM5jI"
+          ],
+          "evidence": "primary + 观影解读",
+          "spoiler": false
         }
       ]
     },
     {
-      "title": "能力与作品阶段",
+      "title": "人要救回来",
       "items": [
         {
-          "text": "无限具有御灵系·金与空间系能力。",
+          "text": "风息展开领域后，无限进入其中救小黑。孩子遇到危险时，他没有停在外面等。小黑最后拜他为师，让这段从抓捕开始的关系，有了另一种结果。",
           "sources": [
-            "https://luoxiaohei-movie.com/character/?page=chara02",
-            "https://luoxiaohei-movie.com/2nd/character/"
-          ]
-        },
-        {
-          "text": "电影第二部资料进一步介绍其空间系·己界（吞噬），能将周围物体收入自己的灵域。",
-          "sources": [
-            "https://luoxiaohei-movie.com/2nd/character/"
-          ]
-        },
-        {
-          "text": "电影第二部资料中，鹿野是无限最后收下的弟子，也是小黑的师姐。",
-          "sources": [
-            "https://luoxiaohei-movie.com/2nd/character/"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "造型观察",
-      "items": [
-        {
-          "text": "两版电影官方正面立绘都可观察到深蓝至蓝灰色的齐肩发、绿色眼睛和清晰的中分发际；电影第一部为交领上衣、护腕和束脚裤，第二部为较长袍服。此处是图像观察，不是精确色值或三视图设定。",
-          "sources": [
-            "https://luoxiaohei-movie.com/character/?page=chara02",
-            "https://luoxiaohei-movie.com/2nd/character/"
-          ]
+            "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)"
+          ],
+          "evidence": "secondary + 观影解读",
+          "spoiler": true
         }
       ]
     }
@@ -179,11 +147,15 @@
     }
   ],
   "uncertainties": [
-    "不在核心卡片写生日、年龄和身高：本轮未取得同一时间线下完整一致的原始设定。电影第二部官方年龄439岁不能移植到2020节气贺图。",
-    "2020节气图属于贺图语境，不能直接认定发生在2019电影、2025电影第二部或TV某一集的特定时间点。",
-    "没有核实无限与哪吒的亲缘关系，也没有依据将二人写作师徒；本轮只确认共同属于会馆语境并在大雪画面同场。",
-    "官方页面的立绘并未提供背面或完整侧面；现有5张参考不构成建模所需的官方三视图。",
-    "第三方收藏的原始作者/权利人标注不等于官方首发帖核验，更不等于获得转载、建模、训练或商业使用许可。"
+    "首作官方人物页只写金属性、空间系，不在本页展开漫画的成仙年龄、历史年号或电影2新增能力术语。",
+    "“后来才认识师父”是关系变化的编辑概括，不是角色原话。",
+    "本页故事只讲首部电影；旧有图册包含续作和2020节气图，图片版本以图注为准。"
   ],
-  "rights": "人物、原画与剧照版权归原权利人。此处为非官方参考资料整理；来源公开可读不等于获得转载、训练或商业建模授权。"
+  "rights": "人物、原画与剧照版权归原权利人。此处为非官方参考资料整理；来源公开可读不等于获得转载、训练或商业建模授权。",
+  "collectionId": "movie1",
+  "chineseVoiceActor": "刘明月",
+  "voiceSources": [
+    "https://www.1905.com/mdb/film/2242929/?fr=mdbypk_zp",
+    "https://www.bilibili.com/bangumi/play/ep281165"
+  ]
 }
