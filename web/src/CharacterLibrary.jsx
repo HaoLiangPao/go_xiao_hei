@@ -461,12 +461,16 @@ function Detail({ profile }) {
 }
 export function CharacterLibrary({ route }) {
   const profile = route.kind === "detail" ? profiles[route.id] : null;
+  const pageTitle =
+    profile?.name ||
+    (route.kind === "collection" && collections[route.id]?.title) ||
+    "人物资料库";
   useEffect(() => {
-    document.title = `${profile?.name || "人物资料库"} · 四时拾光`;
+    document.title = `${pageTitle} · 四时拾光`;
     return () => {
       document.title = "小黑的四时拾光";
     };
-  }, [profile?.name]);
+  }, [pageTitle]);
   return (
     <div className="character-library">
       <LibraryHeader />

@@ -29,7 +29,7 @@ export async function validateCollections({
       new Set(pack.characters.map((c) => c.id)).size !== pack.characters.length
     )
       throw new Error(`作品资料无效：${name}`);
-    for (const c of pack.characters) {
+    for (const c of [...pack.characters, ...(pack.candidates || [])]) {
       if (
         !/^[a-z0-9-]+$/.test(c.id) ||
         !c.name ||
