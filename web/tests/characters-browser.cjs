@@ -4,8 +4,8 @@ const fs = require("node:fs");
 const assert = require("node:assert/strict");
 const { chromium } = require("playwright");
 const id = process.env.CHARACTER;
-if (!["wuxian", "xiaohei", "nezha"].includes(id))
-  throw Error("Set CHARACTER=wuxian, xiaohei, or nezha");
+if (!/^[a-z0-9-]+$/.test(id || ""))
+  throw Error("Set CHARACTER to an installed profile ID");
 const root = path.resolve(__dirname, ".."),
   profile = JSON.parse(
     fs.readFileSync(path.join(root, `src/characters/${id}.json`)),
@@ -13,7 +13,7 @@ const root = path.resolve(__dirname, ".."),
   cast = JSON.parse(
     fs.readFileSync(path.join(root, "src/character-cast.json")),
   );
-const port = { wuxian: 5211, xiaohei: 5212, nezha: 5213 }[id],
+const port = Number(process.env.PORT || 5217),
   origin = `http://127.0.0.1:${port}`;
 const shots =
   process.env.SCREENSHOT_DIR ||
@@ -146,7 +146,7 @@ const shots =
         page.getByRole("link", { name: "打开人物资料库", exact: true }),
       );
       await page
-        .getByRole("heading", { name: "画中同行", exact: true })
+        .getByRole("heading", { name: "在故事里认识他们", exact: true })
         .waitFor();
       await noOverflow();
       assert.equal(
