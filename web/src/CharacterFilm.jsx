@@ -51,15 +51,17 @@ export function CollectionDetail({ collection, profiles, Sources }) {
         </div>
       </header>
       <nav className="collection-links" aria-label="切换作品">
-        {Object.values(collections).map((c) => (
-          <a
-            href={`#/characters/collection/${c.id}`}
-            key={c.id}
-            aria-current={c.id === collection.id ? "page" : undefined}
-          >
-            {c.title}
-          </a>
-        ))}
+        {Object.values(collections)
+          .sort((a, b) => a.order - b.order)
+          .map((c) => (
+            <a
+              href={`#/characters/collection/${c.id}`}
+              key={c.id}
+              aria-current={c.id === collection.id ? "page" : undefined}
+            >
+              {c.title}
+            </a>
+          ))}
       </nav>
       <p className="cast-scope">{collection.scope}</p>
       <Sources urls={collection.sources} />
