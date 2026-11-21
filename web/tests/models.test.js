@@ -64,3 +64,35 @@ test("拒绝未知角色，简化模型不夹带外部素材地址", () => {
     assert.equal(c.eyes.length, 2);
   }
 });
+
+// Deformed facial patches must return to their original surface, so switching
+// characters or replaying an action does not accumulate shape drift.
+test("眨眼变形的顶点有限，复位不累积眼形漂移", () => {
+  const cat = createCharacter("xiaohei");
+  const before = cat.eyes.flatMap((eye) =>
+    eye.children.map((mesh) =>
+      Array.from(mesh.geometry.attributes.position.array),
+    ),
+  );
+  cat.setBlink(0.06);
+  const closed = cat.eyes.flatMap((eye) =>
+    eye.children.map((mesh) =>
+      Array.from(mesh.geometry.attributes.position.array),
+    ),
+  );
+  assert.ok(
+    closed.every(
+      (positions, i) =>
+        positions.every(Number.isFinite) &&
+        positions.some((v, j) => Math.abs(v - before[i][j]) > 1e-4),
+    ),
+  );
+  cat.setBlink(1);
+  cat.eyes
+    .flatMap((eye) => eye.children)
+    .forEach((mesh, i) =>
+      Array.from(mesh.geometry.attributes.position.array).forEach((v, j) =>
+        assert.ok(Math.abs(v - before[i][j]) < 1e-6),
+      ),
+    );
+});

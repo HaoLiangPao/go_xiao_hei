@@ -44,6 +44,9 @@ export function createCharacter(id) {
     parent.add(mesh);
     return mesh;
   }
+  let setBlink = (openness) => {
+    for (const eye of eyes) eye.scale.y = openness;
+  };
   if (id === "xiaohei") {
     // Proportion study: a broad head above a short seated body. These are
     // design choices from the selected front reference, not official measurements.
@@ -73,6 +76,7 @@ export function createCharacter(id) {
         Math.abs((y - 1.36) / 0.7) ** (2 / 0.75);
       return 0.03 + 0.53 * Math.max(0, remaining) ** (0.9 / 2) + lift;
     }
+    const blinkPatches = [];
     function patch(name, parent, cx, cy, rx, ry, lift, material) {
       const vertices = [],
         indices = [],
@@ -100,7 +104,25 @@ export function createCharacter(id) {
       const mesh = new THREE.Mesh(geometry, material);
       mesh.name = name;
       parent.add(mesh);
+      blinkPatches.push({
+        geometry,
+        original: geometry.attributes.position.array.slice(),
+        cx,
+        cy,
+        lift,
+      });
     }
+    setBlink = (openness) => {
+      for (const { geometry, original, cx, cy, lift } of blinkPatches) {
+        const position = geometry.attributes.position;
+        for (let i = 0; i < position.count; i++) {
+          const x = original[i * 3],
+            y = original[i * 3 + 1] * openness;
+          position.setXYZ(i, x, y, faceZ(cx + x, cy + y, lift));
+        }
+        position.needsUpdate = true;
+      }
+    };
     for (const side of [-1, 1]) {
       // A tapered wedge grows from the head corner; it is not an extruded slab.
       const front = [
@@ -279,7 +301,7 @@ export function createCharacter(id) {
     }
     node.geometry.normalizeNormals();
   });
-  return { object, eyes };
+  return { object, eyes, setBlink };
 }
 export function createHopClip(object) {
   return new THREE.AnimationClip("小跳", 0.8, [

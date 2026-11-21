@@ -19,7 +19,7 @@ const descriptions = {
 function resetPose() {
   for (const model of Object.values(models)) {
     model.object.position.y = 0;
-    for (const eye of model.eyes) eye.scale.y = 1;
+    model.setBlink(1);
   }
   action = null;
   canvas.dataset.action = "idle";
@@ -153,11 +153,12 @@ try {
     if (action) {
       const elapsed = (time - action.start) / 1000;
       if (action.kind === "blink")
-        for (const eye of active.eyes)
-          eye.scale.y = Math.max(
-            0.08,
+        active.setBlink(
+          Math.max(
+            0.06,
             Math.abs(Math.cos(Math.PI * Math.min(elapsed / 0.35, 1))),
-          );
+          ),
+        );
       if (action.kind === "hop")
         active.object.position.y =
           0.4 * Math.sin(Math.PI * Math.min(elapsed / 0.8, 1));

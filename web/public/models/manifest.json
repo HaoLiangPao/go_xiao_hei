@@ -30,8 +30,8 @@
     },
     {
       "path": "public/models/lab.js",
-      "bytes": 541929,
-      "sha256": "c930bee81032b4daf10e4a85694b90e6bb6387442914fb04098da57b6da9a5e0"
+      "bytes": 542219,
+      "sha256": "f1c772ef8295fdaaedf5727002a40d8d76d4f25f3c8f02ea17319dc11c165806"
     },
     {
       "path": "public/models/THREE-LICENSE.txt",
@@ -52,13 +52,13 @@
   "sources": [
     {
       "path": "model-lab/main.js",
-      "bytes": 8335,
-      "sha256": "c8e19b3945c2d4a4f93b5302e0f0ec914b91626ddc491cdc72efdb7ff2e4774a"
+      "bytes": 8290,
+      "sha256": "5f3398d3df4944a156c705d1acc89da525e3c573b97de73c99ebf0872c78a82d"
     },
     {
       "path": "model-lab/meshes.js",
-      "bytes": 9008,
-      "sha256": "8af911cab4e2242591f00debf7f5d091d2198bb23f786cf0a7d8c3862c896067"
+      "bytes": 9713,
+      "sha256": "ca59382e968c72977a8a3d061b2c19bd7aead313f8560aa8f07b3fd46ae377ec"
     },
     {
       "path": "scripts/build-model-lab.mjs",
