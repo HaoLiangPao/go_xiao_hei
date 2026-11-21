@@ -1,0 +1,148 @@
+{
+  "id": "fengxi",
+  "name": "风息",
+  "accent": "#64826b",
+  "aliases": [],
+  "heroRef": 0,
+  "basics": [
+    {
+      "label": "身份",
+      "value": "与洛竹、虚淮、天虎一起生活的妖精"
+    },
+    {
+      "label": "能力",
+      "value": "操控植物；御灵系·木"
+    },
+    {
+      "label": "中文配音",
+      "value": "郝祥海"
+    }
+  ],
+  "references": [
+    {
+      "src": "/art/characters/movie1/fengxi/1.png",
+      "title": "风息·首作全身立绘",
+      "description": "官网透明背景全身图，显示本片服装与整体轮廓。",
+      "modelingUse": "先建立正面比例、服装分层与配色基准。",
+      "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara03",
+      "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+      "licenseStatus": "版权保留；资料参考，非开放授权",
+      "kind": "官网立绘",
+      "bytes": 92529,
+      "sha256": "675ec03b34f580451b82e1555d6612d812dc912cfdddfd37982d630c15161f4d"
+    },
+    {
+      "src": "/art/characters/movie1/fengxi/2.jpg",
+      "title": "风息·首作官方剧照一",
+      "description": "夜色下风息的侧面近景，可见发束、耳廓与服装领部。",
+      "modelingUse": "侧脸与发束遮挡关系；夜景不能直接当标准色。",
+      "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara03",
+      "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+      "licenseStatus": "版权保留；资料参考，非开放授权",
+      "kind": "官方剧照",
+      "bytes": 76293,
+      "sha256": "1c3ac759310751fc251b8b8ee798355b9bca8698006fd01d7ac38a53c3200bd2"
+    },
+    {
+      "src": "/art/characters/movie1/fengxi/3.jpg",
+      "title": "风息·首作官方剧照二",
+      "description": "岛上篝火聚会中的风息与小黑等人。",
+      "modelingUse": "人物同框的身高比例、坐姿与日常神态。",
+      "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara03",
+      "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+      "licenseStatus": "版权保留；资料参考，非开放授权",
+      "kind": "官方剧照",
+      "bytes": 112428,
+      "sha256": "34ce4e2b1203a80c65a6f6ff617e1e8a0f28148ce2f243a611ff399ba9909b72"
+    },
+    {
+      "src": "/art/characters/movie1/fengxi/4.jpg",
+      "title": "风息·多视角设定稿",
+      "description": "媒体刊载的正侧背服装、发型、表情与手臂局部设计。",
+      "modelingUse": "发型体积、衣片层次、侧背轮廓；690px宽，精细制作仍需更高清原稿。",
+      "sourceUrl": "https://www.jiemian.com/article/3501281.html",
+      "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+      "licenseStatus": "版权保留；资料参考，非开放授权",
+      "kind": "媒体刊载制作设定稿",
+      "bytes": 79644,
+      "sha256": "1437012a953906e192a10961ba95bf000182e0d9abede6d4c35da10898070b29"
+    },
+    {
+      "src": "/art/characters/movie1/fengxi/5.jpg",
+      "title": "风息·黑豹形态剧照",
+      "description": "有长鬃毛的黑色豹形态张嘴近景。",
+      "modelingUse": "和人形分开建立兽形头部、口腔与鬃毛轮廓。",
+      "sourceUrl": "https://www.jiemian.com/article/3501281.html",
+      "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+      "licenseStatus": "版权保留；资料参考，非开放授权",
+      "kind": "媒体刊载电影剧照",
+      "bytes": 42760,
+      "sha256": "2cd2f14ec2db3e54457a52df3b925786f4851891296eccb1b8f716200ce3f1f3"
+    }
+  ],
+  "rights": "人物与原图版权归《罗小黑战记》及原权利人。非官方资料整理；公开展示不代表开放训练或商业建模授权。",
+  "summary": "小黑流浪时，是风息把他带上岛，介绍给朋友，还给了他一个住处。风息自己却始终放不下失去的家园，不肯接受会馆的处理办法。他想把原来的地方夺回来，甚至走到了伤害小黑的地步。收留孩子的那个人，后来也成了孩子最难面对的人。",
+  "subtitle": "收留过小黑，也伤害了小黑。",
+  "sections": [
+    {
+      "title": "岛上可以住下来",
+      "items": [
+        {
+          "text": "风息带小黑认识洛竹、虚淮和天虎，让这个流浪的孩子有饭吃、有地方住。小黑愿意留下，也因此把他当作可以信任的人。两人的关系，要从这份信任看起。",
+          "sources": [
+            "https://luoxiaohei-movie.com/1st/character/?page=chara03",
+            "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)",
+            "https://read01.com/zh-my/P5By8BB.html"
+          ],
+          "evidence": "primary + secondary",
+          "spoiler": false
+        }
+      ]
+    },
+    {
+      "title": "他不想再换一个地方",
+      "items": [
+        {
+          "text": "家园被人类夺走以后，风息选择反抗，也反对会馆维持平衡的办法。他和无限的冲突因此不只是一场打斗：一个不肯放下原来的家，一个要制止会伤到别人的行动。",
+          "sources": [
+            "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)",
+            "https://www.cinematoday.jp/page/A0007460"
+          ],
+          "evidence": "secondary + 观影解读",
+          "spoiler": true
+        }
+      ]
+    },
+    {
+      "title": "小黑不肯，他还是动手了",
+      "items": [
+        {
+          "text": "小黑不愿按他的计划使用领域，风息最终用豪夺夺走了这项能力。为了自己认定的目标，他越过了小黑的意愿。最让人难受的，也是被他伤害的恰恰是那个信过他的孩子。",
+          "sources": [
+            "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)"
+          ],
+          "evidence": "secondary + 观影解读",
+          "spoiler": true
+        }
+      ]
+    }
+  ],
+  "uncertainties": [
+    "豪夺及结局涉及重大剧透，应默认折叠。",
+    "原型黑豹及豪夺由2019媒体设定报道补充，不能错写成狮子或泛称老虎。",
+    "没有核验可发布的逐字中文台词与时间码，quoteCandidates为空。",
+    "不把2026学前篇后续或粉丝补完写成2019电影发生的事。"
+  ],
+  "checkedAt": "2026-11-21",
+  "eraLabel": "2019 首部电影 · 图册版本逐图注明",
+  "collectionId": "movie1",
+  "chineseVoiceActor": "郝祥海",
+  "voiceSources": [
+    "https://www.1905.com/mdb/film/2242929/?fr=mdbypk_zp",
+    "https://www.bilibili.com/bangumi/play/ep281165"
+  ],
+  "appearanceNote": {
+    "label": "这一版造型",
+    "text": "本页新增参考图均来自首部电影官网及2019年媒体资料；多角度设定图保留原始排版。"
+  }
+}

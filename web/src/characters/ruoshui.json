@@ -1,0 +1,147 @@
+{
+  "id": "ruoshui",
+  "name": "若水",
+  "accent": "#64826b",
+  "aliases": [],
+  "heroRef": 0,
+  "basics": [
+    {
+      "label": "种族/本体",
+      "value": "妖精/狐狸"
+    },
+    {
+      "label": "身份",
+      "value": "妖灵会馆执行者"
+    },
+    {
+      "label": "中文配音",
+      "value": "杨凝"
+    }
+  ],
+  "references": [
+    {
+      "src": "/art/characters/movie1/ruoshui/1.png",
+      "title": "首部电影官方若水立绘",
+      "description": "橙发、绿眼、狐耳狐尾，白色交领上衣、绿色腰带、红色宽裤、卷头鞋。",
+      "modelingUse": "正面身形比例、耳尾轮廓、服装分层与配色；并非三视图。",
+      "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara07",
+      "credit": "©Beijing HMCH Anime Co.,Ltd；官网注明禁止未经许可使用；本记录不表示获得再分发或训练许可。",
+      "licenseStatus": "版权保留；资料参考，非开放授权",
+      "kind": "官方立绘 / 剧照 / 媒体设定图",
+      "bytes": 26811,
+      "sha256": "0db3af5fc2ca93314a77d15e9121d27d32e4fb0fc1a585923fcc6dcb20b0b2e1"
+    },
+    {
+      "src": "/art/characters/movie1/ruoshui/2.jpg",
+      "title": "首部电影官方夜间街道剧照",
+      "description": "若水在夜晚城市街道上张嘴、睁大眼，后方站着穿制服的人。",
+      "modelingUse": "面部惊讶表情、狐耳与发型在夜景照明下的颜色。",
+      "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara07",
+      "credit": "©Beijing HMCH Anime Co.,Ltd；官网注明禁止未经许可使用；本记录不表示获得再分发或训练许可。",
+      "licenseStatus": "版权保留；资料参考，非开放授权",
+      "kind": "官方立绘 / 剧照 / 媒体设定图",
+      "bytes": 59832,
+      "sha256": "5f59cff596406d2b6d44cfb2ccf9a0c50a608f608137c1ae15f7977cec51a56d"
+    },
+    {
+      "src": "/art/characters/movie1/ruoshui/3.jpg",
+      "title": "首部电影官方摸头剧照",
+      "description": "若水俯身微笑，手放在小黑人形的头顶；画面见她的侧脸和尾巴。",
+      "modelingUse": "侧脸、俯身姿势、尾巴侧面与人物相对比例。",
+      "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara07",
+      "credit": "©Beijing HMCH Anime Co.,Ltd；官网注明禁止未经许可使用；本记录不表示获得再分发或训练许可。",
+      "licenseStatus": "版权保留；资料参考，非开放授权",
+      "kind": "官方立绘 / 剧照 / 媒体设定图",
+      "bytes": 53974,
+      "sha256": "149df3a2282dfb6d473bc4f3d261fb83863f68fadc6c7694313c31bb05e0cb54"
+    },
+    {
+      "src": "/art/characters/movie1/ruoshui/4.jpg",
+      "title": "若水·首作多视角设定稿",
+      "description": "2019年设定稿报道若水段落刊图，含白色上衣、绿色腰带、红裤的正侧背视图、狐尾与面部表情；上半幅另含头饰与背负装饰造型。",
+      "modelingUse": "核对身体正侧背轮廓、耳尾比例、宽裤和腰带结构；上半部装饰造型与下方日常造型要分别标注，不要混成唯一正片标准造型。",
+      "sourceUrl": "https://www.jiemian.com/article/3501281.html",
+      "credit": "原作图片版权归原权利人；刊载页注明转载内容，授权联系原著作权人。出处记录不代表已取得再分发或模型训练许可。",
+      "licenseStatus": "版权保留；资料参考，非开放授权",
+      "kind": "官方立绘 / 剧照 / 媒体设定图",
+      "bytes": 107072,
+      "sha256": "fcbb853ba91c8c738d54d8431b5b223de46784802638a64cb48d1ed7830b5c82"
+    },
+    {
+      "src": "/art/characters/movie1/ruoshui/5.jpg",
+      "title": "若水·夜街三分之二侧脸剧照",
+      "description": "城市夜景中的若水半身侧转，耳发、眼睛与肩部轮廓可见；相较官网正脸剧照是不同镜头，并非同图裁切。",
+      "modelingUse": "三分之二侧脸与鼻口位置、侧发厚度、头肩连接；夜景色不直接当无光照材质颜色。",
+      "sourceUrl": "https://www.jiemian.com/article/3501281.html",
+      "credit": "原作图片版权归原权利人；刊载页注明转载内容，授权联系原著作权人。出处记录不代表已取得再分发或模型训练许可。",
+      "licenseStatus": "版权保留；资料参考，非开放授权",
+      "kind": "官方立绘 / 剧照 / 媒体设定图",
+      "bytes": 65623,
+      "sha256": "e38328e57b4f72f5bdaf56a8bd7c2ced5e6b20a750630972bb7ee6a62810baff"
+    }
+  ],
+  "rights": "人物与原图版权归《罗小黑战记》及原权利人。非官方资料整理；公开展示不代表开放训练或商业建模授权。",
+  "summary": "若水是会馆的执行者，也是无限的粉丝。和小黑见面时，她笑眯眯地弯下身，把手放到孩子头上；小黑却板着一张脸。这个狐狸妖精对人类友好，和小黑相处时也主动。她自己笑得高兴，小黑还没放下戒心，两个人的反应正好撞在了一起。",
+  "subtitle": "她笑着摸小黑的头，小黑还板着脸。",
+  "sections": [
+    {
+      "title": "先摸摸这个孩子的头",
+      "items": [
+        {
+          "text": "若水弯下腰，把手放到小黑头顶。她闭眼笑着，小黑没有跟着笑。一个已经凑近了，一个还不太领情，这个短短的碰面，把两个人当时的距离留在了脸上。",
+          "sources": [
+            "https://luoxiaohei-movie.com/1st/character/?page=chara07",
+            "https://luoxiaohei-movie.com/1st/assets/img/character/photo_08-2.jpg"
+          ],
+          "evidence": "scene observation + 观影解读",
+          "spoiler": false
+        }
+      ]
+    },
+    {
+      "title": "见到无限会高兴的人",
+      "items": [
+        {
+          "text": "她在会馆担任执行者，也很崇拜无限。一个是习惯板着脸的大人，一个把喜欢和亲近摆在脸上；把他们和小黑放在一起看，会馆里的人就有了各不相同的反应。",
+          "sources": [
+            "https://luoxiaohei-movie.com/1st/character/?page=chara07"
+          ],
+          "evidence": "primary + 观影解读",
+          "spoiler": false
+        }
+      ]
+    },
+    {
+      "title": "她愿意亲近人类",
+      "items": [
+        {
+          "text": "若水对人类友善，这也是会馆这边的一个日常面貌。同样身为妖精，她没有把人类都当成该躲开的人。和风息对人类的态度放在一起，差别就更明显了。",
+          "sources": [
+            "https://luoxiaohei-movie.com/1st/character/?page=chara07",
+            "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)"
+          ],
+          "evidence": "primary + secondary + 观影解读",
+          "spoiler": false
+        }
+      ]
+    }
+  ],
+  "uncertainties": [
+    "画面中的表情与摸头动作已经核图；当时对白及动作前后原因没有听审，不补台词。",
+    "没有把崇拜写成暗恋或恋人关系；“同事”仅概括同属会馆执行者，不暗示两人日常共事频率。",
+    "不写未核设定集中的年龄身高，也不把TV关系补进首作简介。",
+    "中文杨凝与日语丰崎爱生分开记录；原声片段没有若水单独时间码。"
+  ],
+  "checkedAt": "2026-11-21",
+  "eraLabel": "2019 首部电影 · 图册版本逐图注明",
+  "collectionId": "movie1",
+  "chineseVoiceActor": "杨凝",
+  "voiceSources": [
+    "https://www.1905.com/mdb/film/2242929/?fr=mdbypk_zp",
+    "https://www.bilibili.com/bangumi/play/ep281165"
+  ],
+  "appearanceNote": {
+    "label": "这一版造型",
+    "text": "本页新增参考图均来自首部电影官网及2019年媒体资料；多角度设定图保留原始排版。"
+  }
+}

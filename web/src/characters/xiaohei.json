@@ -1,7 +1,7 @@
 {
   "name": "罗小黑",
-  "subtitle": "好奇的男孩子，也是一只小黑猫",
-  "summary": "能在人形与猫形之间变化的黑猫妖精。跟着无限学习，也在与小白相伴的日子里认识人类世界。",
+  "subtitle": "先有了一个家，后来才学着自己作选择。",
+  "summary": "小黑的家被毁了，才开始在城里流浪。风息把他带上岛，有人一起吃饭，也终于有地方睡觉，他很快就把这里当成了家。所以无限上岛抓人时，小黑先站在风息身边。后来他被无限带走，才发现自己要重新认识这个人，也重新想想该相信谁。",
   "accent": "#466d4c",
   "basics": [
     {
@@ -27,77 +27,50 @@
     "小黑",
     "シャオヘイ"
   ],
-  "checkedAt": "2026-11-19",
-  "eraLabel": "2020 画面与跨作品资料",
+  "checkedAt": "2026-11-21",
+  "eraLabel": "2019 首部电影 · 图册版本逐图注明",
   "heroRef": 0,
   "sections": [
     {
-      "title": "身份与背景",
+      "title": "岛上终于有人接住他",
       "items": [
         {
-          "text": "小黑是一只黑猫妖精，也是男孩子；可以变成人形。",
+          "text": "风息收留了无处可去的小黑，把他介绍给岛上的朋友。洛竹提议办欢迎会，他也有了能住下的地方。这些很小的事，让刚刚还在流浪的小黑很快把岛上当成了家。",
           "sources": [
-            "https://luoxiaohei-movie.com/2nd/character/",
-            "https://bgm.tv/character/26123"
-          ]
+            "https://luoxiaohei-movie.com/1st/character/?page=chara01",
+            "https://luoxiaohei-movie.com/1st/character/?page=chara03",
+            "https://luoxiaohei-movie.com/1st/character/?page=chara05"
+          ],
+          "evidence": "primary + 观影解读",
+          "spoiler": false
         }
       ]
     },
     {
-      "title": "性格与相处",
+      "title": "被带走以后，开始学本事",
       "items": [
         {
-          "text": "直率、活泼，对世界保有好奇，也喜欢人类的食物。",
+          "text": "无限要带他去会馆，小黑一路都在接触自己不熟悉的人和事。两人都有金属性和空间系能力，小黑跟着学着控制力量。他仍然喜欢吃人类的食物，对人的认识也在这一路慢慢改变。",
           "sources": [
-            "https://luoxiaohei-movie.com/1st/character/",
-            "https://luoxiaohei-movie.com/2nd/character/"
-          ]
-        },
-        {
-          "text": "无限是小黑的师父，带着他学习和生活。",
-          "sources": [
-            "https://luoxiaohei-movie.com/tv/character/",
-            "https://luoxiaohei-movie.com/2nd/"
-          ]
-        },
-        {
-          "text": "小白在小黑受伤流落街头时救助他，之后与他一起生活。",
-          "sources": [
-            "https://luoxiaohei-movie.com/tv/character/",
-            "https://www.aniplex.co.jp/lineup/luoxiaohei-tv/"
-          ]
+            "https://luoxiaohei-movie.com/1st/character/?page=chara01",
+            "https://luoxiaohei-movie.com/1st/character/?page=chara02",
+            "https://www.youtube.com/watch?v=4K0aNytM5jI"
+          ],
+          "evidence": "primary",
+          "spoiler": false
         }
       ]
     },
     {
-      "title": "能力与作品阶段",
+      "title": "最后拜谁为师",
       "items": [
         {
-          "text": "有御灵系·金与空间系·传送能力，能操纵金属、连接空间。其领域能力随剧情阶段变化，不能把所有时期能力直接叠加。",
+          "text": "风息夺走他的领域，伤害了这个曾经信任他的孩子。小黑后来重新掌握力量，和无限一起阻止事态恶化，最后拜无限为师。一路上别人都在带他走，到这里，他自己作了决定。",
           "sources": [
-            "https://luoxiaohei-movie.com/2nd/character/",
-            "https://luoxiaohei-movie.com/1st/character/",
-            "https://luoxiaohei.huijiwiki.com/wiki/罗小黑"
-          ]
-        },
-        {
-          "text": "尾巴能分裂成称为黑咻的小生物。黑咻与小黑是不同的资料条目。",
-          "sources": [
-            "https://luoxiaohei-movie.com/2nd/character/",
-            "https://luoxiaohei-movie.com/tv/character/"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "造型观察",
-      "items": [
-        {
-          "text": "建模参考需区分猫形、人形以及不同作品的衣着和发色。2019电影官图是交领上衣、七分裤；电影2官图为现代便装；形象标注以对应图为准。",
-          "sources": [
-            "https://luoxiaohei-movie.com/1st/character/",
-            "https://luoxiaohei-movie.com/2nd/character/"
-          ]
+            "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)"
+          ],
+          "evidence": "secondary + 观影解读",
+          "spoiler": true
         }
       ]
     }
@@ -175,10 +148,16 @@
     }
   ],
   "uncertainties": [
-    "不在通用简介填写统一年龄：官方电影1写6岁、电影2写8岁，TV时间线不同；如以后显示年龄必须带作品阶段。",
-    "生日没有获得本轮已读官方文字确认，先不填。",
-    "五张公开参考并非完整三视图，没有严格正交背面，建模前仍需补正式设定集与授权。",
-    "官方发布图仍属于原权利人，公开可读不等于获得建模训练或商业授权。"
+    "本轮没有实听原片，不引用记忆中的“小黑台词”，也不填电影正片时间码。",
+    "六岁为首作日本官方人物页设定；不用电影2的八岁替换。",
+    "对“人类是不是都一样坏”的表达为剧情问题的转述，不是电影原句。",
+    "本页故事只讲首部电影；旧有图册包含续作和2020节气图，图片版本以图注为准。"
   ],
-  "rights": "人物、原画与剧照版权归原权利人。此处为非官方参考资料整理；来源公开可读不等于获得转载、训练或商业建模授权。"
+  "rights": "人物、原画与剧照版权归原权利人。此处为非官方参考资料整理；来源公开可读不等于获得转载、训练或商业建模授权。",
+  "collectionId": "movie1",
+  "chineseVoiceActor": "山新",
+  "voiceSources": [
+    "https://www.1905.com/mdb/film/2242929/?fr=mdbypk_zp",
+    "https://www.bilibili.com/bangumi/play/ep281165"
+  ]
 }
