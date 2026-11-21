@@ -1,0 +1,438 @@
+{
+  "id": "preschool",
+  "order": 4,
+  "title": "罗小黑战记 · 学前篇",
+  "year": "2026 · 更新至CAT.44",
+  "intro": "从游戏回到日常，小黑开始准备学习，也继续跟着师父做任务。",
+  "scope": "截至2026-11-21，官方目录已列出CAT.41–44。角色记录限已播内容和明确来源，未播45/46不补写剧情；预告中的人物仍与正片已出场分开。",
+  "checkedAt": "2026-11-21",
+  "characters": [
+    {
+      "id": "xiaohei",
+      "name": "罗小黑",
+      "summary": "小黑想和小白一起去上学。对已经能做任务的小妖精来说，新的难题却是拼音、认字，还有人类小朋友每天都要碰到的功课。学前篇从暑假尾巴开始，小白、山新陪着小黑补课，无限也支持小黑进学校。小黑和朋友一起住过、玩过游戏，现在又想和大家一起进校园，开学之前还得把没学过的基础知识补起来。",
+      "sources": [
+        "https://xinwen.bjd.com.cn/content/s6ae89ab8d5de4aef01035e51.html",
+        "https://www.gamersky.com/news/202609/2217201.shtml",
+        "https://znyd.rednet.cn/content/646055/98/16448860.html"
+      ],
+      "sections": [],
+      "references": [
+        {
+          "src": "/art/characters/preschool/fc203239a306b4da.jpg",
+          "sha256": "fc203239a306b4da673698ee3da09c34230b4f682afbe63b1ef8903dbe961cd4",
+          "bytes": 70184,
+          "title": "学前篇·第41集更新图",
+          "description": "CAT41更新宣传图，桌边有小白、山新、小黑和比丢。",
+          "sourceUrl": "https://xinwen.bjd.com.cn/content/s6ae89ab8d5de4aef01035e51.html",
+          "modelingUse": "核对学前篇群像造型与人物相对比例；不是独立角色三视图。",
+          "credit": "原作版权归原权利人；媒体报道收录，出处不表示已获再分发或训练许可。",
+          "licenseStatus": "版权保留，非开放训练或商用授权",
+          "kind": "2026学前篇定档/开播宣传"
+        },
+        {
+          "src": "/art/characters/preschool/40c7d4eacaf7085e.jpg",
+          "sha256": "40c7d4eacaf7085e2ec3da9ceeb4a128f1ed982457c15418306882e7f2821bff",
+          "bytes": 166096,
+          "title": "学前篇·定档群像海报",
+          "description": "10月30日定档海报，含小黑、小白、山新、阿根与比丢等群像。",
+          "sourceUrl": "https://xinwen.bjd.com.cn/content/s6ae89ab8d5de4aef01035e51.html",
+          "modelingUse": "核对学前篇群像造型与人物相对比例；不是独立角色三视图。",
+          "credit": "原作版权归原权利人；媒体报道收录，出处不表示已获再分发或训练许可。",
+          "licenseStatus": "版权保留，非开放训练或商用授权",
+          "kind": "2026学前篇定档/开播宣传"
+        }
+      ],
+      "role": "主要人物"
+    },
+    {
+      "id": "xiaobai",
+      "name": "罗小白",
+      "summary": "这次小白要陪小黑准备上学。朋友想和自己进同一所学校，她和山新都很高兴，也真的坐下来帮小黑补基础：练拼音、认字，把开学以前还没学会的事情一点点补上。这个暑假没有一上来就把大家带去新的战场，先摆在眼前的是书本和小伙伴。小白和小黑原本就一起生活，现在又多了一个共同的盼头——等暑假过去，他们还能在校园里一起玩、一起学习。",
+      "sources": [
+        "https://xinwen.bjd.com.cn/content/s6ae89ab8d5de4aef01035e51.html",
+        "https://www.gamersky.com/news/202609/2217201.shtml"
+      ],
+      "sections": [],
+      "references": [
+        {
+          "src": "/art/characters/preschool/fc203239a306b4da.jpg",
+          "sha256": "fc203239a306b4da673698ee3da09c34230b4f682afbe63b1ef8903dbe961cd4",
+          "bytes": 70184,
+          "title": "学前篇·第41集更新图",
+          "description": "CAT41更新宣传图，桌边有小白、山新、小黑和比丢。",
+          "sourceUrl": "https://xinwen.bjd.com.cn/content/s6ae89ab8d5de4aef01035e51.html",
+          "modelingUse": "核对学前篇群像造型与人物相对比例；不是独立角色三视图。",
+          "credit": "原作版权归原权利人；媒体报道收录，出处不表示已获再分发或训练许可。",
+          "licenseStatus": "版权保留，非开放训练或商用授权",
+          "kind": "2026学前篇定档/开播宣传"
+        },
+        {
+          "src": "/art/characters/preschool/40c7d4eacaf7085e.jpg",
+          "sha256": "40c7d4eacaf7085e2ec3da9ceeb4a128f1ed982457c15418306882e7f2821bff",
+          "bytes": 166096,
+          "title": "学前篇·定档群像海报",
+          "description": "10月30日定档海报，含小黑、小白、山新、阿根与比丢等群像。",
+          "sourceUrl": "https://xinwen.bjd.com.cn/content/s6ae89ab8d5de4aef01035e51.html",
+          "modelingUse": "核对学前篇群像造型与人物相对比例；不是独立角色三视图。",
+          "credit": "原作版权归原权利人；媒体报道收录，出处不表示已获再分发或训练许可。",
+          "licenseStatus": "版权保留，非开放训练或商用授权",
+          "kind": "2026学前篇定档/开播宣传"
+        }
+      ],
+      "role": "主要人物"
+    },
+    {
+      "id": "shanxin",
+      "name": "山新",
+      "summary": "山新这回陪朋友做的事情，从玩游戏变成了帮小黑补课。小黑想和小白一起上人类的学校，开学前要练拼音、认字；小白和山新便一起加入了这件事。前一篇大家还在众生之门里组队，这一篇换到桌边、书本前，山新和小白陪着小黑，把上学的准备一件件做起来。",
+      "sources": [
+        "https://xinwen.bjd.com.cn/content/s6ae89ab8d5de4aef01035e51.html",
+        "https://www.gamersky.com/news/202609/2217201.shtml"
+      ],
+      "sections": [],
+      "references": [
+        {
+          "src": "/art/characters/preschool/fc203239a306b4da.jpg",
+          "sha256": "fc203239a306b4da673698ee3da09c34230b4f682afbe63b1ef8903dbe961cd4",
+          "bytes": 70184,
+          "title": "学前篇·第41集更新图",
+          "description": "CAT41更新宣传图，桌边有小白、山新、小黑和比丢。",
+          "sourceUrl": "https://xinwen.bjd.com.cn/content/s6ae89ab8d5de4aef01035e51.html",
+          "modelingUse": "核对学前篇群像造型与人物相对比例；不是独立角色三视图。",
+          "credit": "原作版权归原权利人；媒体报道收录，出处不表示已获再分发或训练许可。",
+          "licenseStatus": "版权保留，非开放训练或商用授权",
+          "kind": "2026学前篇定档/开播宣传"
+        },
+        {
+          "src": "/art/characters/preschool/40c7d4eacaf7085e.jpg",
+          "sha256": "40c7d4eacaf7085e2ec3da9ceeb4a128f1ed982457c15418306882e7f2821bff",
+          "bytes": 166096,
+          "title": "学前篇·定档群像海报",
+          "description": "10月30日定档海报，含小黑、小白、山新、阿根与比丢等群像。",
+          "sourceUrl": "https://xinwen.bjd.com.cn/content/s6ae89ab8d5de4aef01035e51.html",
+          "modelingUse": "核对学前篇群像造型与人物相对比例；不是独立角色三视图。",
+          "credit": "原作版权归原权利人；媒体报道收录，出处不表示已获再分发或训练许可。",
+          "licenseStatus": "版权保留，非开放训练或商用授权",
+          "kind": "2026学前篇定档/开播宣传"
+        }
+      ],
+      "role": "主要人物",
+      "aliases": [
+        "善心"
+      ]
+    },
+    {
+      "id": "wuxian",
+      "name": "无限",
+      "summary": "无限支持小黑和小白一起上学。孩子想学着在人类的日常里生活，师父没有替他把这个念头挡回去。到了第三、第四集，小黑又和师父一起做任务；标题从“跟师父一起做任务啦”变成“冬冬拯救行动方案五”，同一段行动逐渐露出不同的面貌。会馆的救援还牵涉白游等人的配合，无限和小黑在地底穿行，把冬冬带回来。课本前的小黑是准备上学的孩子，跟在师父身边时，又是在任务里学本事的徒弟。",
+      "sources": [
+        "https://xinwen.bjd.com.cn/content/s6ae89ab8d5de4aef01035e51.html",
+        "https://www.sina.cn/media/2019071187",
+        "https://luoxiaohei.huijiwiki.com/wiki/冬冬拯救行动"
+      ],
+      "sections": [],
+      "references": [],
+      "role": "已播支线 · 剧情细节据二级资料"
+    },
+    {
+      "id": "dongdong",
+      "name": "冬冬",
+      "summary": "冬冬并不是到学前篇才出现的新角色。他在早先TV里就救过出事飞机上的乘客，到了这一篇，又成了会馆要想办法救回来的人。第四十四集的正式标题就是“冬冬拯救行动方案五”。他因能力暴露遭到绑架，会馆组织了营救；无限和小黑去执行，白游等人负责指挥。小黑刚刚还在忙上学以前的补课，这次跟着师父面对的，却是一个得把人平安带回来的任务。",
+      "sources": [
+        "https://www.sina.cn/media/2019071187",
+        "https://luoxiaohei.huijiwiki.com/wiki/冬冬",
+        "https://luoxiaohei.huijiwiki.com/wiki/冬冬拯救行动"
+      ],
+      "sections": [],
+      "references": [
+        {
+          "src": "/art/characters/preschool/04b95cbde3808cd7.jpg",
+          "sha256": "04b95cbde3808cd71eb044604f58be562997304ef799cd1e8636bba693a302ac",
+          "bytes": 5075,
+          "title": "冬冬·社区条目配图",
+          "description": "已实看且与具名条目对应；具体原帧/设定稿首发页尚待定位。",
+          "sourceUrl": "https://bgm.tv/character/124376",
+          "modelingUse": "初步轮廓、衣着和配色对照；低分辨率/截断部分不应补画为完整官方三视图。",
+          "credit": "原作版权归原权利人；社区上载不是再分发或训练授权。",
+          "licenseStatus": "版权保留，非开放训练或商用授权",
+          "kind": "本篇角色关联条目；图片精确作品版本待核，不自动标学前篇原帧"
+        }
+      ],
+      "role": "已播支线 · 剧情细节据二级资料"
+    },
+    {
+      "id": "baiyou",
+      "name": "白游",
+      "summary": "白游是冬冬救援行动的负责人。冬冬被带走后，白游等人负责指挥，无限和小黑在地底穿行，寻找把冬冬带回来的机会。白游在第三、第四集登场，灰白色短发，穿着有口袋的深色制服。师徒俩进入现场，白游则在指挥这一头配合；怎样走、怎样把冬冬带出来，关系着这次救援能不能完成。",
+      "sources": [
+        "https://luoxiaohei.huijiwiki.com/wiki/白游",
+        "https://bgm.tv/subject/593863/characters"
+      ],
+      "sections": [],
+      "references": [
+        {
+          "src": "/art/characters/preschool/00881259218a6b21.jpg",
+          "sha256": "00881259218a6b2142de8bb7184d2ce5b3cd3758799f1f2a30a2c0a6751627b7",
+          "bytes": 15855,
+          "title": "白游·社区条目配图",
+          "description": "已实看且与具名条目对应；具体原帧/设定稿首发页尚待定位。",
+          "sourceUrl": "https://bgm.tv/character/137554",
+          "modelingUse": "初步轮廓、衣着和配色对照；低分辨率/截断部分不应补画为完整官方三视图。",
+          "credit": "原作版权归原权利人；社区上载不是再分发或训练授权。",
+          "licenseStatus": "版权保留，非开放训练或商用授权",
+          "kind": "本篇角色关联条目；图片精确作品版本待核，不自动标学前篇原帧"
+        }
+      ],
+      "role": "已播支线 · 剧情细节据二级资料"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "candidate-26124",
+      "name": "比丢",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bgm.tv/subject/593863/characters",
+        "https://bgm.tv/character/26124"
+      ]
+    },
+    {
+      "id": "candidate-26403",
+      "name": "谛听",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bgm.tv/subject/593863/characters",
+        "https://bgm.tv/character/26403"
+      ]
+    },
+    {
+      "id": "candidate-26404",
+      "name": "阿根",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bgm.tv/subject/593863/characters",
+        "https://bgm.tv/character/26404"
+      ]
+    },
+    {
+      "id": "candidate-74453",
+      "name": "罗云飞",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bgm.tv/subject/593863/characters",
+        "https://bgm.tv/character/74453"
+      ]
+    },
+    {
+      "id": "candidate-92166",
+      "name": "甄云",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bgm.tv/subject/593863/characters",
+        "https://bgm.tv/character/92166"
+      ]
+    },
+    {
+      "id": "candidate-124358",
+      "name": "卡里",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bgm.tv/subject/593863/characters",
+        "https://bgm.tv/character/124358"
+      ]
+    },
+    {
+      "id": "candidate-124359",
+      "name": "秃贝",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bgm.tv/subject/593863/characters",
+        "https://bgm.tv/character/124359"
+      ]
+    },
+    {
+      "id": "candidate-124360",
+      "name": "府先生",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bgm.tv/subject/593863/characters",
+        "https://bgm.tv/character/124360"
+      ]
+    },
+    {
+      "id": "candidate-124366",
+      "name": "潘靖",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bgm.tv/subject/593863/characters",
+        "https://bgm.tv/character/124366"
+      ]
+    },
+    {
+      "id": "candidate-185643",
+      "name": "黑咻",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bgm.tv/subject/593863/characters",
+        "https://bgm.tv/character/185643"
+      ]
+    },
+    {
+      "id": "candidate-202770",
+      "name": "洛竹",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bgm.tv/subject/593863/characters",
+        "https://bgm.tv/character/202770"
+      ]
+    },
+    {
+      "id": "candidate-202778",
+      "name": "冠萱",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bgm.tv/subject/593863/characters",
+        "https://bgm.tv/character/202778"
+      ]
+    },
+    {
+      "id": "candidate-203952",
+      "name": "龙岩",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bgm.tv/subject/593863/characters",
+        "https://bgm.tv/character/203952"
+      ]
+    },
+    {
+      "id": "candidate-227700",
+      "name": "张舟",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bgm.tv/subject/593863/characters",
+        "https://bgm.tv/character/227700"
+      ]
+    },
+    {
+      "id": "candidate-228711",
+      "name": "耶文岚",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bgm.tv/subject/593863/characters",
+        "https://bgm.tv/character/228711"
+      ]
+    },
+    {
+      "id": "candidate-228712",
+      "name": "宿诃",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bgm.tv/subject/593863/characters",
+        "https://bgm.tv/character/228712"
+      ]
+    }
+  ],
+  "media": [
+    {
+      "id": "preschool-official-release-pv",
+      "title": "学前篇定档：10月30日不见不散！",
+      "url": "https://www.bilibili.com/bangumi/play/ep6364375",
+      "publisher": "罗小黑战记",
+      "kind": "官方预告",
+      "platform": "bilibili",
+      "videoId": null,
+      "bvid": "BV1eNaA6EEmi",
+      "epId": 6364375,
+      "language": "zh-CN-unlistened",
+      "languageEvidence": "中文原版平台及中文配音名单；实际音轨未实听",
+      "verifiedListening": false,
+      "startSeconds": null,
+      "endSeconds": null,
+      "quote": null,
+      "quoteSpeaker": null,
+      "description": "发行方公开的本篇预告，可在原平台回看。 逐句台词与时间码尚未校听。"
+    },
+    {
+      "id": "preschool-official-announcement",
+      "title": "众生之门后的故事：2026年见",
+      "url": "https://www.bilibili.com/bangumi/play/ep2374403",
+      "publisher": "罗小黑战记",
+      "kind": "官方先导",
+      "platform": "bilibili",
+      "videoId": null,
+      "bvid": null,
+      "epId": 2374403,
+      "language": "zh-CN-unlistened",
+      "languageEvidence": "中文原版平台及中文配音名单；实际音轨未实听",
+      "verifiedListening": false,
+      "startSeconds": null,
+      "endSeconds": null,
+      "quote": null,
+      "quoteSpeaker": null,
+      "description": "发行方公开的本篇预告，可在原平台回看。 逐句台词与时间码尚未校听。"
+    },
+    {
+      "id": "preschool-ep41",
+      "title": "第41话 开始学习吧小黑同学",
+      "url": "https://www.bilibili.com/bangumi/play/ep6762150",
+      "publisher": "罗小黑战记",
+      "kind": "正版剧集入口",
+      "platform": "bilibili",
+      "videoId": null,
+      "bvid": "BV1CUso6AELi",
+      "epId": 6762150,
+      "language": "zh-CN-unlistened",
+      "languageEvidence": "中文原版平台及中文配音名单；实际音轨未实听",
+      "verifiedListening": false,
+      "startSeconds": null,
+      "endSeconds": null,
+      "quote": null,
+      "quoteSpeaker": null,
+      "description": "正版剧集或电影回看，可能需要登录、会员或受地区限制。 逐句台词与时间码尚未校听。"
+    },
+    {
+      "id": "preschool-ep44-preview",
+      "title": "第44集预告 冬冬拯救行动方案五",
+      "url": "https://www.bilibili.com/bangumi/play/ep7912180",
+      "publisher": "罗小黑战记",
+      "kind": "单集预告",
+      "platform": "bilibili",
+      "videoId": null,
+      "bvid": null,
+      "epId": 7912180,
+      "language": "zh-CN-unlistened",
+      "languageEvidence": "中文原版平台及中文配音名单；实际音轨未实听",
+      "verifiedListening": false,
+      "startSeconds": null,
+      "endSeconds": null,
+      "quote": null,
+      "quoteSpeaker": null,
+      "description": "发行方公开的本篇预告，可在原平台回看。 逐句台词与时间码尚未校听。"
+    }
+  ],
+  "sources": [
+    "https://xinwen.bjd.com.cn/content/s6ae89ab8d5de4aef01035e51.html",
+    "https://www.gamersky.com/news/202609/2217201.shtml",
+    "https://www.sina.cn/media/2019071187",
+    "https://bgm.tv/subject/593863/characters",
+    "https://luoxiaohei.huijiwiki.com/wiki/白游",
+    "https://luoxiaohei.huijiwiki.com/wiki/冬冬"
+  ],
+  "limitations": [
+    "24条关联记录剔除船只和配音汇总剩22条候选，不等同官方完整演员表。",
+    "张舟、耶文岚、宿诃只保留具名基础候选，没有可靠足够剧情就不硬扩写220字。",
+    "白游等新增角色只有1张社区条目配图，具体原图出处仍待补，绝不称5张官方参考。",
+    "黑咻关联条目配图是宣传设计且原首发不明，本次已看但不当学前篇原帧。",
+    "未听审CAT41–44原声，不输出台词引语或时间码。",
+    "公开平台剧集元数据接口返回412，未绕过限制；回看链接保留作品正规目录。",
+    "白游是否感三组长、耶文岚/耶闻岚异文等网传说法未确认，不写进人物设定。",
+    "截至本次核查第45/46未播，部分二级站误标完结/把预定日期当已播，已排除。",
+    "本轮补查：张舟、耶文岚、宿诃独立百科页未成功读取（403或不可访问），未绕过限制，也未补写具体事件。白游性别虽有两处社区记录女，仍无官方直接依据，正文不使用性别代词。",
+    "本环境原生音频输入明确返回 audio content omitted because you do not support audio input，因而没有实际听辨任何台词。",
+    "不把中文标题、中文配音表、Mandarin发行信息当作已经实听音轨的证明。所有记录verifiedListening=false，不填写臆测的角色台词、起止时间。",
+    "只链接正版平台/公开宣传，不下载整部电影或正片，不绕登录、地区与会员限制，不安装新增音频模型。",
+    "学前篇仍在播，当前目录已播到44；本轮没有把未来集数猜测补成已确定角色经历。",
+    "没有找到官方可嵌入YouTube学前篇视频；DonghuaStuff、Cyber tourism与阿尼妹均不能只凭视频标题带Official就认作版权方。"
+  ]
+}
