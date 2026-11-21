@@ -137,6 +137,7 @@ const shots =
         await tap(ending.first().locator("summary"));
       } else await shot("story", page.locator(".work-character").first());
       const images = page.locator(".collection-images img");
+      const imageCount = await images.count();
       for (const image of await images.all()) {
         await image.scrollIntoViewIfNeeded();
         await image.evaluate((e) => e.decode());
@@ -187,7 +188,7 @@ const shots =
       await page.locator("#count").waitFor();
       await overflow();
       console.log(
-        `PASS ${id}/${label}: ${pack.characters.length} sourced records, search, spoilers, ${await images.count().catch(() => 0)} local images, direct route/reload, deferred player, save preserved, no overflow/errors`,
+        `PASS ${id}/${label}: ${pack.characters.length} sourced records, search, spoilers, ${imageCount} local images, direct route/reload, deferred player, save preserved, no overflow/errors`,
       );
       await context.close();
     }
