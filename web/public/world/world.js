@@ -1,9 +1,9 @@
 (() => {
-  if(location.protocol==='file:'){
+  if(globalThis.location.protocol==='file:'){
     const back=document.querySelector('header a');back.href='../../../prototype/puzzle.html';back.textContent='回到离线拼图';
   }
   const M=PixelWorld,A=PixelArt,canvas=document.querySelector('#world'),ctx=canvas.getContext('2d'),frame=document.querySelector('#map-frame');
-  const dialog=document.querySelector('#conversation'),visit=document.querySelector('#visit'),location=document.querySelector('#location'),destinations=document.querySelector('#destinations');
+  const dialog=document.querySelector('#conversation'),visit=document.querySelector('#visit'),locationText=document.querySelector('#location'),destinations=document.querySelector('#destinations');
   const player={...M.spawn,dir:'down',distance:0},visited=new Set(),keys=new Set(),pointers=new Map();
   let route=[],lastTime=0,dirty=true,scale=1,camera={x:0,y:0},near=null,lastMoving=false;
   const reduced=matchMedia('(prefers-reduced-motion: reduce)');
@@ -18,8 +18,8 @@
   function stop(){keys.clear();pointers.clear();route=[];document.querySelectorAll('.held').forEach(b=>b.classList.remove('held'));dirty=true}
   function go(tile,message) {
     stop();route=M.findPath(player,tile);
-    if(!route.length)location.textContent='这里走不到，换一块空地试试。';
-    else location.textContent=message||'沿着小路，慢慢走过去。';
+    if(!route.length)locationText.textContent='这里走不到，换一块空地试试。';
+    else locationText.textContent=message||'沿着小路，慢慢走过去。';
     canvas.focus({preventScroll:true});
   }
   function resize() {
@@ -56,7 +56,7 @@
   }
   function updateNear() {
     const next=M.nearHome(player);
-    if(next?.id!==near?.id){near=next;location.textContent=near?`${near.name}门前 · 可以敲门了`:'小路上 · 慢慢走，不赶时间'}
+    if(next?.id!==near?.id){near=next;locationText.textContent=near?`${near.name}门前 · 可以敲门了`:'小路上 · 慢慢走，不赶时间'}
     visit.disabled=!near;visit.textContent=near?`敲敲${near.name}的门`:'靠近家门后敲门';
   }
   function tick(time) {
@@ -68,7 +68,7 @@
       if(dx||dy){const length=Math.hypot(dx,dy),speed=Math.min(76*dt,route.length?Math.hypot(route[0].x-player.x,route[0].y-player.y):Infinity);dx=dx/length*speed;dy=dy/length*speed;
         player.dir=Math.abs(dx)>Math.abs(dy)?(dx>0?'right':'left'):(dy>0?'down':'up');
         const oldX=player.x,oldY=player.y;moving=M.move(player,dx,dy);player.distance+=Math.hypot(player.x-oldX,player.y-oldY);dirty=true;
-        if(!moving&&route.length){route=[];location.textContent='前面有东西挡着，换条路吧。'}
+        if(!moving&&route.length){route=[];locationText.textContent='前面有东西挡着，换条路吧。'}
       }
       updateNear();
     }
@@ -103,7 +103,7 @@
     dialog.showModal();document.querySelector('#close-scene').focus();dirty=true;
   }
   visit.addEventListener('click',visitHome);document.querySelector('#close-scene').addEventListener('click',()=>dialog.close());
-  dialog.addEventListener('close',()=>{stop();canvas.focus({preventScroll:true})});document.querySelector('#stop').addEventListener('click',()=>{stop();location.textContent='停下来，看看街边的风景。';canvas.focus({preventScroll:true})});
+  dialog.addEventListener('close',()=>{stop();canvas.focus({preventScroll:true})});document.querySelector('#stop').addEventListener('click',()=>{stop();locationText.textContent='停下来，看看街边的风景。';canvas.focus({preventScroll:true})});
   window.addEventListener('blur',stop);document.addEventListener('visibilitychange',()=>{stop();lastTime=0});reduced.addEventListener('change',()=>{dirty=true});
   requestAnimationFrame(tick);
 })();

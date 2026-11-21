@@ -14,13 +14,19 @@ const root=path.resolve(__dirname,'..'),origin='http://127.0.0.1:5231',shots=pat
     const saveKey=puzzleSaveKey('rain','guided','easy','classic');
     for(const [name,width,height,touch] of [['desktop',1360,940,false],['mobile',390,844,true],['small',320,568,true]]) {
       const context=await browser.newContext({viewport:{width,height},hasTouch:touch,isMobile:touch}),page=await context.newPage(),errors=[],outside=[];
-      page.on('pageerror',e=>errors.push(e.message));
+      page.on('pageerror',e=>{errors.push(e.message);console.error(name+' page error: '+e.message)});
       await context.route('**/*',r=>{if(r.request().url().startsWith(origin+'/'))return r.continue();outside.push(r.request().url());return r.abort()});
+      // Install the save before React mounts. Writing it into a running scene
+      // races that scene's save effect and makes the initial fixture unreliable.
+      await context.addInitScript(({origin,saveKey})=>{
+        if(location.origin===origin&&!localStorage.getItem('pixel-world-fixture')){
+          localStorage.setItem('pixel-world-fixture','1');
+          localStorage.setItem('shiguang-mode',JSON.stringify({picture:'rain',board:'guided',level:'easy',shape:'classic',magnet:true}));localStorage.setItem(saveKey,'[0,2,4]');
+        }
+      },{origin,saveKey});
       await page.goto(origin);
-      await page.evaluate(({saveKey})=>{localStorage.setItem('shiguang-mode',JSON.stringify({picture:'rain',board:'guided',level:'easy',shape:'classic',magnet:true}));localStorage.setItem(saveKey,'[0,2,4]')},{saveKey});
-      await page.reload();
       await page.waitForFunction(()=>document.querySelector('#count')?.textContent==='3 / 12');
-      const entry=page.getByRole('link',{name:'去像素街区散步'});await entry.click();
+      const entry=page.getByRole('link',{name:'去像素街区散步'});await entry.click();await page.waitForURL(origin+'/world/');await page.waitForLoadState();assert.deepEqual(errors,[]);
       await page.waitForFunction(()=>!!document.querySelector('#world')?.dataset.x);
       await page.clock.install({time:new Date('2026-11-21T12:00:00Z')});await page.clock.pauseAt(new Date('2026-11-21T12:01:00Z'));
       const canvas=page.locator('#world'),state=()=>canvas.evaluate(el=>({...el.dataset}));
@@ -80,7 +86,8 @@ const root=path.resolve(__dirname,'..'),origin='http://127.0.0.1:5231',shots=pat
       await context.close();
     }
     const offline=await browser.newContext(),p=await offline.newPage();let remote=0;await offline.route(/^https?:/,r=>{remote++;return r.abort()});await p.goto(pathToFileURL(path.join(root,'public/world/index.html')).href);await p.waitForFunction(()=>!!document.querySelector('#world')?.dataset.x);
-    await p.locator('#world').focus();const x=await p.locator('#world').getAttribute('data-x');await p.keyboard.down('ArrowRight');await p.waitForFunction(v=>+document.querySelector('#world').dataset.x>+v+10,x);await p.keyboard.up('ArrowRight');await p.screenshot({path:path.join(shots,'offline-file.png'),fullPage:true});assert.equal(remote,0);await offline.close();console.log('PASS file:// offline without build/network');
+    await p.locator('#world').focus();const x=await p.locator('#world').getAttribute('data-x');await p.keyboard.down('ArrowRight');await p.waitForFunction(v=>+document.querySelector('#world').dataset.x>+v+10,x);await p.keyboard.up('ArrowRight');await p.screenshot({path:path.join(shots,'offline-file.png'),fullPage:true});
+    await p.getByRole('link',{name:'回到离线拼图'}).click();await p.waitForFunction(()=>document.querySelector('#art')?.naturalWidth>0&&document.querySelector('#tray')?.children.length===12);assert.equal(remote,0);await offline.close();console.log('PASS file:// offline world and return to legacy puzzle without build/network');
     const reduced=await browser.newContext({reducedMotion:'reduce'}),r=await reduced.newPage();await r.goto(origin+'/world/');await r.waitForFunction(()=>!!document.querySelector('#world')?.dataset.x);await r.locator('#world').focus();await r.keyboard.down('ArrowRight');await r.waitForFunction(()=>document.querySelector('#world').dataset.moving==='true');assert.equal(await r.locator('#world').getAttribute('data-step'),'0');await r.keyboard.up('ArrowRight');await reduced.close();console.log('PASS reduced-motion: walking works without step cycling');
   } finally {await browser?.close();server.kill()}
 })().catch(e=>{console.error(e);process.exitCode=1});
