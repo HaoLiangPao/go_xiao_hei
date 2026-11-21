@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#28352b"><title>小黑的像素街区 · 四季时光</title>
+  <link rel="stylesheet" href="./world.css">
+</head>
+<body>
+  <main class="world-shell">
+    <header><div><p class="eyebrow">四季时光 · 散步试作</p><h1>小黑的像素街区</h1></div><a href="../../">回到拼图</a></header>
+    <div class="world-layout">
+      <section class="play-area" aria-label="像素地图与操作">
+        <div class="map-frame" id="map-frame">
+          <canvas id="world" tabindex="0" aria-label="像素街区：方向键或WASD行走，点地面前往，靠近家门按E拜访"></canvas>
+          <div id="labels" aria-hidden="true"></div>
+          <span class="map-caption">沿着小路，去朋友家坐坐</span>
+        </div>
+        <div class="walk-status"><p id="location" role="status">小路上 · 慢慢走，不赶时间</p><button id="visit" disabled>靠近家门后敲门</button></div>
+        <div class="controls">
+          <div class="dpad" aria-label="行走方向">
+            <button data-dir="up" aria-label="向上走">↑</button><button data-dir="left" aria-label="向左走">←</button><span aria-hidden="true">爪</span><button data-dir="right" aria-label="向右走">→</button><button data-dir="down" aria-label="向下走">↓</button>
+          </div>
+          <div class="control-note"><p>方向键 / WASD 行走<br>也可以点地面，或选一户人家</p><button id="stop">停下脚步</button></div>
+        </div>
+      </section>
+      <aside aria-label="街区导览">
+        <h2>今天去谁家？</h2><canvas id="overview" width="160" height="120" aria-label="三户人家、小路、河流与小黑当前位置的街区总览"></canvas>
+        <p class="map-key"><span>● 小黑</span><span>━ 小路</span><span>▰ 小河</span></p>
+        <nav id="destinations" aria-label="步行目的地"></nav>
+        <p id="visits" role="status">本次散步 · 已拜访 0 / 3 户</p>
+        <p class="aside-note">点选后，小黑会沿路走到门前。<br>遇见河流，记得走小桥。</p>
+      </aside>
+    </div>
+    <footer><p>非官方二创试作 · 人物及原作形象版权归原权利人。</p><p>街区布局、房屋外观与门口片段为原创玩法示意。暂不进入室内；拜访记录仅保留在本次页面中。</p></footer>
+  </main>
+  <dialog id="conversation" aria-labelledby="scene-title"><p class="eyebrow">门口的一小段时光 · 原创片段</p><h2 id="scene-title"></h2><p id="scene-text"></p><button id="close-scene">继续散步</button></dialog>
+  <noscript>请启用JavaScript来走动。你仍可以通过上方链接回到拼图。</noscript>
+  <script src="./world-model.js"></script><script src="./world-art.js"></script><script src="./world.js"></script>
+</body>
+</html>

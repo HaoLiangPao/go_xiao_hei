@@ -5,11 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
+    "test:world-browser": "node tests/pixel-world-browser.cjs",
     "test:journey-browser": "node tests/journey-browser.cjs",
     "test:material-browser": "node tests/material-browser.cjs",
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1",
-    "test": "node --test tests/geometry.test.js tests/gameplay.test.js tests/journey.test.js tests/dialogue.test.js tests/resources.test.js tests/season-content.test.js tests/character-model.test.js tests/collections.test.js",
+    "test": "node --test tests/geometry.test.js tests/gameplay.test.js tests/journey.test.js tests/dialogue.test.js tests/resources.test.js tests/season-content.test.js tests/character-model.test.js tests/collections.test.js tests/pixel-world.test.js",
     "audio:generate": "node scripts/generate-dialogue.mjs",
     "test:model": "node ../tests/scene-model.test.cjs",
     "test:dom": "node ../tests/color-interaction.test.cjs",
