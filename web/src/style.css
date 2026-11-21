@@ -1647,3 +1647,5 @@ progress::-moz-progress-bar {
   .tray-panel { grid-template-rows: 30px 60px 20px 30px; }
   .dialogue { padding-top: 10px; padding-bottom: 10px; }
 }
+
+.model-entry{display:inline-flex;align-items:center;min-height:44px;color:#557647;text-underline-offset:3px}

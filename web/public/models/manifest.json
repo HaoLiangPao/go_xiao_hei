@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "kind": "non-official-procedural-study",
+  "models": [
+    {
+      "id": "xiaohei",
+      "name": "猫形小黑",
+      "src": "/models/xiaohei.glb",
+      "bytes": 184944,
+      "sha256": "6bbe0121fc363a0646c98f004d0a090241be5ad5d0f95e329ab84a00c60a75ef"
+    },
+    {
+      "id": "heixiu",
+      "name": "黑咻",
+      "src": "/models/heixiu.glb",
+      "bytes": 28376,
+      "sha256": "2ab9f7a91e788c45068efd232cbb21ad3499adcc771a64102486e593a91e6ab4"
+    }
+  ],
+  "files": [
+    {
+      "path": "public/models/index.html",
+      "bytes": 4089,
+      "sha256": "1c541ec7991b565dc836b07821146a422b3e52ce8eae60dae5c5480452be0f95"
+    },
+    {
+      "path": "public/models/lab.css",
+      "bytes": 4190,
+      "sha256": "6da9c6eb59f51397dc56b4d45885fba3e60142771f975129748757a7231c1aef"
+    },
+    {
+      "path": "public/models/lab.js",
+      "bytes": 542219,
+      "sha256": "f1c772ef8295fdaaedf5727002a40d8d76d4f25f3c8f02ea17319dc11c165806"
+    },
+    {
+      "path": "public/models/THREE-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "path": "public/models/xiaohei.glb",
+      "bytes": 184944,
+      "sha256": "6bbe0121fc363a0646c98f004d0a090241be5ad5d0f95e329ab84a00c60a75ef"
+    },
+    {
+      "path": "public/models/heixiu.glb",
+      "bytes": 28376,
+      "sha256": "2ab9f7a91e788c45068efd232cbb21ad3499adcc771a64102486e593a91e6ab4"
+    }
+  ],
+  "sources": [
+    {
+      "path": "model-lab/main.js",
+      "bytes": 8290,
+      "sha256": "5f3398d3df4944a156c705d1acc89da525e3c573b97de73c99ebf0872c78a82d"
+    },
+    {
+      "path": "model-lab/meshes.js",
+      "bytes": 9713,
+      "sha256": "ca59382e968c72977a8a3d061b2c19bd7aead313f8560aa8f07b3fd46ae377ec"
+    },
+    {
+      "path": "scripts/build-model-lab.mjs",
+      "bytes": 2373,
+      "sha256": "b8ad8dd761ce6a6abfc79801744fbfbd8dafc3d2ec75bdb69d93534f6d46821c"
+    }
+  ]
+}

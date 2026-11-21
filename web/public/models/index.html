@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>角色小工坊 · 四时拾光</title>
+    <link rel="stylesheet" href="./lab.css" />
+    <script defer src="./lab.js"></script>
+  </head>
+  <body>
+    <header class="top">
+      <a href="/">四时拾光</a><span>角色小工坊</span
+      ><a href="/#/characters">人物资料库</a>
+    </header>
+    <main>
+      <div class="intro">
+        <p>第一张练习桌</p>
+        <h1>先让他们动起来。</h1>
+        <p>从圆滚滚的身体和一双大眼睛开始。</p>
+      </div>
+      <div class="workbench">
+        <section class="stage-panel" aria-label="模型预览">
+          <div class="model-tabs" aria-label="选择练习角色">
+            <button type="button" data-character="xiaohei" aria-pressed="true">
+              猫形小黑</button
+            ><button type="button" data-character="heixiu" aria-pressed="false">
+              黑咻
+            </button>
+          </div>
+          <div id="stage">
+            <canvas
+              aria-label="可转动的三维角色，方向键转动，加减键缩放，Home回正面"
+              tabindex="0"
+            ></canvas>
+            <p id="fallback" hidden>
+              当前浏览器无法打开3D。可以下载下面的模型文件，或换个支持WebGL的浏览器打开。
+            </p>
+          </div>
+          <p class="gesture">拖动转一转 · 手机单指转动，双指缩放</p>
+          <div class="views">
+            <button data-action="front">正面</button
+            ><button data-action="quarter">斜侧</button
+            ><button data-action="side">侧面</button
+            ><button data-action="back">背面</button
+            ><button data-action="near" aria-label="拉近模型">＋ 拉近</button
+            ><button data-action="far" aria-label="拉远模型">－ 拉远</button>
+          </div>
+        </section>
+        <aside>
+          <h2 id="name">猫形小黑</h2>
+          <p id="description">短短的身体、大大的眼睛和一张小三角嘴。</p>
+          <p class="study-label">非官方简化练习模型</p>
+          <div class="actions">
+            <button data-action="blink">眨眨眼</button
+            ><button data-action="hop">跳一下</button>
+          </div>
+          <output id="status" role="status" aria-live="polite"
+            >模型准备中</output
+          >
+          <div class="download">
+            <h3>带走这张练习稿</h3>
+            <p>
+              GLB模型含一个简单小跳动作，可继续放进Blender或其他支持glTF的软件修改。
+            </p>
+            <a id="download" href="./xiaohei.glb" download="xiaohei-study.glb"
+              >下载猫形小黑模型</a
+            ><small id="size"></small>
+          </div>
+          <p class="next">
+            接下来可以试：让小黑陪着拼图、完成一关解锁动作，或把角色摆进节气的小场景。
+          </p>
+        </aside>
+      </div>
+      <details class="about">
+        <summary>这次做了什么，还缺什么？</summary>
+        <p>
+          用简单几何体手工搭了两个可转动模型，并导出带小跳关键帧的GLB。没有使用模型权重，也没有从图片自动推断看不见的结构。
+        </p>
+        <p>
+          这还是造型练习：比例、耳朵厚度、尾巴和表情可以继续改。暂未做骨骼绑定、口型、复杂动作或3D打印检查。
+        </p>
+        <p>
+          原作参考来自人物图册；可回看<a
+            href="https://luoxiaohei-movie.com/1st/character/?page=chara01"
+            target="_blank"
+            rel="noreferrer"
+            >首部电影官方小黑资料</a
+          >。人物及原作形象版权归原权利人，练习模型不表示获得商业使用许可。
+        </p>
+      </details>
+    </main>
+    <footer>人物版权归《罗小黑战记》及原权利人 · 非官方造型练习</footer>
+  </body>
+</html>
