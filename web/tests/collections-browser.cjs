@@ -124,6 +124,13 @@ const shots =
       const input = page.getByRole("searchbox");
       await input.fill("不存在的测试人物");
       assert.equal(await page.locator(".work-character").count(), 0);
+      if (pack.candidates?.length) {
+        await input.fill(pack.candidates[0].name);
+        assert.ok(await page.locator(".collection-candidates li").count() >= 1);
+        assert.notEqual(await page.locator(".collection-candidates").getAttribute("open"), null);
+        await overflow();
+        await shot("candidate", page.locator(".collection-candidates"));
+      }
       await input.fill(pack.characters[0].name);
       assert.ok((await page.locator(".work-character").count()) >= 1);
       await shot("search", page.locator(".collection-search"));
