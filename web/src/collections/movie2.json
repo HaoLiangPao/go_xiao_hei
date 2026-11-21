@@ -1,0 +1,1730 @@
+{
+  "id": "movie2",
+  "order": 2,
+  "title": "罗小黑战记2",
+  "year": "2025",
+  "intro": "小黑和师父过了两年安稳日子，一次会馆遇袭，让他和师姐鹿野一起出发查明真相。",
+  "scope": "12名官网人物分别整理本作介绍；社区目录中的其他名字另列为待核线索，不把关联记录当作已确认出场名单。",
+  "checkedAt": "2026-11-21",
+  "characters": [
+    {
+      "id": "xiaohei",
+      "name": "小黑",
+      "summary": "小黑已经有师父，也有了安稳过日子的地方。他跟无限吃饭、出门，学本事，也渐渐熟悉人类的生活。可会馆一出事，师父就被怀疑了。这次换成小黑跟着师姐鹿野去找证据。跟师姐并肩打过，也和她吵过，他得自己判断，保护师父到底该怎么做。",
+      "sources": [
+        "https://luoxiaohei-movie.com/2nd/",
+        "https://www.bilibili.com/bangumi/play/ss90209",
+        "https://www.mgtv.com/h/765449/0.html",
+        "https://static.nfnews.com/content/202508/04/c11583794.html?enterColumnId=44177",
+        "https://www.1905.com/news/20250716/1734967.shtml"
+      ],
+      "sections": [
+        {
+          "title": "先过一阵普通日子",
+          "items": [
+            {
+              "text": "和无限在村里生活，小黑不再只是流浪的小猫。分会馆遭袭以后，原本安宁的日子被打断，两人接到任务，也被这场风波分开。",
+              "sources": [
+                "https://luoxiaohei-movie.com/2nd/",
+                "https://www.bilibili.com/bangumi/play/ss90209"
+              ],
+              "evidence": "primary",
+              "spoiler": false
+            }
+          ]
+        },
+        {
+          "title": "跟师姐出门，也会跟师姐争",
+          "items": [
+            {
+              "text": "鹿野带他追查袭击案，两人一起救下飞机上的乘客。相处越久，小黑也越能看见他们在做事方法上的分歧。信任师姐，没有让他把疑问都咽回去。",
+              "sources": [
+                "https://www.mgtv.com/h/765449/0.html",
+                "https://static.nfnews.com/content/202508/04/c11583794.html?enterColumnId=44177"
+              ],
+              "evidence": "primary licensed clip headings + primary interview + 观影解读",
+              "spoiler": true
+            }
+          ]
+        },
+        {
+          "title": "年纪小，也有自己的判断",
+          "items": [
+            {
+              "text": "主创没有把八岁的小黑写成一下就看透一切的人。他比以前能独当一面，遇到是非又仍然直白；师父和师姐的选择，他也会问、会不同意。",
+              "sources": [
+                "https://static.nfnews.com/content/202508/04/c11583794.html?enterColumnId=44177"
+              ],
+              "evidence": "primary interview + 观影解读",
+              "spoiler": false
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "src": "/art/characters/movie2/5c4a4840aacaea55.png",
+          "sha256": "5c4a4840aacaea55f97956005147f582ca9098bb0bc1a3b35c5f0d28b7fbbca2",
+          "bytes": 174497,
+          "title": "小黑·电影2官方立绘",
+          "description": "续作日本发行官网全身角色立绘。",
+          "sourceUrl": "https://luoxiaohei-movie.com/2nd/character/",
+          "modelingUse": "本作服装、站姿、头身比例和正面配色；不是完整三视图。",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；原作权利归原权利人，公开刊载不代表已获再分发、训练或商用许可。",
+          "licenseStatus": "版权保留，非开放训练或商用授权",
+          "kind": "电影《罗小黑战记2》（2025）"
+        },
+        {
+          "src": "/art/characters/movie2/f05de7670e0392a9.jpg",
+          "sha256": "f05de7670e0392a99ba374467fe32fffdfd70e3e613361288c5ac7a8fd47e311",
+          "bytes": 59218,
+          "title": "小黑·正面近景",
+          "description": "小黑人形的正面近景，耳饰、发型和领口清楚。",
+          "sourceUrl": "https://gkids.com/films/the-legend-of-hei-2/",
+          "modelingUse": "脸部比例、耳饰连接和本作发型。",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；原作权利归原权利人，公开刊载不代表已获再分发、训练或商用许可。",
+          "licenseStatus": "版权保留，非开放训练或商用授权",
+          "kind": "电影《罗小黑战记2》（2025）"
+        },
+        {
+          "src": "/art/characters/movie2/dc202bc970d4c5ac.jpg",
+          "sha256": "dc202bc970d4c5ac955fd87b12684d18f0b08b1aec43be5a844b84d6894ab570",
+          "bytes": 342065,
+          "title": "小黑与无限·吃饭",
+          "description": "两人坐在餐桌旁，无限正拿着汉堡，小黑戴帽坐在一旁。",
+          "sourceUrl": "https://gkids.com/films/the-legend-of-hei-2/",
+          "modelingUse": "坐姿、桌面相对身高与日常服装。",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；原作权利归原权利人，公开刊载不代表已获再分发、训练或商用许可。",
+          "licenseStatus": "版权保留，非开放训练或商用授权",
+          "kind": "电影《罗小黑战记2》（2025）"
+        }
+      ],
+      "role": "官网人物",
+      "voiceActor": "山新"
+    },
+    {
+      "id": "wuxian",
+      "name": "无限",
+      "summary": "无限本来带着小黑过日子，吃饭、买衣服、出门玩，师徒的相处也像大人带孩子。会馆遇袭以后，他却成了嫌疑人，小黑跟鹿野出去查真相，他留在总馆。师父暂时不能站在旁边了，两个人怎样信任彼此，也成了这次故事的一部分。",
+      "sources": [
+        "https://static.nfnews.com/content/202508/04/c11583794.html?enterColumnId=44177",
+        "https://www.bilibili.com/bangumi/play/ss90209",
+        "https://www.mgtv.com/h/765449/0.html",
+        "https://gkids.com/films/the-legend-of-hei-2/",
+        "https://www.1905.com/news/20250716/1734967.shtml"
+      ],
+      "sections": [
+        {
+          "title": "平时也要带孩子",
+          "items": [
+            {
+              "text": "主创谈到，无限会带小黑吃喝玩乐、买衣服、看电影。练本事之外，生活里那些琐碎的照应，也撑起了两人的关系。",
+              "sources": [
+                "https://static.nfnews.com/content/202508/04/c11583794.html?enterColumnId=44177"
+              ],
+              "evidence": "primary interview",
+              "spoiler": false
+            }
+          ]
+        },
+        {
+          "title": "这次轮到他被怀疑",
+          "items": [
+            {
+              "text": "分会馆遇袭后，无限被卷入调查。小黑和鹿野要追查真相，师徒不得不分开；那个一直带小黑走的人，这次没法陪他走这一段。",
+              "sources": [
+                "https://www.bilibili.com/bangumi/play/ss90209",
+                "https://www.mgtv.com/h/765449/0.html"
+              ],
+              "evidence": "primary licensed synopsis + 观影解读",
+              "spoiler": false
+            }
+          ]
+        },
+        {
+          "title": "总馆里也有轻松时候",
+          "items": [
+            {
+              "text": "和哪吒待在一起时，无限会坐在沙发上玩游戏。这个一向穿长衫的大人，换成日常衣服坐进客厅，和小黑平时认识的师父是同一个人。",
+              "sources": [
+                "https://gkids.com/films/the-legend-of-hei-2/"
+              ],
+              "evidence": "scene observation",
+              "spoiler": false
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "src": "/art/characters/movie2/e9e089919dfeeb0c.png",
+          "sha256": "e9e089919dfeeb0cfc6473f3a822d95d30584be5d68fe73220e8e6b638e17deb",
+          "bytes": 121895,
+          "title": "无限·电影2官方立绘",
+          "description": "续作日本发行官网全身角色立绘。",
+          "sourceUrl": "https://luoxiaohei-movie.com/2nd/character/",
+          "modelingUse": "本作服装、站姿、头身比例和正面配色；不是完整三视图。",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；原作权利归原权利人，公开刊载不代表已获再分发、训练或商用许可。",
+          "licenseStatus": "版权保留，非开放训练或商用授权",
+          "kind": "电影《罗小黑战记2》（2025）"
+        },
+        {
+          "src": "/art/characters/movie2/a2b03ffa72b5f137.jpg",
+          "sha256": "a2b03ffa72b5f137b3e8217f3afb66fcdfbd49d3f3d7ecfbdb90badb02a881d9",
+          "bytes": 395442,
+          "title": "无限与哪吒·沙发打游戏",
+          "description": "哪吒和换上休闲服的无限坐在沙发上，手里拿着游戏手柄。",
+          "sourceUrl": "https://gkids.com/films/the-legend-of-hei-2/",
+          "modelingUse": "坐姿和本作日常衣装，勿和常规长衫合并成同一套。",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；原作权利归原权利人，公开刊载不代表已获再分发、训练或商用许可。",
+          "licenseStatus": "版权保留，非开放训练或商用授权",
+          "kind": "电影《罗小黑战记2》（2025）"
+        },
+        {
+          "src": "/art/characters/movie2/dc202bc970d4c5ac.jpg",
+          "sha256": "dc202bc970d4c5ac955fd87b12684d18f0b08b1aec43be5a844b84d6894ab570",
+          "bytes": 342065,
+          "title": "无限与小黑·用餐",
+          "description": "无限和小黑一起坐在快餐桌旁。",
+          "sourceUrl": "https://gkids.com/films/the-legend-of-hei-2/",
+          "modelingUse": "日常表情、手持食物姿势及儿童相对尺度。",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；原作权利归原权利人，公开刊载不代表已获再分发、训练或商用许可。",
+          "licenseStatus": "版权保留，非开放训练或商用授权",
+          "kind": "电影《罗小黑战记2》（2025）"
+        }
+      ],
+      "role": "官网人物",
+      "voiceActor": "刘明月"
+    },
+    {
+      "id": "luye",
+      "name": "鹿野",
+      "summary": "师父被冤枉，鹿野马上带小黑出去查。她能追踪留下来的灵，看起来做事干脆，带孩子吃饭住店也有自己的安排。可师姐和师弟并不总能谈到一起：她经历过战争，对人类有戒心，小黑却会追问无辜的人怎么办。一起追凶，也是在慢慢认识对方。",
+      "sources": [
+        "https://luoxiaohei-movie.com/2nd/character/",
+        "https://static.nfnews.com/content/202508/04/c11583794.html?enterColumnId=44177",
+        "https://www.mgtv.com/h/765449/0.html",
+        "https://www.1905.com/news/20250716/1734967.shtml"
+      ],
+      "sections": [
+        {
+          "title": "从带孩子到并肩打",
+          "items": [
+            {
+              "text": "鹿野是无限的弟子，小黑的师姐。刚认识时，她也在好奇师父为什么又收了这个孩子；查案和战斗让两人的关系，一点点从照看小孩变成互相信任的搭档。",
+              "sources": [
+                "https://luoxiaohei-movie.com/2nd/character/",
+                "https://static.nfnews.com/content/202508/04/c11583794.html?enterColumnId=44177"
+              ],
+              "evidence": "primary setting + primary interview",
+              "spoiler": false
+            }
+          ]
+        },
+        {
+          "title": "嘴上排斥，行动里没那么简单",
+          "items": [
+            {
+              "text": "她讨厌人类，却穿现代衣服、吃好吃的、住好酒店；飞机出事时，她也会动手救人。这些细节把她的矛盾留在具体生活里，而不只是讲一段苦难身世。",
+              "sources": [
+                "https://static.nfnews.com/content/202508/04/c11583794.html?enterColumnId=44177",
+                "https://www.mgtv.com/h/765449/0.html"
+              ],
+              "evidence": "primary interview + licensed clip headings + 观影解读",
+              "spoiler": true
+            }
+          ]
+        },
+        {
+          "title": "有些伤还留着",
+          "items": [
+            {
+              "text": "战争让鹿野失去过重要的人。无限曾帮助她，但他也是人类，这让她的亲近里隔着一段距离。调查结束后，她对师父的牵挂仍然留在那次简短道别里。",
+              "sources": [
+                "https://static.nfnews.com/content/202508/04/c11583794.html?enterColumnId=44177"
+              ],
+              "evidence": "primary interview",
+              "spoiler": true
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "src": "/art/characters/movie2/9224e860d81cf972.png",
+          "sha256": "9224e860d81cf9726d78bd6304eec17f85c589602ffb7689d870ec2d50e1704e",
+          "bytes": 128545,
+          "title": "鹿野·电影2官方立绘",
+          "description": "续作日本发行官网全身角色立绘。",
+          "sourceUrl": "https://luoxiaohei-movie.com/2nd/character/",
+          "modelingUse": "本作服装、站姿、头身比例和正面配色；不是完整三视图。",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；原作权利归原权利人，公开刊载不代表已获再分发、训练或商用许可。",
+          "licenseStatus": "版权保留，非开放训练或商用授权",
+          "kind": "电影《罗小黑战记2》（2025）"
+        },
+        {
+          "src": "/art/characters/movie2/0c6906e604ea54a8.jpg",
+          "sha256": "0c6906e604ea54a8ea0bae66f1bf63adff0a08d21eba6c02dbf8bbd701faa5bb",
+          "bytes": 353230,
+          "title": "鹿野·坐着看书",
+          "description": "鹿野侧坐在室内，手里拿着绿色封面的书。",
+          "sourceUrl": "https://gkids.com/films/the-legend-of-hei-2/",
+          "modelingUse": "侧脸、白发厚度、上衣和长裤坐姿。",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；原作权利归原权利人，公开刊载不代表已获再分发、训练或商用许可。",
+          "licenseStatus": "版权保留，非开放训练或商用授权",
+          "kind": "电影《罗小黑战记2》（2025）"
+        },
+        {
+          "src": "/art/characters/movie2/1e7c3ca71e5571b3.jpg",
+          "sha256": "1e7c3ca71e5571b30e5c8fe9ac26e98079a15777f4891c27088db74c00972edd",
+          "bytes": 94125,
+          "title": "鹿野·肩边的小黑",
+          "description": "鹿野半身近景，小黑猫形在她肩边。",
+          "sourceUrl": "https://gkids.com/films/the-legend-of-hei-2/",
+          "modelingUse": "脸部三分之二角度、后束发与小黑猫形比例。",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；原作权利归原权利人，公开刊载不代表已获再分发、训练或商用许可。",
+          "licenseStatus": "版权保留，非开放训练或商用授权",
+          "kind": "电影《罗小黑战记2》（2025）"
+        },
+        {
+          "src": "/art/characters/movie2/e22e40bb402b6016.jpg",
+          "sha256": "e22e40bb402b6016a329e3db9a00506c97296bcab37c7762eca08fd92049d8e5",
+          "bytes": 27828,
+          "title": "鹿野·林间侧脸宣传剧照",
+          "description": "媒体主创专访配图，鹿野在林间侧脸近景，带宣传文字。",
+          "sourceUrl": "https://static.nfnews.com/content/202508/04/c11583794.html?enterColumnId=44177",
+          "modelingUse": "侧脸轮廓与后束发；文字不是已听审台词。",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；原作权利归原权利人，公开刊载不代表已获再分发、训练或商用许可。",
+          "licenseStatus": "版权保留，非开放训练或商用授权",
+          "kind": "电影《罗小黑战记2》（2025）"
+        },
+        {
+          "src": "/art/characters/movie2/452b00830bebec0a.jpg",
+          "sha256": "452b00830bebec0a580659ec1ff4af999de5016ced1cf09662b1afa06322eff8",
+          "bytes": 91374,
+          "title": "鹿野·角色档案海报",
+          "description": "媒体主创专访刊载的电影2角色档案海报，包含全身动态造型。",
+          "sourceUrl": "https://static.nfnews.com/content/202508/04/c11583794.html?enterColumnId=44177",
+          "modelingUse": "本作服装、手套和动作轮廓；海报文字另核，不自动提取数字设定。",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；原作权利归原权利人，公开刊载不代表已获再分发、训练或商用许可。",
+          "licenseStatus": "版权保留，非开放训练或商用授权",
+          "kind": "电影《罗小黑战记2》（2025）"
+        }
+      ],
+      "role": "官网人物",
+      "voiceActor": "朱婧"
+    },
+    {
+      "id": "nezha",
+      "name": "哪吒",
+      "summary": "哪吒这次没有只在事发以后露个面。他被安排留意无限的行动，两个人还能坐在一起打游戏。可当无限一定要出手、会馆又不肯放行，原本守在身边的人也得站起来拦他。熟悉归熟悉，职责到了眼前，照样会动手。",
+      "sources": [
+        "https://gkids.com/films/the-legend-of-hei-2/",
+        "https://zh.wikipedia.org/wiki/罗小黑战记2",
+        "https://luoxiaohei-movie.com/2nd/character/"
+      ],
+      "sections": [
+        {
+          "title": "同一间屋里打游戏",
+          "items": [
+            {
+              "text": "哪吒和无限待在总馆，官方发行剧照拍到了两人并排坐在沙发上拿游戏手柄的样子。紧张的调查之外，两个熟人也有这样消磨时间的时候。",
+              "sources": [
+                "https://gkids.com/films/the-legend-of-hei-2/"
+              ],
+              "evidence": "scene observation",
+              "spoiler": false
+            }
+          ]
+        },
+        {
+          "title": "监视的人要不要放行",
+          "items": [
+            {
+              "text": "无限提出参与行动，受到阻拦，哪吒也出手干预，两人打了起来。这场冲突和首作后段赶来支援的短暂出场不同，让他直接站到了无限面前。",
+              "sources": [
+                "https://zh.wikipedia.org/wiki/罗小黑战记2"
+              ],
+              "evidence": "secondary",
+              "spoiler": true
+            }
+          ]
+        },
+        {
+          "title": "仍属于会馆总部",
+          "items": [
+            {
+              "text": "续作官网把哪吒列为总馆成员，并进一步写明他的创始者身份。他的行动不是随便来凑热闹；这次他本来就在会馆内部的职责和争执之中。",
+              "sources": [
+                "https://luoxiaohei-movie.com/2nd/character/"
+              ],
+              "evidence": "primary + 观影解读",
+              "spoiler": false
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "src": "/art/characters/movie2/fbbce6f3f8ae45d6.png",
+          "sha256": "fbbce6f3f8ae45d696890bf3cc18e4263dbbecdf247cf606732962850cceda64",
+          "bytes": 146231,
+          "title": "哪吒·电影2官方立绘",
+          "description": "续作日本发行官网全身角色立绘。",
+          "sourceUrl": "https://luoxiaohei-movie.com/2nd/character/",
+          "modelingUse": "本作服装、站姿、头身比例和正面配色；不是完整三视图。",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；原作权利归原权利人，公开刊载不代表已获再分发、训练或商用许可。",
+          "licenseStatus": "版权保留，非开放训练或商用授权",
+          "kind": "电影《罗小黑战记2》（2025）"
+        },
+        {
+          "src": "/art/characters/movie2/a2b03ffa72b5f137.jpg",
+          "sha256": "a2b03ffa72b5f137b3e8217f3afb66fcdfbd49d3f3d7ecfbdb90badb02a881d9",
+          "bytes": 395442,
+          "title": "哪吒与无限·游戏时间",
+          "description": "两人在总馆客厅沙发上一起玩游戏。",
+          "sourceUrl": "https://gkids.com/films/the-legend-of-hei-2/",
+          "modelingUse": "本作便服、坐姿和人物相对尺度。",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；原作权利归原权利人，公开刊载不代表已获再分发、训练或商用许可。",
+          "licenseStatus": "版权保留，非开放训练或商用授权",
+          "kind": "电影《罗小黑战记2》（2025）"
+        }
+      ],
+      "role": "官网人物"
+    },
+    {
+      "id": "yudi",
+      "name": "雨笛",
+      "summary": "雨笛是总馆长。会馆出事，长老们各有主张，他面对的不是一场单纯抓住凶手就能了结的争执。他平时温和，也会严肃起来；后来审问灵遥时，这个坐在会馆最上面的老人，还得处理真相公开以后会带来什么。",
+      "sources": [
+        "https://luoxiaohei-movie.com/2nd/character/",
+        "https://zh.wikipedia.org/wiki/罗小黑战记2"
+      ],
+      "sections": [
+        {
+          "title": "长老之上还有总馆长",
+          "items": [
+            {
+              "text": "雨笛的职位在长老和各地馆长之上。影片让会馆内部不同声音聚在一起，也让这个总馆长的处境从名字后面的头衔变得具体。",
+              "sources": [
+                "https://luoxiaohei-movie.com/2nd/character/"
+              ],
+              "evidence": "primary + 观影解读",
+              "spoiler": false
+            }
+          ]
+        },
+        {
+          "title": "说话不总是和气",
+          "items": [
+            {
+              "text": "官网对他的描述同时保留了温和与严厉。会馆内部要作决定时，他并不只是站在旁边的一位老者。",
+              "sources": [
+                "https://luoxiaohei-movie.com/2nd/character/"
+              ],
+              "evidence": "primary",
+              "spoiler": false
+            }
+          ]
+        },
+        {
+          "title": "审问还没有结束的问题",
+          "items": [
+            {
+              "text": "灵遥落网以后，雨笛和池年继续审问他的所作所为，以及尚未找到的武器材料。抓到人以后，遗留的问题还没有自动消失。",
+              "sources": [
+                "https://zh.wikipedia.org/wiki/罗小黑战记2"
+              ],
+              "evidence": "secondary",
+              "spoiler": true
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "src": "/art/characters/movie2/81fa6434599340a5.png",
+          "sha256": "81fa6434599340a5a27a7ebda70e3db5c700b168422aedc05460c84848c59b18",
+          "bytes": 173997,
+          "title": "雨笛·电影2官方立绘",
+          "description": "续作日本发行官网全身角色立绘。",
+          "sourceUrl": "https://luoxiaohei-movie.com/2nd/character/",
+          "modelingUse": "本作服装、站姿、头身比例和正面配色；不是完整三视图。",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；原作权利归原权利人，公开刊载不代表已获再分发、训练或商用许可。",
+          "licenseStatus": "版权保留，非开放训练或商用授权",
+          "kind": "电影《罗小黑战记2》（2025）"
+        }
+      ],
+      "role": "官网人物"
+    },
+    {
+      "id": "lingyao",
+      "name": "灵遥",
+      "summary": "灵遥是会馆长老，起初以关心小黑的长辈面貌出现。可越接近袭击案真相，他和鹿野、小黑的关系就越不一样。看这个人物，前面的和气与后面的选择得放在一起看；他怕妖精失去未来，却把许多人推到了危险里。",
+      "sources": [
+        "https://luoxiaohei-movie.com/2nd/character/",
+        "https://zh.wikipedia.org/wiki/罗小黑战记2",
+        "https://wyb.chinawriter.com.cn/attachment/202510/17/32a35476-337b-424f-a170-34f98bd56ccd.pdf"
+      ],
+      "sections": [
+        {
+          "title": "先是关心孩子的长辈",
+          "items": [
+            {
+              "text": "续作官网介绍灵遥时，写的是长老身份和他对小黑的关心。初次认识他的人，先看见的是这一层长辈的面貌。",
+              "sources": [
+                "https://luoxiaohei-movie.com/2nd/character/"
+              ],
+              "evidence": "primary",
+              "spoiler": false
+            }
+          ]
+        },
+        {
+          "title": "查案查到了他面前",
+          "items": [
+            {
+              "text": "鹿野和小黑的调查最终指向灵遥。后段钢铁厂的交手揭开了他与袭击案的联系，早先的关心，也让这个转折对小黑更难消化。",
+              "sources": [
+                "https://zh.wikipedia.org/wiki/罗小黑战记2"
+              ],
+              "evidence": "secondary + 观影解读",
+              "spoiler": true
+            }
+          ]
+        },
+        {
+          "title": "他担心的未来，成了别人的眼前危险",
+          "items": [
+            {
+              "text": "灵遥把人类力量发展视作妖精的威胁，试图用冲突推动会馆转向强硬。他的恐惧与他选择的办法，并不能当作同一回事。",
+              "sources": [
+                "https://wyb.chinawriter.com.cn/attachment/202510/17/32a35476-337b-424f-a170-34f98bd56ccd.pdf"
+              ],
+              "evidence": "secondary + 观影解读",
+              "spoiler": true
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "src": "/art/characters/movie2/78aae70b1a9d131f.png",
+          "sha256": "78aae70b1a9d131f2c79254bea77cf3a1988d184c718e00da7ccc4ac63e88522",
+          "bytes": 145382,
+          "title": "灵遥·电影2官方立绘",
+          "description": "续作日本发行官网全身角色立绘。",
+          "sourceUrl": "https://luoxiaohei-movie.com/2nd/character/",
+          "modelingUse": "本作服装、站姿、头身比例和正面配色；不是完整三视图。",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；原作权利归原权利人，公开刊载不代表已获再分发、训练或商用许可。",
+          "licenseStatus": "版权保留，非开放训练或商用授权",
+          "kind": "电影《罗小黑战记2》（2025）"
+        }
+      ],
+      "role": "官网人物"
+    },
+    {
+      "id": "ximuzi",
+      "name": "西木子",
+      "summary": "西木子也是长老，和池年谈起人类时却不是一个态度。有人把敌意说得很直，他会劝住对方，不顺着把话继续往冲突上推。议事场合里，他的存在提醒人：同在会馆、同是妖精，也不代表每个人都站在一样的位置。",
+      "sources": [
+        "https://luoxiaohei-movie.com/2nd/character/",
+        "https://static.nfnews.com/content/202508/04/c11583794.html?enterColumnId=44177"
+      ],
+      "sections": [
+        {
+          "title": "长老并不只有一种主张",
+          "items": [
+            {
+              "text": "西木子和灵遥、池年同属会馆长老。面对人类的议题，他会规劝抱有敌意的妖精；同一个会馆里，分歧已经摆在桌上。",
+              "sources": [
+                "https://luoxiaohei-movie.com/2nd/character/"
+              ],
+              "evidence": "primary",
+              "spoiler": false
+            }
+          ]
+        },
+        {
+          "title": "劝住身边的人",
+          "items": [
+            {
+              "text": "他面对敌意时的处理是劝阻，而不是跟着加码。放在池年更强硬的主张旁边，两个人的差别在做事态度里就能看见。",
+              "sources": [
+                "https://luoxiaohei-movie.com/2nd/character/"
+              ],
+              "evidence": "primary + 观影解读",
+              "spoiler": false
+            }
+          ]
+        },
+        {
+          "title": "议事也影响后面的行动",
+          "items": [
+            {
+              "text": "主创说，亭中议事的段落不能删，因为少了这些谈话，世界观和矛盾就不完整。西木子所在的这一边，不只给战斗作背景，也决定会馆如何回应外面的事。",
+              "sources": [
+                "https://static.nfnews.com/content/202508/04/c11583794.html?enterColumnId=44177"
+              ],
+              "evidence": "primary interview + 观影解读",
+              "spoiler": false
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "src": "/art/characters/movie2/094a2267c8656e95.png",
+          "sha256": "094a2267c8656e950f8e30cbc8964cfaddc4bd7555345b367da8034e769ea2f6",
+          "bytes": 131995,
+          "title": "西木子·电影2官方立绘",
+          "description": "续作日本发行官网全身角色立绘。",
+          "sourceUrl": "https://luoxiaohei-movie.com/2nd/character/",
+          "modelingUse": "本作服装、站姿、头身比例和正面配色；不是完整三视图。",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；原作权利归原权利人，公开刊载不代表已获再分发、训练或商用许可。",
+          "licenseStatus": "版权保留，非开放训练或商用授权",
+          "kind": "电影《罗小黑战记2》（2025）"
+        }
+      ],
+      "role": "官网人物"
+    },
+    {
+      "id": "chinian",
+      "name": "池年",
+      "summary": "池年说人类是威胁，转头也真的会去做。他是会馆长老，主张用强硬办法对付人类，带着两个叫甲和乙的徒弟。可给徒弟起名随手到让鹿野吐槽，徒弟遇上飞机出事，又自己选择了救人。这个急着往前冲的师父，并没有把身边每个人都带成同一个样子。",
+      "sources": [
+        "https://luoxiaohei-movie.com/2nd/character/",
+        "https://static.nfnews.com/content/202508/04/c11583794.html?enterColumnId=44177"
+      ],
+      "sections": [
+        {
+          "title": "先摆明自己的主张",
+          "items": [
+            {
+              "text": "池年认为人类构成威胁，主张采取强硬手段。他不是说完就算；主创谈他时，也特意提到他的立场和很快付诸行动的习惯。",
+              "sources": [
+                "https://luoxiaohei-movie.com/2nd/character/",
+                "https://static.nfnews.com/content/202508/04/c11583794.html?enterColumnId=44177"
+              ],
+              "evidence": "primary + primary interview",
+              "spoiler": false
+            }
+          ]
+        },
+        {
+          "title": "徒弟就叫甲和乙",
+          "items": [
+            {
+              "text": "甲和乙是他的徒弟。名字起得简单，也被鹿野调侃。严肃的会馆长老，到了这些日常地方，反而露出一截不太会管徒弟的样子。",
+              "sources": [
+                "https://luoxiaohei-movie.com/2nd/character/",
+                "https://static.nfnews.com/content/202508/04/c11583794.html?enterColumnId=44177"
+              ],
+              "evidence": "primary + primary interview + 观影解读",
+              "spoiler": false
+            }
+          ]
+        },
+        {
+          "title": "徒弟也会自己作决定",
+          "items": [
+            {
+              "text": "飞机遇险时，甲和乙参与救人。主创谈到这段时，把他们的选择和池年不懂管教徒弟的粗线条联系起来；师父排斥人类，不等于徒弟遇险只能照抄立场。",
+              "sources": [
+                "https://static.nfnews.com/content/202508/04/c11583794.html?enterColumnId=44177"
+              ],
+              "evidence": "primary interview + 观影解读",
+              "spoiler": true
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "src": "/art/characters/movie2/d07c6442500c49dd.png",
+          "sha256": "d07c6442500c49ddc99aaa503a70fee61e1d5f61477fb934cffa48a79ba96653",
+          "bytes": 160431,
+          "title": "池年·电影2官方立绘",
+          "description": "续作日本发行官网全身角色立绘。",
+          "sourceUrl": "https://luoxiaohei-movie.com/2nd/character/",
+          "modelingUse": "本作服装、站姿、头身比例和正面配色；不是完整三视图。",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；原作权利归原权利人，公开刊载不代表已获再分发、训练或商用许可。",
+          "licenseStatus": "版权保留，非开放训练或商用授权",
+          "kind": "电影《罗小黑战记2》（2025）"
+        },
+        {
+          "src": "/art/characters/movie2/38c576da4fc054ef.jpg",
+          "sha256": "38c576da4fc054eff52e39f855ae3f9f7b9d3866a77ee06aed44376c030bb960",
+          "bytes": 369560,
+          "title": "池年·战斗中的全身",
+          "description": "池年位于画面中央，身旁有同伴与金属攻击效果。",
+          "sourceUrl": "https://gkids.com/films/the-legend-of-hei-2/",
+          "modelingUse": "长发、外袍张开后的轮廓及动作重心。",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；原作权利归原权利人，公开刊载不代表已获再分发、训练或商用许可。",
+          "licenseStatus": "版权保留，非开放训练或商用授权",
+          "kind": "电影《罗小黑战记2》（2025）"
+        },
+        {
+          "src": "/art/characters/movie2/ec558732a56e594a.jpg",
+          "sha256": "ec558732a56e594aa4410741980e29e837bb912eeaae4205ddca6ccb21fbf3ee",
+          "bytes": 19637,
+          "title": "池年·捏脸表情近景",
+          "description": "媒体主创专访配图，池年的脸被手捏住，眼神与头发清楚。",
+          "sourceUrl": "https://static.nfnews.com/content/202508/04/c11583794.html?enterColumnId=44177",
+          "modelingUse": "变形表情、脸颊与眉眼，不作为常规头模比例。",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；原作权利归原权利人，公开刊载不代表已获再分发、训练或商用许可。",
+          "licenseStatus": "版权保留，非开放训练或商用授权",
+          "kind": "电影《罗小黑战记2》（2025）"
+        }
+      ],
+      "role": "官网人物"
+    },
+    {
+      "id": "jiulao",
+      "name": "鸠老",
+      "summary": "鸠老仍在会馆做执行者。到了第二部，会馆不再只是小黑要去的地方，里面不同资历、不同职责的人也都露了面。他是其中很老资格的一位，能辨认妖精的能力属性；戴着醒目的面具，身上又是一套和其他人很不一样的衣装。",
+      "sources": [
+        "https://luoxiaohei-movie.com/2nd/character/"
+      ],
+      "sections": [
+        {
+          "title": "还是会馆的执行者",
+          "items": [
+            {
+              "text": "鸠老在续作官方名单里仍属于会馆执行者，资历很老。与长老、总馆长、各地馆长分开看，他在组织里的位置就更清楚。",
+              "sources": [
+                "https://luoxiaohei-movie.com/2nd/character/"
+              ],
+              "evidence": "primary",
+              "spoiler": false
+            }
+          ]
+        },
+        {
+          "title": "知道别人是哪一类本事",
+          "items": [
+            {
+              "text": "他能鉴定妖精能力的属性。会馆里不是每个人都只靠打斗办事，辨认和判断，也有人负责。",
+              "sources": [
+                "https://luoxiaohei-movie.com/2nd/character/"
+              ],
+              "evidence": "primary + 观影解读",
+              "spoiler": false
+            }
+          ]
+        },
+        {
+          "title": "不用摘掉面具也认得出来",
+          "items": [
+            {
+              "text": "续作全身图保留了他的醒目面具、红黑长衣和细长的身形。和池年、雨笛站在一起，轮廓很不一样。",
+              "sources": [
+                "https://luoxiaohei-movie.com/2nd/character/"
+              ],
+              "evidence": "scene observation",
+              "spoiler": false
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "src": "/art/characters/movie2/8ee474eab6c58b25.png",
+          "sha256": "8ee474eab6c58b25c1244f696f8971344d36a517ce639a8f94fc84445b02d6c5",
+          "bytes": 201754,
+          "title": "鸠老·电影2官方立绘",
+          "description": "续作日本发行官网全身角色立绘。",
+          "sourceUrl": "https://luoxiaohei-movie.com/2nd/character/",
+          "modelingUse": "本作服装、站姿、头身比例和正面配色；不是完整三视图。",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；原作权利归原权利人，公开刊载不代表已获再分发、训练或商用许可。",
+          "licenseStatus": "版权保留，非开放训练或商用授权",
+          "kind": "电影《罗小黑战记2》（2025）"
+        }
+      ],
+      "role": "官网人物"
+    },
+    {
+      "id": "panjing",
+      "name": "潘靖",
+      "summary": "潘靖是龙游会馆的馆长，负责和人类一方交涉。到了第二部，会馆遇袭，如何回应人类不再只是几个人的争论。把他和直接去打架的人放在一起看，就能看见会馆另一种工作：出了事，还得有人和外面说话、协商。",
+      "sources": [
+        "https://luoxiaohei-movie.com/2nd/character/",
+        "https://static.nfnews.com/content/202508/04/c11583794.html?enterColumnId=44177"
+      ],
+      "sections": [
+        {
+          "title": "管的是龙游会馆",
+          "items": [
+            {
+              "text": "续作官网直接给出了潘靖的名字和龙游馆长身份。他和统管全局的雨笛、长老们各有位置，并非都只是一个笼统的会馆负责人。",
+              "sources": [
+                "https://luoxiaohei-movie.com/2nd/character/"
+              ],
+              "evidence": "primary",
+              "spoiler": false
+            }
+          ]
+        },
+        {
+          "title": "和人类交涉也是职责",
+          "items": [
+            {
+              "text": "潘靖负责人类一方的交涉。会馆要维持共存，除了执行者出任务，也得有人把这些日常往来接住。",
+              "sources": [
+                "https://luoxiaohei-movie.com/2nd/character/"
+              ],
+              "evidence": "primary + 观影解读",
+              "spoiler": false
+            }
+          ]
+        },
+        {
+          "title": "会馆有不止一种工作",
+          "items": [
+            {
+              "text": "主创把各地分会馆比作维持两个种族关系的使馆。放在这个背景里，潘靖的交涉职责也比一个馆长称呼更具体。",
+              "sources": [
+                "https://static.nfnews.com/content/202508/04/c11583794.html?enterColumnId=44177"
+              ],
+              "evidence": "primary interview + 观影解读",
+              "spoiler": false
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "src": "/art/characters/movie2/c9de3ad37821d8a4.png",
+          "sha256": "c9de3ad37821d8a4702f4b14c4609b02ec0b43428e0bce3348f438777c9caa8c",
+          "bytes": 192498,
+          "title": "潘靖·电影2官方立绘",
+          "description": "续作日本发行官网全身角色立绘。",
+          "sourceUrl": "https://luoxiaohei-movie.com/2nd/character/",
+          "modelingUse": "本作服装、站姿、头身比例和正面配色；不是完整三视图。",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；原作权利归原权利人，公开刊载不代表已获再分发、训练或商用许可。",
+          "licenseStatus": "版权保留，非开放训练或商用授权",
+          "kind": "电影《罗小黑战记2》（2025）"
+        }
+      ],
+      "role": "官网人物"
+    },
+    {
+      "id": "jia",
+      "name": "甲",
+      "summary": "甲是池年的徒弟，名字简单得像师父随手排下来的顺序。他和乙一起跟着鹿野、小黑行动，起初带着监视的任务，可到了飞机上，又得和这两个人一起救人。出发时属于谁那一边，遇到危险时具体怎么做，并不是一回事。",
+      "sources": [
+        "https://luoxiaohei-movie.com/2nd/character/",
+        "https://static.nfnews.com/content/202508/04/c11583794.html?enterColumnId=44177",
+        "https://zh.wikipedia.org/wiki/罗小黑战记2",
+        "https://www.mgtv.com/h/765449/0.html"
+      ],
+      "sections": [
+        {
+          "title": "名字是师父起的",
+          "items": [
+            {
+              "text": "甲和乙都是池年的徒弟。两个名字也成了鹿野调侃池年的地方，关系还没讲多，师徒之间的日常味道就出来了。",
+              "sources": [
+                "https://luoxiaohei-movie.com/2nd/character/",
+                "https://static.nfnews.com/content/202508/04/c11583794.html?enterColumnId=44177"
+              ],
+              "evidence": "primary + primary interview + 观影解读",
+              "spoiler": false
+            }
+          ]
+        },
+        {
+          "title": "带着任务跟上师姐弟",
+          "items": [
+            {
+              "text": "会馆安排甲和乙跟随鹿野、小黑，留意他们的行动。起初双方带着戒备，随后却被同一场危险卷在一起。",
+              "sources": [
+                "https://zh.wikipedia.org/wiki/罗小黑战记2"
+              ],
+              "evidence": "secondary",
+              "spoiler": true
+            }
+          ]
+        },
+        {
+          "title": "先把飞机上的人救下来",
+          "items": [
+            {
+              "text": "飞机遇险时，甲和乙参与了救援。与其只按池年的立场给徒弟下结论，这场戏更值得看他们实际伸手帮了谁。",
+              "sources": [
+                "https://static.nfnews.com/content/202508/04/c11583794.html?enterColumnId=44177",
+                "https://www.mgtv.com/h/765449/0.html"
+              ],
+              "evidence": "primary interview + licensed clip headings + 观影解读",
+              "spoiler": true
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "src": "/art/characters/movie2/30646966692580e1.png",
+          "sha256": "30646966692580e1b17d25b40507261e37ee2a83276fa75c96d0ba8cf0146e3a",
+          "bytes": 102900,
+          "title": "甲·电影2官方立绘",
+          "description": "续作日本发行官网全身角色立绘。",
+          "sourceUrl": "https://luoxiaohei-movie.com/2nd/character/",
+          "modelingUse": "本作服装、站姿、头身比例和正面配色；不是完整三视图。",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；原作权利归原权利人，公开刊载不代表已获再分发、训练或商用许可。",
+          "licenseStatus": "版权保留，非开放训练或商用授权",
+          "kind": "电影《罗小黑战记2》（2025）"
+        },
+        {
+          "src": "/art/characters/movie2/a84a84da00fc762a.jpg",
+          "sha256": "a84a84da00fc762a603a08c6960913c20a5708f44a8ae1769c41f2127f09be18",
+          "bytes": 23703,
+          "title": "甲与同伴·飞机座位",
+          "description": "甲与乙在飞机座位上同框，一黑发一浅发。",
+          "sourceUrl": "https://static.nfnews.com/content/202508/04/c11583794.html?enterColumnId=44177",
+          "modelingUse": "本作夹克、手套、坐姿与同伴间相对比例。",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；原作权利归原权利人，公开刊载不代表已获再分发、训练或商用许可。",
+          "licenseStatus": "版权保留，非开放训练或商用授权",
+          "kind": "电影《罗小黑战记2》（2025）"
+        }
+      ],
+      "role": "官网人物"
+    },
+    {
+      "id": "yi",
+      "name": "乙",
+      "summary": "乙是池年的徒弟，名字简单得像师父随手排下来的顺序。他和甲一起跟着鹿野、小黑行动，起初带着监视的任务，可到了飞机上，又得和这两个人一起救人。出发时属于谁那一边，遇到危险时具体怎么做，并不是一回事。",
+      "sources": [
+        "https://luoxiaohei-movie.com/2nd/character/",
+        "https://static.nfnews.com/content/202508/04/c11583794.html?enterColumnId=44177",
+        "https://zh.wikipedia.org/wiki/罗小黑战记2",
+        "https://www.mgtv.com/h/765449/0.html"
+      ],
+      "sections": [
+        {
+          "title": "名字是师父起的",
+          "items": [
+            {
+              "text": "乙和甲都是池年的徒弟。两个名字也成了鹿野调侃池年的地方，关系还没讲多，师徒之间的日常味道就出来了。",
+              "sources": [
+                "https://luoxiaohei-movie.com/2nd/character/",
+                "https://static.nfnews.com/content/202508/04/c11583794.html?enterColumnId=44177"
+              ],
+              "evidence": "primary + primary interview + 观影解读",
+              "spoiler": false
+            }
+          ]
+        },
+        {
+          "title": "带着任务跟上师姐弟",
+          "items": [
+            {
+              "text": "会馆安排甲和乙跟随鹿野、小黑，留意他们的行动。起初双方带着戒备，随后却被同一场危险卷在一起。",
+              "sources": [
+                "https://zh.wikipedia.org/wiki/罗小黑战记2"
+              ],
+              "evidence": "secondary",
+              "spoiler": true
+            }
+          ]
+        },
+        {
+          "title": "先把飞机上的人救下来",
+          "items": [
+            {
+              "text": "飞机遇险时，乙和甲参与了救援。与其只按池年的立场给徒弟下结论，这场戏更值得看他们实际伸手帮了谁。",
+              "sources": [
+                "https://static.nfnews.com/content/202508/04/c11583794.html?enterColumnId=44177",
+                "https://www.mgtv.com/h/765449/0.html"
+              ],
+              "evidence": "primary interview + licensed clip headings + 观影解读",
+              "spoiler": true
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "src": "/art/characters/movie2/65a87439df14db70.png",
+          "sha256": "65a87439df14db70cc69211ad1605a54a9368ff80ee668aef92625a6ca07abee",
+          "bytes": 123354,
+          "title": "乙·电影2官方立绘",
+          "description": "续作日本发行官网全身角色立绘。",
+          "sourceUrl": "https://luoxiaohei-movie.com/2nd/character/",
+          "modelingUse": "本作服装、站姿、头身比例和正面配色；不是完整三视图。",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；原作权利归原权利人，公开刊载不代表已获再分发、训练或商用许可。",
+          "licenseStatus": "版权保留，非开放训练或商用授权",
+          "kind": "电影《罗小黑战记2》（2025）"
+        },
+        {
+          "src": "/art/characters/movie2/a84a84da00fc762a.jpg",
+          "sha256": "a84a84da00fc762a603a08c6960913c20a5708f44a8ae1769c41f2127f09be18",
+          "bytes": 23703,
+          "title": "乙与同伴·飞机座位",
+          "description": "甲与乙在飞机座位上同框，一黑发一浅发。",
+          "sourceUrl": "https://static.nfnews.com/content/202508/04/c11583794.html?enterColumnId=44177",
+          "modelingUse": "本作夹克、手套、坐姿与同伴间相对比例。",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；原作权利归原权利人，公开刊载不代表已获再分发、训练或商用许可。",
+          "licenseStatus": "版权保留，非开放训练或商用授权",
+          "kind": "电影《罗小黑战记2》（2025）"
+        }
+      ],
+      "role": "官网人物"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "candidate-candidate-185643",
+      "name": "黑咻",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/185643"
+      ]
+    },
+    {
+      "id": "candidate-candidate-181332",
+      "name": "泽宇",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/181332"
+      ]
+    },
+    {
+      "id": "candidate-candidate-181338",
+      "name": "皆逆荒",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/181338"
+      ]
+    },
+    {
+      "id": "candidate-candidate-181348",
+      "name": "浩客",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/181348"
+      ]
+    },
+    {
+      "id": "candidate-candidate-181349",
+      "name": "莽眼",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/181349"
+      ]
+    },
+    {
+      "id": "candidate-candidate-181350",
+      "name": "镜云",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/181350"
+      ]
+    },
+    {
+      "id": "candidate-candidate-181351",
+      "name": "小绿",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/181351"
+      ]
+    },
+    {
+      "id": "candidate-candidate-181352",
+      "name": "大松",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/181352"
+      ]
+    },
+    {
+      "id": "candidate-candidate-181353",
+      "name": "肄目",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/181353"
+      ]
+    },
+    {
+      "id": "candidate-candidate-190592",
+      "name": "西地",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/190592"
+      ]
+    },
+    {
+      "id": "candidate-candidate-190593",
+      "name": "天心",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/190593"
+      ]
+    },
+    {
+      "id": "candidate-candidate-190595",
+      "name": "郑信毅",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/190595"
+      ]
+    },
+    {
+      "id": "candidate-candidate-190596",
+      "name": "大须",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/190596"
+      ]
+    },
+    {
+      "id": "candidate-candidate-190597",
+      "name": "鬼镰",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/190597"
+      ]
+    },
+    {
+      "id": "candidate-candidate-190598",
+      "name": "鹤天",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/190598"
+      ]
+    },
+    {
+      "id": "candidate-candidate-190599",
+      "name": "鳄鱼",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/190599"
+      ]
+    },
+    {
+      "id": "candidate-candidate-190600",
+      "name": "芷清",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/190600"
+      ]
+    },
+    {
+      "id": "candidate-candidate-190601",
+      "name": "洛",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/190601"
+      ]
+    },
+    {
+      "id": "candidate-candidate-190603",
+      "name": "余",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/190603"
+      ]
+    },
+    {
+      "id": "candidate-candidate-190604",
+      "name": "空空",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/190604"
+      ]
+    },
+    {
+      "id": "candidate-candidate-190605",
+      "name": "丁",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/190605"
+      ]
+    },
+    {
+      "id": "candidate-candidate-190606",
+      "name": "秋辞",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/190606"
+      ]
+    },
+    {
+      "id": "candidate-candidate-191504",
+      "name": "司令",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/191504"
+      ]
+    },
+    {
+      "id": "candidate-candidate-191505",
+      "name": "夏雨",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/191505"
+      ]
+    },
+    {
+      "id": "candidate-candidate-191506",
+      "name": "江泠",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/191506"
+      ]
+    },
+    {
+      "id": "candidate-candidate-193375",
+      "name": "副队",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/193375"
+      ]
+    },
+    {
+      "id": "candidate-candidate-193377",
+      "name": "部长",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/193377"
+      ]
+    },
+    {
+      "id": "candidate-candidate-193378",
+      "name": "记录员",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/193378"
+      ]
+    },
+    {
+      "id": "candidate-candidate-193379",
+      "name": "机长",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/193379"
+      ]
+    },
+    {
+      "id": "candidate-candidate-193380",
+      "name": "副机长",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/193380"
+      ]
+    },
+    {
+      "id": "candidate-candidate-193384",
+      "name": "大志",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/193384"
+      ]
+    },
+    {
+      "id": "candidate-candidate-193386",
+      "name": "空乘",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/193386"
+      ]
+    },
+    {
+      "id": "candidate-candidate-193388",
+      "name": "静一",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/193388"
+      ]
+    },
+    {
+      "id": "candidate-candidate-193389",
+      "name": "清泉",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/193389"
+      ]
+    },
+    {
+      "id": "candidate-candidate-193392",
+      "name": "明月",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/193392"
+      ]
+    },
+    {
+      "id": "candidate-candidate-193393",
+      "name": "阿吉",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/193393"
+      ]
+    },
+    {
+      "id": "candidate-candidate-193395",
+      "name": "紫实",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/193395"
+      ]
+    },
+    {
+      "id": "candidate-candidate-190831",
+      "name": "阎明",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/190831"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208518",
+      "name": "青峰",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208518"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208519",
+      "name": "希声",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208519"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208520",
+      "name": "玄止",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208520"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208535",
+      "name": "乞峰",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208535"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208536",
+      "name": "白宜",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208536"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208537",
+      "name": "鲁伊",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208537"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208538",
+      "name": "黑阳",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208538"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208539",
+      "name": "南歌",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208539"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208540",
+      "name": "佳柒",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208540"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208541",
+      "name": "木炎",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208541"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208542",
+      "name": "晓月",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208542"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208543",
+      "name": "叁拾",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208543"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208544",
+      "name": "辛绝",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208544"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208545",
+      "name": "昊天",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208545"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208546",
+      "name": "绝文",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208546"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208547",
+      "name": "厌骨",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208547"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208548",
+      "name": "暮影",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208548"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208549",
+      "name": "鬼辰",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208549"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208550",
+      "name": "蓝玉",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208550"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208551",
+      "name": "樊陪",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208551"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208552",
+      "name": "咪咪",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208552"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208553",
+      "name": "阿良",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208553"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208554",
+      "name": "肖符",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208554"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208555",
+      "name": "星月",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208555"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208556",
+      "name": "心缘",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208556"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208557",
+      "name": "稀碎",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208557"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208558",
+      "name": "沐夜",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208558"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208559",
+      "name": "斑臂",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208559"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208560",
+      "name": "白鬃",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208560"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208561",
+      "name": "莉澄",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208561"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208562",
+      "name": "凌铜",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208562"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208628",
+      "name": "火花",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208628"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208630",
+      "name": "小玉",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208630"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208651",
+      "name": "归月",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208651"
+      ]
+    },
+    {
+      "id": "candidate-candidate-208652",
+      "name": "晴岚",
+      "summary": "社区关联目录收录；尚未逐集核对出场、身份和中文配音。",
+      "sources": [
+        "https://bangumi.tv/subject/442114/characters",
+        "https://bangumi.tv/character/208652"
+      ]
+    }
+  ],
+  "media": [
+    {
+      "id": "movie2-official-voice",
+      "title": "声音是这样炼成的！",
+      "url": "https://www.bilibili.com/bangumi/play/ep2703577",
+      "publisher": "哔哩哔哩电影",
+      "kind": "配音特辑",
+      "platform": "bilibili",
+      "videoId": null,
+      "bvid": "BV1cnupz6Ekd",
+      "epId": 2703577,
+      "language": "zh-CN-unlistened",
+      "languageEvidence": "中文原版平台及中文配音名单；实际音轨未实听",
+      "verifiedListening": false,
+      "startSeconds": null,
+      "endSeconds": null,
+      "quote": null,
+      "quoteSpeaker": null,
+      "description": "配音演员与创作者谈录制幕后，包含多位角色。 逐句台词与时间码尚未校听。"
+    },
+    {
+      "id": "movie2-official-final-trailer",
+      "title": "并肩作战！超燃一夏！",
+      "url": "https://www.bilibili.com/bangumi/play/ep2703574",
+      "publisher": "哔哩哔哩电影",
+      "kind": "官方预告",
+      "platform": "bilibili",
+      "videoId": null,
+      "bvid": "BV1qeGpzrEPc",
+      "epId": 2703574,
+      "language": "zh-CN-unlistened",
+      "languageEvidence": "中文原版平台及中文配音名单；实际音轨未实听",
+      "verifiedListening": false,
+      "startSeconds": null,
+      "endSeconds": null,
+      "quote": null,
+      "quoteSpeaker": null,
+      "description": "发行方公开的本篇预告，可在原平台回看。 逐句台词与时间码尚未校听。"
+    },
+    {
+      "id": "movie2-official-feature",
+      "title": "罗小黑战记2 正片",
+      "url": "https://www.bilibili.com/bangumi/play/ep2243434",
+      "publisher": "哔哩哔哩电影",
+      "kind": "正版正片入口",
+      "platform": "bilibili",
+      "videoId": null,
+      "bvid": null,
+      "epId": 2243434,
+      "language": "zh-CN-unlistened",
+      "languageEvidence": "中文原版平台及中文配音名单；实际音轨未实听",
+      "verifiedListening": false,
+      "startSeconds": null,
+      "endSeconds": null,
+      "quote": null,
+      "quoteSpeaker": null,
+      "description": "正版剧集或电影回看，可能需要登录、会员或受地区限制。 逐句台词与时间码尚未校听。"
+    },
+    {
+      "id": "movie2-encore-malaysia",
+      "title": "《罗小黑战记2》马来西亚官方预告",
+      "url": "https://www.youtube.com/watch?v=Ge8dkfgh34g",
+      "publisher": "Encore Films Malaysia",
+      "kind": "官方预告",
+      "platform": "youtube",
+      "videoId": "Ge8dkfgh34g",
+      "bvid": null,
+      "epId": null,
+      "language": "zh-CN-unlistened",
+      "languageEvidence": "Encore发行方官网明确影片Language: Mandarin；视频自身未提供language字段/字幕，未实听。",
+      "verifiedListening": false,
+      "startSeconds": null,
+      "endSeconds": null,
+      "quote": null,
+      "quoteSpeaker": null,
+      "description": "发行方公开的本篇预告，可在原平台回看。 逐句台词与时间码尚未校听。"
+    }
+  ],
+  "sources": [
+    "https://col.com/article/1939538595891085312",
+    "https://luoxiaohei-movie.com/2nd/",
+    "https://www.bilibili.com/bangumi/play/ss90209",
+    "https://luoxiaohei-movie.com/2nd/character/"
+  ],
+  "limitations": [
+    "这是本轮有界收集的有来源目录，不称影片全部人物已经官方核完。",
+    "社区把组织妖灵会馆当作角色条目，本轮明确排除该条。",
+    "群众/客串角色的名字、配音、正片或片尾出现位置，没有逐帧对片核实。",
+    "中文CV多数得到正版演员名单存在性佐证，角色映射仍有部分只靠二手演职员转录，不能统一标官方已核。",
+    "没有下载整片或模型权重，没有克隆声音，也未采集声音样本；所有引语/时间码为空。",
+    "人物能力只用本作官方页明确内容，灵遥重大反转来自二手剧情且单独标剧透。",
+    "各图片保留版本与权利状态；公开可看不等于获得素材再分发或声音训练许可。",
+    "本地研究图在/tmp，产品提交是否带图由根任务按已有版权说明与用户授权判断。",
+    "本环境原生音频输入明确返回 audio content omitted because you do not support audio input，因而没有实际听辨任何台词。",
+    "不把中文标题、中文配音表、Mandarin发行信息当作已经实听音轨的证明。所有记录verifiedListening=false，不填写臆测的角色台词、起止时间。",
+    "只链接正版平台/公开宣传，不下载整部电影或正片，不绕登录、地区与会员限制，不安装新增音频模型。"
+  ]
+}
