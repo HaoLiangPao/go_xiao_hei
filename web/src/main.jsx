@@ -909,7 +909,7 @@ function App() {
       />
       <footer className="game-footer">
         <span>没有倒计时，慢慢来。</span>
-        <span>非官方二创 · 原创小片段</span>
+        <span>非官方二创 · <a className="world-entry" href="/world/">去像素街区散步</a></span>
       </footer>
       <dialog
         ref={dialogRef}
