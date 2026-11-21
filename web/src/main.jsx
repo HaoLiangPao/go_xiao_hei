@@ -909,6 +909,7 @@ function App() {
       />
       <footer className="game-footer">
         <span>没有倒计时，慢慢来。</span>
+        <a className="model-entry" href="/models/">角色小工坊</a>
         <span>非官方二创 · 原创小片段</span>
       </footer>
       <dialog
