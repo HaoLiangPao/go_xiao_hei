@@ -1,0 +1,118 @@
+{
+  "id": "xiaobai",
+  "name": "罗小白",
+  "subtitle": "和朋友一起，走进新的故事。",
+  "summary": "小白是把受伤的小黑带回家的女孩。到了众生之门，她没有只在屏幕外看小黑冒险，而是和山新、阿根一起登录游戏。开头大家手忙脚乱，她也得从最基本的规则学起；被狼群围住的时候，她终于成功放出了火。游戏里当然有强弱、等级和输赢，可她和小黑的关系没有变成谁带谁刷分：小黑后来最难过的，就是没能保护好她和其他伙伴。那个以前捡猫回家的小姑娘，这次成了和小黑站在同一个队伍里的人。",
+  "accent": "#6d8461",
+  "basics": [
+    {
+      "label": "本页作品",
+      "value": "罗小黑战记 · 众生之门篇"
+    },
+    {
+      "label": "参考图",
+      "value": "5张（保留原始合照）"
+    },
+    {
+      "label": "原声",
+      "value": "正版入口回看，逐句台词待校听"
+    }
+  ],
+  "aliases": [
+    "小白"
+  ],
+  "checkedAt": "2026-11-21",
+  "eraLabel": "2021 · CAT.29–40",
+  "heroRef": 0,
+  "sections": [
+    {
+      "title": "在这一篇里",
+      "items": [
+        {
+          "text": "小白是把受伤的小黑带回家的女孩。到了众生之门，她没有只在屏幕外看小黑冒险，而是和山新、阿根一起登录游戏。开头大家手忙脚乱，她也得从最基本的规则学起；被狼群围住的时候，她终于成功放出了火。游戏里当然有强弱、等级和输赢，可她和小黑的关系没有变成谁带谁刷分：小黑后来最难过的，就是没能保护好她和其他伙伴。那个以前捡猫回家的小姑娘，这次成了和小黑站在同一个队伍里的人。",
+          "sources": [
+            "https://luoxiaohei-movie.com/tv/character/",
+            "https://luoxiaohei-movie.com/tv/episode/?id=10",
+            "https://luoxiaohei-movie.com/tv/episode/?id=12",
+            "https://luoxiaohei-movie.com/tv/episode/?id=13"
+          ],
+          "evidence": "official-synopsis",
+          "spoiler": false
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "src": "/art/characters/zhongsheng/b0f9985f413905f7.jpg",
+      "sha256": "b0f9985f413905f78a27545f0fcafc6a6925eab14ba5ab05cc096564b913a33e",
+      "bytes": 51229,
+      "title": "罗小白·官方TV人物页图",
+      "description": "该人物官方TV角色配图，属于通用TV形象。",
+      "sourceUrl": "https://luoxiaohei-movie.com/tv/character/",
+      "modelingUse": "对照原TV服装、脸形、发型与姿态；合照不等于单角色立绘，未提供完整三视图。",
+      "credit": "©2025 Beijing HMCH Anime Co.,Ltd；官方页禁止未经许可使用；记录出处不代表再分发或训练授权。",
+      "licenseStatus": "版权保留，非开放训练或商用授权",
+      "kind": "原TV剧集；2025日本重编版官方图"
+    },
+    {
+      "src": "/art/characters/zhongsheng/8bbf18cdb660707d.jpg",
+      "sha256": "8bbf18cdb660707d1d8ccb2f7e8ec6245674c3e2f4e4755f8efcaab7a7ca8164",
+      "bytes": 88505,
+      "title": "罗小白·CAT.29官方分集剧照",
+      "description": "本篇四人组游戏场景，含罗小白；保留完整合照，不把其他角色裁掉假充立绘。",
+      "sourceUrl": "https://luoxiaohei-movie.com/tv/episode/?id=10",
+      "modelingUse": "对照原TV服装、脸形、发型与姿态；合照不等于单角色立绘，未提供完整三视图。",
+      "credit": "©2025 Beijing HMCH Anime Co.,Ltd；官方页禁止未经许可使用；记录出处不代表再分发或训练授权。",
+      "licenseStatus": "版权保留，非开放训练或商用授权",
+      "kind": "原TV剧集；2025日本重编版官方图"
+    },
+    {
+      "src": "/art/characters/zhongsheng/15293741fd08e305.jpg",
+      "sha256": "15293741fd08e305f1f5d8ca856d15168fa72c2aa2007b3af05b60e5a95e9ea0",
+      "bytes": 250703,
+      "title": "罗小白·CAT.30官方分集剧照",
+      "description": "本篇四人组游戏场景，含罗小白；保留完整合照，不把其他角色裁掉假充立绘。",
+      "sourceUrl": "https://luoxiaohei-movie.com/tv/episode/?id=10",
+      "modelingUse": "对照原TV服装、脸形、发型与姿态；合照不等于单角色立绘，未提供完整三视图。",
+      "credit": "©2025 Beijing HMCH Anime Co.,Ltd；官方页禁止未经许可使用；记录出处不代表再分发或训练授权。",
+      "licenseStatus": "版权保留，非开放训练或商用授权",
+      "kind": "原TV剧集；2025日本重编版官方图"
+    },
+    {
+      "src": "/art/characters/zhongsheng/8fd565d502e0f5af.jpg",
+      "sha256": "8fd565d502e0f5afaea3aca9bb70664d46d53d124775b77406a0738094785fd4",
+      "bytes": 332704,
+      "title": "罗小白·CAT.31官方分集剧照",
+      "description": "本篇四人组游戏场景，含罗小白；保留完整合照，不把其他角色裁掉假充立绘。",
+      "sourceUrl": "https://luoxiaohei-movie.com/tv/episode/?id=10",
+      "modelingUse": "对照原TV服装、脸形、发型与姿态；合照不等于单角色立绘，未提供完整三视图。",
+      "credit": "©2025 Beijing HMCH Anime Co.,Ltd；官方页禁止未经许可使用；记录出处不代表再分发或训练授权。",
+      "licenseStatus": "版权保留，非开放训练或商用授权",
+      "kind": "原TV剧集；2025日本重编版官方图"
+    },
+    {
+      "src": "/art/characters/zhongsheng/7addcfa62dd0f427.jpg",
+      "sha256": "7addcfa62dd0f427d5a956c871d2ea552e5f29705000f618d69d5f84312fccc0",
+      "bytes": 290360,
+      "title": "罗小白·CAT.33官方分集剧照",
+      "description": "本篇四人组游戏场景，含罗小白；保留完整合照，不把其他角色裁掉假充立绘。",
+      "sourceUrl": "https://luoxiaohei-movie.com/tv/episode/?id=11",
+      "modelingUse": "对照原TV服装、脸形、发型与姿态；合照不等于单角色立绘，未提供完整三视图。",
+      "credit": "©2025 Beijing HMCH Anime Co.,Ltd；官方页禁止未经许可使用；记录出处不代表再分发或训练授权。",
+      "licenseStatus": "版权保留，非开放训练或商用授权",
+      "kind": "原TV剧集；2025日本重编版官方图"
+    }
+  ],
+  "uncertainties": [
+    "参考图保留原作画面，合照不是单人物三视图；未经核听不引用逐字台词。"
+  ],
+  "rights": "非官方资料整理，原图及人物版权归原权利人。公开刊载不代表开放训练或商用授权。",
+  "collectionId": "zhongsheng",
+  "chineseVoiceActor": null,
+  "voiceSources": [],
+  "appearanceNote": {
+    "label": "这一篇的记录",
+    "text": "原版CAT.29–40，共12集。五位核心人物可由官方本篇梗概核对；其余简介逐条区分二级资料、通用TV背景与本篇出场待核。日本重编版第10–13话并非中国原版集号。"
+  }
+}

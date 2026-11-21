@@ -1,0 +1,118 @@
+{
+  "id": "agen",
+  "name": "阿根",
+  "subtitle": "和朋友一起，走进新的故事。",
+  "summary": "阿根是小白的表哥，平时跟爷爷住在乡下。他懂妖精的事，自己也能用冰，却不是进了众生之门就什么都懂。和小黑、小白、山新组队后，他一面跟着大家试规则，一面把原有的能力用进游戏里的战斗。到了“45级门槛”的混战，小黑和他成了队伍撑住场面的主力；更强的玩家接连赶来，四个人仍然会陷入苦战。他既是小白熟悉的哥哥，也是和朋友一起研究新游戏、认真帮队伍过关的玩家。",
+  "accent": "#6d8461",
+  "basics": [
+    {
+      "label": "本页作品",
+      "value": "罗小黑战记 · 众生之门篇"
+    },
+    {
+      "label": "参考图",
+      "value": "5张（保留原始合照）"
+    },
+    {
+      "label": "原声",
+      "value": "正版入口回看，逐句台词待校听"
+    }
+  ],
+  "aliases": [
+    "罗根",
+    "阿根"
+  ],
+  "checkedAt": "2026-11-21",
+  "eraLabel": "2021 · CAT.29–40",
+  "heroRef": 0,
+  "sections": [
+    {
+      "title": "在这一篇里",
+      "items": [
+        {
+          "text": "阿根是小白的表哥，平时跟爷爷住在乡下。他懂妖精的事，自己也能用冰，却不是进了众生之门就什么都懂。和小黑、小白、山新组队后，他一面跟着大家试规则，一面把原有的能力用进游戏里的战斗。到了“45级门槛”的混战，小黑和他成了队伍撑住场面的主力；更强的玩家接连赶来，四个人仍然会陷入苦战。他既是小白熟悉的哥哥，也是和朋友一起研究新游戏、认真帮队伍过关的玩家。",
+          "sources": [
+            "https://luoxiaohei-movie.com/tv/character/",
+            "https://luoxiaohei-movie.com/tv/episode/?id=10",
+            "https://luoxiaohei-movie.com/tv/episode/?id=13"
+          ],
+          "evidence": "official-synopsis",
+          "spoiler": false
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "src": "/art/characters/zhongsheng/88f09a8bf40a6b1a.jpg",
+      "sha256": "88f09a8bf40a6b1a3313e79e42832371fc5b69136c5e3ee3c84cda09e1537084",
+      "bytes": 76704,
+      "title": "阿根·官方TV人物页图",
+      "description": "该人物官方TV角色配图，属于通用TV形象。",
+      "sourceUrl": "https://luoxiaohei-movie.com/tv/character/",
+      "modelingUse": "对照原TV服装、脸形、发型与姿态；合照不等于单角色立绘，未提供完整三视图。",
+      "credit": "©2025 Beijing HMCH Anime Co.,Ltd；官方页禁止未经许可使用；记录出处不代表再分发或训练授权。",
+      "licenseStatus": "版权保留，非开放训练或商用授权",
+      "kind": "原TV剧集；2025日本重编版官方图"
+    },
+    {
+      "src": "/art/characters/zhongsheng/8bbf18cdb660707d.jpg",
+      "sha256": "8bbf18cdb660707d1d8ccb2f7e8ec6245674c3e2f4e4755f8efcaab7a7ca8164",
+      "bytes": 88505,
+      "title": "阿根·CAT.29官方分集剧照",
+      "description": "本篇四人组游戏场景，含阿根；保留完整合照，不把其他角色裁掉假充立绘。",
+      "sourceUrl": "https://luoxiaohei-movie.com/tv/episode/?id=10",
+      "modelingUse": "对照原TV服装、脸形、发型与姿态；合照不等于单角色立绘，未提供完整三视图。",
+      "credit": "©2025 Beijing HMCH Anime Co.,Ltd；官方页禁止未经许可使用；记录出处不代表再分发或训练授权。",
+      "licenseStatus": "版权保留，非开放训练或商用授权",
+      "kind": "原TV剧集；2025日本重编版官方图"
+    },
+    {
+      "src": "/art/characters/zhongsheng/15293741fd08e305.jpg",
+      "sha256": "15293741fd08e305f1f5d8ca856d15168fa72c2aa2007b3af05b60e5a95e9ea0",
+      "bytes": 250703,
+      "title": "阿根·CAT.30官方分集剧照",
+      "description": "本篇四人组游戏场景，含阿根；保留完整合照，不把其他角色裁掉假充立绘。",
+      "sourceUrl": "https://luoxiaohei-movie.com/tv/episode/?id=10",
+      "modelingUse": "对照原TV服装、脸形、发型与姿态；合照不等于单角色立绘，未提供完整三视图。",
+      "credit": "©2025 Beijing HMCH Anime Co.,Ltd；官方页禁止未经许可使用；记录出处不代表再分发或训练授权。",
+      "licenseStatus": "版权保留，非开放训练或商用授权",
+      "kind": "原TV剧集；2025日本重编版官方图"
+    },
+    {
+      "src": "/art/characters/zhongsheng/8fd565d502e0f5af.jpg",
+      "sha256": "8fd565d502e0f5afaea3aca9bb70664d46d53d124775b77406a0738094785fd4",
+      "bytes": 332704,
+      "title": "阿根·CAT.31官方分集剧照",
+      "description": "本篇四人组游戏场景，含阿根；保留完整合照，不把其他角色裁掉假充立绘。",
+      "sourceUrl": "https://luoxiaohei-movie.com/tv/episode/?id=10",
+      "modelingUse": "对照原TV服装、脸形、发型与姿态；合照不等于单角色立绘，未提供完整三视图。",
+      "credit": "©2025 Beijing HMCH Anime Co.,Ltd；官方页禁止未经许可使用；记录出处不代表再分发或训练授权。",
+      "licenseStatus": "版权保留，非开放训练或商用授权",
+      "kind": "原TV剧集；2025日本重编版官方图"
+    },
+    {
+      "src": "/art/characters/zhongsheng/3bd60743c2feaaa7.jpg",
+      "sha256": "3bd60743c2feaaa7d7b7d7d336ff829617de0592042734237141f94fd09a42c9",
+      "bytes": 257861,
+      "title": "阿根·CAT.32官方分集剧照",
+      "description": "本篇四人组游戏场景，含阿根；保留完整合照，不把其他角色裁掉假充立绘。",
+      "sourceUrl": "https://luoxiaohei-movie.com/tv/episode/?id=11",
+      "modelingUse": "对照原TV服装、脸形、发型与姿态；合照不等于单角色立绘，未提供完整三视图。",
+      "credit": "©2025 Beijing HMCH Anime Co.,Ltd；官方页禁止未经许可使用；记录出处不代表再分发或训练授权。",
+      "licenseStatus": "版权保留，非开放训练或商用授权",
+      "kind": "原TV剧集；2025日本重编版官方图"
+    }
+  ],
+  "uncertainties": [
+    "参考图保留原作画面，合照不是单人物三视图；未经核听不引用逐字台词。"
+  ],
+  "rights": "非官方资料整理，原图及人物版权归原权利人。公开刊载不代表开放训练或商用授权。",
+  "collectionId": "zhongsheng",
+  "chineseVoiceActor": null,
+  "voiceSources": [],
+  "appearanceNote": {
+    "label": "这一篇的记录",
+    "text": "原版CAT.29–40，共12集。五位核心人物可由官方本篇梗概核对；其余简介逐条区分二级资料、通用TV背景与本篇出场待核。日本重编版第10–13话并非中国原版集号。"
+  }
+}
