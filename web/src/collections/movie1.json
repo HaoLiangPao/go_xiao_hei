@@ -1,0 +1,1170 @@
+{
+  "id": "movie1",
+  "order": 1,
+  "title": "罗小黑战记 · 第一部电影",
+  "year": "2019",
+  "intro": "从一座岛，到一段有人陪着走的路。先认识小黑遇见的这些人。",
+  "scope": "首部电影官网有10个人物专页；另收录官方配音表与1905演职员资料中的9条角色记录。19条是目前有出处的具名记录，不等于全部背景人物，也不代表每人都有完整介绍。",
+  "checkedAt": "2026-11-21",
+  "characters": [
+    {
+      "id": "xiaohei",
+      "name": "小黑",
+      "role": "官网人物",
+      "summary": "小黑的家被毁了，才开始在城里流浪。风息把他带上岛，有人一起吃饭，也终于有地方睡觉，他很快就把这里当成了家。所以无限上岛抓人时，小黑先站在风息身边。后来他被无限带走，才发现自己要重新认识这个人，也重新想想该相信谁。",
+      "sources": [
+        "https://luoxiaohei-movie.com/1st/character/?page=chara01",
+        "https://luoxiaohei-movie.com/1st/staffcast/"
+      ],
+      "sections": [
+        {
+          "title": "岛上终于有人接住他",
+          "items": [
+            {
+              "text": "风息收留了无处可去的小黑，把他介绍给岛上的朋友。洛竹提议办欢迎会，他也有了能住下的地方。这些很小的事，让刚刚还在流浪的小黑很快把岛上当成了家。",
+              "sources": [
+                "https://luoxiaohei-movie.com/1st/character/?page=chara01",
+                "https://luoxiaohei-movie.com/1st/character/?page=chara03",
+                "https://luoxiaohei-movie.com/1st/character/?page=chara05"
+              ],
+              "evidence": "primary + 观影解读",
+              "spoiler": false
+            }
+          ]
+        },
+        {
+          "title": "被带走以后，开始学本事",
+          "items": [
+            {
+              "text": "无限要带他去会馆，小黑一路都在接触自己不熟悉的人和事。两人都有金属性和空间系能力，小黑跟着学着控制力量。他仍然喜欢吃人类的食物，对人的认识也在这一路慢慢改变。",
+              "sources": [
+                "https://luoxiaohei-movie.com/1st/character/?page=chara01",
+                "https://luoxiaohei-movie.com/1st/character/?page=chara02",
+                "https://www.youtube.com/watch?v=4K0aNytM5jI"
+              ],
+              "evidence": "primary",
+              "spoiler": false
+            }
+          ]
+        },
+        {
+          "title": "最后拜谁为师",
+          "items": [
+            {
+              "text": "风息夺走他的领域，伤害了这个曾经信任他的孩子。小黑后来重新掌握力量，和无限一起阻止事态恶化，最后拜无限为师。一路上别人都在带他走，到这里，他自己作了决定。",
+              "sources": [
+                "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)"
+              ],
+              "evidence": "secondary + 观影解读",
+              "spoiler": true
+            }
+          ]
+        }
+      ],
+      "voiceActor": "山新",
+      "references": [
+        {
+          "title": "人形与猫形正面全身",
+          "imageUrl": "https://luoxiaohei-movie.com/1st/assets/img/character/chara_01.png",
+          "sourceUrl": "https://luoxiaohei-movie.com/1st/character/",
+          "description": "同一张立绘同时包含人形与黑猫形态。",
+          "modelingUse": "核对猫耳、绿色内耳、头身比、交领上衣、绑腿与猫形基础比例。",
+          "src": "/art/characters/xiaohei/reference-1.png",
+          "kind": "官方角色立绘",
+          "credit": "© 北京寒木春华动画技术有限公司 · 官方发布的原作图像",
+          "licenseStatus": "保留版权；未确认开放再分发、训练或商业使用许可",
+          "evidence": "官方页面已视觉核对",
+          "sha256": "7b0909c37cbffa52276f79a5d1973dac6d0b0a892e363769404662ab4ddbebf2",
+          "bytes": 62059
+        },
+        {
+          "title": "人形斜侧脸·夜间暖光",
+          "imageUrl": "https://luoxiaohei-movie.com/1st/assets/img/character/photo_01-1.jpg",
+          "sourceUrl": "https://luoxiaohei-movie.com/1st/character/",
+          "description": "暖色夜景中的斜侧脸近景，手在颈前。",
+          "modelingUse": "观察脸颊轮廓、鼻口极简结构、耳朵和发束层次；暖光不能当作固有色。",
+          "src": "/art/characters/xiaohei/reference-2.jpg",
+          "kind": "官方电影剧照",
+          "credit": "© 北京寒木春华动画技术有限公司 · 官方发布的原作图像",
+          "licenseStatus": "保留版权；未确认开放再分发、训练或商业使用许可",
+          "evidence": "官方页面已视觉核对",
+          "sha256": "6d4833a66d85c8ae7d666160160690e9d2e2a79501b2d39aa5400d36d84a3428",
+          "bytes": 91803
+        },
+        {
+          "title": "人形背侧·餐桌动作",
+          "imageUrl": "https://luoxiaohei-movie.com/1st/assets/img/character/photo_01-2.jpg",
+          "sourceUrl": "https://luoxiaohei-movie.com/1st/character/",
+          "description": "从背侧看坐姿进食，能见上衣背面、袖口、脸颊和手。",
+          "modelingUse": "补充背侧衣片、袖子与手臂在动作中的关系，不能替代完整背面三视图。",
+          "src": "/art/characters/xiaohei/reference-3.jpg",
+          "kind": "官方电影剧照",
+          "credit": "© 北京寒木春华动画技术有限公司 · 官方发布的原作图像",
+          "licenseStatus": "保留版权；未确认开放再分发、训练或商业使用许可",
+          "evidence": "官方页面已视觉核对",
+          "sha256": "31bbb8bfe4e7b5e7273bd696cca4a4e49454689d05d244b60fb66dfee71d6f25",
+          "bytes": 128346
+        },
+        {
+          "title": "猫形四分之三侧面与黑咻",
+          "imageUrl": "https://luoxiaohei-movie.com/1st/assets/img/character/photo_01-3.jpg",
+          "sourceUrl": "https://luoxiaohei-movie.com/1st/character/",
+          "description": "坐着的黑猫形小黑，旁有体积更小的黑咻。",
+          "modelingUse": "核对大眼、尖耳、四肢与躯干体积，区分猫形小黑和黑咻。",
+          "src": "/art/characters/xiaohei/reference-4.jpg",
+          "kind": "官方电影剧照",
+          "credit": "© 北京寒木春华动画技术有限公司 · 官方发布的原作图像",
+          "licenseStatus": "保留版权；未确认开放再分发、训练或商业使用许可",
+          "evidence": "官方页面已视觉核对",
+          "sha256": "cc82b1ecc131c79cdd9bd394a95980aaaf6c290d5e3a354ce74cf77972232d13",
+          "bytes": 151354
+        },
+        {
+          "title": "猫形趴卧与尾巴",
+          "imageUrl": "https://luoxiaohei-movie.com/tv/assets/img/chara_01.jpg",
+          "sourceUrl": "https://luoxiaohei-movie.com/tv/character/",
+          "description": "趴在垫子上的小黑，全身与尾巴可见。",
+          "modelingUse": "观察猫形趴卧时的躯干轮廓、眼脸比例、尾巴走势。",
+          "src": "/art/characters/xiaohei/reference-5.jpg",
+          "kind": "官方TV人物画面",
+          "credit": "© 北京寒木春华动画技术有限公司 · 官方发布的原作图像",
+          "licenseStatus": "保留版权；未确认开放再分发、训练或商业使用许可",
+          "evidence": "官方页面已视觉核对",
+          "sha256": "4be4f28597577e5361730ae2f7ebc9839e5b9f490f729d874835dd22fa84af8f",
+          "bytes": 51040
+        }
+      ]
+    },
+    {
+      "id": "wuxian",
+      "name": "无限",
+      "role": "官网人物",
+      "summary": "无限是人，在妖灵会馆做执行人。小黑第一次见他，他是来抓风息的，动手时也把小黑抓住了。可把孩子带走以后，他又开始教小黑控制能力。两人起初互不亲近，一路相处下来，小黑才认识了抓人之外的无限，最后愿意喊他师父。",
+      "sources": [
+        "https://luoxiaohei-movie.com/1st/character/?page=chara02",
+        "https://luoxiaohei-movie.com/1st/staffcast/"
+      ],
+      "sections": [
+        {
+          "title": "上岛是来抓人的",
+          "items": [
+            {
+              "text": "无限登岛追捕风息一行。风息等人脱身后，小黑落在他手里，他便带着小黑往会馆走。这段关系的开头，是一个想办完差事的大人，和一个不愿跟他走的孩子。",
+              "sources": [
+                "https://luoxiaohei-movie.com/1st/"
+              ],
+              "evidence": "primary + 观影解读",
+              "spoiler": false
+            }
+          ]
+        },
+        {
+          "title": "两个人的本事有相通的地方",
+          "items": [
+            {
+              "text": "无限和小黑都有金属性、空间系能力，所以他能教小黑怎样控制力量。旅途给了他们相处的时间，小黑对他的印象也不再停在岛上的那场冲突里。",
+              "sources": [
+                "https://luoxiaohei-movie.com/1st/character/?page=chara01",
+                "https://luoxiaohei-movie.com/1st/character/?page=chara02",
+                "https://www.youtube.com/watch?v=4K0aNytM5jI"
+              ],
+              "evidence": "primary + 观影解读",
+              "spoiler": false
+            }
+          ]
+        },
+        {
+          "title": "人要救回来",
+          "items": [
+            {
+              "text": "风息展开领域后，无限进入其中救小黑。孩子遇到危险时，他没有停在外面等。小黑最后拜他为师，让这段从抓捕开始的关系，有了另一种结果。",
+              "sources": [
+                "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)"
+              ],
+              "evidence": "secondary + 观影解读",
+              "spoiler": true
+            }
+          ]
+        }
+      ],
+      "voiceActor": "刘明月",
+      "references": [
+        {
+          "title": "电影第一部·无限正面立绘",
+          "imageUrl": "https://luoxiaohei-movie.com/assets/img/character/chara_02.png",
+          "sourceUrl": "https://luoxiaohei-movie.com/character/?page=chara02",
+          "description": "正面全身、交领上衣、深蓝护腕、束脚裤。图片左侧含日文角色名，保留原图不得伪称无字三视图。",
+          "modelingUse": "观察头身比例、发际、眼形、衣领交叠、护腕及裤脚轮廓。",
+          "src": "/art/characters/wuxian/reference-1.png",
+          "kind": "官方角色立绘",
+          "credit": "© 北京寒木春华动画技术有限公司 · 官方发布的原作图像",
+          "licenseStatus": "保留版权；未确认开放再分发、训练或商业使用许可",
+          "evidence": "A 官方原始页面",
+          "sha256": "bb90baa8c84ec58c2a5e9d5f38a6737e36ac358ad666276cc714efe5a0601f57",
+          "bytes": 84475
+        },
+        {
+          "title": "电影第二部·无限长袍正面立绘",
+          "imageUrl": "https://luoxiaohei-movie.com/2nd/assets/img/chara/chara_02.png",
+          "sourceUrl": "https://luoxiaohei-movie.com/2nd/character/",
+          "description": "正面全身长袍造型，与第一部衣装不同；不可混成同一套服装。",
+          "modelingUse": "补充长袍外轮廓、袖宽、腰带层次、垂坠及鞋型；建立独立服装变体。",
+          "src": "/art/characters/wuxian/reference-2.png",
+          "kind": "官方角色立绘",
+          "credit": "© 北京寒木春华动画技术有限公司 · 官方发布的原作图像",
+          "licenseStatus": "保留版权；未确认开放再分发、训练或商业使用许可",
+          "evidence": "A 官方原始页面",
+          "sha256": "e9e089919dfeeb0cfc6473f3a822d95d30584be5d68fe73220e8e6b638e17deb",
+          "bytes": 121895
+        },
+        {
+          "title": "2020谷雨·廊下习字",
+          "imageUrl": "https://luoxiaohei.cockerel.com.cn/media/solar/2020/2020-谷雨.jpg",
+          "sourceUrl": "https://luoxiaohei.huijiwiki.com/wiki/%E6%96%87%E4%BB%B6:2020%E5%B9%B4%E8%B0%B7%E9%9B%A8%E8%B4%BA%E5%9B%BE.jpg",
+          "description": "微俯视、三分之二正面、浅色长袍，手握长杆在地面上写画，小黑坐在旁边。",
+          "modelingUse": "用于长袍体块、束带、袖口、握持姿势以及师徒比例比较；不能当成官方正交侧视。",
+          "src": "/art/grain-rain-2020.jpg",
+          "kind": "2020 节气插图",
+          "credit": "© 北京寒木春华动画技术有限公司 · 第三方存档，未逐张核对官方首发",
+          "licenseStatus": "保留版权；未确认开放再分发、训练或商业使用许可",
+          "evidence": "B 第三方条目 + 已有本地原件，未逐张核对官方首发",
+          "sha256": "521c6e83e16a22ee5d0c1b592378f437facf1f02baf3b4775223706e88fa2f5e",
+          "bytes": 229823
+        },
+        {
+          "title": "2020大雪·与小黑、哪吒堆雪人",
+          "imageUrl": "https://luoxiaohei.cockerel.com.cn/media/solar/2020/2020-大雪.jpg",
+          "sourceUrl": "https://luoxiaohei.huijiwiki.com/wiki/%E6%96%87%E4%BB%B6:2020%E5%B9%B4%E5%A4%A7%E9%9B%AA%E8%B4%BA%E5%9B%BE.jpg",
+          "description": "冬装、略侧正面站姿；哪吒在画面左侧，无限在右后方，小黑在右前方。",
+          "modelingUse": "冬装叠穿厚度、外套领形、发型被衣领遮挡的情况，以及三个人物的体量对照。",
+          "src": "/art/solar/majorSnow.jpg",
+          "kind": "2020 节气插图",
+          "credit": "© 北京寒木春华动画技术有限公司 · 第三方存档，未逐张核对官方首发",
+          "licenseStatus": "保留版权；未确认开放再分发、训练或商业使用许可",
+          "evidence": "B 第三方条目 + 已有本地原件，未逐张核对官方首发",
+          "sha256": "004e4c960eceb1750660b1026920dd5c5ae279017ca0fe901ae536cee28ed6c6",
+          "bytes": 250765
+        },
+        {
+          "title": "2020立夏·竹筏上歇息",
+          "imageUrl": "https://luoxiaohei.cockerel.com.cn/media/solar/2020/2020-立夏.jpg",
+          "sourceUrl": "https://luoxiaohei.huijiwiki.com/wiki/%E6%96%87%E4%BB%B6:2020%E5%B9%B4%E7%AB%8B%E5%A4%8F%E8%B4%BA%E5%9B%BE.jpg",
+          "description": "俯视、仰卧姿势、两手置于脑后、敞开条纹外衫、短裤和赤脚，小黑在旁入睡。",
+          "modelingUse": "观察躯干和四肢放松时的比例、衣袖褶皱与手脚姿势；透视较强，不能直接量取骨骼尺寸。",
+          "src": "/art/solar/startSummer.jpg",
+          "kind": "2020 节气插图",
+          "credit": "© 北京寒木春华动画技术有限公司 · 第三方存档，未逐张核对官方首发",
+          "licenseStatus": "保留版权；未确认开放再分发、训练或商业使用许可",
+          "evidence": "B 第三方条目 + 已有本地原件，未逐张核对官方首发",
+          "sha256": "7b5e8081c15021d78279c368bbac879aaf2fe2a31414655112afd8f0f62c3186",
+          "bytes": 193321
+        }
+      ]
+    },
+    {
+      "id": "fengxi",
+      "name": "风息",
+      "role": "官网人物",
+      "summary": "小黑流浪时，是风息把他带上岛，介绍给朋友，还给了他一个住处。风息自己却始终放不下失去的家园，不肯接受会馆的处理办法。他想把原来的地方夺回来，甚至走到了伤害小黑的地步。收留孩子的那个人，后来也成了孩子最难面对的人。",
+      "sources": [
+        "https://luoxiaohei-movie.com/1st/character/?page=chara03",
+        "https://luoxiaohei-movie.com/1st/staffcast/"
+      ],
+      "sections": [
+        {
+          "title": "岛上可以住下来",
+          "items": [
+            {
+              "text": "风息带小黑认识洛竹、虚淮和天虎，让这个流浪的孩子有饭吃、有地方住。小黑愿意留下，也因此把他当作可以信任的人。两人的关系，要从这份信任看起。",
+              "sources": [
+                "https://luoxiaohei-movie.com/1st/character/?page=chara03",
+                "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)",
+                "https://read01.com/zh-my/P5By8BB.html"
+              ],
+              "evidence": "primary + secondary",
+              "spoiler": false
+            }
+          ]
+        },
+        {
+          "title": "他不想再换一个地方",
+          "items": [
+            {
+              "text": "家园被人类夺走以后，风息选择反抗，也反对会馆维持平衡的办法。他和无限的冲突因此不只是一场打斗：一个不肯放下原来的家，一个要制止会伤到别人的行动。",
+              "sources": [
+                "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)",
+                "https://www.cinematoday.jp/page/A0007460"
+              ],
+              "evidence": "secondary + 观影解读",
+              "spoiler": true
+            }
+          ]
+        },
+        {
+          "title": "小黑不肯，他还是动手了",
+          "items": [
+            {
+              "text": "小黑不愿按他的计划使用领域，风息最终用豪夺夺走了这项能力。为了自己认定的目标，他越过了小黑的意愿。最让人难受的，也是被他伤害的恰恰是那个信过他的孩子。",
+              "sources": [
+                "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)"
+              ],
+              "evidence": "secondary + 观影解读",
+              "spoiler": true
+            }
+          ]
+        }
+      ],
+      "voiceActor": "郝祥海",
+      "references": [
+        {
+          "src": "/art/characters/movie1/fengxi/1.png",
+          "title": "风息·首作全身立绘",
+          "description": "官网透明背景全身图，显示本片服装与整体轮廓。",
+          "modelingUse": "先建立正面比例、服装分层与配色基准。",
+          "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara03",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+          "licenseStatus": "版权保留；资料参考，非开放授权",
+          "kind": "官网立绘",
+          "bytes": 92529,
+          "sha256": "675ec03b34f580451b82e1555d6612d812dc912cfdddfd37982d630c15161f4d"
+        },
+        {
+          "src": "/art/characters/movie1/fengxi/2.jpg",
+          "title": "风息·首作官方剧照一",
+          "description": "夜色下风息的侧面近景，可见发束、耳廓与服装领部。",
+          "modelingUse": "侧脸与发束遮挡关系；夜景不能直接当标准色。",
+          "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara03",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+          "licenseStatus": "版权保留；资料参考，非开放授权",
+          "kind": "官方剧照",
+          "bytes": 76293,
+          "sha256": "1c3ac759310751fc251b8b8ee798355b9bca8698006fd01d7ac38a53c3200bd2"
+        },
+        {
+          "src": "/art/characters/movie1/fengxi/3.jpg",
+          "title": "风息·首作官方剧照二",
+          "description": "岛上篝火聚会中的风息与小黑等人。",
+          "modelingUse": "人物同框的身高比例、坐姿与日常神态。",
+          "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara03",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+          "licenseStatus": "版权保留；资料参考，非开放授权",
+          "kind": "官方剧照",
+          "bytes": 112428,
+          "sha256": "34ce4e2b1203a80c65a6f6ff617e1e8a0f28148ce2f243a611ff399ba9909b72"
+        },
+        {
+          "src": "/art/characters/movie1/fengxi/4.jpg",
+          "title": "风息·多视角设定稿",
+          "description": "媒体刊载的正侧背服装、发型、表情与手臂局部设计。",
+          "modelingUse": "发型体积、衣片层次、侧背轮廓；690px宽，精细制作仍需更高清原稿。",
+          "sourceUrl": "https://www.jiemian.com/article/3501281.html",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+          "licenseStatus": "版权保留；资料参考，非开放授权",
+          "kind": "媒体刊载制作设定稿",
+          "bytes": 79644,
+          "sha256": "1437012a953906e192a10961ba95bf000182e0d9abede6d4c35da10898070b29"
+        },
+        {
+          "src": "/art/characters/movie1/fengxi/5.jpg",
+          "title": "风息·黑豹形态剧照",
+          "description": "有长鬃毛的黑色豹形态张嘴近景。",
+          "modelingUse": "和人形分开建立兽形头部、口腔与鬃毛轮廓。",
+          "sourceUrl": "https://www.jiemian.com/article/3501281.html",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+          "licenseStatus": "版权保留；资料参考，非开放授权",
+          "kind": "媒体刊载电影剧照",
+          "bytes": 42760,
+          "sha256": "2cd2f14ec2db3e54457a52df3b925786f4851891296eccb1b8f716200ce3f1f3"
+        }
+      ]
+    },
+    {
+      "id": "xuhuai",
+      "name": "虚淮",
+      "role": "官网人物",
+      "summary": "小黑来到岛上，认识了风息的几位朋友，虚淮也在其中。和张罗欢迎会的洛竹放在一起，他显得安静得多。他的本事和冰有关，连身体也是冰构成的，受伤能自行修复。平日里不太抢眼的同伴，一旦交手，就有了冰块与精灵鱼环绕的另一副样子。",
+      "sources": [
+        "https://luoxiaohei-movie.com/1st/character/?page=chara04",
+        "https://luoxiaohei-movie.com/1st/staffcast/"
+      ],
+      "sections": [
+        {
+          "title": "小黑在岛上认识的朋友",
+          "items": [
+            {
+              "text": "虚淮和风息、洛竹、天虎一起生活。洛竹招呼新来的小黑时，几个人成了一桌的朋友。虚淮的表情不多，官网选出的夜间近景里，他皱着眉，和洛竹招呼人的样子很不一样。",
+              "sources": [
+                "https://luoxiaohei-movie.com/1st/character/?page=chara03",
+                "https://luoxiaohei-movie.com/1st/character/?page=chara04",
+                "https://luoxiaohei-movie.com/1st/character/?page=chara05",
+                "https://luoxiaohei-movie.com/1st/assets/img/character/photo_05-1.jpg"
+              ],
+              "evidence": "primary + scene observation + 观影解读",
+              "spoiler": false
+            }
+          ]
+        },
+        {
+          "title": "身体也是冰做的",
+          "items": [
+            {
+              "text": "虚淮能用冰，也有一副由冰构成的身体，受伤以后可以自行修复。打斗里那些冰块和碎片，并不只是身边的装饰；冰也直接关系到他怎么承受攻击。",
+              "sources": [
+                "https://luoxiaohei-movie.com/1st/character/?page=chara04"
+              ],
+              "evidence": "primary + 观影解读",
+              "spoiler": false
+            }
+          ]
+        },
+        {
+          "title": "还有精灵鱼",
+          "items": [
+            {
+              "text": "除了冰，虚淮还能放出精灵鱼。和风息、洛竹、天虎一起行动时，他有自己的出手方式；蓝色冰体环绕的战斗画面，和林间安静站着的样子很不一样。",
+              "sources": [
+                "https://luoxiaohei-movie.com/1st/character/?page=chara04",
+                "https://www.jiemian.com/article/3501281.html"
+              ],
+              "evidence": "primary + scene observation",
+              "spoiler": false
+            }
+          ]
+        }
+      ],
+      "voiceActor": "曹云图",
+      "references": [
+        {
+          "src": "/art/characters/movie1/xuhuai/1.png",
+          "title": "虚淮·首作全身立绘",
+          "description": "官网透明背景全身图，显示本片服装与整体轮廓。",
+          "modelingUse": "先建立正面比例、服装分层与配色基准。",
+          "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara04",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+          "licenseStatus": "版权保留；资料参考，非开放授权",
+          "kind": "官网立绘",
+          "bytes": 34623,
+          "sha256": "c1c63f6cfe73dc7009930a339e9afe00354779fb5d0ef5039a1573ecfb978904"
+        },
+        {
+          "src": "/art/characters/movie1/xuhuai/2.jpg",
+          "title": "虚淮·首作官方剧照一",
+          "description": "虚淮正面近景，角状头部轮廓、额部与浅色长发清晰。",
+          "modelingUse": "脸部比例、头部突起、眉眼和发片位置。",
+          "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara04",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+          "licenseStatus": "版权保留；资料参考，非开放授权",
+          "kind": "官方剧照",
+          "bytes": 34707,
+          "sha256": "957571bb1e45f48c9b0b3c1933dc9de8e16420d2acc0b67e930e0eaa54a3f91f"
+        },
+        {
+          "src": "/art/characters/movie1/xuhuai/3.jpg",
+          "title": "虚淮·首作官方剧照二",
+          "description": "虚淮战斗剧照，蓝色冰体与碎片环绕身体。",
+          "modelingUse": "区分角色本体和战斗特效，不把发光当固有色。",
+          "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara04",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+          "licenseStatus": "版权保留；资料参考，非开放授权",
+          "kind": "官方剧照",
+          "bytes": 73939,
+          "sha256": "6b59d4dcd073b7e7f892754d7e946bf8260a00beb6e10da3bd13724be3fc92e1"
+        },
+        {
+          "src": "/art/characters/movie1/xuhuai/4.jpg",
+          "title": "虚淮·多视角设定稿",
+          "description": "含正面、侧面、背面及头部和鞋手局部参考。",
+          "modelingUse": "头部突起、长发背面、衣服围边与腰间串珠。",
+          "sourceUrl": "https://www.jiemian.com/article/3501281.html",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+          "licenseStatus": "版权保留；资料参考，非开放授权",
+          "kind": "媒体刊载制作设定稿",
+          "bytes": 72955,
+          "sha256": "5018f1855d874c454d8ed42e2085965da13b8dd5b1919e65824fe3e4130f44f9"
+        },
+        {
+          "src": "/art/characters/movie1/xuhuai/5.jpg",
+          "title": "虚淮·林间站姿剧照",
+          "description": "虚淮侧身立于林间，服装轮廓和长发下垂方向可见。",
+          "modelingUse": "自然站姿、重心与头发长度，避免只按正脸建模。",
+          "sourceUrl": "https://www.jiemian.com/article/3501281.html",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+          "licenseStatus": "版权保留；资料参考，非开放授权",
+          "kind": "媒体刊载电影剧照",
+          "bytes": 29496,
+          "sha256": "80b6cf5d3a26ee9393a533f0c214c348f8c4dcafde4c63c4eff29761cf1c8f9b"
+        }
+      ]
+    },
+    {
+      "id": "luozhu",
+      "name": "洛竹",
+      "role": "官网人物",
+      "summary": "小黑刚到岛上，洛竹就张罗着欢迎他，还拿植物的小把戏逗孩子开心。他和风息一起生活，也想念原来的故乡。可到了风息要伤害小黑的时候，他没有跟着点头，而是急着劝阻。先伸手招呼孩子的人，后来也想把这个孩子护下来。",
+      "sources": [
+        "https://luoxiaohei-movie.com/1st/character/?page=chara05",
+        "https://luoxiaohei-movie.com/1st/staffcast/"
+      ],
+      "sections": [
+        {
+          "title": "新来的孩子，先吃顿饭",
+          "items": [
+            {
+              "text": "欢迎会是洛竹提议办的。小黑还拘谨着，他就忙着招呼，还用植物逗小黑开心。比起先解释大家为什么住在这里，他先让这个孩子坐进了朋友中间。",
+              "sources": [
+                "https://luoxiaohei-movie.com/1st/character/?page=chara05",
+                "https://read01.com/zh-my/P5By8BB.html"
+              ],
+              "evidence": "primary + secondary + 观影解读",
+              "spoiler": false
+            }
+          ]
+        },
+        {
+          "title": "种灵也能帮忙找人",
+          "items": [
+            {
+              "text": "洛竹的本事和植物有关，除了直接操控植物，还能远程操控种灵察看周围。同样的木系能力，在他手里既能拿来逗孩子，也能用在伙伴的行动里。",
+              "sources": [
+                "https://luoxiaohei-movie.com/1st/character/?page=chara05",
+                "https://read01.com/zh-my/P5By8BB.html"
+              ],
+              "evidence": "primary + secondary",
+              "spoiler": false
+            }
+          ]
+        },
+        {
+          "title": "老朋友也得拦一下",
+          "items": [
+            {
+              "text": "他想夺回故乡，却不赞同风息对小黑的做法。风息强行夺取领域前，洛竹急着劝阻，希望能再跟小黑谈谈。老朋友和刚认识的孩子都在眼前，他没法装作这件事没有问题。",
+              "sources": [
+                "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)",
+                "https://read01.com/zh-my/P5By8BB.html"
+              ],
+              "evidence": "secondary + 观影解读",
+              "spoiler": true
+            }
+          ]
+        }
+      ],
+      "voiceActor": "叮当",
+      "references": [
+        {
+          "src": "/art/characters/movie1/luozhu/1.png",
+          "title": "洛竹·首作全身立绘",
+          "description": "官网透明背景全身图，显示本片服装与整体轮廓。",
+          "modelingUse": "先建立正面比例、服装分层与配色基准。",
+          "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara05",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+          "licenseStatus": "版权保留；资料参考，非开放授权",
+          "kind": "官网立绘",
+          "bytes": 31744,
+          "sha256": "752475077ca5615f4838d16477cda90a950c721a83461f7fa29d764688d6907b"
+        },
+        {
+          "src": "/art/characters/movie1/luozhu/2.jpg",
+          "title": "洛竹·首作官方剧照一",
+          "description": "室内场景中的洛竹侧脸近景，长发向后扎起。",
+          "modelingUse": "侧脸、耳朵与发束连接。",
+          "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara05",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+          "licenseStatus": "版权保留；资料参考，非开放授权",
+          "kind": "官方剧照",
+          "bytes": 36943,
+          "sha256": "5e6b59a71e6acd65fa03f4e74f12aa3c939ae2a11e2b1c44844122e7203c3172"
+        },
+        {
+          "src": "/art/characters/movie1/luozhu/3.jpg",
+          "title": "洛竹·首作官方剧照二",
+          "description": "夜色下与风息同框的洛竹，肩臂与红色围巾清楚可见。",
+          "modelingUse": "人物相对身高与围巾、肩部轮廓；夜间配色仅作光照参考。",
+          "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara05",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+          "licenseStatus": "版权保留；资料参考，非开放授权",
+          "kind": "官方剧照",
+          "bytes": 34659,
+          "sha256": "8c2040ec4af5da0b60d70b0ae381e922acc6cca797d7fe36d5d930f9de26d0c8"
+        },
+        {
+          "src": "/art/characters/movie1/luozhu/4.jpg",
+          "title": "洛竹·多视角设定稿",
+          "description": "正侧背视图、围巾与肩甲、发型与鞋袜细节。",
+          "modelingUse": "正侧背可相互校对；衣服和身体不要做成一个粘连块。",
+          "sourceUrl": "https://www.jiemian.com/article/3501281.html",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+          "licenseStatus": "版权保留；资料参考，非开放授权",
+          "kind": "媒体刊载制作设定稿",
+          "bytes": 66618,
+          "sha256": "67976aa0d702888e2f2eed54958f7d9a6689be778331487e486a4913411851fd"
+        },
+        {
+          "src": "/art/characters/movie1/luozhu/5.jpg",
+          "title": "洛竹·林间动作剧照",
+          "description": "洛竹立在树干与藤枝之间，周围是绿色林木。",
+          "modelingUse": "双臂抬起时肩部服装形变、宽裤与腿部动作。",
+          "sourceUrl": "https://www.jiemian.com/article/3501281.html",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+          "licenseStatus": "版权保留；资料参考，非开放授权",
+          "kind": "媒体刊载电影剧照",
+          "bytes": 55013,
+          "sha256": "097565dba4fd5bb42aa708078cbf63a04cc97e2e3af0f9175b54d3ce68a37223"
+        }
+      ]
+    },
+    {
+      "id": "tianhu",
+      "name": "天虎",
+      "role": "官网人物",
+      "summary": "天虎的虎脸、宽帽檐和圆身形，让人很难认错。可别看他块头大，他是从小跟着风息等人生活的弟弟。欢迎小黑吃饭时，他关心的是吃喝；平时也不太开口。和其他几个人放在一起，他不用说很多话，光是待在饭桌边，就已经很有存在感。",
+      "sources": [
+        "https://luoxiaohei-movie.com/1st/character/?page=chara06",
+        "https://luoxiaohei-movie.com/1st/staffcast/"
+      ],
+      "sections": [
+        {
+          "title": "跟着大家长大的弟弟",
+          "items": [
+            {
+              "text": "天虎从小和风息等人一起生活。大家站在一起，最占地方的是他，但同伴间的关系不能按块头来排：他是那个受大家照应的弟弟。",
+              "sources": [
+                "https://luoxiaohei-movie.com/1st/character/?page=chara06"
+              ],
+              "evidence": "primary + 观影解读",
+              "spoiler": false
+            }
+          ]
+        },
+        {
+          "title": "想吃什么，说得很清楚",
+          "items": [
+            {
+              "text": "欢迎小黑的那顿饭里，天虎的话大多围着吃喝转，递酒时还被风息拦住。2019年的设定报道把他的首作台词概括成三个单字。别人忙着说话，他用很短的回应留在热闹里。",
+              "sources": [
+                "https://www.jiemian.com/article/3501281.html",
+                "https://read01.com/zh-my/P5By8BB.html"
+              ],
+              "evidence": "secondary + 观影解读",
+              "spoiler": false
+            }
+          ]
+        },
+        {
+          "title": "要帮忙时也会出手",
+          "items": [
+            {
+              "text": "天虎有御灵系·火的能力，也是风息一起行动的伙伴。他话少，平时安静，真到需要帮忙的时候又靠得住。块头和虎脸都很醒目，认识他以后才发现，他和第一眼看上去的样子有些不同。",
+              "sources": [
+                "https://luoxiaohei-movie.com/1st/character/?page=chara06"
+              ],
+              "evidence": "primary + 观影解读",
+              "spoiler": false
+            }
+          ]
+        }
+      ],
+      "voiceActor": "图特哈蒙",
+      "references": [
+        {
+          "src": "/art/characters/movie1/tianhu/1.png",
+          "title": "天虎·首作全身立绘",
+          "description": "官网透明背景全身图，显示本片服装与整体轮廓。",
+          "modelingUse": "先建立正面比例、服装分层与配色基准。",
+          "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara06",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+          "licenseStatus": "版权保留；资料参考，非开放授权",
+          "kind": "官网立绘",
+          "bytes": 26431,
+          "sha256": "852bff5845763f0896c9d3eb387e69f8cb616067e2376df4a4ed5a4a8105376b"
+        },
+        {
+          "src": "/art/characters/movie1/tianhu/2.jpg",
+          "title": "天虎·首作官方剧照一",
+          "description": "天虎脸部近景，可见虎纹、口鼻与浅色围领。",
+          "modelingUse": "虎脸不是写实虎脸；注意二维简化的口鼻比例和纹路走向。",
+          "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara06",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+          "licenseStatus": "版权保留；资料参考，非开放授权",
+          "kind": "官方剧照",
+          "bytes": 51273,
+          "sha256": "e1da8683d9ef70a8a0a5d79b18fb422e9755aeaac0d4148bf43f2025c5221cef"
+        },
+        {
+          "src": "/art/characters/movie1/tianhu/3.jpg",
+          "title": "天虎·首作官方剧照二",
+          "description": "白天全身场景中的天虎，宽帽与圆身体的轮廓清楚。",
+          "modelingUse": "体型、帽檐宽度与身体比例；配色以白天画面校准。",
+          "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara06",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+          "licenseStatus": "版权保留；资料参考，非开放授权",
+          "kind": "官方剧照",
+          "bytes": 57146,
+          "sha256": "ae1877c0a1a7512b2e5464c217b0abc2674c7ab23f6db92b94d46d8a0c0cb3ab"
+        },
+        {
+          "src": "/art/characters/movie1/tianhu/4.jpg",
+          "title": "天虎·多视角设定稿",
+          "description": "正背视图、帽子围领以及手、腿和脸部表情拆解。",
+          "modelingUse": "圆体型仍需看背面和四肢结构，脸部纹路需绕体检查。",
+          "sourceUrl": "https://www.jiemian.com/article/3501281.html",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+          "licenseStatus": "版权保留；资料参考，非开放授权",
+          "kind": "媒体刊载制作设定稿",
+          "bytes": 71269,
+          "sha256": "9c82664d9f6621a9d01271d78ce0c3923fe3142c493aba59c50a37c23cd0ea19"
+        },
+        {
+          "src": "/art/characters/movie1/tianhu/5.jpg",
+          "title": "天虎·夜街全身剧照",
+          "description": "天虎立于灯笼街巷，画面保留他的全身尺度。",
+          "modelingUse": "环境里的体积与占地感；夜景仅供光照和姿势参考。",
+          "sourceUrl": "https://www.jiemian.com/article/3501281.html",
+          "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+          "licenseStatus": "版权保留；资料参考，非开放授权",
+          "kind": "媒体刊载电影剧照",
+          "bytes": 49838,
+          "sha256": "21a2455a1e9d6ad36ca89eb222e7f3d6dacf9fc218a3377871fa5a3abb32d9c9"
+        }
+      ]
+    },
+    {
+      "id": "ruoshui",
+      "name": "若水",
+      "role": "官网人物",
+      "summary": "若水是会馆的执行者，也是无限的粉丝。和小黑见面时，她笑眯眯地弯下身，把手放到孩子头上；小黑却板着一张脸。这个狐狸妖精对人类友好，和小黑相处时也主动。她自己笑得高兴，小黑还没放下戒心，两个人的反应正好撞在了一起。",
+      "sources": [
+        "https://luoxiaohei-movie.com/1st/character/?page=chara07",
+        "https://luoxiaohei-movie.com/1st/staffcast/"
+      ],
+      "sections": [
+        {
+          "title": "先摸摸这个孩子的头",
+          "items": [
+            {
+              "text": "若水弯下腰，把手放到小黑头顶。她闭眼笑着，小黑没有跟着笑。一个已经凑近了，一个还不太领情，这个短短的碰面，把两个人当时的距离留在了脸上。",
+              "sources": [
+                "https://luoxiaohei-movie.com/1st/character/?page=chara07",
+                "https://luoxiaohei-movie.com/1st/assets/img/character/photo_08-2.jpg"
+              ],
+              "evidence": "scene observation + 观影解读",
+              "spoiler": false
+            }
+          ]
+        },
+        {
+          "title": "见到无限会高兴的人",
+          "items": [
+            {
+              "text": "她在会馆担任执行者，也很崇拜无限。一个是习惯板着脸的大人，一个把喜欢和亲近摆在脸上；把他们和小黑放在一起看，会馆里的人就有了各不相同的反应。",
+              "sources": [
+                "https://luoxiaohei-movie.com/1st/character/?page=chara07"
+              ],
+              "evidence": "primary + 观影解读",
+              "spoiler": false
+            }
+          ]
+        },
+        {
+          "title": "她愿意亲近人类",
+          "items": [
+            {
+              "text": "若水对人类友善，这也是会馆这边的一个日常面貌。同样身为妖精，她没有把人类都当成该躲开的人。和风息对人类的态度放在一起，差别就更明显了。",
+              "sources": [
+                "https://luoxiaohei-movie.com/1st/character/?page=chara07",
+                "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)"
+              ],
+              "evidence": "primary + secondary + 观影解读",
+              "spoiler": false
+            }
+          ]
+        }
+      ],
+      "voiceActor": "杨凝",
+      "references": [
+        {
+          "src": "/art/characters/movie1/ruoshui/1.png",
+          "title": "首部电影官方若水立绘",
+          "description": "橙发、绿眼、狐耳狐尾，白色交领上衣、绿色腰带、红色宽裤、卷头鞋。",
+          "modelingUse": "正面身形比例、耳尾轮廓、服装分层与配色；并非三视图。",
+          "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara07",
+          "credit": "©Beijing HMCH Anime Co.,Ltd；官网注明禁止未经许可使用；本记录不表示获得再分发或训练许可。",
+          "licenseStatus": "版权保留；资料参考，非开放授权",
+          "kind": "官方立绘 / 剧照 / 媒体设定图",
+          "bytes": 26811,
+          "sha256": "0db3af5fc2ca93314a77d15e9121d27d32e4fb0fc1a585923fcc6dcb20b0b2e1"
+        },
+        {
+          "src": "/art/characters/movie1/ruoshui/2.jpg",
+          "title": "首部电影官方夜间街道剧照",
+          "description": "若水在夜晚城市街道上张嘴、睁大眼，后方站着穿制服的人。",
+          "modelingUse": "面部惊讶表情、狐耳与发型在夜景照明下的颜色。",
+          "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara07",
+          "credit": "©Beijing HMCH Anime Co.,Ltd；官网注明禁止未经许可使用；本记录不表示获得再分发或训练许可。",
+          "licenseStatus": "版权保留；资料参考，非开放授权",
+          "kind": "官方立绘 / 剧照 / 媒体设定图",
+          "bytes": 59832,
+          "sha256": "5f59cff596406d2b6d44cfb2ccf9a0c50a608f608137c1ae15f7977cec51a56d"
+        },
+        {
+          "src": "/art/characters/movie1/ruoshui/3.jpg",
+          "title": "首部电影官方摸头剧照",
+          "description": "若水俯身微笑，手放在小黑人形的头顶；画面见她的侧脸和尾巴。",
+          "modelingUse": "侧脸、俯身姿势、尾巴侧面与人物相对比例。",
+          "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara07",
+          "credit": "©Beijing HMCH Anime Co.,Ltd；官网注明禁止未经许可使用；本记录不表示获得再分发或训练许可。",
+          "licenseStatus": "版权保留；资料参考，非开放授权",
+          "kind": "官方立绘 / 剧照 / 媒体设定图",
+          "bytes": 53974,
+          "sha256": "149df3a2282dfb6d473bc4f3d261fb83863f68fadc6c7694313c31bb05e0cb54"
+        },
+        {
+          "src": "/art/characters/movie1/ruoshui/4.jpg",
+          "title": "若水·首作多视角设定稿",
+          "description": "2019年设定稿报道若水段落刊图，含白色上衣、绿色腰带、红裤的正侧背视图、狐尾与面部表情；上半幅另含头饰与背负装饰造型。",
+          "modelingUse": "核对身体正侧背轮廓、耳尾比例、宽裤和腰带结构；上半部装饰造型与下方日常造型要分别标注，不要混成唯一正片标准造型。",
+          "sourceUrl": "https://www.jiemian.com/article/3501281.html",
+          "credit": "原作图片版权归原权利人；刊载页注明转载内容，授权联系原著作权人。出处记录不代表已取得再分发或模型训练许可。",
+          "licenseStatus": "版权保留；资料参考，非开放授权",
+          "kind": "官方立绘 / 剧照 / 媒体设定图",
+          "bytes": 107072,
+          "sha256": "fcbb853ba91c8c738d54d8431b5b223de46784802638a64cb48d1ed7830b5c82"
+        },
+        {
+          "src": "/art/characters/movie1/ruoshui/5.jpg",
+          "title": "若水·夜街三分之二侧脸剧照",
+          "description": "城市夜景中的若水半身侧转，耳发、眼睛与肩部轮廓可见；相较官网正脸剧照是不同镜头，并非同图裁切。",
+          "modelingUse": "三分之二侧脸与鼻口位置、侧发厚度、头肩连接；夜景色不直接当无光照材质颜色。",
+          "sourceUrl": "https://www.jiemian.com/article/3501281.html",
+          "credit": "原作图片版权归原权利人；刊载页注明转载内容，授权联系原著作权人。出处记录不代表已取得再分发或模型训练许可。",
+          "licenseStatus": "版权保留；资料参考，非开放授权",
+          "kind": "官方立绘 / 剧照 / 媒体设定图",
+          "bytes": 65623,
+          "sha256": "e38328e57b4f72f5bdaf56a8bd7c2ced5e6b20a750630972bb7ee6a62810baff"
+        }
+      ]
+    },
+    {
+      "id": "nezha",
+      "name": "哪吒",
+      "role": "官网人物",
+      "summary": "龙游出了事，哪吒从会馆总部赶来支援。可等他到场，风息的领域已经进不去了，人来了也没法直接帮上里面的无限。第一部留给他的戏份不长：一个发型醒目、从总部来的执行人，碰上了眼前这道不好办的难题。中文配音和小黑一样，都是山新。",
+      "sources": [
+        "https://luoxiaohei-movie.com/1st/character/?page=chara08",
+        "https://luoxiaohei-movie.com/1st/staffcast/"
+      ],
+      "sections": [
+        {
+          "title": "从总部赶来",
+          "items": [
+            {
+              "text": "哪吒是会馆总部派来的执行人。他出现时，龙游的事已经闹大了；这次支援，就是第一部里观众认识他的主要一段经历。",
+              "sources": [
+                "https://luoxiaohei-movie.com/1st/character/?page=chara08",
+                "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)"
+              ],
+              "evidence": "primary + secondary",
+              "spoiler": false
+            }
+          ]
+        },
+        {
+          "title": "领域挡在面前",
+          "items": [
+            {
+              "text": "风息的领域已经无法进入，哪吒没能进去参与无限与风息的交战。赶到现场和真正帮上忙之间，还隔着这层限制。",
+              "sources": [
+                "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)"
+              ],
+              "evidence": "secondary + 观影解读",
+              "spoiler": true
+            }
+          ]
+        },
+        {
+          "title": "同名，各有各的故事",
+          "items": [
+            {
+              "text": "这是《罗小黑战记》里的哪吒。木头在2019年的采访中说过，与《哪吒之魔童降世》并没有联动；两部电影各自的身世和经历，也不能混在一起。",
+              "sources": [
+                "https://media.people.com.cn/n1/2019/0911/c40606-31347724.html",
+                "https://www.ithome.com/0/445/173.htm"
+              ],
+              "evidence": "primary interview + secondary",
+              "spoiler": false
+            }
+          ]
+        }
+      ],
+      "voiceActor": "山新",
+      "references": [
+        {
+          "title": "首部电影·正面全身角色图",
+          "imageUrl": "https://luoxiaohei-movie.com/1st/assets/img/character/chara_10.png",
+          "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara08",
+          "description": "深色双发髻、齐刘海、黑白外套、NAZA上衣、迷彩短裤、七分打底裤与运动鞋；正面放松站姿。",
+          "modelingUse": "用于首部电影服装分层、身形轮廓、正面配色和饰带位置；不是正交三视图，不提供背面构造。",
+          "src": "/art/characters/nezha/reference-1.png",
+          "kind": "官方角色立绘",
+          "credit": "© 北京寒木春华动画技术有限公司 · 官方发布的原作图像",
+          "licenseStatus": "保留版权；未确认开放再分发、训练或商业使用许可",
+          "evidence": "A: official site with HMCH copyright; no reuse license found",
+          "sha256": "72d2782c85234df85186ad9e4bc3a95168b51ca943b1c8b76b1f6fd04dc1d255",
+          "bytes": 29653
+        },
+        {
+          "title": "首部电影·仰视回身画面",
+          "imageUrl": "https://luoxiaohei-movie.com/1st/assets/img/character/photo_10-1.jpg",
+          "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara08",
+          "description": "夜色场景，侧后方仰视角色回头，能看见刘海、耳部、后束发与外套后侧轮廓。",
+          "modelingUse": "用于头部侧后体积和后束发轮廓参考；图像受镜头透视和夜间光照影响，不能量尺寸或当完整背面设定。",
+          "src": "/art/characters/nezha/reference-2.jpg",
+          "kind": "官方电影剧照",
+          "credit": "© 北京寒木春华动画技术有限公司 · 官方发布的原作图像",
+          "licenseStatus": "保留版权；未确认开放再分发、训练或商业使用许可",
+          "evidence": "A: official site with HMCH copyright; no reuse license found",
+          "sha256": "7f27911d4df86db97fc1c3622aafde9b4eeddbb54146e00bab74f03a88215fb5",
+          "bytes": 16567
+        },
+        {
+          "title": "首部电影·张臂近景",
+          "imageUrl": "https://luoxiaohei-movie.com/1st/assets/img/character/photo_10-2.jpg",
+          "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara08",
+          "description": "正面偏俯视近景，角色张开双臂，面部轮廓、发际线、外套领口及NAZA字样清楚。",
+          "modelingUse": "用于面部比例、眼睑、刘海、肩袖与领口结构观察；这是动作帧，不是T-pose或正交图。",
+          "src": "/art/characters/nezha/reference-3.jpg",
+          "kind": "官方电影剧照",
+          "credit": "© 北京寒木春华动画技术有限公司 · 官方发布的原作图像",
+          "licenseStatus": "保留版权；未确认开放再分发、训练或商业使用许可",
+          "evidence": "A: official site with HMCH copyright; no reuse license found",
+          "sha256": "8030da82c1d531c962b382a514ad7f2e125bf7150383d4a77c9d06a717bb8898",
+          "bytes": 44501
+        },
+        {
+          "title": "续作电影·正面全身角色图",
+          "imageUrl": "https://luoxiaohei-movie.com/2nd/assets/img/chara/chara_04.png",
+          "sourceUrl": "https://luoxiaohei-movie.com/2nd/character/",
+          "description": "双发髻与黑色短外套延续，紫色火焰纹、蓝灰短裤、腰间垂带和鞋款与首部不同。",
+          "modelingUse": "用于单独记录续作服装版本，方便后续换装建模；不能和首部服装混为同一套设定。",
+          "src": "/art/characters/nezha/reference-4.png",
+          "kind": "官方角色立绘",
+          "credit": "© 北京寒木春华动画技术有限公司 · 官方发布的原作图像",
+          "licenseStatus": "保留版权；未确认开放再分发、训练或商业使用许可",
+          "evidence": "A: official site with HMCH copyright; no reuse license found",
+          "sha256": "fbbce6f3f8ae45d696890bf3cc18e4263dbbecdf247cf606732962850cceda64",
+          "bytes": 146231
+        },
+        {
+          "title": "2020大雪·和伙伴堆雪人",
+          "imageUrl": "https://luoxiaohei.cockerel.com.cn/media/solar/2020/2020-大雪.jpg",
+          "sourceUrl": "https://luoxiaohei.cockerel.com.cn/artwork/huiji:solar/2020/%E5%A4%A7%E9%9B%AA",
+          "description": "哪吒在画面左侧抱臂，穿冬季浅色外套、紫色内搭、红色短裤；无限在雪人后方，小黑在右下。",
+          "modelingUse": "用于2020冬装、表情、伙伴相对身高与场景尺度参考；节气插图有风格化变形，不可当精确建模标尺。",
+          "src": "/art/solar/majorSnow.jpg",
+          "kind": "2020 节气插图",
+          "credit": "© 北京寒木春华动画技术有限公司 · 第三方存档，未逐张核对官方首发",
+          "licenseStatus": "保留版权；未确认开放再分发、训练或商业使用许可",
+          "evidence": "B: third-party archive credits HMCH; first official post not verified",
+          "sha256": "004e4c960eceb1750660b1026920dd5c5ae279017ca0fe901ae536cee28ed6c6",
+          "bytes": 250765
+        }
+      ]
+    },
+    {
+      "id": "jiulao",
+      "name": "鸠老",
+      "role": "官网人物",
+      "summary": "会馆执行者，能鉴定灵属性",
+      "sources": [
+        "https://luoxiaohei-movie.com/1st/character/?page=chara09",
+        "https://luoxiaohei-movie.com/1st/staffcast/"
+      ]
+    },
+    {
+      "id": "curator",
+      "name": "馆长",
+      "role": "官网人物",
+      "summary": "龙游市会馆馆长；官网此页未写中文姓名潘靖",
+      "sources": [
+        "https://luoxiaohei-movie.com/1st/character/?page=chara10",
+        "https://luoxiaohei-movie.com/1st/staffcast/"
+      ]
+    },
+    {
+      "id": "flower-fairy",
+      "name": "花妖",
+      "role": "演职员记录",
+      "summary": "首作配音表中的花之妖精",
+      "sources": [
+        "https://luoxiaohei-movie.com/1st/staffcast/"
+      ]
+    },
+    {
+      "id": "laofu",
+      "name": "老府",
+      "role": "演职员记录",
+      "summary": "有配音的次要角色",
+      "sources": [
+        "https://www.1905.com/mdb/film/2242929/?fr=mdbypk_zp",
+        "https://m.1905.com/Mdb/mdbDetail/filmid/2242929/"
+      ]
+    },
+    {
+      "id": "niepan",
+      "name": "涅槃",
+      "role": "演职员记录",
+      "summary": "媒体数据库所用角色写法，别与涅帕重复计数",
+      "sources": [
+        "https://www.1905.com/mdb/film/2242929/?fr=mdbypk_zp",
+        "https://m.1905.com/Mdb/mdbDetail/filmid/2242929/"
+      ]
+    },
+    {
+      "id": "zhaoyue",
+      "name": "兆岳",
+      "role": "演职员记录",
+      "summary": "有配音的次要角色",
+      "sources": [
+        "https://www.1905.com/mdb/film/2242929/?fr=mdbypk_zp",
+        "https://m.1905.com/Mdb/mdbDetail/filmid/2242929/"
+      ]
+    },
+    {
+      "id": "fisherman",
+      "name": "渔夫",
+      "role": "演职员记录",
+      "summary": "按职能标注的角色，未获得姓名",
+      "sources": [
+        "https://www.1905.com/mdb/film/2242929/?fr=mdbypk_zp",
+        "https://m.1905.com/Mdb/mdbDetail/filmid/2242929/"
+      ]
+    },
+    {
+      "id": "tianjie",
+      "name": "天介",
+      "role": "演职员记录",
+      "summary": "有配音的次要角色",
+      "sources": [
+        "https://www.1905.com/mdb/film/2242929/?fr=mdbypk_zp",
+        "https://m.1905.com/Mdb/mdbDetail/filmid/2242929/"
+      ]
+    },
+    {
+      "id": "minxiang",
+      "name": "闵翔",
+      "role": "演职员记录",
+      "summary": "有配音的次要角色",
+      "sources": [
+        "https://www.1905.com/mdb/film/2242929/?fr=mdbypk_zp",
+        "https://m.1905.com/Mdb/mdbDetail/filmid/2242929/"
+      ]
+    },
+    {
+      "id": "maomao",
+      "name": "毛毛",
+      "role": "演职员记录",
+      "summary": "媒体数据库用毛毛；与冠旭对应待查片尾",
+      "sources": [
+        "https://www.1905.com/mdb/film/2242929/?fr=mdbypk_zp",
+        "https://m.1905.com/Mdb/mdbDetail/filmid/2242929/"
+      ]
+    },
+    {
+      "id": "guanxuan",
+      "name": "冠萱",
+      "role": "演职员记录",
+      "summary": "媒体数据库配音角色名",
+      "sources": [
+        "https://www.1905.com/mdb/film/2242929/?fr=mdbypk_zp",
+        "https://m.1905.com/Mdb/mdbDetail/filmid/2242929/"
+      ]
+    }
+  ],
+  "media": [
+    {
+      "id": "movie1-voice-featurette",
+      "title": "《羅小黑戰記》電影版 配音特輯",
+      "url": "https://www.youtube.com/watch?v=UwZZbx9ZRNc",
+      "platform": "youtube",
+      "videoId": "UwZZbx9ZRNc",
+      "language": "zh-CN-candidate",
+      "publisher": "羅小黑戰記",
+      "publisherEvidence": [
+        "https://www.youtube.com/channel/UCPVlLWXABJgR3SEkqbZLnxw",
+        "https://ent.cri.cn/20190814/6d0b7528-bfc1-fbe9-9066-37a457cafc4e.html"
+      ],
+      "speakers": [
+        "山新（配音演员）",
+        "刘明月（配音演员）",
+        "其他配音演员；片段顺序待实听"
+      ],
+      "verifiedListening": false,
+      "startSeconds": null,
+      "endSeconds": null,
+      "quote": null,
+      "quoteSpeaker": null,
+      "quoteSource": null,
+      "kind": "配音特辑",
+      "description": "官方频道公开的配音幕后，含多位演员和角色片段；本轮未逐句核听，不是单个人物的纯台词集。",
+      "alternativeUrl": "https://www.bilibili.com/bangumi/play/ep281165"
+    },
+    {
+      "id": "movie1-release-trailer",
+      "title": "《羅小黑戰記》電影版 定檔預告—9月12日不見不散",
+      "url": "https://www.youtube.com/watch?v=wkmD3lLIjq4",
+      "platform": "youtube",
+      "videoId": "wkmD3lLIjq4",
+      "language": "zh-CN-candidate",
+      "publisher": "羅小黑戰記",
+      "publisherEvidence": [
+        "https://www.youtube.com/channel/UCPVlLWXABJgR3SEkqbZLnxw"
+      ],
+      "speakers": [],
+      "verifiedListening": false,
+      "startSeconds": null,
+      "endSeconds": null,
+      "quote": null,
+      "quoteSpeaker": null,
+      "quoteSource": null,
+      "kind": "定档预告",
+      "description": "2019年发布的定档预告。标题保留当时计划档期；影片后来提档至9月7日。中文逐句声轨尚未校听。"
+    },
+    {
+      "id": "movie1-bilibili-feature",
+      "title": "罗小黑战记（2019）正版影片入口",
+      "url": "https://www.bilibili.com/bangumi/play/ss28198",
+      "platform": "bilibili",
+      "videoId": "BV1xE411C7hZ",
+      "language": "zh-CN-listed",
+      "publisher": "哔哩哔哩电影",
+      "publisherEvidence": [
+        "https://www.bilibili.com/bangumi/play/ss28198"
+      ],
+      "speakers": [
+        "小黑：山新",
+        "无限：刘明月",
+        "哪吒：山新"
+      ],
+      "verifiedListening": false,
+      "startSeconds": null,
+      "endSeconds": null,
+      "quote": null,
+      "quoteSpeaker": null,
+      "quoteSource": null,
+      "kind": "正版正片入口",
+      "description": "正版影片页面。观看可能需要登录、会员或受地区限制；此处不保存或分发正片。"
+    }
+  ],
+  "sources": [
+    "https://luoxiaohei-movie.com/1st/character/",
+    "https://luoxiaohei-movie.com/1st/staffcast/",
+    "https://www.1905.com/mdb/film/2242929/?fr=mdbypk_zp"
+  ],
+  "limitations": [
+    "8位主要人物整理了较完整介绍，其余保留可核实的出场或演职员信息。没有把资料少的人补成完整性格设定。",
+    "人物故事涉及首作剧情，重要转折默认折叠。标为“观影解读”的部分是整理者理解。",
+    "新增五人共25张参考图；小黑、无限、哪吒沿用的图册含跨作品参考，不能视作40张纯首作剧照。",
+    "中文配音演员与官方回看入口有出处，但本轮未逐句核听，没有发布精确台词或时间码。",
+    "毛毛、冠萱等次要角色的名字按1905记录保留；与其他版本姓名的对应关系仍需片尾核对。"
+  ]
+}

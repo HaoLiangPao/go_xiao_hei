@@ -3,6 +3,13 @@ import cast from "./character-cast.json";
 import { characterHref, filterCharacters } from "./characterModel.js";
 import { Icon } from "./Artwork.jsx";
 import "./characters.css";
+import {
+  CollectionCards,
+  CollectionDetail,
+  CharacterStorySection,
+  CharacterFilmVoices,
+  collections,
+} from "./CharacterFilm.jsx";
 
 const packs = import.meta.glob("./characters/*.json", {
   eager: true,
@@ -11,6 +18,24 @@ const packs = import.meta.glob("./characters/*.json", {
 const profiles = Object.fromEntries(
   Object.values(packs).map((profile) => [profile.id, profile]),
 );
+const indexedCast = cast.characters.map((character) => {
+  const profile =
+    profiles[character.id] ||
+    Object.values(profiles).find(
+      (p) =>
+        p.name === character.name ||
+        p.aliases?.includes(character.name) ||
+        character.aliases?.includes(p.name),
+    );
+  return {
+    ...character,
+    id: profile?.id || character.id,
+    userSpellings:
+      character.name === "山新"
+        ? [...new Set([...(character.userSpellings || []), "善心"])]
+        : character.userSpellings,
+  };
+});
 const workLabels = {
   tv: "TV 动画",
   movie1: "电影一",
@@ -58,7 +83,7 @@ function LibraryHeader() {
       <a className="brand" href="#">
         <Icon name="leaf" />
         <span>
-          四时拾光<small>画里的人，一起记住</small>
+          四时拾光<small>人物介绍与原片参考</small>
         </span>
       </a>
       <nav aria-label="资料库导航">
@@ -75,7 +100,7 @@ function CastIndex() {
     [status, setStatus] = useState("all");
   const characters = useMemo(
     () =>
-      filterCharacters(cast.characters, {
+      filterCharacters(indexedCast, {
         query,
         work,
         readyOnly,
@@ -84,25 +109,35 @@ function CastIndex() {
       }),
     [query, work, readyOnly, status],
   );
+  const order = [
+    "xiaohei",
+    "wuxian",
+    "fengxi",
+    "luozhu",
+    "xuhuai",
+    "tianhu",
+    "ruoshui",
+    "nezha",
+  ];
   const featured = Object.values(profiles).sort(
     (a, b) =>
-      ["wuxian", "xiaohei", "nezha"].indexOf(a.id) -
-      ["wuxian", "xiaohei", "nezha"].indexOf(b.id),
+      (order.includes(a.id) ? order.indexOf(a.id) : order.length) -
+      (order.includes(b.id) ? order.indexOf(b.id) : order.length),
   );
   return (
     <>
       <section className="library-intro">
         <div>
           <p className="library-eyebrow">罗小黑战记 · 人物资料库</p>
-          <h1>画中同行</h1>
-          <p>从四时里的相遇，认一认每张熟悉的面孔。</p>
+          <h1>在故事里认识他们</h1>
+          <p>按作品认识人物，也看看他们相处时的小细节。</p>
           <p className="library-intro-note">
-            人物背景、性格与造型参考，按出处慢慢整理。
+            人物介绍、几场值得留意的戏，还有能回看的原片资料。
           </p>
         </div>
         <div className="library-count">
-          <strong>{cast.characters.length}</strong>
-          <span>条角色索引</span>
+          <strong>{featured.length}</strong>
+          <span>个人物已有详情</span>
           <small>
             {cast.characters.filter((c) => c.status === "confirmed").length}{" "}
             条官方来源核对
@@ -113,10 +148,11 @@ function CastIndex() {
           </small>
         </div>
       </section>
+      <CollectionCards />
       <section aria-labelledby="featured-title" className="featured-characters">
         <div className="library-section-heading">
-          <h2 id="featured-title">先从四时里的他们开始</h2>
-          <span>2020 节气图集</span>
+          <h2 id="featured-title">已整理的人物</h2>
+          <span>背景、相处细节与造型参考</span>
         </div>
         <div className="featured-grid">
           {featured.map((profile) => (
@@ -244,7 +280,7 @@ function CastIndex() {
           </p>
         )}
         <details className="library-research">
-          <summary>收录范围与待核对的名字</summary>
+          <summary>收录范围与姓名说明</summary>
           <p>
             核对日期：{cast.checkedAt}
             。角色索引与完整人物档案分开维护，未整理详情不表示该角色不存在。
@@ -313,10 +349,12 @@ function Detail({ profile }) {
               </div>
             ))}
           </dl>
-          <p className="character-2020">
-            <span>在四时里遇见</span>
-            {profile.appearance2020}
-          </p>
+          {(profile.appearanceNote || profile.appearance2020) && (
+            <p className="character-2020">
+              <span>{profile.appearanceNote?.label || "在四时里遇见"}</span>
+              {profile.appearanceNote?.text || profile.appearance2020}
+            </p>
+          )}
           <a
             className="character-gallery-jump"
             href="#references"
@@ -333,17 +371,14 @@ function Detail({ profile }) {
       </section>
       <div className="character-notes-grid">
         {profile.sections.map((section) => (
-          <section className="character-notes" key={section.title}>
-            <h2>{section.title}</h2>
-            {section.items.map((item, i) => (
-              <div key={i}>
-                <p>{item.text}</p>
-                <SourceLinks urls={item.sources} />
-              </div>
-            ))}
-          </section>
+          <CharacterStorySection
+            key={section.title}
+            section={section}
+            Sources={SourceLinks}
+          />
         ))}
       </div>
+      <CharacterFilmVoices profile={profile} />
       <section className="character-reference-section" id="references">
         <div className="library-section-heading">
           <h2>造型参考图册</h2>
@@ -444,17 +479,28 @@ function Detail({ profile }) {
 }
 export function CharacterLibrary({ route }) {
   const profile = route.kind === "detail" ? profiles[route.id] : null;
+  const pageTitle =
+    profile?.name ||
+    (route.kind === "collection" && collections[route.id]?.title) ||
+    "人物资料库";
   useEffect(() => {
-    document.title = `${profile?.name || "人物资料库"} · 四时拾光`;
+    document.title = `${pageTitle} · 四时拾光`;
     return () => {
       document.title = "小黑的四时拾光";
     };
-  }, [profile?.name]);
+  }, [pageTitle]);
   return (
     <div className="character-library">
       <LibraryHeader />
       <main id="character-main">
-        {route.kind === "index" ? (
+        {route.kind === "collection" && collections[route.id] ? (
+          <CollectionDetail
+            key={route.id}
+            collection={collections[route.id]}
+            profiles={profiles}
+            Sources={SourceLinks}
+          />
+        ) : route.kind === "index" ? (
           <CastIndex />
         ) : profile ? (
           <Detail key={profile.id} profile={profile} />

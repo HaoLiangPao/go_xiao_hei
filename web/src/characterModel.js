@@ -1,5 +1,7 @@
 // Pure helpers shared by the reference library and its data checks.
 export function characterRoute(hash = "") {
+  const collection = /^#\/characters\/collection\/([a-z0-9-]+)\/?$/.exec(hash);
+  if (collection) return { kind: "collection", id: collection[1] };
   const match = /^#\/characters(?:\/([^/?#]+))?\/?$/.exec(hash);
   if (!match)
     return hash.startsWith("#/characters")
@@ -32,7 +34,12 @@ export function filterCharacters(
           : character.status !== "confirmed")) &&
       (work === "all" || character.works.includes(work)) &&
       (!term ||
-        [character.name, ...(character.aliases || []), character.summary]
+        [
+          character.name,
+          ...(character.aliases || []),
+          ...(character.userSpellings || []),
+          character.summary,
+        ]
           .join(" ")
           .normalize("NFKC")
           .toLocaleLowerCase("zh-CN")
