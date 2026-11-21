@@ -31,6 +31,9 @@ export function CollectionDetail({ collection, profiles, Sources }) {
   const characters = collection.characters.filter((c) =>
     [c.name, ...(c.aliases || [])].join(" ").includes(query.trim()),
   );
+  const candidates = (collection.candidates || []).filter((c) =>
+    [c.name, ...(c.aliases || [])].join(" ").includes(query.trim()),
+  );
   return (
     <article className="work-detail">
       <a className="character-back" href="#/characters">
@@ -69,7 +72,10 @@ export function CollectionDetail({ collection, profiles, Sources }) {
           placeholder="名字或别名"
         />
       </label>
-      <p role="status">找到 {characters.length} 条人物记录</p>
+      <p role="status">
+        找到 {characters.length} 条人物记录
+        {candidates.length > 0 && `，另有 ${candidates.length} 条待核目录线索`}
+      </p>
       <div className="work-characters">
         {characters.map((c) => (
           <section key={c.id} className="work-character" id={`role-${c.id}`}>
@@ -116,7 +122,31 @@ export function CollectionDetail({ collection, profiles, Sources }) {
           </section>
         ))}
       </div>
-      {!characters.length && <p>这一篇里没有匹配的名字，试试其他写法。</p>}
+      {candidates.length > 0 && (
+        <details
+          className="collection-candidates"
+          open={query.trim() ? true : undefined}
+        >
+          <summary>
+            关联目录中还有这些名字 · 出场待核（{candidates.length}）
+          </summary>
+          <p>
+            下面来自社区关联目录，尚未逐集核对，不能作为本篇已出场的完整名单。
+          </p>
+          <ul>
+            {candidates.map((c) => (
+              <li key={c.id}>
+                <strong>{c.name}</strong>
+                <span>{c.summary}</span>
+                <Sources urls={c.sources} />
+              </li>
+            ))}
+          </ul>
+        </details>
+      )}
+      {!characters.length && !candidates.length && (
+        <p>这一篇里没有匹配的名字，试试其他写法。</p>
+      )}
       <CharacterFilmVoices collection={collection} />
       <section className="character-boundaries">
         <h2>这一篇的资料说明</h2>
@@ -145,7 +175,7 @@ export function CharacterStorySection({ section, Sources }) {
     <details className="character-notes character-ending">
       <summary>
         <h2>{section.title}</h2>
-        <small>涉及后半段剧情 · 点开阅读</small>
+        <small>包含剧情进展 · 点开阅读</small>
       </summary>
       {body}
     </details>
@@ -180,7 +210,7 @@ export function CharacterFilmVoices({ profile, collection }) {
         </p>
       )}
       <p className="film-voice-note">
-        这里收录官方发布的配音特辑与预告，包含多位角色。点开后可在原平台回看；逐句台词还没有校听。
+        这里收录官方特辑、预告或正版剧集入口，包含多位角色。点开后可在原平台回看；逐句台词还没有校听。
       </p>
       <div className="film-media-list">
         {media.map((entry) => {

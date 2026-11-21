@@ -1012,3 +1012,30 @@
 .film-media-card h3 {
   overflow-wrap: anywhere;
 }
+
+.collection-candidates {
+  border: 1px solid #cbd8c5;
+  border-radius: 14px;
+  padding: 20px;
+  margin: 24px 0;
+  line-height: 1.8;
+}
+.collection-candidates summary {
+  cursor: pointer;
+}
+.collection-candidates ul {
+  list-style: none;
+  padding: 0;
+}
+.collection-candidates li {
+  border-top: 1px solid #d6e0d0;
+  padding: 14px 0;
+}
+.collection-candidates li > strong,
+.collection-candidates li > span {
+  display: block;
+}
+.collection-candidates li > span {
+  font-size: 13px;
+  color: #577362;
+}
