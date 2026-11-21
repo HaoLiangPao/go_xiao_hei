@@ -1,0 +1,4 @@
+interface:
+  display_name: "角色审美审核"
+  short_description: "对照原作检查角色比例、轮廓、线条和动作一致性，给出有图像证据的改进意见"
+  default_prompt: "使用 $character-art-review 对照原作审核这次角色美术改动，给出优先修改项和未确认部分。"
