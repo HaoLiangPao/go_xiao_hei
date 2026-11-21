@@ -1,0 +1,147 @@
+{
+  "id": "luye",
+  "name": "鹿野",
+  "subtitle": "会带小黑去找真相，也会被小黑问住的师姐。",
+  "summary": "师父被冤枉，鹿野马上带小黑出去查。她能追踪留下来的灵，看起来做事干脆，带孩子吃饭住店也有自己的安排。可师姐和师弟并不总能谈到一起：她经历过战争，对人类有戒心，小黑却会追问无辜的人怎么办。一起追凶，也是在慢慢认识对方。",
+  "accent": "#6d8461",
+  "basics": [
+    {
+      "label": "本页作品",
+      "value": "罗小黑战记2"
+    },
+    {
+      "label": "参考图",
+      "value": "5张（保留原始合照）"
+    },
+    {
+      "label": "原声",
+      "value": "正版入口回看，逐句台词待校听"
+    }
+  ],
+  "aliases": [],
+  "checkedAt": "2026-11-21",
+  "eraLabel": "2025",
+  "heroRef": 0,
+  "sections": [
+    {
+      "title": "从带孩子到并肩打",
+      "items": [
+        {
+          "text": "鹿野是无限的弟子，小黑的师姐。刚认识时，她也在好奇师父为什么又收了这个孩子；查案和战斗让两人的关系，一点点从照看小孩变成互相信任的搭档。",
+          "sources": [
+            "https://luoxiaohei-movie.com/2nd/character/",
+            "https://static.nfnews.com/content/202508/04/c11583794.html?enterColumnId=44177"
+          ],
+          "evidence": "primary setting + primary interview",
+          "spoiler": false
+        }
+      ]
+    },
+    {
+      "title": "嘴上排斥，行动里没那么简单",
+      "items": [
+        {
+          "text": "她讨厌人类，却穿现代衣服、吃好吃的、住好酒店；飞机出事时，她也会动手救人。这些细节把她的矛盾留在具体生活里，而不只是讲一段苦难身世。",
+          "sources": [
+            "https://static.nfnews.com/content/202508/04/c11583794.html?enterColumnId=44177",
+            "https://www.mgtv.com/h/765449/0.html"
+          ],
+          "evidence": "primary interview + licensed clip headings + 观影解读",
+          "spoiler": true
+        }
+      ]
+    },
+    {
+      "title": "有些伤还留着",
+      "items": [
+        {
+          "text": "战争让鹿野失去过重要的人。无限曾帮助她，但他也是人类，这让她的亲近里隔着一段距离。调查结束后，她对师父的牵挂仍然留在那次简短道别里。",
+          "sources": [
+            "https://static.nfnews.com/content/202508/04/c11583794.html?enterColumnId=44177"
+          ],
+          "evidence": "primary interview",
+          "spoiler": true
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "src": "/art/characters/movie2/9224e860d81cf972.png",
+      "sha256": "9224e860d81cf9726d78bd6304eec17f85c589602ffb7689d870ec2d50e1704e",
+      "bytes": 128545,
+      "title": "鹿野·电影2官方立绘",
+      "description": "续作日本发行官网全身角色立绘。",
+      "sourceUrl": "https://luoxiaohei-movie.com/2nd/character/",
+      "modelingUse": "本作服装、站姿、头身比例和正面配色；不是完整三视图。",
+      "credit": "© Beijing HMCH Anime Co.,Ltd；原作权利归原权利人，公开刊载不代表已获再分发、训练或商用许可。",
+      "licenseStatus": "版权保留，非开放训练或商用授权",
+      "kind": "电影《罗小黑战记2》（2025）"
+    },
+    {
+      "src": "/art/characters/movie2/0c6906e604ea54a8.jpg",
+      "sha256": "0c6906e604ea54a8ea0bae66f1bf63adff0a08d21eba6c02dbf8bbd701faa5bb",
+      "bytes": 353230,
+      "title": "鹿野·坐着看书",
+      "description": "鹿野侧坐在室内，手里拿着绿色封面的书。",
+      "sourceUrl": "https://gkids.com/films/the-legend-of-hei-2/",
+      "modelingUse": "侧脸、白发厚度、上衣和长裤坐姿。",
+      "credit": "© Beijing HMCH Anime Co.,Ltd；原作权利归原权利人，公开刊载不代表已获再分发、训练或商用许可。",
+      "licenseStatus": "版权保留，非开放训练或商用授权",
+      "kind": "电影《罗小黑战记2》（2025）"
+    },
+    {
+      "src": "/art/characters/movie2/1e7c3ca71e5571b3.jpg",
+      "sha256": "1e7c3ca71e5571b30e5c8fe9ac26e98079a15777f4891c27088db74c00972edd",
+      "bytes": 94125,
+      "title": "鹿野·肩边的小黑",
+      "description": "鹿野半身近景，小黑猫形在她肩边。",
+      "sourceUrl": "https://gkids.com/films/the-legend-of-hei-2/",
+      "modelingUse": "脸部三分之二角度、后束发与小黑猫形比例。",
+      "credit": "© Beijing HMCH Anime Co.,Ltd；原作权利归原权利人，公开刊载不代表已获再分发、训练或商用许可。",
+      "licenseStatus": "版权保留，非开放训练或商用授权",
+      "kind": "电影《罗小黑战记2》（2025）"
+    },
+    {
+      "src": "/art/characters/movie2/e22e40bb402b6016.jpg",
+      "sha256": "e22e40bb402b6016a329e3db9a00506c97296bcab37c7762eca08fd92049d8e5",
+      "bytes": 27828,
+      "title": "鹿野·林间侧脸宣传剧照",
+      "description": "媒体主创专访配图，鹿野在林间侧脸近景，带宣传文字。",
+      "sourceUrl": "https://static.nfnews.com/content/202508/04/c11583794.html?enterColumnId=44177",
+      "modelingUse": "侧脸轮廓与后束发；文字不是已听审台词。",
+      "credit": "© Beijing HMCH Anime Co.,Ltd；原作权利归原权利人，公开刊载不代表已获再分发、训练或商用许可。",
+      "licenseStatus": "版权保留，非开放训练或商用授权",
+      "kind": "电影《罗小黑战记2》（2025）"
+    },
+    {
+      "src": "/art/characters/movie2/452b00830bebec0a.jpg",
+      "sha256": "452b00830bebec0a580659ec1ff4af999de5016ced1cf09662b1afa06322eff8",
+      "bytes": 91374,
+      "title": "鹿野·角色档案海报",
+      "description": "媒体主创专访刊载的电影2角色档案海报，包含全身动态造型。",
+      "sourceUrl": "https://static.nfnews.com/content/202508/04/c11583794.html?enterColumnId=44177",
+      "modelingUse": "本作服装、手套和动作轮廓；海报文字另核，不自动提取数字设定。",
+      "credit": "© Beijing HMCH Anime Co.,Ltd；原作权利归原权利人，公开刊载不代表已获再分发、训练或商用许可。",
+      "licenseStatus": "版权保留，非开放训练或商用授权",
+      "kind": "电影《罗小黑战记2》（2025）"
+    }
+  ],
+  "uncertainties": [
+    "本轮不直接引用采访转述的影片对白；没有官方原声听审时间码。",
+    "媒体展示了200余稿设计探索；弃稿不当成片唯一标准造型。",
+    "主要参考5张都对应本作实际造型；另存设计探索只供研究，不自动进入角色标准图。",
+    "参考图保留原作画面，合照不是单人物三视图；未经核听不引用逐字台词。"
+  ],
+  "rights": "非官方资料整理，原图及人物版权归原权利人。公开刊载不代表开放训练或商用授权。",
+  "collectionId": "movie2",
+  "chineseVoiceActor": "朱婧",
+  "voiceSources": [
+    "https://static.nfnews.com/content/202508/04/c11583794.html?enterColumnId=44177",
+    "https://www.1905.com/news/20250716/1734967.shtml"
+  ],
+  "appearanceNote": {
+    "label": "这一篇的记录",
+    "text": "12名官网人物分别整理本作介绍；社区目录中的其他名字另列为待核线索，不把关联记录当作已确认出场名单。"
+  }
+}
