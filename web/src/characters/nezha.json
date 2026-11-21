@@ -1,7 +1,7 @@
 {
   "name": "哪吒",
-  "subtitle": "会馆的执行者，雪人旁的伙伴",
-  "summary": "《罗小黑战记》世界观中的哪吒，来自会馆总部的执行者。双发髻、齐刘海和现代休闲衣装，是辨认他的线索。",
+  "subtitle": "总部来的帮手，也有进不去的地方。",
+  "summary": "龙游出了事，哪吒从会馆总部赶来支援。可等他到场，风息的领域已经进不去了，人来了也没法直接帮上里面的无限。第一部留给他的戏份不长：一个发型醒目、从总部来的执行人，碰上了眼前这道不好办的难题。中文配音和小黑一样，都是山新。",
   "accent": "#a44c50",
   "basics": [
     {
@@ -27,69 +27,48 @@
     "ナタ",
     "Nezha"
   ],
-  "checkedAt": "2026-11-19",
-  "eraLabel": "2020 画面与跨作品资料",
+  "checkedAt": "2026-11-21",
+  "eraLabel": "2019 首部电影 · 图册版本逐图注明",
   "heroRef": 0,
   "sections": [
     {
-      "title": "身份与背景",
+      "title": "从总部赶来",
       "items": [
         {
-          "text": "这是《罗小黑战记》世界观中的哪吒；导演明确说明并非《哪吒之魔童降世》的联动角色。",
-          "sources": [
-            "https://ent.people.com.cn/n1/2019/0911/c1012-31347995.html"
-          ]
-        },
-        {
-          "text": "哪吒是妖灵会馆总部派遣的执行者，拥有很强的实力。续作官方资料进一步将他介绍为隶属总馆的妖精、会馆三大创始神之一。",
+          "text": "哪吒是会馆总部派来的执行人。他出现时，龙游的事已经闹大了；这次支援，就是第一部里观众认识他的主要一段经历。",
           "sources": [
             "https://luoxiaohei-movie.com/1st/character/?page=chara08",
-            "https://luoxiaohei-movie.com/2nd/character/"
-          ]
+            "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)"
+          ],
+          "evidence": "primary + secondary",
+          "spoiler": false
         }
       ]
     },
     {
-      "title": "性格与相处",
+      "title": "领域挡在面前",
       "items": [
         {
-          "text": "发行宣传提到哪吒喜欢游戏。官方立绘中，他多呈平静神情、穿现代休闲装；这些属于外观观察。",
+          "text": "风息的领域已经无法进入，哪吒没能进去参与无限与风息的交战。赶到现场和真正帮上忙之间，还隔着这层限制。",
           "sources": [
-            "https://www.animatetimes.com/news/details.php?id=1763700816",
-            "https://luoxiaohei-movie.com/1st/character/?page=chara08",
-            "https://luoxiaohei-movie.com/2nd/character/"
-          ]
-        },
-        {
-          "text": "哪吒与无限同属会馆执行者。续作发行宣传还呈现了无限暂住哪吒家、以及两人对战的情节。",
-          "sources": [
-            "https://luoxiaohei-movie.com/1st/character/?page=chara08",
-            "https://luoxiaohei-movie.com/1st/character/?page=chara02",
-            "https://www.animatetimes.com/news/details.php?id=1763700816"
-          ]
+            "https://zh.wikipedia.org/wiki/罗小黑战记_(电影)"
+          ],
+          "evidence": "secondary + 观影解读",
+          "spoiler": true
         }
       ]
     },
     {
-      "title": "能力与作品阶段",
+      "title": "同名，各有各的故事",
       "items": [
         {
-          "text": "官方续作资料列出御灵系·火、生灵系·幻化、锁御系·灵御。资料页先保留这三项已确认能力，不把别的哪吒作品中的法宝或身世套用过来。",
+          "text": "这是《罗小黑战记》里的哪吒。木头在2019年的采访中说过，与《哪吒之魔童降世》并没有联动；两部电影各自的身世和经历，也不能混在一起。",
           "sources": [
-            "https://luoxiaohei-movie.com/2nd/character/"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "造型观察",
-      "items": [
-        {
-          "text": "官方角色图可见深色齐刘海、头顶双发髻、低束长发、短款外套与NAZA字样上衣，左上臂系红色饰带；首部电影图与续作图服装图案、短裤和鞋款不同。",
-          "sources": [
-            "https://luoxiaohei-movie.com/1st/character/?page=chara08",
-            "https://luoxiaohei-movie.com/2nd/character/"
-          ]
+            "https://media.people.com.cn/n1/2019/0911/c40606-31347724.html",
+            "https://www.ithome.com/0/445/173.htm"
+          ],
+          "evidence": "primary interview + secondary",
+          "spoiler": false
         }
       ]
     }
@@ -167,11 +146,15 @@
     }
   ],
   "uncertainties": [
-    "未找到可靠的精确出生年月；超过3000岁来自2025续作人物资料，不推算出生年份。",
-    "123厘米在社区百科出现，但本轮未找到原始设定来源，页面先不写确定身高。",
-    "2020大雪官方微博首发帖未逐张核验；保存既有第三方档案来源。",
-    "没有完整正交三视图或身体背面设定；不能从前面图自行补造背面。",
-    "所有图片均未确认开放再分发、模型训练或商业建模许可；版权署名不等于授权。"
+    "未在可回看的中文官方短片中实听并定位哪吒的台词，因此不给“哪吒原声已核验”标签。",
+    "三千多岁、三大创始神及完整能力分类可另查跨作品设定，本次不作为首作人物页的主要内容。",
+    "本页故事只讲首部电影；旧有图册包含续作和2020节气图，图片版本以图注为准。"
   ],
-  "rights": "人物、原画与剧照版权归原权利人。此处为非官方参考资料整理；来源公开可读不等于获得转载、训练或商业建模授权。"
+  "rights": "人物、原画与剧照版权归原权利人。此处为非官方参考资料整理；来源公开可读不等于获得转载、训练或商业建模授权。",
+  "collectionId": "movie1",
+  "chineseVoiceActor": "山新",
+  "voiceSources": [
+    "https://www.1905.com/mdb/film/2242929/?fr=mdbypk_zp",
+    "https://www.bilibili.com/bangumi/play/ep281165"
+  ]
 }

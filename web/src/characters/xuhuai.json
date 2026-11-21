@@ -1,0 +1,149 @@
+{
+  "id": "xuhuai",
+  "name": "虚淮",
+  "accent": "#64826b",
+  "aliases": [],
+  "heroRef": 0,
+  "basics": [
+    {
+      "label": "身份",
+      "value": "与风息一起行动的妖精"
+    },
+    {
+      "label": "能力",
+      "value": "御灵系·冰；冰构成身体、受伤可自修复；可放出精灵鱼"
+    },
+    {
+      "label": "中文配音",
+      "value": "曹云图"
+    }
+  ],
+  "references": [
+    {
+      "src": "/art/characters/movie1/xuhuai/1.png",
+      "title": "虚淮·首作全身立绘",
+      "description": "官网透明背景全身图，显示本片服装与整体轮廓。",
+      "modelingUse": "先建立正面比例、服装分层与配色基准。",
+      "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara04",
+      "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+      "licenseStatus": "版权保留；资料参考，非开放授权",
+      "kind": "官网立绘",
+      "bytes": 34623,
+      "sha256": "c1c63f6cfe73dc7009930a339e9afe00354779fb5d0ef5039a1573ecfb978904"
+    },
+    {
+      "src": "/art/characters/movie1/xuhuai/2.jpg",
+      "title": "虚淮·首作官方剧照一",
+      "description": "虚淮正面近景，角状头部轮廓、额部与浅色长发清晰。",
+      "modelingUse": "脸部比例、头部突起、眉眼和发片位置。",
+      "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara04",
+      "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+      "licenseStatus": "版权保留；资料参考，非开放授权",
+      "kind": "官方剧照",
+      "bytes": 34707,
+      "sha256": "957571bb1e45f48c9b0b3c1933dc9de8e16420d2acc0b67e930e0eaa54a3f91f"
+    },
+    {
+      "src": "/art/characters/movie1/xuhuai/3.jpg",
+      "title": "虚淮·首作官方剧照二",
+      "description": "虚淮战斗剧照，蓝色冰体与碎片环绕身体。",
+      "modelingUse": "区分角色本体和战斗特效，不把发光当固有色。",
+      "sourceUrl": "https://luoxiaohei-movie.com/1st/character/?page=chara04",
+      "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+      "licenseStatus": "版权保留；资料参考，非开放授权",
+      "kind": "官方剧照",
+      "bytes": 73939,
+      "sha256": "6b59d4dcd073b7e7f892754d7e946bf8260a00beb6e10da3bd13724be3fc92e1"
+    },
+    {
+      "src": "/art/characters/movie1/xuhuai/4.jpg",
+      "title": "虚淮·多视角设定稿",
+      "description": "含正面、侧面、背面及头部和鞋手局部参考。",
+      "modelingUse": "头部突起、长发背面、衣服围边与腰间串珠。",
+      "sourceUrl": "https://www.jiemian.com/article/3501281.html",
+      "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+      "licenseStatus": "版权保留；资料参考，非开放授权",
+      "kind": "媒体刊载制作设定稿",
+      "bytes": 72955,
+      "sha256": "5018f1855d874c454d8ed42e2085965da13b8dd5b1919e65824fe3e4130f44f9"
+    },
+    {
+      "src": "/art/characters/movie1/xuhuai/5.jpg",
+      "title": "虚淮·林间站姿剧照",
+      "description": "虚淮侧身立于林间，服装轮廓和长发下垂方向可见。",
+      "modelingUse": "自然站姿、重心与头发长度，避免只按正脸建模。",
+      "sourceUrl": "https://www.jiemian.com/article/3501281.html",
+      "credit": "© Beijing HMCH Anime Co.,Ltd；未获得重新分发或建模商用许可；公开刊载不等于开放授权",
+      "licenseStatus": "版权保留；资料参考，非开放授权",
+      "kind": "媒体刊载电影剧照",
+      "bytes": 29496,
+      "sha256": "80b6cf5d3a26ee9393a533f0c214c348f8c4dcafde4c63c4eff29761cf1c8f9b"
+    }
+  ],
+  "rights": "人物与原图版权归《罗小黑战记》及原权利人。非官方资料整理；公开展示不代表开放训练或商业建模授权。",
+  "summary": "小黑来到岛上，认识了风息的几位朋友，虚淮也在其中。和张罗欢迎会的洛竹放在一起，他显得安静得多。他的本事和冰有关，连身体也是冰构成的，受伤能自行修复。平日里不太抢眼的同伴，一旦交手，就有了冰块与精灵鱼环绕的另一副样子。",
+  "subtitle": "岛上安静的同伴，有一副冰做的身体。",
+  "sections": [
+    {
+      "title": "小黑在岛上认识的朋友",
+      "items": [
+        {
+          "text": "虚淮和风息、洛竹、天虎一起生活。洛竹招呼新来的小黑时，几个人成了一桌的朋友。虚淮的表情不多，官网选出的夜间近景里，他皱着眉，和洛竹招呼人的样子很不一样。",
+          "sources": [
+            "https://luoxiaohei-movie.com/1st/character/?page=chara03",
+            "https://luoxiaohei-movie.com/1st/character/?page=chara04",
+            "https://luoxiaohei-movie.com/1st/character/?page=chara05",
+            "https://luoxiaohei-movie.com/1st/assets/img/character/photo_05-1.jpg"
+          ],
+          "evidence": "primary + scene observation + 观影解读",
+          "spoiler": false
+        }
+      ]
+    },
+    {
+      "title": "身体也是冰做的",
+      "items": [
+        {
+          "text": "虚淮能用冰，也有一副由冰构成的身体，受伤以后可以自行修复。打斗里那些冰块和碎片，并不只是身边的装饰；冰也直接关系到他怎么承受攻击。",
+          "sources": [
+            "https://luoxiaohei-movie.com/1st/character/?page=chara04"
+          ],
+          "evidence": "primary + 观影解读",
+          "spoiler": false
+        }
+      ]
+    },
+    {
+      "title": "还有精灵鱼",
+      "items": [
+        {
+          "text": "除了冰，虚淮还能放出精灵鱼。和风息、洛竹、天虎一起行动时，他有自己的出手方式；蓝色冰体环绕的战斗画面，和林间安静站着的样子很不一样。",
+          "sources": [
+            "https://luoxiaohei-movie.com/1st/character/?page=chara04",
+            "https://www.jiemian.com/article/3501281.html"
+          ],
+          "evidence": "primary + scene observation",
+          "spoiler": false
+        }
+      ]
+    }
+  ],
+  "uncertainties": [
+    "最初概念稿中的木系虚淮不是成片设定，不可把放花幻术写入2019成片能力。",
+    "饭桌对话只获二手抄本与细节文章线索，建议最终看片听审后发布；不引逐字对白。",
+    "初次登场、年龄排行、战力榜不作为本轮人物事实，未找足一手依据。",
+    "没有采用粉丝抄本中邀请配合逗孩子的具体对话；表情描写来自官网已核图片，不作为逐帧观影结论。"
+  ],
+  "checkedAt": "2026-11-21",
+  "eraLabel": "2019 首部电影 · 图册版本逐图注明",
+  "collectionId": "movie1",
+  "chineseVoiceActor": "曹云图",
+  "voiceSources": [
+    "https://www.1905.com/mdb/film/2242929/?fr=mdbypk_zp",
+    "https://www.bilibili.com/bangumi/play/ep281165"
+  ],
+  "appearanceNote": {
+    "label": "这一版造型",
+    "text": "本页新增参考图均来自首部电影官网及2019年媒体资料；多角度设定图保留原始排版。"
+  }
+}
