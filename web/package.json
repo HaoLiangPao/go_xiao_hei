@@ -15,23 +15,27 @@
     "test:dom": "node ../tests/color-interaction.test.cjs",
     "test:browser": "node tests/browser.cjs",
     "test:voice-browser": "node tests/dialogue-browser.cjs",
-    "predev": "node scripts/prepare-public.mjs",
-    "prebuild": "node scripts/prepare-public.mjs",
+    "predev": "node scripts/prepare-public.mjs && node scripts/model-resources.mjs",
+    "prebuild": "node scripts/prepare-public.mjs && node scripts/model-resources.mjs",
     "resources:publish": "node scripts/publish-resources.mjs",
     "resources:check": "node scripts/runtime-resources.mjs",
     "test:spring-browser": "node tests/spring-browser.cjs",
     "test:season-browser": "node tests/season-browser.cjs",
     "test:characters-browser": "node tests/characters-browser.cjs",
-    "characters:check": "node scripts/character-resources.mjs"
+    "characters:check": "node scripts/character-resources.mjs",
+    "models:build": "node scripts/build-model-lab.mjs",
+    "test:models": "node --test tests/models.test.js",
+    "test:models-browser": "node tests/models-browser.cjs"
   },
   "dependencies": {
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },
   "devDependencies": {
-    "vite": "8.3.5",
+    "jsdom": "26.1.0",
     "playwright": "1.61.1",
-    "jsdom": "26.1.0"
+    "three": "0.181.2",
+    "vite": "8.3.5"
   },
   "engines": {
     "node": ">=22.12.0"
