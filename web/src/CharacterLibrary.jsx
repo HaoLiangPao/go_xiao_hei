@@ -18,6 +18,24 @@ const packs = import.meta.glob("./characters/*.json", {
 const profiles = Object.fromEntries(
   Object.values(packs).map((profile) => [profile.id, profile]),
 );
+const indexedCast = cast.characters.map((character) => {
+  const profile =
+    profiles[character.id] ||
+    Object.values(profiles).find(
+      (p) =>
+        p.name === character.name ||
+        p.aliases?.includes(character.name) ||
+        character.aliases?.includes(p.name),
+    );
+  return {
+    ...character,
+    id: profile?.id || character.id,
+    userSpellings:
+      character.name === "山新"
+        ? [...new Set([...(character.userSpellings || []), "善心"])]
+        : character.userSpellings,
+  };
+});
 const workLabels = {
   tv: "TV 动画",
   movie1: "电影一",
@@ -82,7 +100,7 @@ function CastIndex() {
     [status, setStatus] = useState("all");
   const characters = useMemo(
     () =>
-      filterCharacters(cast.characters, {
+      filterCharacters(indexedCast, {
         query,
         work,
         readyOnly,

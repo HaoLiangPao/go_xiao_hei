@@ -106,6 +106,7 @@ export function CollectionDetail({ collection, profiles, Sources }) {
                     </a>
                     <figcaption>
                       {ref.title}
+                      <p>{ref.description}</p>
                       <a href={ref.sourceUrl} target="_blank" rel="noreferrer">
                         图片出处
                       </a>
