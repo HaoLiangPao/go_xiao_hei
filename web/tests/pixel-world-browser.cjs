@@ -19,6 +19,7 @@ const root=path.resolve(__dirname,'..'),origin='http://127.0.0.1:5231',shots=pat
       await page.goto(origin);
       await page.evaluate(({saveKey})=>{localStorage.setItem('shiguang-mode',JSON.stringify({picture:'rain',board:'guided',level:'easy',shape:'classic',magnet:true}));localStorage.setItem(saveKey,'[0,2,4]')},{saveKey});
       await page.reload();
+      await page.waitForFunction(()=>document.querySelector('#count')?.textContent==='3 / 12');
       const entry=page.getByRole('link',{name:'去像素街区散步'});await entry.click();
       await page.waitForFunction(()=>!!document.querySelector('#world')?.dataset.x);
       await page.clock.install({time:new Date('2026-11-21T12:00:00Z')});await page.clock.pauseAt(new Date('2026-11-21T12:01:00Z'));
@@ -49,6 +50,10 @@ const root=path.resolve(__dirname,'..'),origin='http://127.0.0.1:5231',shots=pat
           if(await page.locator('#visit').isEnabled()){const text=await page.locator('#visit').innerText();if(text.includes(i===0?'山新':i===1?'小白家':'爷爷')){arrived=true;break}}
         }
         assert.ok(arrived,`${name} should walk to ${id}`);assert.notEqual((await state()).x,before.x);
+        assert.equal(await page.evaluate(()=>{
+          const f=document.querySelector('#map-frame').getBoundingClientRect();
+          return [...document.querySelectorAll('.home-label:not([hidden])')].every(label=>{const r=label.getBoundingClientRect();return r.left>=f.left&&r.right<=f.right&&r.top>=f.top&&r.bottom<=f.bottom});
+        }),true,'visible house names stay inside the map');
         await shot(id);await page.locator('#visit').click();await shot(`${id}-dialog`);
         assert.equal(await page.locator('#conversation').evaluate(el=>el.open),true);
         const atDialog=await state();await page.keyboard.down('ArrowDown');await page.clock.runFor(300);assert.equal((await state()).y,atDialog.y);await page.keyboard.up('ArrowDown');
@@ -62,13 +67,15 @@ const root=path.resolve(__dirname,'..'),origin='http://127.0.0.1:5231',shots=pat
       await canvas.click({position:{x:(+clickStart.x-32-+clickStart.cameraX)*+clickStart.scale,y:(+clickStart.y-+clickStart.cameraY)*+clickStart.scale}});
       await page.clock.runFor(600);assert.ok(+(await state()).x<+clickStart.x-10);
       await page.locator('#stop').click();await page.clock.runFor(32);assert.equal((await state()).moving,'false');
+      const stopPosition=await state();await page.keyboard.down('ArrowRight');await page.clock.runFor(240);await page.keyboard.up('ArrowRight');await page.clock.runFor(32);assert.ok(+(await state()).x>+stopPosition.x+5,'keyboard remains usable after Stop');
+      await page.locator('[data-dir=left]').focus();const beforeKeyButton=await state();await page.keyboard.down('Enter');await page.clock.runFor(240);await page.keyboard.up('Enter');await page.clock.runFor(32);assert.ok(+(await state()).x<+beforeKeyButton.x-5);assert.equal((await state()).moving,'false');
       if(name==='desktop'){
         const data=await page.evaluate(()=>{const a=document.createElement('canvas');a.width=128;a.height=128;const c=a.getContext('2d');c.fillStyle='#e1e4c6';c.fillRect(0,0,128,128);['down','right','up','left'].forEach((dir,row)=>{for(let f=0;f<4;f++)PixelArt.sprite(c,16+f*32,31+row*32,dir,f)});return a.toDataURL()});
         fs.writeFileSync(path.join(shots,'xiaohei-atlas.png'),Buffer.from(data.split(',')[1],'base64'));
         const enlarged=await page.evaluate(data=>new Promise(resolve=>{const image=new Image();image.onload=()=>{const c=document.createElement('canvas');c.width=512;c.height=512;const ctx=c.getContext('2d');ctx.imageSmoothingEnabled=false;ctx.drawImage(image,0,0,512,512);resolve(c.toDataURL())};image.src=data}),data);
         fs.writeFileSync(path.join(shots,'xiaohei-atlas-4x.png'),Buffer.from(enlarged.split(',')[1],'base64'));
       }
-      await page.getByRole('link',{name:'回到拼图'}).click();assert.equal(await page.evaluate(k=>localStorage.getItem(k),saveKey),'[0,2,4]');
+      await page.getByRole('link',{name:'回到拼图'}).click();await page.waitForFunction(()=>document.querySelector('#count')?.textContent==='3 / 12');assert.equal(await page.evaluate(k=>localStorage.getItem(k),saveKey),'[0,2,4]');
       assert.deepEqual(errors,[]);assert.deepEqual(outside,[]);console.log(`PASS ${name}: keyboard, actual painted walking frames, ${touch?'held touch/cancel, ':''}routes to all 3 homes, bridge, visits/dialog pause, ground click, stop, layout, puzzle save`);
       await context.close();
     }

@@ -75,24 +75,27 @@
     if(dir==='left'){c.translate(32,0);c.scale(-1,1);dir='right'}
     const r=(x,y,w,h,color)=>rect(c,x,y,w,h,color);
     const phase=[0,1,0,-1][frame%4];
+    const leftLift=phase>0?2:0,rightLift=phase<0?2:0;
     // Feet retain a fixed ground anchor. Leg phase changes, not overall volume.
     r(9,27,15,3,'#627b4b');
-    r(10,20,13,9,P.line);r(11,21,11,7,P.cat);
-    if(dir==='up'){r(8,22,4,6,P.cat);r(7,23,2,4,P.catLight)}
-    else {r(7,23,4,5,P.line);r(6,22,3,4,P.cat);r(6,21,2,2,P.catLight)}
-    r(11,27+phase,4,4-phase,P.line);r(18,27-phase,4,4+phase,P.line);
-    r(12,27+phase,2,3-phase,P.cat);r(19,27-phase,2,3+phase,P.cat);
+    r(10,20,13,8,P.line);r(11,21,11,6,P.cat);
+    // Open hook silhouette keeps the little curled tail readable over any tile.
+    r(6,22,2,5,P.line);r(6,26,5,2,P.line);r(5,21,3,2,P.line);r(9,24,2,3,P.line);
+    r(6,23,1,3,P.catLight);r(8,26,2,1,P.cat);
+    const leftX=dir==='right'?11-phase*2:11,rightX=dir==='right'?18+phase*2:18;
+    r(leftX,26,4,5-leftLift,P.line);r(rightX,26,4,5-rightLift,P.line);
+    r(leftX+1,27,2,3-leftLift,P.cat);r(rightX+1,27,2,3-rightLift,P.cat);
     if(dir==='right') {
       r(7,6,18,15,P.line);r(5,8,22,11,P.line);r(6,8,20,11,P.cat);r(8,6,16,15,P.cat);
       r(8,1,2,8,P.line);r(10,3,2,6,P.line);r(10,5,2,3,P.ear);r(22,2,2,6,P.line);r(21,4,2,3,P.ear);
       r(18,9,8,10,P.line);r(18,10,8,8,P.cream);r(20,10,6,7,'#101c19');r(26,18,2,2,'#6ba6a0');
-      r(14,27+phase,3,4-phase,P.line);
     } else {
-      r(3,1,2,8,P.line);r(5,3,2,7,P.line);r(7,5,2,4,P.line);
-      r(27,1,2,8,P.line);r(25,3,2,7,P.line);r(23,5,2,4,P.line);
+      for(const [ex,ey,ew] of [[3,1,1],[3,2,2],[4,3,2],[4,4,3],[4,5,4],[5,6,4],[5,7,4]]) {
+        r(ex,ey,ew,1,P.line);r(32-ex-ew,ey,ew,1,P.line);
+      }
       r(4,7,24,14,P.line);r(2,9,28,10,P.line);r(3,9,26,10,P.cat);r(5,7,22,14,P.cat);
       if(dir==='down') {
-        r(5,5,2,4,P.ear);r(25,5,2,4,P.ear);
+        r(5,5,1,2,P.ear);r(6,6,2,2,P.ear);r(26,5,1,2,P.ear);r(24,6,2,2,P.ear);
         for(const ex of [5,18]) {
           r(ex+2,9,6,11,P.line);r(ex+1,10,8,9,P.line);r(ex,12,10,5,P.line);
           r(ex+2,10,6,9,P.cream);r(ex+1,12,8,5,P.cream);r(ex+4,10,3,9,'#101c19');r(ex+3,11,5,7,'#101c19');r(ex+2,13,6,3,'#101c19');

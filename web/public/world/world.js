@@ -1,4 +1,7 @@
 (() => {
+  if(location.protocol==='file:'){
+    const back=document.querySelector('header a');back.href='../../../prototype/puzzle.html';back.textContent='回到离线拼图';
+  }
   const M=PixelWorld,A=PixelArt,canvas=document.querySelector('#world'),ctx=canvas.getContext('2d'),frame=document.querySelector('#map-frame');
   const dialog=document.querySelector('#conversation'),visit=document.querySelector('#visit'),location=document.querySelector('#location'),destinations=document.querySelector('#destinations');
   const player={...M.spawn,dir:'down',distance:0},visited=new Set(),keys=new Set(),pointers=new Map();
@@ -39,7 +42,15 @@
     if(route.length){const p=route[route.length-1];ctx.fillStyle='#f7e6bb';ctx.fillRect(p.x-2,p.y-2,4,4);ctx.fillStyle='#a57e50';ctx.fillRect(p.x-1,p.y-1,2,2)}
     ctx.restore();
     const offset=(frame.clientWidth-canvas.width*scale)/2;
-    for(const h of M.homes){const label=labels.get(h.id);label.style.left=offset+((h.x+h.w/2)*M.TILE-camera.x)*scale+'px';label.style.top=(h.y*M.TILE-camera.y-4)*scale+'px'}
+    for(const h of M.homes){
+      const label=labels.get(h.id),left=h.x*M.TILE-camera.x,top=h.y*M.TILE-camera.y;
+      label.hidden=left+h.w*M.TILE<0||left>canvas.width||top+h.h*M.TILE<0||top>canvas.height;
+      if(!label.hidden){
+        const half=label.offsetWidth/2+3;
+        label.style.left=Math.max(half,Math.min(frame.clientWidth-half,offset+(left+h.w*M.TILE/2)*scale))+'px';
+        label.style.top=Math.max(label.offsetHeight+3,Math.min(canvas.height*scale-3,(top-4)*scale))+'px';
+      }
+    }
     A.mini(mini,player,visited);
     Object.assign(canvas.dataset,{x:player.x.toFixed(2),y:player.y.toFixed(2),direction:player.dir,moving:String(moving),step:String(step),cameraX:String(camera.x),cameraY:String(camera.y),scale:String(scale)});
   }
@@ -74,6 +85,9 @@
     button.addEventListener('pointerdown',e=>{if(e.button!==0||dialog.open)return;e.preventDefault();route=[];button.setPointerCapture(e.pointerId);pointers.set(e.pointerId,button.dataset.dir);keys.add(button.dataset.dir);button.classList.add('held')});
     const release=e=>{const dir=pointers.get(e.pointerId);pointers.delete(e.pointerId);if(dir&&![...pointers.values()].includes(dir))keys.delete(dir);button.classList.remove('held')};
     button.addEventListener('pointerup',release);button.addEventListener('pointercancel',release);button.addEventListener('lostpointercapture',release);
+    button.addEventListener('keydown',e=>{if((e.key===' '||e.key==='Enter')&&!dialog.open){e.preventDefault();route=[];keys.add(button.dataset.dir);button.classList.add('held')}});
+    button.addEventListener('keyup',e=>{if(e.key===' '||e.key==='Enter'){e.preventDefault();keys.delete(button.dataset.dir);button.classList.remove('held')}});
+    button.addEventListener('blur',()=>{keys.delete(button.dataset.dir);button.classList.remove('held')});
   }
   canvas.addEventListener('pointerdown',e=>{
     if(dialog.open||e.button!==0)return;e.preventDefault();const box=canvas.getBoundingClientRect(),x=Math.floor(((e.clientX-box.left)/scale+camera.x)/M.TILE),y=Math.floor(((e.clientY-box.top)/scale+camera.y)/M.TILE);
@@ -89,7 +103,7 @@
     dialog.showModal();document.querySelector('#close-scene').focus();dirty=true;
   }
   visit.addEventListener('click',visitHome);document.querySelector('#close-scene').addEventListener('click',()=>dialog.close());
-  dialog.addEventListener('close',()=>{stop();canvas.focus({preventScroll:true})});document.querySelector('#stop').addEventListener('click',()=>{stop();location.textContent='停下来，看看街边的风景。'});
+  dialog.addEventListener('close',()=>{stop();canvas.focus({preventScroll:true})});document.querySelector('#stop').addEventListener('click',()=>{stop();location.textContent='停下来，看看街边的风景。';canvas.focus({preventScroll:true})});
   window.addEventListener('blur',stop);document.addEventListener('visibilitychange',()=>{stop();lastTime=0});reduced.addEventListener('change',()=>{dirty=true});
   requestAnimationFrame(tick);
 })();
