@@ -58,7 +58,8 @@ const shots =
         hasTouch: touch,
         isMobile: touch,
       });
-      await context.addInitScript(() => {
+      await context.addInitScript((appOrigin) => {
+        if (location.origin !== appOrigin) return;
         if (!localStorage.getItem("collection-fixture")) {
           localStorage.setItem("collection-fixture", "1");
           localStorage.setItem(
@@ -66,7 +67,7 @@ const shots =
             '{"version":1,"completed":["startSpring"]}',
           );
         }
-      });
+      }, origin);
       const page = await context.newPage(),
         errors = [],
         outside = [];
