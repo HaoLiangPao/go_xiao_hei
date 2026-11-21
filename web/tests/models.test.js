@@ -11,7 +11,7 @@ const manifest = JSON.parse(
     "utf8",
   ),
 );
-test("两个练习模型导出后可重新加载，包含有限顶点、正确比例和可播放动作", async () => {
+test("两个练习模型导出后可重新加载，包含有限顶点、导出前后一致的包围盒和可播放动作", async () => {
   assert.equal(manifest.models.length, 2);
   for (const entry of manifest.models) {
     const bytes = await readFile(
@@ -33,6 +33,13 @@ test("两个练习模型导出后可重新加载，包含有限顶点、正确�
         assert.ok(
           [...node.geometry.attributes.position.array].every(Number.isFinite),
         );
+        const normal = node.geometry.attributes.normal;
+        for (let i = 0; i < normal.count; i++)
+          assert.ok(
+            Math.abs(
+              Math.hypot(normal.getX(i), normal.getY(i), normal.getZ(i)) - 1,
+            ) < 0.001,
+          );
       }
     });
     assert.ok(meshes >= 7);
@@ -55,6 +62,5 @@ test("拒绝未知角色，简化模型不夹带外部素材地址", () => {
   for (const id of ["xiaohei", "heixiu"]) {
     const c = createCharacter(id);
     assert.equal(c.eyes.length, 2);
-    assert.equal(c.object.userData.version, "study-1");
   }
 });

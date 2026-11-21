@@ -13,7 +13,7 @@ let selected = "xiaohei",
   action = null;
 const models = {};
 const descriptions = {
-  xiaohei: "尖耳朵、绿眼白和长尾巴，先把猫形的轮廓捏出来。",
+  xiaohei: "短短的身体、大大的眼睛和一张小三角嘴。",
   heixiu: "圆滚滚的小黑团子。用最简单的形状，试试眼睛和动作能带来多少表情。",
 };
 function resetPose() {
@@ -30,9 +30,19 @@ function viewpoint(view = "front") {
   controls.target.set(0, target, 0);
   const distance = selected === "xiaohei" ? 5.5 : 4.0;
   camera.position.set(
-    view === "side" ? distance : 0,
+    view === "side"
+      ? distance
+      : view === "quarter"
+        ? distance * Math.SQRT1_2
+        : 0,
     target + 0.7,
-    view === "side" ? 0 : view === "back" ? -distance : distance,
+    view === "side"
+      ? 0
+      : view === "quarter"
+        ? distance * Math.SQRT1_2
+        : view === "back"
+          ? -distance
+          : distance,
   );
   controls.update();
   canvas.dataset.view = view;
@@ -168,9 +178,9 @@ try {
     fail("3D显示已中断，刷新页面可重试；模型仍可下载。");
   });
   function perform(kind) {
-    if (["front", "side", "back"].includes(kind)) {
+    if (["front", "quarter", "side", "back"].includes(kind)) {
       viewpoint(kind);
-      status.textContent = `${modelNames[selected]} · ${{ front: "正面", side: "侧面", back: "背面" }[kind]}`;
+      status.textContent = `${modelNames[selected]} · ${{ front: "正面", quarter: "斜侧", side: "侧面", back: "背面" }[kind]}`;
       return;
     }
     if (kind === "near" || kind === "far") {

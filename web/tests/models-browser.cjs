@@ -1,3 +1,4 @@
+const { createHash } = require("node:crypto");
 const { spawn } = require("node:child_process");
 const fs = require("node:fs"),
   path = require("node:path"),
@@ -129,6 +130,8 @@ const shots = path.join(root, "../docs/screenshots/model-lab");
       await shot("side", page.locator(".stage-panel"));
       await tap(page.getByRole("button", { name: "背面", exact: true }));
       await shot("back", page.locator(".stage-panel"));
+      await tap(page.getByRole("button", { name: "斜侧", exact: true }));
+      await shot("quarter", page.locator(".stage-panel"));
       await tap(page.getByRole("button", { name: "正面", exact: true }));
       await canvas.scrollIntoViewIfNeeded();
       const before = await canvas.screenshot(),
@@ -219,15 +222,24 @@ const shots = path.join(root, "../docs/screenshots/model-lab");
       await tap(page.getByRole("link", { name: "下载黑咻模型", exact: true }));
       const download = await downloadEvent;
       const temp = await download.path();
-      assert.equal(fs.readFileSync(temp).length, 28380);
+      assert.equal(
+        createHash("sha256").update(fs.readFileSync(temp)).digest("hex"),
+        JSON.parse(
+          fs.readFileSync(path.join(root, "public/models/manifest.json")),
+        ).models.find((m) => m.id === "heixiu").sha256,
+      );
       await tap(page.getByRole("button", { name: "猫形小黑", exact: true }));
       const catEvent = page.waitForEvent("download");
       await tap(
         page.getByRole("link", { name: "下载猫形小黑模型", exact: true }),
       );
       assert.equal(
-        fs.readFileSync(await (await catEvent).path()).length,
-        38320,
+        createHash("sha256")
+          .update(fs.readFileSync(await (await catEvent).path()))
+          .digest("hex"),
+        JSON.parse(
+          fs.readFileSync(path.join(root, "public/models/manifest.json")),
+        ).models.find((m) => m.id === "xiaohei").sha256,
       );
       await page.reload();
       await ready();
